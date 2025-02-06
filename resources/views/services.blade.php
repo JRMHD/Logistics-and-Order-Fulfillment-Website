@@ -46,28 +46,7 @@
                 <div class="row cs_center">
                     <div class="cs-bread-page-title-area">
                         <div class="cs-page-title-in">
-                            <div class="cs-bread-cap">
-                                <svg width="33" height="19" viewBox="0 0 33 19" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_4589_11874)">
-                                        <path d="M0.931641 18.682L15.7481 9.72777L0.931641 0.773499V18.682Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.931641 9.72777H15.7481L0.931641 0.773499V9.72777Z"
-                                            fill="white" />
-                                        <path d="M17.25 18.6821L32.0664 9.72783L17.25 0.77356V18.6821Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M17.25 9.72783H32.0664L17.25 0.77356V9.72783Z"
-                                            fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_4589_11874">
-                                            <rect width="31.1351" height="18" fill="white"
-                                                transform="translate(0.931641 0.727783)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <span>Blog</span>
-                            </div>
+
                             <div class="cs-page-title">
                                 <h2 class="cs_white_color">Our Services</h2>
                             </div>
@@ -76,7 +55,7 @@
                     <div class="breadcrumb">
                         <ul class="cs_mp0">
                             <li>
-                                <a href="index.html" class="cs-text_b_line"><span>Home</span></a>
+                                <a href="/" class="cs-text_b_line"><span>Home</span></a>
                             </li>
                             <li>.</li>
                             <li>Services</li>
@@ -134,10 +113,11 @@
                     <div class="cs-sec-title-height"></div>
 
                     <div class="cs-service-list-wrap">
+                        <!-- Order Fulfillment -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
-                                    <i class="flaticon-airplane"></i>
+                                    <i class="flaticon-order"></i>
                                     <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
@@ -147,24 +127,26 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4 class="cs_black_color">Freight Transportation</h4>
+                                    <h4 class="cs_black_color">Order Fulfillment</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    Flexible and efficient road transportation across local and
-                                    international routes.
+                                    We handle every step of the order fulfillment process, ensuring your products reach
+                                    customers on time and in perfect condition.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="service-details.html"><i class="flaticon-arrow"></i></a>
+                                <a href="/about"><i class="flaticon-arrow"></i></a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
+
+                        <!-- Warehousing -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
-                                    <i class="flaticon-logistics"></i>
+                                    <i class="flaticon-warehouse"></i>
                                     <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
@@ -174,20 +156,51 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Warehousing & Distribution</h4>
+                                    <h4>Warehousing</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    Flexible and efficient road transportation across local and
-                                    international routes.
+                                    Our state-of-the-art warehousing solutions provide secure and scalable storage
+                                    tailored to your business needs.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="service-details.html"><i class="flaticon-arrow"></i></a>
+                                <a href="/about"><i class="flaticon-arrow"></i></a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
+
+                        <!-- Last-Mile Delivery -->
+                        <div class="cs-service-item">
+                            <div class="ser-icon-title">
+                                <div class="cs-ser-icons">
+                                    <i class="flaticon-delivery-truck"></i>
+                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
+                                            fill="#D40511" />
+                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="cs-ser-title">
+                                    <h4>Last-Mile Delivery</h4>
+                                </div>
+                            </div>
+                            <div class="cs-ser-para">
+                                <p>
+                                    We specialize in efficient last-mile delivery services, ensuring your products reach
+                                    their final destination quickly and reliably.
+                                </p>
+                            </div>
+                            <div class="cs-ser-btn">
+                                <a href="/about"><i class="flaticon-arrow"></i></a>
+                            </div>
+                        </div>
+                        <div class="cs-ser-border mb-50"></div>
+
+                        <!-- Bulk Distribution -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -201,51 +214,22 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Supply Chain Management</h4>
+                                    <h4>Bulk Distribution</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    Flexible and efficient road transportation across local and
-                                    international routes.
+                                    We handle large-scale distribution with precision and efficiency, ensuring your
+                                    products are delivered on time and in bulk.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="service-details.html"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-shipping"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>E-Commerce Solutions</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    Flexible and efficient road transportation across local and
-                                    international routes.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="service-details.html"><i class="flaticon-arrow"></i></a>
+                                <a href="/about"><i class="flaticon-arrow"></i></a>
                             </div>
                         </div>
                         <div class="cs-ser-border"></div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
     <!-- End Service Section -->
 
@@ -253,315 +237,7 @@
     <!-- Section to Section Gap -->
 
     <!-- Start Expertise Area Style Full Width -->
-    <section>
-        <div class="cs-expertise-wrap expert-full-zig">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="cs-expert-area-content">
-                        <div class="cs-expert-area-item">
-                            <div class="cs-exp-icon-title">
-                                <div class="cs-exp-icon svg-left-to-right-animation-wrap">
-                                    <span class="svg-left-to-right-animation">
-                                        <i class="flaticon-shipping"></i>
-                                        <i class="flaticon-shipping"></i>
-                                    </span>
-                                </div>
-                                <div class="cs-exp-title">
-                                    <h5>Land Freight Services</h5>
-                                </div>
-                            </div>
-                            <div class="cs-exp-text">
-                                <p>
-                                    Contrary to popular belief, Lorem Ipsum is not simply random
-                                    text. It has roots in a piece of classic.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="cs-expert-line"></div>
-                        <div class="cs-expert-area-item">
-                            <div class="cs-exp-icon-title">
-                                <div class="cs-exp-icon svg-left-to-right-animation-wrap">
-                                    <span class="svg-left-to-right-animation">
-                                        <i class="flaticon-cargo-ship"></i>
-                                        <i class="flaticon-cargo-ship"></i>
-                                    </span>
-                                </div>
-                                <div class="cs-exp-title">
-                                    <h5>Ocean Freight Solutions</h5>
-                                </div>
-                            </div>
-                            <div class="cs-exp-text">
-                                <p>
-                                    Contrary to popular belief, Lorem Ipsum is not simply random
-                                    text. It has roots in a piece of classic.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="cs-expert-line"></div>
-                        <div class="cs-expert-area-item">
-                            <div class="cs-exp-icon-title">
-                                <div class="cs-exp-icon svg-left-to-right-animation-wrap">
-                                    <span class="svg-left-to-right-animation">
-                                        <i class="flaticon-airplane"></i>
-                                        <i class="flaticon-airplane"></i>
-                                    </span>
-                                </div>
-                                <div class="cs-exp-title">
-                                    <h5>Air Cargo Transportation</h5>
-                                </div>
-                            </div>
-                            <div class="cs-exp-text">
-                                <p>
-                                    Contrary to popular belief, Lorem Ipsum is not simply random
-                                    text. It has roots in a piece of classic.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Expertise Area Style Full Width -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
-
-    <!-- Start Testimonial -->
-    <section>
-        <div class="cs-testi-wrap">
-            <div class="container">
-                <div class="cs-testi-wrap-in">
-                    <div class="cs-testi-content">
-                        <div class="swiper home1-testi-slider1">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="cs-testi-slide-in">
-                                        <div class="cs-testi-quote">
-                                            <svg width="55" height="46" viewBox="0 0 55 46" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M30.1272 46L39.4171 0H54.1012V46H30.1272ZM0.15979 46L9.44969 0H24.1337V46H0.15979Z"
-                                                    fill="#D40511" />
-                                            </svg>
-                                        </div>
-                                        <h4>
-                                            "Always reliable and on time! Their exceptional service
-                                            has streamlined our operations. Highly recommended!"
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cs-testi-slide-in">
-                                        <div class="cs-testi-quote">
-                                            <svg width="55" height="46" viewBox="0 0 55 46" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M30.1272 46L39.4171 0H54.1012V46H30.1272ZM0.15979 46L9.44969 0H24.1337V46H0.15979Z"
-                                                    fill="#D40511" />
-                                            </svg>
-                                        </div>
-                                        <h4>
-                                            "Punctual and dependable! Their outstanding service has
-                                            greatly improved our operations. Highly recommended!"
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cs-testi-slide-in">
-                                        <div class="cs-testi-quote">
-                                            <svg width="55" height="46" viewBox="0 0 55 46" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M30.1272 46L39.4171 0H54.1012V46H30.1272ZM0.15979 46L9.44969 0H24.1337V46H0.15979Z"
-                                                    fill="#D40511" />
-                                            </svg>
-                                        </div>
-                                        <h4>
-                                            "Efficient and trustworthy! Their seamless service has
-                                            helped optimize our deliveries. Would definitely
-                                            recommend!"
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cs-testi-slide-in">
-                                        <div class="cs-testi-quote">
-                                            <svg width="55" height="46" viewBox="0 0 55 46" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M30.1272 46L39.4171 0H54.1012V46H30.1272ZM0.15979 46L9.44969 0H24.1337V46H0.15979Z"
-                                                    fill="#D40511" />
-                                            </svg>
-                                        </div>
-                                        <h4>
-                                            "Consistently reliable! Their attention to detail and
-                                            prompt service have made significant impact. Highly
-                                            recommend them!"
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cs-testi-user-container">
-                            <div class="cs-user-single home1-testi-sc" data-slide="0">
-                                <div class="cs-user-img">
-                                    <img src="assets/img/testi-user01.jpg" alt="LogiHub" />
-                                </div>
-                                <div class="cs-user-info">
-                                    <h6><span>—</span>Jane Doe</h6>
-                                    <p>ABC Manufacturing</p>
-                                </div>
-                            </div>
-                            <div class="cs-user-single home1-testi-sc" data-slide="1">
-                                <div class="cs-user-img">
-                                    <img src="assets/img/testi-user02.jpg" alt="LogiHub" />
-                                </div>
-                                <div class="cs-user-info">
-                                    <h6><span>—</span>Alexander Martinez</h6>
-                                    <p>Director Xyz</p>
-                                </div>
-                            </div>
-                            <div class="cs-user-single home1-testi-sc" data-slide="2">
-                                <div class="cs-user-img">
-                                    <img src="assets/img/testi-user03.jpg" alt="LogiHub" />
-                                </div>
-                                <div class="cs-user-info">
-                                    <h6><span>—</span>Jonathan Evans</h6>
-                                    <p>Xyz Manufacturing</p>
-                                </div>
-                            </div>
-                            <div class="cs-user-single home1-testi-sc" data-slide="3">
-                                <div class="cs-user-img">
-                                    <img src="assets/img/testi-user04.png" alt="LogiHub" />
-                                </div>
-                                <div class="cs-user-info">
-                                    <h6><span>—</span>Benjamin Chen</h6>
-                                    <p>Expo Manufacturing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cs-testi-arrow">
-                <div class="cs-testi-right home1-testi-swiper-button-next">
-                    <i class="flaticon-right-arrow"></i>
-                </div>
-                <div class="cs-testi-left home1-testi-swiper-button-prev">
-                    <i class="flaticon-right-arrow"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Testimonial -->
-
-    <div class="cs-section-height-half"></div>
-    <!-- Section to Section Gap -->
-    <div class="cs-container-border"></div>
-    <div class="cs-section-height-half"></div>
-    <!-- Section to Section Gap -->
-
-    <!-- Start Counter -->
-    <section>
-        <div class="cs-counter-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="cs-counter-item">
-                            <div class="cs-count-text">
-                                <span id="count1" class="amin_auto_count cs-text-style-h2">348</span><span
-                                    class="cs-text-style-h2">K</span>
-                            </div>
-                            <div class="cs-counter-title">
-                                <p>Service Provided Monthly</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="cs-counter-item">
-                            <div class="cs-count-text">
-                                <span id="count2" class="amin_auto_count cs-text-style-h2">499</span><span
-                                    class="cs-text-style-h2">K</span>
-                            </div>
-                            <div class="cs-counter-title">
-                                <p>Deliveries Completed</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="cs-counter-item">
-                            <div class="cs-count-text">
-                                <span id="count3" class="amin_auto_count cs-text-style-h2">150</span><span
-                                    class="cs-text-style-h2">+</span>
-                            </div>
-                            <div class="cs-counter-title">
-                                <p>Global Partners</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="cs-counter-item">
-                            <div class="cs-count-text">
-                                <span id="count4" class="amin_auto_count cs-text-style-h2">99.9</span><span
-                                    class="cs-text-style-h2">%</span>
-                            </div>
-                            <div class="cs-counter-title">
-                                <p>On-Time Delivery Rate</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Counter -->
-
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
-
-    <!-- Start Client Area Full Width -->
-    <section>
-        <div class="cs-client-brand-wrapper style-full-1raw">
-            <div class="cs-client-container">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">HasExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">XpoExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">FedExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">DaaExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">TheExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">UpsExpress</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Client Area Full Width -->
 
     <!-- Start CTA -->
     <section>
@@ -576,7 +252,7 @@
                         </div>
                         <div class="cs-cta-btn">
                             <div class="cs-primary-btn">
-                                <a href="contact.html">Free Quote
+                                <a href="/Quoterequest">Free Quote
                                     <i class="flaticon-right-arrow"></i>
                                 </a>
                             </div>

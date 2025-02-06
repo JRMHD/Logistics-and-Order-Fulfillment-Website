@@ -49,7 +49,7 @@
                             <div class="breadcrumb">
                                 <ul class="cs_mp0">
                                     <li>
-                                        <a href="index.html" class="cs-text_b_line"><span>Home</span></a>
+                                        <a href="/" class="cs-text_b_line"><span>Home</span></a>
                                     </li>
                                     <li>.</li>
                                     <li>Contact</li>
@@ -75,33 +75,33 @@
                     <div class="col-xl-5">
                         <div class="cs-contact-in">
                             <h2>Get In Touch</h2>
-                            <p class="cs-contact-text">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text. It has roots
-                                in a piece of classic random text.</p>
+                            <p class="cs-contact-text">We handle every step of the order fulfillment process, ensuring
+                                your products reach customers on time and in perfect condition.</p>
                             <div class="cs-logi-office-wrap">
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
                                         <h6>Corporate Office</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada
+                                        Nairobi,Kenya
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-                                        <a href="#" class="cs-text-style-h6">info@email.com</a>
+                                        <a href="#" class="cs-text-style-h6">+254 798 984929</a>
+                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
                                     </div>
                                 </div>
                                 <div class="cs-border-v-line"></div>
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
-                                        <h6>Canada Office</h6>
+                                        <h6>East Africa</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada
+                                        Nairobi,Kenya
                                     </p>
+
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-                                        <a href="#" class="cs-text-style-h6">info@email.com</a>
+                                        <a href="#" class="cs-text-style-h6">+254 706 459198</a>
+                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -111,24 +111,40 @@
                         <div class="cs-contact-page-form-wrap">
                             <div class="cs-form-cp-in">
                                 <form>
+                                    <!-- Name -->
                                     <div class="mb-3">
                                         <input type="text" class="form-control" placeholder="Your Name" required>
                                     </div>
+
+                                    <!-- Email -->
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="example@l" required>
+                                        <input type="email" class="form-control" placeholder="example@domain.com"
+                                            required>
                                     </div>
+
+                                    <!-- Phone -->
                                     <div class="mb-3">
                                         <input type="tel" class="form-control" id="phone"
                                             placeholder="+1-416-8241228" required>
                                     </div>
+
+                                    <!-- Subject -->
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                            required>
+                                    </div>
+
+                                    <!-- Message -->
                                     <div class="mb-3">
                                         <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
                                     </div>
 
+                                    <!-- Submit Button -->
                                     <button type="submit" class="cs-primary-btn">Submit<i
                                             class="flaticon-right-arrow"></i></button>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -140,54 +156,14 @@
     <div class="cs-section-height"></div>
     <!-- Section to Section Gap -->
 
-    <!-- Start Client Area Full Width -->
-    <section>
-        <div class="cs-client-brand-wrapper style-full-1raw">
-            <div class="cs-client-container">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">HasExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">XpoExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">FedExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">DaaExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">TheExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">UpsExpress</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Client Area Full Width -->
+
 
     <!-- Start Map -->
     <div class="cs-logi-map-wrap">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd"
-            allowfullscreen=""></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510564.65107988653!2d36.5177334104462!3d-1.3031873859975642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1738876221663!5m2!1sen!2ske"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- End Map -->
 

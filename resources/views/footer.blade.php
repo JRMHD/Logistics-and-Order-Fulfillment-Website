@@ -9,25 +9,26 @@
                                 <h6>Corporate Office</h6>
                             </div>
                             <p class="cs-max-width-200">
-                                612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada
+                                Nairobi,Kenya
                             </p>
                             <div class="cs-logi-emai-phone">
-                                <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-                                <a href="#" class="cs-text-style-h6">info@email.com</a>
+                                <a href="#" class="cs-text-style-h6">+254 798 984929</a>
+                                <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="cs-logi-cor-office cs-footer-widget">
                             <div class="cs-footer-widget-title">
-                                <h6>Canada Office</h6>
+                                <h6>East Africa</h6>
                             </div>
                             <p class="cs-max-width-200">
-                                612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada
+                                Nairobi,Kenya
                             </p>
                             <div class="cs-logi-emai-phone">
-                                <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-                                <a href="#" class="cs-text-style-h6">info@email.com</a>
+                                <a href="#" class="cs-text-style-h6">+254 706 459198</a>
+                                <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -111,8 +112,18 @@
                     </div>
                 </div>
                 <div class="cs-footer-copy-text">
-                    <p>© 2024 <a href="#">Thememarch.</a> All Rights Reserved.</p>
+                    <p>©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="/">{{ config('app.name') }}</a>. All Rights Reserved. |
+                        Designed and Developed by
+                        <a href="https://www.jrmhd.tech/" target="_blank" class="text-decoration-none">
+                            Jrmhd Technologies
+                        </a>
+                    </p>
                 </div>
+
             </div>
         </div>
         <div class="cs-logi-footer-border">

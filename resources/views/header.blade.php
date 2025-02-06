@@ -4,25 +4,25 @@
         <div class="container-fluid">
             <div class="cs-topbar-container">
                 <div class="cs-topbar-left">
-                    <span class="cs-small-text cs-color-black">612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada</span>
+                    <span class="cs-small-text cs-color-black">Nairobi,Kenya</span>
                 </div>
                 <div class="cs-logi-topbar-right">
                     <div class="cs-topbar-social">
                         <ul>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>FB</span></a>
+                                <a href="#" class="cs-text_b_line"><span>J</span></a>
                             </li>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>TW</span></a>
+                                <a href="#" class="cs-text_b_line"><span>R</span></a>
                             </li>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>LI</span></a>
+                                <a href="#" class="cs-text_b_line"><span>M</span></a>
                             </li>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>IG</span></a>
+                                <a href="#" class="cs-text_b_line"><span>H</span></a>
                             </li>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>PIN</span></a>
+                                <a href="#" class="cs-text_b_line"><span>D</span></a>
                             </li>
                         </ul>
                     </div>
@@ -75,8 +75,8 @@
                 <!-- Start Main Header Right Area -->
                 <div class="cs_main_header_right">
                     <div class="cs-header-additional-item">
-                        <a href="{{ url('/order-tracking') }}"><span class="cs_accent_color">+</span> Track Your
-                            Shipment</a>
+                        <a href="{{ url('/Quoterequest') }}"><span class="cs_accent_color">+</span> Request a Free
+                            Quote</a>
                     </div>
                     <div class="cs_toolbox">
                         <span class="cs_icon_btn">
@@ -99,7 +99,7 @@
     <div class="cs-header-emai-phone">
         <div class="cs-topbar-email">
             <div class="cs-email">
-                <a href="#">Info@email.com</a>
+                <a href="#">nyamsawa@gmail.com</a>
             </div>
         </div>
         <a href="#" class="cs-header-phone">
@@ -112,7 +112,7 @@
                         <span>Make a Call</span>
                         <div>
                             <h6 class="cs-text-style-h6 cs-text_b_line">
-                                +1-416-8241228
+                                +254 798 984929
                             </h6>
                         </div>
                     </div>
@@ -133,15 +133,15 @@
             <a class="cs_site_branding" href="/">
                 <img src="assets/img/logo_black_text.png" alt="Logo" />
             </a>
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text.
+            <p>We handle every step of the order fulfillment process, ensuring your products reach customers on time and
+                in perfect condition.
             </p>
         </div>
         <div class="cs-sidebar-middle-area">
-            <p>612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada</p>
+            <p>Nairobi,Kenya</p>
             <div class="cs-sidebar-emai-phone">
-                <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-                <a href="#" class="cs-text-style-h6">info@email.com</a>
+                <a href="#" class="cs-text-style-h6">+254 798 984929</a>
+                <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
             </div>
             <div class="cs-common-icon-style cs-sidebar-social">
                 <ul>
@@ -168,18 +168,7 @@
                 </ul>
             </div>
         </div>
-        <div class="cs-sidebar-bottom-area">
-            <form class="cs-logi-newsletter">
-                <input class="cs-newsletter-email" type="email" placeholder="Enter Your Email Address" required />
-                <button class="cs-newsletter-btn svg-left-to-right-animation-wrap" type="submit">
-                    Subscribe
-                    <span class="svg-left-to-right-animation">
-                        <i class="flaticon-right-arrow"></i>
-                        <i class="flaticon-right-arrow"></i>
-                    </span>
-                </button>
-            </form>
-        </div>
+
     </div>
 </div>
 <!-- End Sidebar -->

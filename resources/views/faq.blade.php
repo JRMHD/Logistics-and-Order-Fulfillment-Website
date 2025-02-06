@@ -100,17 +100,17 @@
                             <div class="cs-left-nav-in">
                                 <ul>
                                     <li id="tab1-tab" class="cs-text_b_line tab active"><a href="#"><span>About
-                                                Company</span></a></li>
-                                    <li id="tab2-tab" class="cs-text_b_line tab"><a
-                                            href="#"><span>Services</span></a></li>
-                                    <li id="tab3-tab" class="cs-text_b_line tab"><a
-                                            href="#"><span>History</span></a></li>
-                                    <li id="tab4-tab" class="cs-text_b_line tab"><a href="#"><span>Our
-                                                Goal</span></a></li>
-                                    <li id="tab5-tab" class="cs-text_b_line tab"><a href="#"><span>Refund
-                                                Policy</span></a></li>
-                                    <li id="tab6-tab" class="cs-text_b_line tab"><a href="#"><span>Privacy
-                                                Policy</span></a></li>
+                                                {{ config('app.name') }}</span></a></li>
+                                    <li id="tab2-tab" class="cs-text_b_line tab"><a href="#"><span>Our
+                                                History</span></a></li>
+                                    <li id="tab3-tab" class="cs-text_b_line tab"><a href="#"><span>Industries We
+                                                Serve</span></a></li>
+                                    <li id="tab4-tab" class="cs-text_b_line tab"><a href="#"><span>Timely
+                                                Deliveries</span></a></li>
+                                    <li id="tab5-tab" class="cs-text_b_line tab"><a
+                                            href="#"><span>Sustainability</span></a></li>
+                                    <li id="tab6-tab" class="cs-text_b_line tab"><a
+                                            href="#"><span>Partnerships</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -120,583 +120,71 @@
                             <div class="cs_accordian">
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            What services does your logistics company provide?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">What is {{ config('app.name') }}?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
-
                                     <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
+                                        <p>{{ config('app.name') }} is a logistics and order fulfillment company
+                                            dedicated to providing seamless, technology-driven logistics solutions
+                                            across Kenya.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure the safety and security of goods during transportation?
+                                        <h6 class="cs_accordian_title cs_m0">When was {{ config('app.name') }} founded?
                                         </h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
-
                                     <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
+                                        <p>{{ config('app.name') }} was established in 2018 to bridge the gap between
+                                            businesses and their customers through innovative logistics solutions.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you handle customs clearance for international shipments?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">What industries does
+                                            {{ config('app.name') }} serve?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
-
                                     <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
+                                        <p>We serve e-commerce, retailers, manufacturers, wholesalers, and SMEs,
+                                            providing customized logistics solutions to enhance efficiency and reduce
+                                            costs.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">How does {{ config('app.name') }} ensure
+                                            timely deliveries?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
-
                                     <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
+                                        <p>We leverage state-of-the-art tracking systems, real-time updates, and
+                                            optimized delivery routes to ensure timely and reliable order fulfillment.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">What sustainability initiatives does
+                                            {{ config('app.name') }} follow?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
-
                                     <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
+                                        <p>We are committed to eco-friendly logistics practices, including fleet
+                                            optimization and sustainable supply chain solutions, to reduce our carbon
+                                            footprint.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">How can I partner with
+                                            {{ config('app.name') }}?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
-
                                     <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab2-content" class="cs-faq-wrap tab-content">
-                            <div class="cs_accordian">
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure the safety and security of goods during transportation?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you handle customs clearance for international shipments?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab3-content" class="cs-faq-wrap tab-content">
-                            <div class="cs_accordian">
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you handle customs clearance for international shipments?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab4-content" class="cs-faq-wrap tab-content">
-                            <div class="cs_accordian">
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab5-content" class="cs-faq-wrap tab-content active">
-                            <div class="cs_accordian">
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            What services does your logistics company provide?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure the safety and security of goods during transportation?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you handle customs clearance for international shipments?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab6-content" class="cs-faq-wrap tab-content">
-                            <div class="cs_accordian">
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">
-                                            How do you ensure sustainability in your logistics operations?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-
-                                    <div class="cs_accordian_body">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                                        in a piece of
-                                        classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                        McClintock, a Latin
-                                        professor at Hampden-Sydney College in Virginia. It has roots in a piece of
-                                        classical.
+                                        <p>Businesses can partner with us by reaching out through our contact page or
+                                            customer support to discuss customized logistics solutions.</p>
                                     </div>
                                 </div>
                             </div>
@@ -706,6 +194,7 @@
             </div>
         </div>
     </div>
+
     <!-- End Faq Content Section -->
 
     <div class="cs-section-height"></div>
@@ -719,63 +208,49 @@
                     <div class="col-xl-5">
                         <div class="cs-contact-in">
                             <h2>Still Have a Question Please ask?</h2>
-                            <p class="cs-contact-text">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text. It has roots
-                                in a piece of classic random text.</p>
+                            <p class="cs-contact-text"> {{ config('app.name') }}
+                                serve industries like
+                                e-commerce, retail, and manufacturing, ensuring seamless supply chain management. Reach
+                                out through our <a href="/contact">contact page</a> or customer support to discuss
+                                customized logistics solutions tailored to your needs.</p>
                             <div class="cs-logi-office-wrap">
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
                                         <h6>Corporate Office</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada
+                                        Nairobi,Kenya
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-                                        <a href="#" class="cs-text-style-h6">info@email.com</a>
+                                        <a href="#" class="cs-text-style-h6">+254 798 984929</a>
+                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
                                     </div>
                                 </div>
                                 <div class="cs-border-v-line"></div>
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
-                                        <h6>Canada Office</h6>
+                                        <h6>East Africa</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        612-7 Roanoke Rd, Toronto, ON M3A 1E3, Canada
+                                        Nairobi,Kenya
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-                                        <a href="#" class="cs-text-style-h6">info@email.com</a>
+                                        <a href="#" class="cs-text-style-h6">+254 706 459198</a>
+                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-7">
-                        <div>
-                            <div class="cs-form-cp-in cs-form-light">
-                                <form>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control"
-                                            placeholder="examplename@email.com" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="tel" class="form-control" id="phone"
-                                            placeholder="+1-416-8241228" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-                                    </div>
+                       <div>
+    <div class="cs-form-cp-in cs-form-light text-center" style="color: white;">
+        <a href="/contact" class="cs-primary-btn" style="color: white;">Contact Us<i class="flaticon-right-arrow"></i></a>
+    </div>
+</div>
 
-                                    <button type="submit" class="cs-primary-btn">Submit<i
-                                            class="flaticon-right-arrow"></i></button>
-                                </form>
-                            </div>
-                        </div>
                     </div>
+
                 </div>
             </div>
         </div>

@@ -57,8 +57,12 @@
                                 mistyped. But don’t worry, we’re here to get you back on
                                 track.
                             </p>
-                            <div class="cs-primary-btn">
-                                <a href="index.html">Go To Home<i class="flaticon-right-arrow"></i></a>
+
+                            <div class="timer-container">
+                                <div class="countdown-circle">
+                                    <span id="countdown">10</span>
+                                </div>
+                                <p>You will be redirected in <span id="countdown-text">10</span> seconds.</p>
                             </div>
                         </div>
                     </div>
@@ -73,53 +77,78 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // Countdown timer
+        let countdownElement = document.getElementById("countdown");
+        let countdownTextElement = document.getElementById("countdown-text");
+        let countdownValue = 10;
+
+        const countdownInterval = setInterval(() => {
+            countdownValue--;
+            countdownElement.innerText = countdownValue;
+            countdownTextElement.innerText = countdownValue;
+
+            // When the countdown reaches 0, redirect to home
+            if (countdownValue === 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "/"; // Redirect to home
+            }
+        }, 1000); // 1000ms = 1 second
+    </script>
+
+    <style>
+        .timer-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .countdown-circle {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #00bcd4;
+            border-radius: 50%;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 100px;
+            text-align: center;
+            animation: pulse 1s infinite;
+        }
+
+        .countdown-circle span {
+            display: block;
+        }
+
+        #countdown-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+
     <!-- Error Content -->
 
     <div class="cs-section-height"></div>
     <!-- Section to Section Gap -->
 
-    <!-- Start Client Area Style 1 -->
-    <section>
-        <div class="cs-client-brand-wrapper style-full-1raw">
-            <div class="cs-client-container">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">HasExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">XpoExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">FedExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">DaaExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">TheExpress</a></h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4">
-                            <div class="cs-client-card">
-                                <h6><a href="#">UpsExpress</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Client Area Style 1 -->
+
 
     <!-- Start Footer -->
     @include('footer')

@@ -53,7 +53,7 @@
                             <div class="breadcrumb">
                                 <ul class="cs_mp0">
                                     <li>
-                                        <a href="index.html" class="cs-text_b_line"><span>Home</span></a>
+                                        <a href="/" class="cs-text_b_line"><span>Home</span></a>
                                     </li>
                                     <li>.</li>
                                     <li>Tracking</li>

@@ -17,7 +17,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 
 Route::view('/about', 'about');
@@ -28,6 +28,7 @@ Route::view('/header', 'header');
 Route::view('/order-tracking', 'order-tracking');
 Route::view('/service-details', 'service-details');
 Route::view('/services', 'services');
+Route::view('/Quoterequest', 'Quoterequest');
 
 // 404 Page
 Route::fallback(function () {
