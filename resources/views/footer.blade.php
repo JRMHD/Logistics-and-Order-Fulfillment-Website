@@ -60,18 +60,88 @@
                                 </div>
                                 <p>Delivering Excellence in Global Logistics.</p>
                             </div>
-                            <form class="cs-logi-newsletter">
-                                <input class="cs-newsletter-email" type="email" placeholder="Enter Your Email Address"
-                                    required />
+                            <form class="cs-logi-newsletter" id="subscribeForm">
+                                @csrf
+                                <input class="cs-newsletter-email" type="email" name="email"
+                                    placeholder="Enter Your Email Address" required />
+
                                 <button class="cs-newsletter-btn cs_center svg-left-to-right-animation-wrap"
-                                    type="submit">
+                                    type="submit" id="subscribeBtn">
                                     Subscribe
                                     <span class="svg-left-to-right-animation">
                                         <i class="flaticon-right-arrow"></i>
                                         <i class="flaticon-right-arrow"></i>
                                     </span>
                                 </button>
+
+                                <!-- Modern Loading Spinner -->
+                                <div id="loading" class="spinner" style="display: none;"></div>
+
+                                <div id="responseMessage" class="mt-2"></div>
                             </form>
+
+                            <style>
+                                /* Modern CSS Loader */
+                                .spinner {
+                                    margin: 10px auto;
+                                    width: 30px;
+                                    height: 30px;
+                                    border: 4px solid rgba(0, 0, 0, 0.1);
+                                    border-left-color: #3498db;
+                                    /* Loader color */
+                                    border-radius: 50%;
+                                    animation: spin 1s linear infinite;
+                                    display: inline-block;
+                                }
+
+                                @keyframes spin {
+                                    0% {
+                                        transform: rotate(0deg);
+                                    }
+
+                                    100% {
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            </style>
+
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                            <script>
+                                $(document).ready(function() {
+                                    $("#subscribeForm").on("submit", function(e) {
+                                        e.preventDefault();
+
+                                        $("#subscribeBtn").prop("disabled", true); // Disable button
+                                        $("#loading").show(); // Show spinner
+                                        $("#responseMessage").html('');
+
+                                        $.ajax({
+                                            url: "{{ route('subscribe') }}",
+                                            method: "POST",
+                                            data: $(this).serialize(),
+                                            success: function(response) {
+                                                $("#loading").hide();
+                                                $("#subscribeBtn").prop("disabled", false);
+                                                $("#responseMessage").html('<div class="text-success">' + response
+                                                    .message + '</div>');
+                                                $("#subscribeForm")[0].reset();
+                                            },
+                                            error: function(xhr) {
+                                                $("#loading").hide();
+                                                $("#subscribeBtn").prop("disabled", false);
+                                                let errors = xhr.responseJSON.errors;
+                                                let errorMessage = '<div class="text-danger">';
+                                                $.each(errors, function(key, value) {
+                                                    errorMessage += value[0] + '<br>';
+                                                });
+                                                errorMessage += '</div>';
+                                                $("#responseMessage").html(errorMessage);
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+
                             <div class="cs-social-common">
                                 <ul>
                                     <li>

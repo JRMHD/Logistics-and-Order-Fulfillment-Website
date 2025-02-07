@@ -30,38 +30,6 @@
     <section>
         <div class="cs-hero-slider-wrap cs-hero-home-1">
             <div class="cs-hero-slider-content-wrap">
-                <div class="cs-hero-slider-instrument">
-                    <div class="cs-hero-slider-controller">
-                        <div class="slider-controler-item" data-slide="0">
-                            <h6>01</h6>
-                            <p>Order Fulfillment</p>
-                        </div>
-                        <div class="slider-controler-item" data-slide="1">
-                            <h6>02</h6>
-                            <p>Warehousing</p>
-                        </div>
-                        <div class="slider-controler-item" data-slide="2">
-                            <h6>03</h6>
-                            <p>Last-Mile Delivery</p>
-                        </div>
-                    </div>
-                    <div class="cs-hero-slider-thumb">
-                        <div class="cs-thumb-in">
-                            <div class="cs-hero-thumb-item">
-                                <img src="assets/img/hero-slider-thumb.jpg" alt="LogiHub" class="hero-thumb"
-                                    data-slide="0">
-                            </div>
-                            <div class="cs-hero-thumb-item">
-                                <img src="assets/img/hero-slider-thumb-1.jpg" alt="LogiHub" class="hero-thumb"
-                                    data-slide="1">
-                            </div>
-                            <div class="cs-hero-thumb-item">
-                                <img src="assets/img/hero-slider-thumb-2.jpg" alt="LogiHub" class="hero-thumb"
-                                    data-slide="2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="cs-hero-slider-content">
                     <div class="swiper hero1-slider1">
                         <div class="swiper-wrapper">

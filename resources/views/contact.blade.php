@@ -110,40 +110,106 @@
                     <div class="col-xl-7">
                         <div class="cs-contact-page-form-wrap">
                             <div class="cs-form-cp-in">
-                                <form>
-                                    <!-- Name -->
+                                <form id="contactForm">
+                                    @csrf
+
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                        <input type="text" class="form-control" name="name"
+                                            placeholder="Your Name" required>
                                     </div>
 
-                                    <!-- Email -->
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="example@domain.com"
+                                        <input type="email" class="form-control" name="email"
+                                            placeholder="example@domain.com" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control" name="phone"
+                                            placeholder="eg .0706378245" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="subject" placeholder="Subject"
                                             required>
                                     </div>
 
-                                    <!-- Phone -->
                                     <div class="mb-3">
-                                        <input type="tel" class="form-control" id="phone"
-                                            placeholder="+1-416-8241228" required>
+                                        <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
                                     </div>
 
-                                    <!-- Subject -->
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                            required>
-                                    </div>
+                                    <button type="submit" class="cs-primary-btn" id="submitBtn">
+                                        Submit <i class="flaticon-right-arrow"></i>
+                                    </button>
 
-                                    <!-- Message -->
-                                    <div class="mb-3">
-                                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-                                    </div>
+                                    <!-- Modern Loading Spinner -->
+                                    <div id="loading" class="spinner" style="display: none;"></div>
 
-                                    <!-- Submit Button -->
-                                    <button type="submit" class="cs-primary-btn">Submit<i
-                                            class="flaticon-right-arrow"></i></button>
+                                    <div id="responseMessage" class="mt-2"></div>
                                 </form>
                             </div>
+
+                            <style>
+                                /* Modern CSS Loader */
+                                .spinner {
+                                    margin: 10px auto;
+                                    width: 40px;
+                                    height: 40px;
+                                    border: 4px solid rgba(0, 0, 0, 0.1);
+                                    border-left-color: #3498db;
+                                    /* Loader color */
+                                    border-radius: 50%;
+                                    animation: spin 1s linear infinite;
+                                }
+
+                                @keyframes spin {
+                                    0% {
+                                        transform: rotate(0deg);
+                                    }
+
+                                    100% {
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            </style>
+
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                            <script>
+                                $(document).ready(function() {
+                                    $("#contactForm").on("submit", function(e) {
+                                        e.preventDefault();
+
+                                        $("#submitBtn").prop("disabled", true); // Disable button
+                                        $("#loading").show(); // Show spinner
+                                        $("#responseMessage").html('');
+
+                                        $.ajax({
+                                            url: "{{ route('contact.store') }}",
+                                            method: "POST",
+                                            data: $(this).serialize(),
+                                            success: function(response) {
+                                                $("#loading").hide();
+                                                $("#submitBtn").prop("disabled", false);
+                                                $("#responseMessage").html('<div class="text-success">' + response
+                                                    .message + '</div>');
+                                                $("#contactForm")[0].reset();
+                                            },
+                                            error: function(xhr) {
+                                                $("#loading").hide();
+                                                $("#submitBtn").prop("disabled", false);
+                                                let errors = xhr.responseJSON.errors;
+                                                let errorMessage = '<div class="text-danger">';
+                                                $.each(errors, function(key, value) {
+                                                    errorMessage += value[0] + '<br>';
+                                                });
+                                                errorMessage += '</div>';
+                                                $("#responseMessage").html(errorMessage);
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+
+
 
                         </div>
                     </div>

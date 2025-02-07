@@ -2,6 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\QuoteRequestController;
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -34,3 +39,7 @@ Route::view('/Quoterequest', 'Quoterequest');
 Route::fallback(function () {
     return view('404');
 });
+
+Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
+Route::post('/quote-request', [QuoteRequestController::class, 'store']);

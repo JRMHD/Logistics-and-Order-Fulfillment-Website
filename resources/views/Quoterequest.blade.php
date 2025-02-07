@@ -55,58 +55,139 @@
                                         <h4>Request For a Free Quote</h4>
                                     </div>
                                     <div class="cs-quote-form">
-                                        <form>
+                                        <form id="quoteRequestForm" action="{{ url('/quote-request') }}" method="POST">
+                                            @csrf
+
                                             <!-- Full Name -->
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" id="full-name"
-                                                    placeholder="Full Name" required>
+                                                <input type="text" class="form-control" name="full_name"
+                                                    id="full-name" placeholder="Full Name" required>
+                                                <div class="text-danger error-full_name"></div>
                                             </div>
 
                                             <!-- Phone -->
                                             <div class="mb-3">
-                                                <input type="tel" class="form-control" id="phone"
+                                                <input type="tel" class="form-control" name="phone" id="phone"
                                                     placeholder="+1-416-8241228" required>
+                                                <div class="text-danger error-phone"></div>
                                             </div>
 
                                             <!-- Pickup Location -->
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" id="pickup-location"
-                                                    placeholder="Pickup Location (City, Country)" required>
+                                                <input type="text" class="form-control" name="pickup_location"
+                                                    id="pickup-location" placeholder="Pickup Location (City, Country)"
+                                                    required>
+                                                <div class="text-danger error-pickup_location"></div>
                                             </div>
 
                                             <!-- Delivery Location -->
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" id="delivery-location"
+                                                <input type="text" class="form-control" name="delivery_location"
+                                                    id="delivery-location"
                                                     placeholder="Delivery Location (City, Country)" required>
+                                                <div class="text-danger error-delivery_location"></div>
                                             </div>
 
                                             <!-- Type of Goods -->
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" id="type-of-goods"
-                                                    placeholder="Type of Goods" required>
+                                                <input type="text" class="form-control" name="type_of_goods"
+                                                    id="type-of-goods" placeholder="Type of Goods" required>
+                                                <div class="text-danger error-type_of_goods"></div>
                                             </div>
 
                                             <!-- Date -->
                                             <div class="mb-3">
-                                                <input type="date" class="form-control" id="date" required>
+                                                <input type="date" class="form-control" name="date" id="date"
+                                                    required>
+                                                <div class="text-danger error-date"></div>
                                             </div>
 
                                             <!-- Weight and Dimensions -->
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" id="weight-dimensions"
-                                                    placeholder="Weight and Dimensions (kg, cm)" required>
+                                                <input type="text" class="form-control" name="weight_dimensions"
+                                                    id="weight-dimensions" placeholder="Weight and Dimensions (kg, cm)"
+                                                    required>
+                                                <div class="text-danger error-weight_dimensions"></div>
                                             </div>
 
                                             <!-- Additional Message (Optional) -->
                                             <div class="mb-3">
-                                                <textarea class="form-control" id="message" rows="4" placeholder="Additional Message (Optional)"></textarea>
+                                                <textarea class="form-control" name="message" id="message" rows="4"
+                                                    placeholder="Additional Message (Optional)"></textarea>
+                                                <div class="text-danger error-message"></div>
+                                            </div>
+
+                                            <!-- Loading Spinner -->
+                                            <div class="text-center">
+                                                <div id="loadingSpinner" class="spinner-border text-primary d-none"
+                                                    role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                </div>
                                             </div>
 
                                             <!-- Submit Button -->
-                                            <button type="submit" class="cs-primary-btn white-primary-btn">Submit<i
-                                                    class="flaticon-right-arrow"></i></button>
+                                            <button type="submit" id="submitButton"
+                                                class="cs-primary-btn white-primary-btn">Submit</button>
+
+                                            <!-- Success Message -->
+                                            <div id="successMessage" class="alert alert-success mt-3 d-none"></div>
+
+                                            <!-- Error Message -->
+                                            <div id="errorMessage" class="alert alert-danger mt-3 d-none"></div>
                                         </form>
                                     </div>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $('#quoteRequestForm').submit(function(e) {
+                                                e.preventDefault();
+                                                let formData = $(this).serialize();
+
+                                                // Hide previous messages
+                                                $('#successMessage').addClass('d-none').text('');
+                                                $('#errorMessage').addClass('d-none').text('');
+                                                $('.text-danger').text(''); // Clear old validation messages
+
+                                                // Show loading spinner and disable button
+                                                $('#loadingSpinner').removeClass('d-none');
+                                                $('#submitButton').prop('disabled', true).text('Submitting...');
+
+                                                $.ajax({
+                                                    url: "{{ url('/quote-request') }}",
+                                                    type: "POST",
+                                                    data: formData,
+                                                    success: function(response) {
+                                                        // Hide spinner, reset button text
+                                                        $('#loadingSpinner').addClass('d-none');
+                                                        $('#submitButton').prop('disabled', false).text('Submit');
+
+                                                        // Show success message
+                                                        $('#successMessage').removeClass('d-none').text(response.success);
+
+                                                        // Reset the form fields
+                                                        $('#quoteRequestForm')[0].reset();
+                                                    },
+                                                    error: function(xhr) {
+                                                        // Hide spinner, reset button text
+                                                        $('#loadingSpinner').addClass('d-none');
+                                                        $('#submitButton').prop('disabled', false).text('Submit');
+
+                                                        if (xhr.status === 422) {
+                                                            let errors = xhr.responseJSON.errors;
+                                                            $.each(errors, function(key, value) {
+                                                                $('.error-' + key).text(value[0]);
+                                                            });
+                                                        } else {
+                                                            $('#errorMessage').removeClass('d-none').text(
+                                                                'An unexpected error occurred. Please try again.');
+                                                        }
+                                                    }
+                                                });
+                                            });
+                                        });
+                                    </script>
+
+
 
                                 </div>
                             </div>
