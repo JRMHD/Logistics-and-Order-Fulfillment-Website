@@ -90,7 +90,7 @@
 
 
 
-    
+
     <!-- End Home_1 Slider -->
 
     <div class="cs-section-height"></div> <!-- Section to Section Gap -->
@@ -164,7 +164,8 @@
     </section>
     <!-- End Expertise Area Style 1 -->
 
-<section style="
+    <section
+        style="
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -172,28 +173,35 @@
     background: #004041;
     padding: 1.5rem 1rem;
 ">
-    <div style="
+        <div
+            style="
         text-align: center;
         max-width: 800px;
         margin: 0 auto;
         padding: 0 1rem;
     ">
-        <h1 style="
+            <h1
+                style="
             color: white;
             font-size: 2rem;
             margin-bottom: 1rem;
             font-weight: 700;
             line-height: 1.2;
-        ">Track Your Shipment</h1>
-        
-        <p style="
+        ">
+                Track Your Shipment</h1>
+
+            <p
+                style="
             color: #f3f4f6;
             font-size: 1rem;
             margin-bottom: 1.5rem;
             line-height: 1.5;
-        ">Stay informed about your package's journey from pickup to delivery. Real-time tracking at your fingertips.</p>
-        
-        <a href="/order-tracking" style="
+        ">
+                Stay informed about your package's journey from pickup to delivery. Real-time tracking at your
+                fingertips.</p>
+
+            <a href="/order-tracking"
+                style="
             display: inline-block;
             background: #004041;
             color: white;
@@ -204,12 +212,13 @@
             text-decoration: none;
             transition: all 0.3s ease;
             border: 2px solid white;
-        " onmouseover="this.style.background='white';this.style.color='#004041';" 
-           onmouseout="this.style.background='#004041';this.style.color='white';">
-            Track Now
-        </a>
-    </div>
-</section>
+        "
+                onmouseover="this.style.background='white';this.style.color='#004041';"
+                onmouseout="this.style.background='#004041';this.style.color='white';">
+                Track Now
+            </a>
+        </div>
+    </section>
 
     <div class="cs-section-height"></div> <!-- Section to Section Gap -->
 
