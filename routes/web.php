@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\QuoteRequestController;
-
+use App\Http\Controllers\AdminController;
 
 
 Route::get('/', function () {
@@ -43,3 +43,8 @@ Route::fallback(function () {
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
 Route::post('/quote-request', [QuoteRequestController::class, 'store']);
+
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+});
