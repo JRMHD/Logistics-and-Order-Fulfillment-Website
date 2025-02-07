@@ -6,6 +6,9 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\QuoteRequestController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\TruckingController;
+use App\Http\Controllers\Admin\AdminSubscriberController;
+use App\Http\Controllers\Admin\AdminDashboardController;
 
 
 Route::get('/', function () {
@@ -47,4 +50,17 @@ Route::post('/quote-request', [QuoteRequestController::class, 'store']);
 
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+    // Route::resource('/admin/trucking', TruckingController::class);
+    Route::resource('/admin/trucking', TruckingController::class)->names('admin.trucking');
+
+    // Subscriber Management
+    Route::get('/admin/subscribers', [AdminSubscriberController::class, 'index'])->name('admin.subscribers.index');
+    Route::get('/admin/subscribers/export', [AdminSubscriberController::class, 'exportCsv'])->name('admin.subscribers.export');
+
+    Route::get('/admin/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
 });
+
+
+Route::get('/order-tracking', [TruckingController::class, 'trackOrder'])->name('order.tracking');
+
+
