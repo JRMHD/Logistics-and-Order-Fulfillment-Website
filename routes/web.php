@@ -34,7 +34,7 @@ Route::view('/faq', 'faq');
 Route::view('/footer', 'footer');
 Route::view('/header', 'header');
 Route::view('/order-tracking', 'order-tracking');
-Route::view('/service-details', 'service-details');
+// Route::view('/service-details', 'service-details');
 Route::view('/services', 'services');
 Route::view('/Quoterequest', 'Quoterequest');
 

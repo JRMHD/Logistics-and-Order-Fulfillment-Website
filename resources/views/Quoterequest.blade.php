@@ -5,19 +5,39 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Thememarch" />
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
-    <!-- Site Title -->
-    <title>LogiHub - Logistic & Transportation</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>Get Shipping Quote | Motor Speed Courier Kenya - Instant Delivery Rates</title>
+    <meta name="description"
+        content="Get instant delivery quotes for shipping across Kenya's 47 counties. Fast, reliable rate calculator for businesses, e-commerce, and individual shipping needs.">
+    <meta name="keywords"
+        content="shipping quote kenya, delivery rates, courier pricing, logistics quote, shipping calculator kenya, motor speed courier rates, delivery cost calculator, business shipping rates">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Get Instant Shipping Quotes | Motor Speed Courier Kenya">
+    <meta property="og:description"
+        content="Calculate your delivery costs instantly. Transparent pricing for shipping across Kenya, perfect for businesses and individual needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://motorspeedcourier.com/quote-request">
+    <meta property="og:site_name" content="Motor Speed Courier">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Motor Speed Courier">
+    <link rel="canonical" href="http://motorspeedcourier.com/quote-request">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -97,16 +117,16 @@
 
                                             <!-- Date -->
                                             <div class="mb-3">
-                                                <input type="date" class="form-control" name="date" id="date"
-                                                    required>
+                                                <input type="date" class="form-control" name="date"
+                                                    id="date" required>
                                                 <div class="text-danger error-date"></div>
                                             </div>
 
                                             <!-- Weight and Dimensions -->
                                             <div class="mb-3">
                                                 <input type="text" class="form-control" name="weight_dimensions"
-                                                    id="weight-dimensions" placeholder="Weight and Dimensions (kg, cm)"
-                                                    required>
+                                                    id="weight-dimensions"
+                                                    placeholder="Weight and Dimensions (kg, cm)" required>
                                                 <div class="text-danger error-weight_dimensions"></div>
                                             </div>
 

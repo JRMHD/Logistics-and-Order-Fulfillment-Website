@@ -5,19 +5,39 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Thememarch" />
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
-    <!-- Site Title -->
-    <title>LogiHub - Logistic & Transportation</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>Logistics Services | Motor Speed Courier - E-commerce Delivery & Business Solutions Kenya</title>
+    <meta name="description"
+        content="Comprehensive logistics services including e-commerce delivery, same-day shipping, and nationwide distribution across Kenya's 47 counties. Custom solutions for businesses of all sizes.">
+    <meta name="keywords"
+        content="logistics services kenya, e-commerce delivery, same day delivery, business logistics solutions, courier services nairobi, nationwide delivery kenya, supply chain management, warehousing kenya">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Logistics & Delivery Services | Motor Speed Courier Kenya">
+    <meta property="og:description"
+        content="Technology-driven logistics solutions for e-commerce, retail & SMEs. Reliable delivery services across all 47 counties in Kenya.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://motorspeedcourier.com/services">
+    <meta property="og:site_name" content="Motor Speed Courier">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Motor Speed Courier">
+    <link rel="canonical" href="http://motorspeedcourier.com/services">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -120,7 +140,8 @@
                                                                     class="flaticon-right-arrow"></i><span>E-commerce
                                                                     Solutions</span></a></li>
                                                         <li class="cs-text_b_line"><a href="#"><i
-                                                                    class="flaticon-right-arrow"></i><span>Warehousing &
+                                                                    class="flaticon-right-arrow"></i><span>Warehousing
+                                                                    &
                                                                     Distribution</span></a></li>
                                                         <li class="cs-text_b_line"><a href="#"><i
                                                                     class="flaticon-right-arrow"></i><span>E-commerce

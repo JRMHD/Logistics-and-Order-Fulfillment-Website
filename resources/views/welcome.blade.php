@@ -5,19 +5,39 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Thememarch" />
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
-    <!-- Site Title -->
-    <title>LogiHub - Logistic & Transportation</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>Motor Speed Courier - Leading Logistics & Delivery Services in Kenya</title>
+    <meta name="description"
+        content="Kenya's trusted logistics partner since 2018. Offering nationwide delivery across 47 counties, technology-driven solutions for e-commerce, retail & SMEs. Fast, reliable & efficient courier services.">
+    <meta name="keywords"
+        content="logistics kenya, courier service kenya, e-commerce delivery, nationwide delivery, motor speed courier, business logistics, same day delivery, courier nairobi, kenyan counties delivery">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Motor Speed Courier - Leading Logistics & Delivery Services in Kenya">
+    <meta property="og:description"
+        content="Technology-driven logistics solutions across all 47 Kenyan counties. Trusted by e-commerce, retailers & SMEs since 2018.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://motorspeedcourier.com">
+    <meta property="og:site_name" content="Motor Speed Courier">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Motor Speed Courier">
+    <link rel="canonical" href="http://motorspeedcourier.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 

@@ -5,19 +5,39 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Thememarch" />
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
-    <!-- Site Title -->
-    <title>LogiHub - Logistic & Transportation</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>Contact Motor Speed Courier | Logistics Support in Kenya</title>
+    <meta name="description"
+        content="Get in touch with Motor Speed Courier for reliable logistics solutions across Kenya. Customer support available for e-commerce, retail & business delivery services.">
+    <meta name="keywords"
+        content="contact motor speed courier, logistics support kenya, courier contact details, delivery service contact, logistics customer service, kenya courier support, business logistics help">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Contact Us | Motor Speed Courier Kenya">
+    <meta property="og:description"
+        content="Reach out to Motor Speed Courier for all your logistics needs across Kenya's 47 counties. Professional support for businesses and individuals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://motorspeedcourier.com/contact">
+    <meta property="og:site_name" content="Motor Speed Courier">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Motor Speed Courier">
+    <link rel="canonical" href="http://motorspeedcourier.com/contact">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -129,8 +149,8 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                            required>
+                                        <input type="text" class="form-control" name="subject"
+                                            placeholder="Subject" required>
                                     </div>
 
                                     <div class="mb-3">

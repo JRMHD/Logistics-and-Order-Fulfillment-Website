@@ -5,19 +5,38 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Thememarch" />
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
-    <!-- Site Title -->
-    <title>LogiHub - Logistic & Transportation</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>Page Not Found | Motor Speed Courier Kenya</title>
+    <meta name="description"
+        content="Sorry, the page you're looking for cannot be found. Explore our logistics services across Kenya or return to our homepage for shipping and delivery solutions.">
+    <meta name="keywords"
+        content="404, page not found, motor speed courier kenya, logistics services, delivery solutions">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Page Not Found | Motor Speed Courier Kenya">
+    <meta property="og:description"
+        content="Sorry, this page isn't available. Visit our homepage to explore our nationwide delivery services across Kenya.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://motorspeedcourier.com/404">
+    <meta property="og:site_name" content="Motor Speed Courier">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="Motor Speed Courier">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>

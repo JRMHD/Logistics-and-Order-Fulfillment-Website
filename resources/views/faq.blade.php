@@ -6,19 +6,39 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Thememarch" />
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
-    <!-- Site Title -->
-    <title>LogiHub - Logistic & Transportation</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>FAQ | Motor Speed Courier Kenya - Delivery & Logistics Questions Answered</title>
+    <meta name="description"
+        content="Find answers to common questions about our logistics services, delivery times, pricing, and coverage across Kenya's 47 counties. Your shipping questions answered.">
+    <meta name="keywords"
+        content="logistics faq kenya, courier service questions, delivery faq, shipping help kenya, motor speed courier support, logistics information, delivery service guide, shipping questions kenya">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Frequently Asked Questions | Motor Speed Courier Kenya">
+    <meta property="og:description"
+        content="Get answers about our nationwide delivery services, shipping processes, and logistics solutions. Supporting businesses across Kenya since 2018.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://motorspeedcourier.com/faq">
+    <meta property="og:site_name" content="Motor Speed Courier">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Motor Speed Courier">
+    <link rel="canonical" href="http://motorspeedcourier.com/faq">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -243,11 +263,12 @@
                         </div>
                     </div>
                     <div class="col-xl-7">
-                       <div>
-    <div class="cs-form-cp-in cs-form-light text-center" style="color: white;">
-        <a href="/contact" class="cs-primary-btn" style="color: white;">Contact Us<i class="flaticon-right-arrow"></i></a>
-    </div>
-</div>
+                        <div>
+                            <div class="cs-form-cp-in cs-form-light text-center" style="color: white;">
+                                <a href="/contact" class="cs-primary-btn" style="color: white;">Contact Us<i
+                                        class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
 
                     </div>
 

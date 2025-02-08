@@ -6,21 +6,39 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Thememarch" />
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
+    <!-- SEO Meta Tags -->
+    <title>Track Your Delivery | Motor Speed Courier Kenya - Real-Time Package Tracking</title>
+    <meta name="description"
+        content="Track your package in real-time with Motor Speed Courier's online tracking system. Fast and reliable delivery tracking across all 47 counties in Kenya.">
+    <meta name="keywords"
+        content="track package kenya, courier tracking, delivery status, parcel tracking kenya, motor speed courier tracking, real-time tracking, order status kenya, shipping tracker">
 
-    <!-- Site Title -->
-    <title>LogiHub - Logistic & Transportation</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Track Your Package | Motor Speed Courier Kenya">
+    <meta property="og:description"
+        content="Use our real-time tracking system to monitor your deliveries across Kenya. Fast, reliable, and accurate package tracking.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://motorspeedcourier.com/order-tracking">
+    <meta property="og:site_name" content="Motor Speed Courier">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Motor Speed Courier">
+    <link rel="canonical" href="http://motorspeedcourier.com/order-tracking">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
