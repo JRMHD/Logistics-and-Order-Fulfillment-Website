@@ -10,16 +10,31 @@
                     <div class="cs-topbar-social">
                         <ul>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>J</span></a>
+                                <a href="#" class="cs-text_b_line"><span>M</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="cs-text_b_line"><span>O</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="cs-text_b_line"><span>T</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="cs-text_b_line"><span>O</span></a>
                             </li>
                             <li>
                                 <a href="#" class="cs-text_b_line"><span>R</span></a>
                             </li>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>M</span></a>
+                                <a href="#" class="cs-text_b_line"><span>S</span></a>
                             </li>
                             <li>
-                                <a href="#" class="cs-text_b_line"><span>H</span></a>
+                                <a href="#" class="cs-text_b_line"><span>P</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="cs-text_b_line"><span>E</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="cs-text_b_line"><span>E</span></a>
                             </li>
                             <li>
                                 <a href="#" class="cs-text_b_line"><span>D</span></a>
@@ -27,6 +42,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

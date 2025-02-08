@@ -176,10 +176,12 @@
                 <div class="cs-footer-copy-branding">
                     <div class="cs-footer-copy-branding">
                         <a href="index.html">
-                            <img src="assets/img/logo_white_text.png" alt="LogiHub" />
+                            <img src="assets/img/logo_white_text.png" alt="LogiHub"
+                                style="width: 250px; height: auto;" />
                         </a>
                         <span>Delivering Excellence in Global Logistics.</span>
                     </div>
+
                 </div>
                 <div class="cs-footer-copy-text">
                     <p>©
