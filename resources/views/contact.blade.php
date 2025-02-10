@@ -107,7 +107,7 @@
                                     </p>
                                     <div class="cs-logi-emai-phone">
                                         <a href="#" class="cs-text-style-h6">+254 798 984929</a>
-                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
+                                        <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                                     </div>
                                 </div>
                                 <div class="cs-border-v-line"></div>

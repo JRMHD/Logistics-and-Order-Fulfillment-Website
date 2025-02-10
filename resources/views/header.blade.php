@@ -115,7 +115,7 @@
     <div class="cs-header-emai-phone">
         <div class="cs-topbar-email">
             <div class="cs-email">
-                <a href="#">nyamsawa@gmail.com</a>
+                <a href="#">info@motorspeedcourier.com</a>
             </div>
         </div>
         <a href="#" class="cs-header-phone">
@@ -157,7 +157,7 @@
             <p>Nairobi,Kenya</p>
             <div class="cs-sidebar-emai-phone">
                 <a href="#" class="cs-text-style-h6">+254 798 984929</a>
-                <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
+                <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
             </div>
             <div class="cs-common-icon-style cs-sidebar-social">
                 <ul>

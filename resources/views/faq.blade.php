@@ -95,7 +95,7 @@
                     <div class="breadcrumb">
                         <ul class="cs_mp0">
                             <li>
-                                <a href="index.html" class="cs-text_b_line"><span>Home</span></a>
+                                <a href="/" class="cs-text_b_line"><span>Home</span></a>
                             </li>
                             <li>.</li>
                             <li>FAQ</li>
@@ -243,7 +243,7 @@
                                     </p>
                                     <div class="cs-logi-emai-phone">
                                         <a href="#" class="cs-text-style-h6">+254 798 984929</a>
-                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
+                                        <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                                     </div>
                                 </div>
                                 <div class="cs-border-v-line"></div>
