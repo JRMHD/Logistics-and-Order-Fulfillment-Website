@@ -2,32 +2,48 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\QuoteRequest;
-use App\Mail\QuoteRequestUserMail;
-use App\Mail\QuoteRequestOwnerMail;
 use Illuminate\Http\Request;
+use App\Models\QuoteRequest;
 use Illuminate\Support\Facades\Mail;
 
 class QuoteRequestController extends Controller
 {
-    public function submit(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
-            'full_name' => 'required|string',
-            'phone' => 'required|string',
-            'pickup_location' => 'required|string',
-            'delivery_location' => 'required|string',
-            'type_of_goods' => 'required|string',
-            'date' => 'required|date',
-            'weight_dimensions' => 'required|string',
-            'email' => 'required|email'
+            'full_name' => 'required|string|max:255',
+            'phone' => 'required|string|max:20',
+            'email' => 'required|email|max:255',
+            'services' => 'required|string',
+            'message' => 'nullable|string',
         ]);
 
-        $quote = QuoteRequest::create($request->all());
+        // Save data to the database
+        $quote = QuoteRequest::create([
+            'full_name' => $request->full_name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'services' => $request->services,
+            'message' => $request->message,
+        ]);
 
-        Mail::send(new QuoteRequestUserMail($quote));
-        Mail::send(new QuoteRequestOwnerMail($quote));
+        // Send email to the owner
+        Mail::send('emails.quote_request', ['quote' => $quote], function ($message) use ($quote) {
+            $message->to('nyamsawa@gmail.com')
+                ->subject('New Quote Request')
+                ->from($quote->email);
+        });
 
-        return response()->json(['message' => 'Your quote request has been received.'], 200);
+        // Send confirmation email to the user
+        Mail::send('emails.user_confirmation', ['quote' => $quote], function ($message) use ($quote) {
+            $message->to($quote->email)
+                ->subject('Quote Request Confirmation')
+                ->from('info@motorspeedcourier.com');
+        });
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Your request has been submitted successfully.',
+        ]);
     }
 }

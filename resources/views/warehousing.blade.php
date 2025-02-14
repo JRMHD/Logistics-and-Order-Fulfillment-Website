@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="cs-sec-title cs-max-w-640">
-                                <h2>What We Offer</h2>
+                                <h2>3. WAREHOUSING & STORAGE SOLUTIONS</h2>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,6 @@
                     <div class="cs-sec-title-height"></div>
 
                     <div class="cs-service-list-wrap">
-                        <!-- Order Fulfillment -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -147,13 +146,16 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4 class="cs_black_color">Order Fulfillment</h4>
+                                    <h4 class="cs_black_color">At MOTORSPEED COURIER AND FULFILMENT</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We handle every step of the order fulfillment process, ensuring your products reach
-                                    customers on time and in perfect condition.
+                                    In the fast-moving world of logistics, having the right storage solution can make
+                                    all the difference. We offer state-of-the-art warehousing facilities that provide
+                                    secure, scalable, and efficient storage solutions for businesses of all sizes.
+                                    Whether you need short-term storage for seasonal inventory or a long-term fulfilment
+                                    center to support your growing operations, we’ve got you covered.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -162,7 +164,6 @@
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Warehousing -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -176,13 +177,30 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Warehousing</h4>
+                                    <h4>Our Warehousing & Storage Solutions</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    Our state-of-the-art warehousing solutions provide secure and scalable storage
-                                    tailored to your business needs.
+                                    Our Warehousing & Storage Solutions are designed to meet the unique needs of your
+                                    business, ensuring your goods are stored safely and delivered efficiently. Here’s
+                                    what we offer:
+                                    <br><br>
+                                    ✅ Short & Long-Term Warehousing: Whether you need storage for a few weeks or several
+                                    years, our flexible warehousing options are tailored to your business needs. Our
+                                    facilities are equipped with advanced security systems, including 24/7 surveillance
+                                    and access control, to ensure your goods are always safe.
+                                    <br><br>
+                                    ✅ Fulfillment Centers: Speed is critical in today’s competitive market. Our
+                                    fulfilment centers are strategically located to enable faster order processing and
+                                    dispatch, ensuring your customers receive their orders on time. From picking and
+                                    packing to shipping, we handle it all with precision and efficiency.
+                                    <br><br>
+                                    ✅ Cross-Docking Services: Reduce handling time and streamline your distribution
+                                    process with our cross-docking services. This innovative solution allows goods to be
+                                    transferred directly from incoming to outgoing vehicles, minimizing storage time and
+                                    improving efficiency. It’s ideal for businesses looking to optimize their supply
+                                    chain and reduce costs.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -191,7 +209,6 @@
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Last-Mile Delivery -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -205,42 +222,26 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Last-Mile Delivery</h4>
+                                    <h4>Why Choose Our Warehousing & Storage Solutions?</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We specialize in efficient last-mile delivery services, ensuring your products reach
-                                    their final destination quickly and reliably.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
-
-                        <!-- Bulk Distribution -->
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-supply-chain"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Bulk Distribution</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    We handle large-scale distribution with precision and efficiency, ensuring your
-                                    products are delivered on time and in bulk.
+                                    • Security: Our facilities are equipped with advanced security systems, including
+                                    CCTV surveillance, fire protection, and access control, to ensure your goods are
+                                    always safe.
+                                    <br><br>
+                                    • Scalability: Whether you’re a small business or a large enterprise, our storage
+                                    solutions can scale with your needs.
+                                    <br><br>
+                                    • Efficiency: With strategically located fulfilment centers and cross-docking
+                                    services, we help you reduce handling time and improve delivery speed.
+                                    <br><br>
+                                    • Specialized Storage: Our temperature-controlled facilities ensure that perishable
+                                    and sensitive goods are stored under optimal conditions.
+                                    <br><br>
+                                    • Cost-Effective: Flexible storage options and efficient processes help you reduce
+                                    operational costs and improve profitability.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -250,6 +251,8 @@
                         <div class="cs-ser-border"></div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
     <!-- End Service Section -->
 

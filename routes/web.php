@@ -4,11 +4,11 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SubscriptionController;
-use App\Http\Controllers\QuoteRequestController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\TruckingController;
 use App\Http\Controllers\Admin\AdminSubscriberController;
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\QuoteRequestController;
 
 
 Route::get('/', function () {
@@ -34,9 +34,17 @@ Route::view('/faq', 'faq');
 Route::view('/footer', 'footer');
 Route::view('/header', 'header');
 Route::view('/order-tracking', 'order-tracking');
-// Route::view('/service-details', 'service-details');
+Route::view('/privacypolicy', 'privacypolicy');
+Route::view('/termsandconditions', 'termsandconditions');
+Route::view('/pricing', 'pricing');
 Route::view('/services', 'services');
 Route::view('/Quoterequest', 'Quoterequest');
+Route::view('/courieranddelivery', 'courieranddelivery');
+Route::view('/ecommercepackaging', 'ecommercepackaging');
+Route::view('/warehousing', 'warehousing');
+Route::view('/medicalcourier', 'medicalcourier');
+Route::view('/bulklogistics', 'bulklogistics');
+Route::view('/reverselogistics', 'reverselogistics');
 
 // 404 Page
 Route::fallback(function () {
@@ -45,7 +53,7 @@ Route::fallback(function () {
 
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
-Route::post('/quote-request', [QuoteRequestController::class, 'store']);
+
 
 
 Route::middleware(['auth', 'admin'])->group(function () {
@@ -62,5 +70,4 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
 
 Route::get('/order-tracking', [TruckingController::class, 'trackOrder'])->name('order.tracking');
-
-
+Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('quote.request');

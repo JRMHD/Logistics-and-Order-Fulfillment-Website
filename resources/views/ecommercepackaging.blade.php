@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="cs-sec-title cs-max-w-640">
-                                <h2>What We Offer</h2>
+                                <h2>2. E-COMMERCE PACKAGING & FULFILMENT</h2>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,6 @@
                     <div class="cs-sec-title-height"></div>
 
                     <div class="cs-service-list-wrap">
-                        <!-- Order Fulfillment -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -147,13 +146,17 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4 class="cs_black_color">Order Fulfillment</h4>
+                                    <h4 class="cs_black_color">At MOTORSPEED COURIER AND FULFILMENT</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We handle every step of the order fulfillment process, ensuring your products reach
-                                    customers on time and in perfect condition.
+                                    In today’s fast-paced e-commerce landscape, delivering a seamless customer
+                                    experience is key to building loyalty and driving growth. We empower online
+                                    businesses with end-to-end fulfilment solutions that take the hassle out of order
+                                    processing, packaging, and delivery. From the moment a customer places an order to
+                                    the final delivery, we handle every step with precision and care, allowing you to
+                                    focus on growing your business.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -162,7 +165,6 @@
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Warehousing -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -176,13 +178,43 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Warehousing</h4>
+                                    <h4>Our E-Commerce Packaging & Fulfilment Services</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    Our state-of-the-art warehousing solutions provide secure and scalable storage
-                                    tailored to your business needs.
+                                    Our E-Commerce Packaging & Fulfilment services are designed to help you scale
+                                    efficiently while maintaining exceptional customer satisfaction. Here’s how we do
+                                    it:
+                                    <br><br>
+                                    ✅ Order Processing & Packing: We take care of the entire order fulfilment process,
+                                    from storage and picking to packaging. Our team ensures that every order is handled
+                                    with precision and care, so your products reach your customers in perfect condition.
+                                    Whether it’s a single item or a bulk order, we’ve got you covered.
+                                    <br><br>
+                                    ✅ Inventory Management: Running out of stock can cost you sales and damage your
+                                    reputation. With our real-time stock tracking system, you’ll always know what’s in
+                                    stock and what needs replenishing. We help you optimize your inventory levels,
+                                    ensuring you never run out of popular products and can meet customer demand
+                                    effortlessly.
+                                    <br><br>
+                                    ✅ Returns & Exchange Management: Returns are an inevitable part of e-commerce, but
+                                    they don’t have to be a headache. Our hassle-free return logistics make it easy for
+                                    customers to return or exchange items, while we handle the rest. From processing
+                                    returns to restocking items, we ensure a smooth and efficient process that keeps
+                                    your customers happy.
+                                    <br><br>
+                                    ✅ Custom Packaging & Branding: First impressions matter, and your packaging is often
+                                    the first physical touchpoint a customer has with your brand. We offer custom boxes,
+                                    labels, and packaging that reflect your brand identity and create a memorable
+                                    unboxing experience. Stand out from the competition and leave a lasting impression
+                                    with packaging that speaks to your brand’s values.
+                                    <br><br>
+                                    ✅ API Integration: Managing multiple e-commerce platforms can be time-consuming and
+                                    complex. Our seamless API integration connects your online store with our fulfilment
+                                    system, automating order processing and inventory updates. Whether you’re using
+                                    Shopify, WooCommerce, Jumia, or other platforms, we ensure smooth and streamlined
+                                    operations.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -191,7 +223,6 @@
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Last-Mile Delivery -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -205,42 +236,25 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Last-Mile Delivery</h4>
+                                    <h4>Why Choose Our E-Commerce Packaging & Fulfilment Services?</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We specialize in efficient last-mile delivery services, ensuring your products reach
-                                    their final destination quickly and reliably.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
-
-                        <!-- Bulk Distribution -->
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-supply-chain"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Bulk Distribution</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    We handle large-scale distribution with precision and efficiency, ensuring your
-                                    products are delivered on time and in bulk.
+                                    • Efficiency: We streamline your order fulfilment process, saving you time and
+                                    resources so you can focus on growing your business.
+                                    <br><br>
+                                    • Scalability: Whether you’re a small startup or a large enterprise, our solutions
+                                    are designed to scale with your business.
+                                    <br><br>
+                                    • Customer Satisfaction: From fast delivery to hassle-free returns, we help you
+                                    deliver an exceptional customer experience that builds loyalty.
+                                    <br><br>
+                                    • Brand Enhancement: Our custom packaging solutions help you create a strong brand
+                                    identity and stand out in a competitive market.
+                                    <br><br>
+                                    • Technology-Driven: With real-time inventory tracking and API integration, we
+                                    leverage technology to make your operations smarter and more efficient.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -250,6 +264,8 @@
                         <div class="cs-ser-border"></div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
     <!-- End Service Section -->
 

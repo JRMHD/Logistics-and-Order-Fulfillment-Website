@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>Motor Speed Courier - Leading Logistics & Delivery Services in Kenya</title>
+    <title>MotorSpeedCourier - Leading Logistics & Delivery Services in Kenya</title>
     <meta name="description"
         content="Kenya's trusted logistics partner since 2018. Offering nationwide delivery across 47 counties, technology-driven solutions for e-commerce, retail & SMEs. Fast, reliable & efficient courier services.">
     <meta name="keywords"
@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
                                 <div class="cs-hero-slider-img slider-image">
-                                    <img src="assets/img/hero/home_1_hero_slider_1.jpg" alt="Order Fulfillment">
+                                    <img src="\assets\img\home truck 1.jpg" alt="Order Fulfillment">
                                 </div>
                             </div>
                             <!-- Slide 2: Warehousing -->
@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="cs-hero-slider-img slider-image">
-                                    <img src="assets/img/hero/home_1_hero_slider_2.jpg" alt="Warehousing">
+                                    <img src="\assets\img\home truck 2.jpg" alt="Warehousing">
                                 </div>
                             </div>
                             <!-- Slide 3: Last-Mile Delivery -->
@@ -98,7 +98,7 @@
                                     </div>
                                 </div>
                                 <div class="cs-hero-slider-img slider-image">
-                                    <img src="assets/img/hero/home_1_hero_slider_3.jpg" alt="Last-Mile Delivery">
+                                    <img src="\assets\img\home truck 3.jpg" alt="Last-Mile Delivery">
                                 </div>
                             </div>
                         </div>
@@ -748,7 +748,7 @@
         <div class="cs-quote-process-wrap">
             <div class="container-fluid">
                 <div class="cs-content-wrap-quote-process img-scroll-parallax img-scroll-object-zoom"
-                    data-src="assets/img/process-quote-img.jpg">
+                    data-src="/assets/img/delivery-truck.jpg">
                     <div class="cs-height-65"></div>
                     <div class="row">
                         <div class="col-xl-7 quote-flex-reverse">
@@ -923,7 +923,7 @@
                     <div class="col-xl-6 col-lg-12">
                         <div class="cs-com-fe-img reveal-img-wrap horizontal">
                             <div class="reveal-img-inner">
-                                <img src="assets/img/company-feature-style-1.png" alt="XXX">
+                                <img src="\assets\img\delivery woman.jpg" alt="XXX">
                             </div>
                         </div>
                     </div>
@@ -944,7 +944,7 @@
     <span class="cs_scrollup">
         <i class="flaticon-top"></i>
     </span>
-
+    @include('whatsapp')
     <!-- Script -->
     <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
     <script src="assets/js/plugins/swiper.min.js"></script>

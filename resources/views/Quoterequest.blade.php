@@ -75,13 +75,16 @@
                                         <h4>Request For a Free Quote</h4>
                                     </div>
                                     <div class="cs-quote-form">
-                                        <form id="quoteRequestForm" action="{{ url('/quote-request') }}" method="POST">
+                                        <!-- Success/Error Messages -->
+                                        <div id="responseMessage"></div>
+
+                                        <form id="quoteForm">
                                             @csrf
 
                                             <!-- Full Name -->
                                             <div class="mb-3">
                                                 <input type="text" class="form-control" name="full_name"
-                                                    id="full-name" placeholder="Full Name" required>
+                                                    id="full_name" placeholder="Full Name" required>
                                                 <div class="text-danger error-full_name"></div>
                                             </div>
 
@@ -92,42 +95,29 @@
                                                 <div class="text-danger error-phone"></div>
                                             </div>
 
-                                            <!-- Pickup Location -->
+                                            <!-- Email -->
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" name="pickup_location"
-                                                    id="pickup-location" placeholder="Pickup Location (City, Country)"
-                                                    required>
-                                                <div class="text-danger error-pickup_location"></div>
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                    placeholder="Email Address" required>
+                                                <div class="text-danger error-email"></div>
                                             </div>
 
-                                            <!-- Delivery Location -->
+                                            <!-- Services Dropdown -->
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" name="delivery_location"
-                                                    id="delivery-location"
-                                                    placeholder="Delivery Location (City, Country)" required>
-                                                <div class="text-danger error-delivery_location"></div>
-                                            </div>
-
-                                            <!-- Type of Goods -->
-                                            <div class="mb-3">
-                                                <input type="text" class="form-control" name="type_of_goods"
-                                                    id="type-of-goods" placeholder="Type of Goods" required>
-                                                <div class="text-danger error-type_of_goods"></div>
-                                            </div>
-
-                                            <!-- Date -->
-                                            <div class="mb-3">
-                                                <input type="date" class="form-control" name="date"
-                                                    id="date" required>
-                                                <div class="text-danger error-date"></div>
-                                            </div>
-
-                                            <!-- Weight and Dimensions -->
-                                            <div class="mb-3">
-                                                <input type="text" class="form-control" name="weight_dimensions"
-                                                    id="weight-dimensions"
-                                                    placeholder="Weight and Dimensions (kg, cm)" required>
-                                                <div class="text-danger error-weight_dimensions"></div>
+                                                <select class="form-control text-dark bg-light" name="services"
+                                                    id="services" required>
+                                                    <option value="" disabled selected>Select a Service</option>
+                                                    <option value="courier_and_delivery">Courier and Delivery Services
+                                                    </option>
+                                                    <option value="ecommerce_packaging">E-commerce Packaging</option>
+                                                    <option value="warehousing_storage">Warehousing & Storage</option>
+                                                    <option value="medical_courier">Medical Courier</option>
+                                                    <option value="bulk_corporate_logistics">Bulk & Corporate Logistics
+                                                    </option>
+                                                    <option value="reverse_logistics">Reverse Logistics</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                                <div class="text-danger error-services"></div>
                                             </div>
 
                                             <!-- Additional Message (Optional) -->
@@ -137,81 +127,62 @@
                                                 <div class="text-danger error-message"></div>
                                             </div>
 
-                                            <!-- Loading Spinner -->
-                                            <div class="text-center">
-                                                <div id="loadingSpinner" class="spinner-border text-primary d-none"
-                                                    role="status">
-                                                    <span class="visually-hidden">Loading...</span>
-                                                </div>
-                                            </div>
-
-                                            <!-- Submit Button -->
+                                            <!-- Submit Button with Loading Spinner -->
                                             <button type="submit" id="submitButton"
-                                                class="cs-primary-btn white-primary-btn">Submit</button>
+                                                class="cs-primary-btn white-primary-btn bg-danger text-white border border-danger">
+                                                <span id="submitText">Submit</span>
+                                                <span id="loadingSpinner"
+                                                    class="spinner-border spinner-border-sm text-white d-none"></span>
+                                            </button>
 
-                                            <!-- Success Message -->
-                                            <div id="successMessage" class="alert alert-success mt-3 d-none"></div>
 
-                                            <!-- Error Message -->
-                                            <div id="errorMessage" class="alert alert-danger mt-3 d-none"></div>
                                         </form>
                                     </div>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                                    <script>
-                                        $(document).ready(function() {
-                                            $('#quoteRequestForm').submit(function(e) {
-                                                e.preventDefault();
-                                                let formData = $(this).serialize();
-
-                                                // Hide previous messages
-                                                $('#successMessage').addClass('d-none').text('');
-                                                $('#errorMessage').addClass('d-none').text('');
-                                                $('.text-danger').text(''); // Clear old validation messages
-
-                                                // Show loading spinner and disable button
-                                                $('#loadingSpinner').removeClass('d-none');
-                                                $('#submitButton').prop('disabled', true).text('Submitting...');
-
-                                                $.ajax({
-                                                    url: "{{ url('/quote-request') }}",
-                                                    type: "POST",
-                                                    data: formData,
-                                                    success: function(response) {
-                                                        // Hide spinner, reset button text
-                                                        $('#loadingSpinner').addClass('d-none');
-                                                        $('#submitButton').prop('disabled', false).text('Submit');
-
-                                                        // Show success message
-                                                        $('#successMessage').removeClass('d-none').text(response.success);
-
-                                                        // Reset the form fields
-                                                        $('#quoteRequestForm')[0].reset();
-                                                    },
-                                                    error: function(xhr) {
-                                                        // Hide spinner, reset button text
-                                                        $('#loadingSpinner').addClass('d-none');
-                                                        $('#submitButton').prop('disabled', false).text('Submit');
-
-                                                        if (xhr.status === 422) {
-                                                            let errors = xhr.responseJSON.errors;
-                                                            $.each(errors, function(key, value) {
-                                                                $('.error-' + key).text(value[0]);
-                                                            });
-                                                        } else {
-                                                            $('#errorMessage').removeClass('d-none').text(
-                                                                'An unexpected error occurred. Please try again.');
-                                                        }
-                                                    }
-                                                });
-                                            });
-                                        });
-                                    </script>
-
-
-
                                 </div>
                             </div>
                         </div>
+
+                        <!-- jQuery for AJAX -->
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script>
+                            $(document).ready(function() {
+                                $('#quoteForm').submit(function(event) {
+                                    event.preventDefault(); // Prevent page refresh
+
+                                    // Show loading spinner
+                                    $('#submitText').addClass('d-none');
+                                    $('#loadingSpinner').removeClass('d-none');
+                                    $('#submitButton').prop('disabled', true);
+
+                                    $.ajax({
+                                        url: "{{ route('quote.request') }}",
+                                        method: "POST",
+                                        data: $(this).serialize(),
+                                        success: function(response) {
+                                            if (response.success) {
+                                                $('#quoteForm')[0].reset();
+                                                $('#responseMessage').html('<div class="alert alert-success">' +
+                                                    response.message + '</div>');
+                                            }
+                                            $('#submitText').removeClass('d-none');
+                                            $('#loadingSpinner').addClass('d-none');
+                                            $('#submitButton').prop('disabled', false);
+                                        },
+                                        error: function(xhr) {
+                                            let errors = xhr.responseJSON.errors;
+                                            $('.text-danger').html('');
+                                            $.each(errors, function(key, value) {
+                                                $('.error-' + key).html(value[0]);
+                                            });
+                                            $('#submitText').removeClass('d-none');
+                                            $('#loadingSpinner').addClass('d-none');
+                                            $('#submitButton').prop('disabled', false);
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
+
                     </div>
                     <div class="cs-height-50"></div>
                 </div>
@@ -222,7 +193,7 @@
     <!-- Start Footer -->
     @include('footer')
     <!-- End Footer -->
-
+    @include('whatsapp')
     <span class="cs_scrollup">
         <i class="flaticon-top"></i>
     </span>

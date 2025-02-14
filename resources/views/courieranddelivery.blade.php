@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="cs-sec-title cs-max-w-640">
-                                <h2>What We Offer</h2>
+                                <h2>1. COURIER & DELIVERY SERVICES</h2>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,6 @@
                     <div class="cs-sec-title-height"></div>
 
                     <div class="cs-service-list-wrap">
-                        <!-- Order Fulfillment -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -147,13 +146,16 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4 class="cs_black_color">Order Fulfillment</h4>
+                                    <h4 class="cs_black_color">At MOTORSPEED COURIER AND FULFILMENT</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We handle every step of the order fulfillment process, ensuring your products reach
-                                    customers on time and in perfect condition.
+                                    We understand that timely and secure delivery is the backbone of any successful
+                                    business. Whether you’re sending a small parcel or a large consignment, our Courier
+                                    & Delivery Services are designed to meet your needs with speed, reliability, and
+                                    professionalism. From local deliveries to nationwide distribution, we ensure your
+                                    packages reach their destination safely and on time.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -162,7 +164,6 @@
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Warehousing -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -176,13 +177,35 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Warehousing</h4>
+                                    <h4>Here’s how we make it happen:</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    Our state-of-the-art warehousing solutions provide secure and scalable storage
-                                    tailored to your business needs.
+                                    ✅ Same-Day & Next-Day Delivery: Need it there fast? Our same-day and next-day
+                                    delivery options ensure your packages are delivered within cities and towns in
+                                    record time. Perfect for urgent shipments or last-minute orders, we guarantee your
+                                    items will arrive when you need them most.
+                                    <br><br>
+                                    ✅ Nationwide Delivery: No matter where your customers are located, we’ve got you
+                                    covered. With secure deliveries across all 47 counties in Kenya, we ensure your
+                                    packages reach even the most remote areas. Our real-time tracking system gives you
+                                    peace of mind, allowing you to monitor your shipment every step of the way.
+                                    <br><br>
+                                    ✅ Last-Mile Delivery: The final leg of the delivery journey is often the most
+                                    critical. Our efficient door-to-door delivery service ensures a seamless experience
+                                    for both businesses and individuals. Whether it’s a package for a customer or a
+                                    document for a partner, we make sure it arrives safely at their doorstep.
+                                    <br><br>
+                                    ✅ Express & Urgent Deliveries: Time-sensitive packages require special attention.
+                                    Our express and urgent delivery services are designed for speed, ensuring your
+                                    shipments arrive as quickly as possible. Whether it’s a critical business document
+                                    or a time-sensitive product, we deliver with precision and care.
+                                    <br><br>
+                                    ✅ Cash on Delivery (COD) Services: Simplify your payment process with our Cash on
+                                    Delivery (COD) option. We collect payments from your customers on your behalf,
+                                    ensuring a smooth and hassle-free transaction. This service is ideal for e-commerce
+                                    businesses looking to offer flexible payment options to their customers.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -191,7 +214,6 @@
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Last-Mile Delivery -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -205,42 +227,25 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Last-Mile Delivery</h4>
+                                    <h4>Why Choose Our Courier & Delivery Services?</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We specialize in efficient last-mile delivery services, ensuring your products reach
-                                    their final destination quickly and reliably.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
-
-                        <!-- Bulk Distribution -->
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-supply-chain"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Bulk Distribution</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    We handle large-scale distribution with precision and efficiency, ensuring your
-                                    products are delivered on time and in bulk.
+                                    • Speed: We prioritize fast and efficient deliveries, ensuring your packages arrive
+                                    on time, every time.
+                                    <br><br>
+                                    • Reliability: With a proven track record, you can trust us to handle your shipments
+                                    with care and professionalism.
+                                    <br><br>
+                                    • Nationwide Reach: From bustling cities to remote towns, we deliver across all 47
+                                    counties in Kenya.
+                                    <br><br>
+                                    • Real-Time Tracking: Stay informed with our advanced tracking system, giving you
+                                    visibility into your shipment’s journey.
+                                    <br><br>
+                                    • Customer-Centric Approach: We tailor our services to meet your unique needs,
+                                    ensuring a seamless experience for you and your customers.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
@@ -250,6 +255,8 @@
                         <div class="cs-ser-border"></div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
     <!-- End Service Section -->
 

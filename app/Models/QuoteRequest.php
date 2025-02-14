@@ -12,11 +12,8 @@ class QuoteRequest extends Model
     protected $fillable = [
         'full_name',
         'phone',
-        'pickup_location',
-        'delivery_location',
-        'type_of_goods',
-        'date',
-        'weight_dimensions',
+        'email',
+        'services',
         'message',
     ];
 }

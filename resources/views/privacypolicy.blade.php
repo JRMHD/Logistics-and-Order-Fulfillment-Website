@@ -12,24 +12,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>FAQ | Motor Speed Courier Kenya - Delivery & Logistics Questions Answered</title>
+    <title>Privacy Policy | Motor Speed Courier Kenya - Delivery & Logistics Questions Answered</title>
     <meta name="description"
         content="Find answers to common questions about our logistics services, delivery times, pricing, and coverage across Kenya's 47 counties. Your shipping questions answered.">
     <meta name="keywords"
-        content="logistics faq kenya, courier service questions, delivery faq, shipping help kenya, motor speed courier support, logistics information, delivery service guide, shipping questions kenya">
+        content="logistics Privacy Policy kenya, courier service questions, delivery Privacy Policy, shipping help kenya, motor speed courier support, logistics information, delivery service guide, shipping questions kenya">
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Frequently Asked Questions | Motor Speed Courier Kenya">
     <meta property="og:description"
         content="Get answers about our nationwide delivery services, shipping processes, and logistics solutions. Supporting businesses across Kenya since 2018.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com/faq">
+    <meta property="og:url" content="http://motorspeedcourier.com/Privacy Policy">
     <meta property="og:site_name" content="Motor Speed Courier">
 
     <!-- Additional SEO Tags -->
     <meta name="robots" content="index, follow">
     <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com/faq">
+    <link rel="canonical" href="http://motorspeedcourier.com/Privacy Policy">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.svg">
@@ -85,10 +85,10 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <span>FAQ</span>
+                                <span>Privacy Policy</span>
                             </div>
                             <div class="cs-page-title">
-                                <h2 class="cs_white_color">FAQ</h2>
+                                <h2 class="cs_white_color">Privacy Policy</h2>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                                 <a href="/" class="cs-text_b_line"><span>Home</span></a>
                             </li>
                             <li>.</li>
-                            <li>FAQ</li>
+                            <li>Privacy Policy</li>
                         </ul>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
     <div class="cs-section-height"></div>
     <!-- Section to Section Gap -->
 
-    <!-- Start Faq Content Section -->
+    <!-- Start Privacy Policy Content Section -->
     <div class="cs-faq-page-wrap">
         <div class="cs-faq-container-in">
             <div class="container">
@@ -119,18 +119,8 @@
                         <div class="cs-left-navigation-wrap">
                             <div class="cs-left-nav-in">
                                 <ul>
-                                    <li id="tab1-tab" class="cs-text_b_line tab active"><a href="#"><span>About
-                                                {{ config('app.name') }}</span></a></li>
-                                    <li id="tab2-tab" class="cs-text_b_line tab"><a href="#"><span>Our
-                                                History</span></a></li>
-                                    <li id="tab3-tab" class="cs-text_b_line tab"><a href="#"><span>Industries We
-                                                Serve</span></a></li>
-                                    <li id="tab4-tab" class="cs-text_b_line tab"><a href="#"><span>Timely
-                                                Deliveries</span></a></li>
-                                    <li id="tab5-tab" class="cs-text_b_line tab"><a
-                                            href="#"><span>Sustainability</span></a></li>
-                                    <li id="tab6-tab" class="cs-text_b_line tab"><a
-                                            href="#"><span>Partnerships</span></a></li>
+                                    <li id="tab1-tab" class="cs-text_b_line tab active"><a href="#"><span>Privacy
+                                                Policy</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -140,186 +130,163 @@
                             <div class="cs_accordian">
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What is {{ config('app.name') }}?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">Welcome to MOTORSPEED COURIER AND
+                                            FULFILMENT</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>{{ config('app.name') }} is a logistics and order fulfillment company
-                                            dedicated to providing seamless, technology-driven logistics solutions
-                                            across Kenya.</p>
+                                        <p>Welcome to MOTORSPEED COURIER AND FULFILMENT (hereinafter referred to as
+                                            "we," "us," "our," or the "Company"), a trading name of MOTORSPEED LOGISTICS
+                                            AND FULFILMENT CENTRE LIMITED, a company registered under the laws of Kenya.
+                                            This Privacy Policy ("Policy") explains how we collect, use, disclose, and
+                                            protect your personal information when you use our website, services, and
+                                            any related applications (collectively, the "Services"). By accessing or
+                                            using our Services, you agree to the terms of this Policy.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">When was {{ config('app.name') }} founded?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">1. INFORMATION WE COLLECT</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>{{ config('app.name') }} was established in 2018 to bridge the gap between
-                                            businesses and their customers through innovative logistics solutions.</p>
+                                        <p>1.1 We may collect the following types of information when you use our
+                                            Services:</p>
+                                        <p>1.1.1 Personal Information: This includes your name, email address, phone
+                                            number, postal address, and any other information you provide when creating
+                                            an account, booking a service, or contacting us.</p>
+                                        <p>1.1.2 Payment Information: This includes your billing address, credit/debit
+                                            card details, and other payment-related information.</p>
+                                        <p>1.1.3 Usage Data: This includes information about how you interact with our
+                                            website and Services, such as your IP address, browser type, device
+                                            information, and pages visited.</p>
+                                        <p>1.1.4 Cookies and Tracking Technologies: We use cookies and similar
+                                            technologies to collect information about your browsing behavior and
+                                            preferences.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What industries does
-                                            {{ config('app.name') }} serve?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">2. HOW WE USE YOUR INFORMATION</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We serve e-commerce, retailers, manufacturers, wholesalers, and SMEs,
-                                            providing customized logistics solutions to enhance efficiency and reduce
-                                            costs.</p>
+                                        <p>2.1 We use the information we collect for the following purposes:</p>
+                                        <p>2.1.1 To Provide and Improve Our Services: To process your orders, deliver
+                                            packages, and improve the quality of our Services.</p>
+                                        <p>2.1.2 To Communicate with You: To send you service-related notifications,
+                                            updates, and promotional materials.</p>
+                                        <p>2.1.3 To Process Payments: To facilitate transactions and prevent fraud.</p>
+                                        <p>2.1.4 To Analyze Usage: To understand how our Services are used and to
+                                            improve user experience.</p>
+                                        <p>2.1.5 To Comply with Legal Obligations: To comply with applicable laws,
+                                            regulations, and legal processes.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How does {{ config('app.name') }} ensure
-                                            timely deliveries?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">3. HOW WE SHARE YOUR INFORMATION</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We leverage state-of-the-art tracking systems, real-time updates, and
-                                            optimized delivery routes to ensure timely and reliable order fulfillment.
+                                        <p>3.1 We may share your information with the following parties:</p>
+                                        <p>3.1.1 Service Providers: We may share your information with third-party
+                                            service providers who assist us in delivering our Services, such as payment
+                                            processors, delivery partners, and IT support.</p>
+                                        <p>3.1.2 Legal Authorities: We may disclose your information if required by law
+                                            or to protect our rights, property, or safety, or that of others.</p>
+                                        <p>3.1.3 Business Transfers: In the event of a merger, acquisition, or sale of
+                                            assets, your information may be transferred to the new owner.</p>
+                                        <p>3.2 We will not sell, rent, or trade your personal information to third
+                                            parties for marketing purposes without your explicit consent.</p>
+                                    </div>
+                                </div>
+                                <div class="cs_accordian_item cs_color_1">
+                                    <div class="cs_accordian_header">
+                                        <h6 class="cs_accordian_title cs_m0">4. DATA SECURITY</h6>
+                                        <i class="flaticon-down-arrow"></i>
+                                    </div>
+                                    <div class="cs_accordian_body">
+                                        <p>4.1 We take reasonable measures to protect your personal information from
+                                            unauthorized access, use, or disclosure.</p>
+                                        <p>4.2 These measures include encryption, secure servers, and access controls.
                                         </p>
+                                        <p>4.3 However, no method of transmission over the internet or electronic
+                                            storage is completely secure, and we cannot guarantee absolute security.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What sustainability initiatives does
-                                            {{ config('app.name') }} follow?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">5. DATA RETENTION</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We are committed to eco-friendly logistics practices, including fleet
-                                            optimization and sustainable supply chain solutions, to reduce our carbon
-                                            footprint.</p>
+                                        <p>5.1 We retain your personal information only for as long as necessary to
+                                            fulfill the purposes outlined in this Policy, unless a longer retention
+                                            period is required or permitted by law.</p>
+                                        <p>5.2 After the retention period, your information will be securely deleted or
+                                            anonymized.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How can I partner with
-                                            {{ config('app.name') }}?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">6. YOUR RIGHTS</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Businesses can partner with us by reaching out through our contact page or
-                                            customer support to discuss customized logistics solutions.</p>
+                                        <p>6.1 You have the following rights regarding your personal information:</p>
+                                        <p>6.1.1 Access: You may request a copy of the personal information we hold
+                                            about you.</p>
+                                        <p>6.1.2 Correction: You may request that we correct any inaccurate or
+                                            incomplete information.</p>
+                                        <p>6.1.3 Deletion: You may request that we delete your personal information,
+                                            subject to legal obligations.</p>
+                                        <p>6.1.4 Objection: You may object to the processing of your personal
+                                            information for certain purposes.</p>
+                                        <p>6.1.5 Withdrawal of Consent: If we rely on your consent to process your
+                                            information, you may withdraw your consent at any time.</p>
+                                        <p>6.2 To exercise these rights, please contact us using the details provided on
+                                            the website.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How can I partner with
-                                            {{ config('app.name') }}?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">7. COOKIES AND TRACKING TECHNOLOGIES</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Businesses can partner with us by reaching out through our contact page or
-                                            customer support to discuss customized logistics solutions.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Where do you operate?</h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>We provide nationwide coverage across all 47 counties in Kenya, as well as
-                                            international delivery services. Whether you’re in Nairobi, Mombasa, or any
-                                            other part of the country, we’ve got you covered.</p>
+                                        <p>7.1 We use cookies and similar technologies to enhance your experience on our
+                                            website.</p>
+                                        <p>7.2 You can manage your cookie preferences through your browser settings.</p>
+                                        <p>7.3 Disabling cookies may affect the functionality of our website.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How can I track my shipment?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">8. THIRD-PARTY LINKS</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>You can track your shipment in real-time using our online tracking tool.
-                                            Simply enter your tracking number on our website, and you’ll get updates on
-                                            the status of your package.</p>
+                                        <p>8.1 Our website may contain links to third-party websites or services.</p>
+                                        <p>8.2 We are not responsible for the privacy practices or content of these
+                                            third parties.</p>
+                                        <p>8.3 We encourage you to review the privacy policies of any third-party
+                                            websites you visit.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Do you offer same-day delivery?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">9. CHANGES TO THIS POLICY</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Yes, we offer same-day and next-day delivery for packages within cities and
-                                            towns. Contact us to confirm availability in your area.</p>
+                                        <p>9.1 We reserve the right to update or modify this Policy at any time.</p>
+                                        <p>9.2 Any changes will be effective immediately upon posting on our website.
+                                        </p>
+                                        <p>9.3 Your continued use of our Services after the posting of revised Policy
+                                            constitutes your acceptance of the changes.</p>
                                     </div>
                                 </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What is Cash on Delivery (COD), and how
-                                            does it work?</h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>Cash on Delivery (COD) allows your customers to pay for their orders upon
-                                            delivery. We collect the payment on your behalf and remit it to you after
-                                            deducting any applicable fees.</p>
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What items are prohibited for delivery?
-                                        </h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>We do not handle prohibited goods such as illegal substances, hazardous
-                                            materials, perishable items without proper packaging, cash, or live animals.
-                                            For a full list, refer to our Terms of Service.</p>
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Can you integrate with my e-commerce
-                                            platform?</h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>Yes, we offer API integration with popular platforms like Shopify,
-                                            WooCommerce, and Jumia. This allows for seamless order processing and
-                                            inventory management.</p>
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How do you handle returns for e-commerce
-                                            businesses?</h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>We provide hassle-free returns management, including product inspection,
-                                            repackaging, reshipping, and eco-friendly disposal. Learn more about our
-                                            Reverse Logistics & Returns Handling services.</p>
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Can you reship returned items?</h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>Yes, we offer repackaging and reshipping services for returned items that are
-                                            in good condition and can be resold.</p>
-                                    </div>
-                                </div>
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What payment methods do you accept?</h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>We accept various payment methods, including cash, credit/debit cards, mobile
-                                            money, and bank transfers.</p>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -328,7 +295,8 @@
         </div>
     </div>
 
-    <!-- End Faq Content Section -->
+
+    <!-- End Privacy Policy Content Section -->
 
     <div class="cs-section-height"></div>
     <!-- Section to Section Gap -->

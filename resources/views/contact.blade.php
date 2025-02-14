@@ -103,7 +103,7 @@
                                         <h6>Corporate Office</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        Nairobi,Kenya
+                                        Sikedi House, Old Mobasa Road, Nairobi
                                     </p>
                                     <div class="cs-logi-emai-phone">
                                         <a href="#" class="cs-text-style-h6">+254 798 984929</a>
@@ -116,12 +116,12 @@
                                         <h6>East Africa</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        Nairobi,Kenya
+                                         Sikedi House, Old Mobasa Road, Nairobi
                                     </p>
 
                                     <div class="cs-logi-emai-phone">
                                         <a href="#" class="cs-text-style-h6">+254 706 459198</a>
-                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
+                                        <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +256,7 @@
     <!-- Start Footer -->
     @include('footer')
     <!-- End Footer -->
-
+    @include('whatsapp')
     <!-- Start Scrollup -->
     <span class="cs_scrollup">
         <i class="flaticon-top"></i>

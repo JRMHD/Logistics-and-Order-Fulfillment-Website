@@ -8,26 +8,25 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #e0e0ff;
+            background-color: #ffffff;
+            color: #333333;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
         }
 
         .container {
-            background: rgba(48, 43, 99, 0.6);
-            border: 2px solid #7367f0;
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
             max-width: 600px;
             margin: 0 auto;
             padding: 30px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
 
         .header {
-            background: linear-gradient(90deg, #7367f0, #9d74ff);
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
             color: white;
             padding: 20px;
             border-radius: 12px;
@@ -35,18 +34,40 @@
             margin-bottom: 20px;
         }
 
+        .header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
         .quote-details {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid #5d3fd3;
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
             border-radius: 10px;
             padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .quote-details p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .quote-details strong {
+            color: #333333;
+            font-weight: 600;
         }
 
         .footer {
             text-align: center;
-            color: #a0a0ff;
+            color: #777777;
             font-size: 0.8em;
             margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -60,12 +81,9 @@
         <div class="quote-details">
             <p><strong>Name:</strong> {{ $quote->full_name }}</p>
             <p><strong>Phone:</strong> {{ $quote->phone }}</p>
-            <p><strong>Pickup:</strong> {{ $quote->pickup_location }}</p>
-            <p><strong>Delivery:</strong> {{ $quote->delivery_location }}</p>
-            <p><strong>Goods:</strong> {{ $quote->type_of_goods }}</p>
-            <p><strong>Date:</strong> {{ $quote->date }}</p>
-            <p><strong>Size & Weight:</strong> {{ $quote->weight_dimensions }}</p>
-            <p><strong>Additional Notes:</strong> {{ $quote->message }}</p>
+            <p><strong>Email:</strong> {{ $quote->email }}</p>
+            <p><strong>Service Requested:</strong> {{ $quote->services }}</p>
+            <p><strong>Message:</strong> {{ $quote->message }}</p>
         </div>
 
         <div class="footer">

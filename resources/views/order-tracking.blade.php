@@ -516,7 +516,7 @@
     <!-- Start Footer -->
     @include('footer')
     <!-- End Footer -->
-
+    @include('whatsapp')
     <!-- Start Scrollup -->
     <span class="cs_scrollup">
         <i class="flaticon-top"></i>
