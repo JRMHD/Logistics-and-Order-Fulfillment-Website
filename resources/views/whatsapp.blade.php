@@ -3,12 +3,12 @@
 <div class="whatsapp-container">
     <div class="popup-message" id="whatsappPopup">
         <div class="message-carousel">
-            <div class="message-text active">👋 Hey there! Need assistance?</div>
-            <div class="message-text">💬 Chat with us on WhatsApp</div>
-            <div class="message-text">🌟 Get instant help with Ciala Residence!</div>
+            <div class="message-text active">👋 Hey there?</div>
+            <div class="message-text">💬 Chat with us!</div>
+            <div class="message-text">🌟 Get instant help!</div>
         </div>
     </div>
-    <a href="https://wa.me/254798984929?text=Hello! I'm reaching out from the motorspeedcourier website. I'd like to learn more about your Services."
+    <a href="https://wa.me/254711222666?text=Hello! I'm reaching out from the motorspeedcourier website. I'd like to learn more about your Services."
         target="_blank" class="whatsapp-button">
         <i class="fab fa-whatsapp"></i>
     </a>

@@ -60,7 +60,7 @@
                                         <h1 class="logi-splite">Seamless Order Fulfillment Solutions</h1>
                                     </div>
                                     <div class="cs-hero-slider-btn">
-                                        <a href="/services" class="cs-primary-btn">
+                                        <a href="/courieranddelivery" class="cs-primary-btn">
                                             <span>Read More</span>
                                         </a>
                                     </div>
@@ -76,7 +76,7 @@
                                         <h1 class="logi-splite">State-of-the-Art Warehousing Solutions</h1>
                                     </div>
                                     <div class="cs-hero-slider-btn">
-                                        <a href="/services" class="cs-primary-btn">
+                                        <a href="/warehousing" class="cs-primary-btn">
                                             <span>Read More</span>
                                         </a>
                                     </div>
@@ -89,16 +89,16 @@
                             <div class="swiper-slide cs_center">
                                 <div class="cs-hero-slide-content">
                                     <div class="cs-hero-title">
-                                        <h1 class="logi-splite">Efficient Last-Mile Delivery Services</h1>
+                                        <h1 class="logi-splite">Warehousing & Storage Solutions</h1>
                                     </div>
                                     <div class="cs-hero-slider-btn">
-                                        <a href="/services" class="cs-primary-btn">
+                                        <a href="/warehousing" class="cs-primary-btn">
                                             <span>Read More</span>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cs-hero-slider-img slider-image">
-                                    <img src="\assets\img\home truck 3.jpg" alt="Last-Mile Delivery">
+                                    <img src="\assets\img\warehousing pic.jpg" alt="Last-Mile Delivery">
                                 </div>
                             </div>
                         </div>
@@ -512,7 +512,7 @@
                                     customers on time and in perfect condition.</p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/services"><i class="flaticon-arrow"></i></a>
+                                <a href="/courieranddelivery"><i class="flaticon-arrow"></i></a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
@@ -539,7 +539,7 @@
                                     tailored to your business needs.</p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/services"><i class="flaticon-arrow"></i></a>
+                                <a href="/warehousing"><i class="flaticon-arrow"></i></a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
@@ -566,7 +566,7 @@
                                     their final destination quickly and reliably.</p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/services"><i class="flaticon-arrow"></i></a>
+                                <a href="/courieranddelivery"><i class="flaticon-arrow"></i></a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
@@ -575,7 +575,7 @@
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
-                                    <i class="flaticon-supply-chain"></i>
+                                    {{-- <i class="flaticon-supply-chain"></i> --}}
                                     <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
@@ -593,7 +593,7 @@
                                     products are delivered on time and in bulk.</p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/services"><i class="flaticon-arrow"></i></a>
+                                <a href="/bulklogistics"><i class="flaticon-arrow"></i></a>
                             </div>
                         </div>
                         <div class="cs-ser-border"></div>

@@ -12,7 +12,7 @@
                                 Sikedi House, Old Mobasa Road, Nairobi
                             </p>
                             <div class="cs-logi-emai-phone">
-                                <a href="#" class="cs-text-style-h6">+254 798 984929</a>
+                                <a href="#" class="cs-text-style-h6"> +254 711 222666</a>
                                 <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com
                                 </a>
                             </div>
@@ -65,6 +65,7 @@
                                 </div>
                                 <p>Delivering Excellence in Global Logistics.</p>
                             </div>
+                            <div id="responseMessage" class="mt-2" style="margin-top: 10px;"></div>
                             <form class="cs-logi-newsletter" id="subscribeForm"
                                 style="max-width: 500px; padding: 20px;">
                                 @csrf
@@ -84,7 +85,7 @@
 
                                 <div id="loading" class="spinner" style="display: none; margin-top: 10px;"></div>
 
-                                <div id="responseMessage" class="mt-2" style="margin-top: 10px;"></div>
+
                             </form>
 
                             <style>

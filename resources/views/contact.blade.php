@@ -106,7 +106,7 @@
                                         Sikedi House, Old Mobasa Road, Nairobi
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+254 798 984929</a>
+                                        <a href="#" class="cs-text-style-h6"> +254 711 222666</a>
                                         <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@
                                         <h6>East Africa</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                         Sikedi House, Old Mobasa Road, Nairobi
+                                        Sikedi House, Old Mobasa Road, Nairobi
                                     </p>
 
                                     <div class="cs-logi-emai-phone">
@@ -139,13 +139,13 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" name="email"
-                                            placeholder="example@domain.com" required>
+                                        <input type="email" class="form-control" name="email" placeholder="email"
+                                            required>
                                     </div>
 
                                     <div class="mb-3">
                                         <input type="tel" class="form-control" name="phone"
-                                            placeholder="eg .0706378245" required>
+                                            placeholder="phone number" required>
                                     </div>
 
                                     <div class="mb-3">

@@ -65,19 +65,19 @@
 
                 <!-- Start Main Header Middle Area -->
                 <div class="cs-logi-header-middle">
-                    <div class="cs_nav cs_medium" style="font-size: 14px; padding: 14px 0;">
+                    <div class="cs_nav cs_medium" style="font-size: 15px; padding: 15px 0;">
                         <ul class="cs_nav_list" style="margin: 0; padding: 0;">
-                            <li style="margin: 0 14px; padding: 10px 0;">
+                            <li style="margin: 0 15px; padding: 10px 0;">
                                 <a href="{{ url('/') }}" class="cs-text_b_line"
-                                    style="font-size: 14px;"><span>Home</span></a>
+                                    style="font-size: 15px;"><span>Home</span></a>
                             </li>
-                            <li style="margin: 0 14px; padding: 10px 0;">
+                            <li style="margin: 0 15px; padding: 10px 0;">
                                 <a href="{{ url('/about') }}" class="cs-text_b_line"
-                                    style="font-size: 14px;"><span>About Us</span></a>
+                                    style="font-size: 15px;"><span>About Us</span></a>
                             </li>
-                            <li class="cs_nav_dropdown" style="margin: 0 14px; padding: 10px 0;">
+                            <li class="cs_nav_dropdown" style="margin: 0 15px; padding: 10px 0;">
                                 <a href="#" class="cs-text_b_line dropdown-toggle" onclick="toggleDropdown(event)"
-                                    style="font-size: 14px;">
+                                    style="font-size: 15px;">
                                     <span>Services</span>
                                     <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 10 6"
                                         fill="currentColor" style="margin-left: 5px;">
@@ -86,67 +86,47 @@
                                     </svg>
                                 </a>
                                 <ul class="cs_dropdown_menu" style="padding: 10px 0; min-width: 200px;">
-                                    <li style="padding: 8px 14px;">
+                                    <li style="padding: 8px 15px;">
                                         <a href="{{ url('/courieranddelivery') }}"
-                                            style="font-size: 14px;"><span>Courier & Delivery Services</span></a>
+                                            style="font-size: 15px;"><span>Courier & Delivery Services</span></a>
                                     </li>
-                                    <li style="padding: 8px 14px;">
+                                    <li style="padding: 8px 15px;">
                                         <a href="{{ url('/ecommercepackaging') }}"
-                                            style="font-size: 14px;"><span>E-commerce Packaging</span></a>
+                                            style="font-size: 15px;"><span>E-commerce Packaging</span></a>
                                     </li>
-                                    <li style="padding: 8px 14px;">
-                                        <a href="{{ url('/warehousing') }}" style="font-size: 14px;"><span>Warehousing &
+                                    <li style="padding: 8px 15px;">
+                                        <a href="{{ url('/warehousing') }}" style="font-size: 15px;"><span>Warehousing &
                                                 Storage solutions</span></a>
                                     </li>
-                                    <li style="padding: 8px 14px;">
-                                        <a href="{{ url('/medicalcourier') }}" style="font-size: 14px;"><span>Medical
+                                    <li style="padding: 8px 15px;">
+                                        <a href="{{ url('/medicalcourier') }}" style="font-size: 15px;"><span>Medical
                                                 Courier</span></a>
                                     </li>
-                                    <li style="padding: 8px 14px;">
-                                        <a href="{{ url('/bulklogistics') }}" style="font-size: 14px;"><span>Bulk &
+                                    <li style="padding: 8px 15px;">
+                                        <a href="{{ url('/bulklogistics') }}" style="font-size: 15px;"><span>Bulk &
                                                 Corporate Logistics</span></a>
                                     </li>
-                                    <li style="padding: 8px 14px;">
-                                        <a href="{{ url('/reverselogistics') }}" style="font-size: 14px;"><span>Reverse
+                                    <li style="padding: 8px 15px;">
+                                        <a href="{{ url('/reverselogistics') }}" style="font-size: 15px;"><span>Reverse
                                                 Logistics</span></a>
                                     </li>
                                 </ul>
                             </li>
-                            <li style="margin: 0 14px; padding: 10px 0;">
+                            <li style="margin: 0 15px; padding: 10px 0;">
                                 <a href="{{ url('/order-tracking') }}" class="cs-text_b_line"
-                                    style="font-size: 14px;"><span>Shipment Tracking</span></a>
+                                    style="font-size: 15px;"><span>Shipment Tracking</span></a>
                             </li>
-                            <li style="margin: 0 14px; padding: 10px 0;">
+                            <li style="margin: 0 15px; padding: 10px 0;">
                                 <a href="{{ url('/pricing') }}" class="cs-text_b_line"
-                                    style="font-size: 14px;"><span>Pricing</span></a>
+                                    style="font-size: 15px;"><span>Pricing</span></a>
                             </li>
-                            <li style="margin: 0 14px; padding: 10px 0;">
+                            <li style="margin: 0 15px; padding: 10px 0;">
                                 <a href="{{ url('/contact') }}" class="cs-text_b_line"
-                                    style="font-size: 14px;"><span>Contact</span></a>
+                                    style="font-size: 15px;"><span>Contact</span></a>
                             </li>
-                            <li class="cs_nav_dropdown" style="margin: 0 14px; padding: 10px 0;">
-                                <a href="#" class="cs-text_b_line dropdown-toggle"
-                                    onclick="toggleDropdown(event)" style="font-size: 14px;">
-                                    <span>Help & Info</span>
-                                    <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 10 6"
-                                        fill="currentColor" style="margin-left: 5px;">
-                                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </a>
-                                <ul class="cs_dropdown_menu" style="padding: 10px 0; min-width: 200px;">
-                                    <li style="padding: 8px 14px;">
-                                        <a href="{{ url('/termsandconditions') }}"
-                                            style="font-size: 14px;"><span>Terms & Conditions</span></a>
-                                    </li>
-                                    <li style="padding: 8px 14px;">
-                                        <a href="{{ url('/privacypolicy') }}" style="font-size: 14px;"><span>Privacy
-                                                Policy</span></a>
-                                    </li>
-                                    <li style="padding: 8px 14px;">
-                                        <a href="{{ url('/faq') }}" style="font-size: 14px;"><span>FAQ</span></a>
-                                    </li>
-                                </ul>
+                            <li style="margin: 0 15px; padding: 10px 0;">
+                                <a href="{{ url('/faq') }}" class="cs-text_b_line"
+                                    style="font-size: 15px;"><span>FAQ</span></a>
                             </li>
                         </ul>
                     </div>
@@ -179,7 +159,7 @@
                     }
 
                     .cs_dropdown_menu li a {
-                        padding: 8px 14px;
+                        padding: 8px 15px;
                         display: block;
                         white-space: nowrap;
                         color: inherit;
@@ -280,7 +260,7 @@
                         <span>Make a Call</span>
                         <div>
                             <h6 class="cs-text-style-h6 cs-text_b_line">
-                                +254 798 984929
+                                +254 711 222666
                             </h6>
                         </div>
                     </div>

@@ -91,7 +91,7 @@
                                             <!-- Phone -->
                                             <div class="mb-3">
                                                 <input type="tel" class="form-control" name="phone" id="phone"
-                                                    placeholder="+1-416-8241228" required>
+                                                    placeholder="phone number" required>
                                                 <div class="text-danger error-phone"></div>
                                             </div>
 
