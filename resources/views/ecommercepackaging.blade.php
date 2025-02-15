@@ -87,181 +87,134 @@
     </section>
     <!-- End Common BreadCrumb -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
+ 
 
     <!-- Start Service Section -->
-    <section>
-        <div class="cs-service-sec-wrapper cs-ser-style-2">
-            <div class="container">
-                <div class="row">
-                    <div class="cs-section-title-center sec-title-style-2">
-                        <div class="cs-title-center-area">
-                            <div class="cs-sec-caption">
-                                <div class="cs-cap-icon">
-                                    <svg width="32" height="19" viewBox="0 0 32 19" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_4589_150)">
-                                            <path d="M0.467773 18.6986L15.2842 9.74431L0.467773 0.790039V18.6986Z"
-                                                fill="#D40511" />
-                                            <path opacity="0.4"
-                                                d="M0.467773 9.74431H15.2842L0.467773 0.790039V9.74431Z"
-                                                fill="white" />
-                                            <path d="M16.7865 18.6986L31.6029 9.74431L16.7865 0.790039V18.6986Z"
-                                                fill="#D40511" />
-                                            <path opacity="0.4" d="M16.7865 9.74431H31.6029L16.7865 0.790039V9.74431Z"
-                                                fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath>
-                                                <rect width="31.1351" height="18" fill="white"
-                                                    transform="translate(0.467773 0.744141)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
-                                <div class="cs-cap-text">
-                                    <p>Services</p>
-                                </div>
-                            </div>
-                            <div class="cs-sec-title cs-max-w-640">
-                                <h2>2. E-COMMERCE PACKAGING & FULFILMENT</h2>
-                            </div>
-                        </div>
+    <section style="padding: 80px 0; background: #fff;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Header Section -->
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span
+                    style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Our
+                    Services</span>
+                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">E-COMMERCE PACKAGING & FULFILMENT
+                </h2>
+            </div>
+
+            <!-- Introduction Card -->
+            <div
+                style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #D40511; font-size: 24px; margin-bottom: 20px;">At MOTORSPEED COURIER AND FULFILMENT
+                </h3>
+                <p style="color: #444; line-height: 1.8; font-size: 16px;">
+                    In today’s fast-paced e-commerce landscape, delivering a seamless customer experience is key to
+                    building loyalty and driving growth. At MOTORSPEED COURIER AND FULFILMENT, we empower online
+                    businesses with end-to-end fulfilment solutions that take the hassle out of order processing,
+                    packaging, and delivery. From the moment a customer places an order to the final delivery, we handle
+                    every step with precision and care, allowing you to focus on growing your business.
+                </p>
+            </div>
+
+            <!-- Core Principles -->
+            <div style="margin-bottom: 50px;">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Our E-Commerce
+                    Packaging & Fulfilment services are designed to help you scale efficiently while maintaining
+                    exceptional customer satisfaction. Here’s how we do it:</h3>
+
+                <!-- Service Features -->
+                <div style="display: grid; gap: 25px;">
+                    <!-- Order Processing & Packing -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Order Processing & Packing
+                        </h4>
+                        <p style="color: #666; line-height: 1.7;">We take care of the entire order fulfilment process,
+                            from storage and picking to packaging. Our team ensures that every order is handled with
+                            precision and care, so your products reach your customers in perfect condition. Whether it’s
+                            a single item or a bulk order, we’ve got you covered.</p>
                     </div>
 
-                    <div class="cs-sec-title-height"></div>
+                    <!-- Inventory Management -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Inventory Management</h4>
+                        <p style="color: #666; line-height: 1.7;">Running out of stock can cost you sales and damage
+                            your reputation. With our real-time stock tracking system, you’ll always know what’s in
+                            stock and what needs replenishing. We help you optimize your inventory levels, ensuring you
+                            never run out of popular products and can meet customer demand effortlessly.</p>
+                    </div>
 
-                    <div class="cs-service-list-wrap">
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-order"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4 class="cs_black_color">At MOTORSPEED COURIER AND FULFILMENT</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    In today’s fast-paced e-commerce landscape, delivering a seamless customer
-                                    experience is key to building loyalty and driving growth. We empower online
-                                    businesses with end-to-end fulfilment solutions that take the hassle out of order
-                                    processing, packaging, and delivery. From the moment a customer places an order to
-                                    the final delivery, we handle every step with precision and care, allowing you to
-                                    focus on growing your business.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
+                    <!-- Returns & Exchange Management -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Returns & Exchange
+                            Management</h4>
+                        <p style="color: #666; line-height: 1.7;">Returns are an inevitable part of e-commerce, but they
+                            don’t have to be a headache. Our hassle-free return logistics make it easy for customers to
+                            return or exchange items, while we handle the rest. From processing returns to restocking
+                            items, we ensure a smooth and efficient process that keeps your customers happy.</p>
+                    </div>
 
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-warehouse"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Our E-Commerce Packaging & Fulfilment Services</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    Our E-Commerce Packaging & Fulfilment services are designed to help you scale
-                                    efficiently while maintaining exceptional customer satisfaction. Here’s how we do
-                                    it:
-                                    <br><br>
-                                    ✅ Order Processing & Packing: We take care of the entire order fulfilment process,
-                                    from storage and picking to packaging. Our team ensures that every order is handled
-                                    with precision and care, so your products reach your customers in perfect condition.
-                                    Whether it’s a single item or a bulk order, we’ve got you covered.
-                                    <br><br>
-                                    ✅ Inventory Management: Running out of stock can cost you sales and damage your
-                                    reputation. With our real-time stock tracking system, you’ll always know what’s in
-                                    stock and what needs replenishing. We help you optimize your inventory levels,
-                                    ensuring you never run out of popular products and can meet customer demand
-                                    effortlessly.
-                                    <br><br>
-                                    ✅ Returns & Exchange Management: Returns are an inevitable part of e-commerce, but
-                                    they don’t have to be a headache. Our hassle-free return logistics make it easy for
-                                    customers to return or exchange items, while we handle the rest. From processing
-                                    returns to restocking items, we ensure a smooth and efficient process that keeps
-                                    your customers happy.
-                                    <br><br>
-                                    ✅ Custom Packaging & Branding: First impressions matter, and your packaging is often
-                                    the first physical touchpoint a customer has with your brand. We offer custom boxes,
-                                    labels, and packaging that reflect your brand identity and create a memorable
-                                    unboxing experience. Stand out from the competition and leave a lasting impression
-                                    with packaging that speaks to your brand’s values.
-                                    <br><br>
-                                    ✅ API Integration: Managing multiple e-commerce platforms can be time-consuming and
-                                    complex. Our seamless API integration connects your online store with our fulfilment
-                                    system, automating order processing and inventory updates. Whether you’re using
-                                    Shopify, WooCommerce, Jumia, or other platforms, we ensure smooth and streamlined
-                                    operations.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
+                    <!-- Custom Packaging & Branding -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Custom Packaging & Branding
+                        </h4>
+                        <p style="color: #666; line-height: 1.7;">First impressions matter, and your packaging is often
+                            the first physical touchpoint a customer has with your brand. We offer custom boxes, labels,
+                            and packaging that reflect your brand identity and create a memorable unboxing experience.
+                            Stand out from the competition and leave a lasting impression with packaging that speaks to
+                            your brand’s values.</p>
+                    </div>
 
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-delivery-truck"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Why Choose Our E-Commerce Packaging & Fulfilment Services?</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    • Efficiency: We streamline your order fulfilment process, saving you time and
-                                    resources so you can focus on growing your business.
-                                    <br><br>
-                                    • Scalability: Whether you’re a small startup or a large enterprise, our solutions
-                                    are designed to scale with your business.
-                                    <br><br>
-                                    • Customer Satisfaction: From fast delivery to hassle-free returns, we help you
-                                    deliver an exceptional customer experience that builds loyalty.
-                                    <br><br>
-                                    • Brand Enhancement: Our custom packaging solutions help you create a strong brand
-                                    identity and stand out in a competitive market.
-                                    <br><br>
-                                    • Technology-Driven: With real-time inventory tracking and API integration, we
-                                    leverage technology to make your operations smarter and more efficient.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border"></div>
+                    <!-- API Integration -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ API Integration</h4>
+                        <p style="color: #666; line-height: 1.7;">Managing multiple e-commerce platforms can be
+                            time-consuming and complex. Our seamless API integration connects your online store with our
+                            fulfilment system, automating order processing and inventory updates. Whether you’re using
+                            Shopify, WooCommerce, Jumia, or other platforms, we ensure smooth and streamlined
+                            operations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div
+                style="background: #f8f9fa; border-radius: 15px; padding: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Choose Our
+                    E-Commerce Packaging & Fulfilment Services?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <!-- Feature Items -->
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Efficiency</h5>
+                        <p style="color: #666; line-height: 1.6;">We streamline your order fulfilment process, saving
+                            you time and resources so you can focus on growing your business.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Scalability</h5>
+                        <p style="color: #666; line-height: 1.6;">Whether you’re a small startup or a large enterprise,
+                            our solutions are designed to scale with your business.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Customer Satisfaction</h5>
+                        <p style="color: #666; line-height: 1.6;">From fast delivery to hassle-free returns, we help you
+                            deliver an exceptional customer experience that builds loyalty.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Brand Enhancement</h5>
+                        <p style="color: #666; line-height: 1.6;">Our custom packaging solutions help you create a
+                            strong brand identity and stand out in a competitive market.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Technology-Driven</h5>
+                        <p style="color: #666; line-height: 1.6;">With real-time inventory tracking and API
+                            integration, we leverage technology to make your operations smarter and more efficient.</p>
                     </div>
                 </div>
             </div>
@@ -269,8 +222,7 @@
     </section>
     <!-- End Service Section -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
+   
 
     <!-- Start Expertise Area Style Full Width -->
 

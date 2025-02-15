@@ -87,8 +87,7 @@
     </section>
     <!-- End Common BreadCrumb -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
+ 
 
     <!-- Start Service Section -->
     <section style="padding: 80px 0; background: #fff;">
@@ -98,7 +97,7 @@
                 <span
                     style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Our
                     Services</span>
-                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">6. REVERSE LOGISTICS & RETURNS HANDLING
+                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">REVERSE LOGISTICS & RETURNS HANDLING
                 </h2>
             </div>
 

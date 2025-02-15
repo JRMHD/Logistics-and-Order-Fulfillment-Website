@@ -87,177 +87,113 @@
     </section>
     <!-- End Common BreadCrumb -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
+    <section style="padding: 80px 0; background: #fff;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Header Section -->
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span
+                    style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Our
+                    Services</span>
+                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">WAREHOUSING & STORAGE SOLUTIONS</h2>
+            </div>
 
-    <!-- Start Service Section -->
-    <section>
-        <div class="cs-service-sec-wrapper cs-ser-style-2">
-            <div class="container">
-                <div class="row">
-                    <div class="cs-section-title-center sec-title-style-2">
-                        <div class="cs-title-center-area">
-                            <div class="cs-sec-caption">
-                                <div class="cs-cap-icon">
-                                    <svg width="32" height="19" viewBox="0 0 32 19" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_4589_150)">
-                                            <path d="M0.467773 18.6986L15.2842 9.74431L0.467773 0.790039V18.6986Z"
-                                                fill="#D40511" />
-                                            <path opacity="0.4"
-                                                d="M0.467773 9.74431H15.2842L0.467773 0.790039V9.74431Z"
-                                                fill="white" />
-                                            <path d="M16.7865 18.6986L31.6029 9.74431L16.7865 0.790039V18.6986Z"
-                                                fill="#D40511" />
-                                            <path opacity="0.4" d="M16.7865 9.74431H31.6029L16.7865 0.790039V9.74431Z"
-                                                fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath>
-                                                <rect width="31.1351" height="18" fill="white"
-                                                    transform="translate(0.467773 0.744141)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
-                                <div class="cs-cap-text">
-                                    <p>Services</p>
-                                </div>
-                            </div>
-                            <div class="cs-sec-title cs-max-w-640">
-                                <h2>3. WAREHOUSING & STORAGE SOLUTIONS</h2>
-                            </div>
-                        </div>
+            <!-- Introduction Card -->
+            <div
+                style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #D40511; font-size: 24px; margin-bottom: 20px;">At MOTORSPEED COURIER AND FULFILMENT
+                </h3>
+                <p style="color: #444; line-height: 1.8; font-size: 16px;">
+                    In the fast-moving world of logistics, having the right storage solution can make all the
+                    difference. At MOTORSPEED COURIER AND FULFILMENT, we offer state-of-the-art warehousing facilities
+                    that provide secure, scalable, and efficient storage solutions for businesses of all sizes. Whether
+                    you need short-term storage for seasonal inventory or a long-term fulfilment center to support your
+                    growing operations, we’ve got you covered.
+                </p>
+            </div>
+
+            <!-- Core Principles -->
+            <div style="margin-bottom: 50px;">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Our Warehousing &
+                    Storage Solutions are designed to meet the unique needs of your business, ensuring your goods are
+                    stored safely and delivered efficiently. Here’s what we offer:</h3>
+
+                <!-- Service Features -->
+                <div style="display: grid; gap: 25px;">
+                    <!-- Short & Long-Term Warehousing -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Short & Long-Term
+                            Warehousing</h4>
+                        <p style="color: #666; line-height: 1.7;">Whether you need storage for a few weeks or several
+                            years, our flexible warehousing options are tailored to your business needs. Our facilities
+                            are equipped with advanced security systems, including 24/7 surveillance and access control,
+                            to ensure your goods are always safe.</p>
                     </div>
 
-                    <div class="cs-sec-title-height"></div>
+                    <!-- Fulfillment Centers -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Fulfillment Centers</h4>
+                        <p style="color: #666; line-height: 1.7;">Speed is critical in today’s competitive market. Our
+                            fulfilment centers are strategically located to enable faster order processing and dispatch,
+                            ensuring your customers receive their orders on time. From picking and packing to shipping,
+                            we handle it all with precision and efficiency.</p>
+                    </div>
 
-                    <div class="cs-service-list-wrap">
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-order"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4 class="cs_black_color">At MOTORSPEED COURIER AND FULFILMENT</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    In the fast-moving world of logistics, having the right storage solution can make
-                                    all the difference. We offer state-of-the-art warehousing facilities that provide
-                                    secure, scalable, and efficient storage solutions for businesses of all sizes.
-                                    Whether you need short-term storage for seasonal inventory or a long-term fulfilment
-                                    center to support your growing operations, we’ve got you covered.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
+                    <!-- Cross-Docking Services -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Cross-Docking Services</h4>
+                        <p style="color: #666; line-height: 1.7;">Reduce handling time and streamline your distribution
+                            process with our cross-docking services. This innovative solution allows goods to be
+                            transferred directly from incoming to outgoing vehicles, minimizing storage time and
+                            improving efficiency. It’s ideal for businesses looking to optimize their supply chain and
+                            reduce costs.</p>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-warehouse"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Our Warehousing & Storage Solutions</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    Our Warehousing & Storage Solutions are designed to meet the unique needs of your
-                                    business, ensuring your goods are stored safely and delivered efficiently. Here’s
-                                    what we offer:
-                                    <br><br>
-                                    ✅ Short & Long-Term Warehousing: Whether you need storage for a few weeks or several
-                                    years, our flexible warehousing options are tailored to your business needs. Our
-                                    facilities are equipped with advanced security systems, including 24/7 surveillance
-                                    and access control, to ensure your goods are always safe.
-                                    <br><br>
-                                    ✅ Fulfillment Centers: Speed is critical in today’s competitive market. Our
-                                    fulfilment centers are strategically located to enable faster order processing and
-                                    dispatch, ensuring your customers receive their orders on time. From picking and
-                                    packing to shipping, we handle it all with precision and efficiency.
-                                    <br><br>
-                                    ✅ Cross-Docking Services: Reduce handling time and streamline your distribution
-                                    process with our cross-docking services. This innovative solution allows goods to be
-                                    transferred directly from incoming to outgoing vehicles, minimizing storage time and
-                                    improving efficiency. It’s ideal for businesses looking to optimize their supply
-                                    chain and reduce costs.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
+            <!-- Why Choose Us Section -->
+            <div
+                style="background: #f8f9fa; border-radius: 15px; padding: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Choose Our
+                    Warehousing & Storage Solutions?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <!-- Feature Items -->
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Security</h5>
+                        <p style="color: #666; line-height: 1.6;">Our facilities are equipped with advanced security
+                            systems, including CCTV surveillance, fire protection, and access control, to ensure your
+                            goods are always safe.</p>
+                    </div>
 
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-delivery-truck"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Why Choose Our Warehousing & Storage Solutions?</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    • Security: Our facilities are equipped with advanced security systems, including
-                                    CCTV surveillance, fire protection, and access control, to ensure your goods are
-                                    always safe.
-                                    <br><br>
-                                    • Scalability: Whether you’re a small business or a large enterprise, our storage
-                                    solutions can scale with your needs.
-                                    <br><br>
-                                    • Efficiency: With strategically located fulfilment centers and cross-docking
-                                    services, we help you reduce handling time and improve delivery speed.
-                                    <br><br>
-                                    • Specialized Storage: Our temperature-controlled facilities ensure that perishable
-                                    and sensitive goods are stored under optimal conditions.
-                                    <br><br>
-                                    • Cost-Effective: Flexible storage options and efficient processes help you reduce
-                                    operational costs and improve profitability.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border"></div>
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Scalability</h5>
+                        <p style="color: #666; line-height: 1.6;">Whether you’re a small business or a large enterprise,
+                            our storage solutions can scale with your needs.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Efficiency</h5>
+                        <p style="color: #666; line-height: 1.6;">With strategically located fulfilment centers and
+                            cross-docking services, we help you reduce handling time and improve delivery speed.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Specialized Storage</h5>
+                        <p style="color: #666; line-height: 1.6;">Our temperature-controlled facilities ensure that
+                            perishable and sensitive goods are stored under optimal conditions.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Cost-Effective</h5>
+                        <p style="color: #666; line-height: 1.6;">Flexible storage options and efficient processes help
+                            you reduce operational costs and improve profitability.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Service Section -->
-
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
 
     <!-- Start Expertise Area Style Full Width -->
 

@@ -290,7 +290,7 @@
         <div class="cs-sidebar-middle-area">
             <p>Reliable Logistics Solutions Across Kenya | Same-Day & Next-Day Delivery Available</p>
             <div class="cs-sidebar-emai-phone">
-                <a href="#" class="cs-text-style-h6">+254 798 984929</a>
+                <a href="#" class="cs-text-style-h6">+254 711 222666</a>
                 <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
             </div>
 

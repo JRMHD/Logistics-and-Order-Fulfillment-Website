@@ -87,172 +87,131 @@
     </section>
     <!-- End Common BreadCrumb -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
+    
 
     <!-- Start Service Section -->
-    <section>
-        <div class="cs-service-sec-wrapper cs-ser-style-2">
-            <div class="container">
-                <div class="row">
-                    <div class="cs-section-title-center sec-title-style-2">
-                        <div class="cs-title-center-area">
-                            <div class="cs-sec-caption">
-                                <div class="cs-cap-icon">
-                                    <svg width="32" height="19" viewBox="0 0 32 19" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_4589_150)">
-                                            <path d="M0.467773 18.6986L15.2842 9.74431L0.467773 0.790039V18.6986Z"
-                                                fill="#D40511" />
-                                            <path opacity="0.4"
-                                                d="M0.467773 9.74431H15.2842L0.467773 0.790039V9.74431Z"
-                                                fill="white" />
-                                            <path d="M16.7865 18.6986L31.6029 9.74431L16.7865 0.790039V18.6986Z"
-                                                fill="#D40511" />
-                                            <path opacity="0.4" d="M16.7865 9.74431H31.6029L16.7865 0.790039V9.74431Z"
-                                                fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath>
-                                                <rect width="31.1351" height="18" fill="white"
-                                                    transform="translate(0.467773 0.744141)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
-                                <div class="cs-cap-text">
-                                    <p>Services</p>
-                                </div>
-                            </div>
-                            <div class="cs-sec-title cs-max-w-640">
-                                <h2>1. COURIER & DELIVERY SERVICES</h2>
-                            </div>
-                        </div>
+    <section style="padding: 80px 0; background: #fff;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Header Section -->
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span
+                    style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Our
+                    Services</span>
+                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">COURIER & DELIVERY SERVICES</h2>
+            </div>
+
+            <!-- Introduction Card -->
+            <div
+                style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #D40511; font-size: 24px; margin-bottom: 20px;">At MOTORSPEED COURIER AND FULFILMENT
+                </h3>
+                <p style="color: #444; line-height: 1.8; font-size: 16px;">
+                    At MOTORSPEED COURIER AND FULFILMENT, we understand that timely and secure delivery is the backbone
+                    of any successful business. Whether you’re sending a small parcel or a large consignment, our
+                    Courier & Delivery Services are designed to meet your needs with speed, reliability, and
+                    professionalism. From local deliveries to nationwide distribution, we ensure your packages reach
+                    their destination safely and on time.
+                </p>
+            </div>
+
+            <!-- Core Principles -->
+            <div style="margin-bottom: 50px;">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Here’s how we make
+                    it happen:</h3>
+
+                <!-- Service Features -->
+                <div style="display: grid; gap: 25px;">
+                    <!-- Same-Day & Next-Day Delivery -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Same-Day & Next-Day Delivery
+                        </h4>
+                        <p style="color: #666; line-height: 1.7;">Need it there fast? Our same-day and next-day delivery
+                            options ensure your packages are delivered within cities and towns in record time. Perfect
+                            for urgent shipments or last-minute orders, we guarantee your items will arrive when you
+                            need them most.</p>
                     </div>
 
-                    <div class="cs-sec-title-height"></div>
+                    <!-- Nationwide Delivery -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Nationwide Delivery</h4>
+                        <p style="color: #666; line-height: 1.7;">No matter where your customers are located, we’ve got
+                            you covered. With secure deliveries across all 47 counties in Kenya, we ensure your packages
+                            reach even the most remote areas. Our real-time tracking system gives you peace of mind,
+                            allowing you to monitor your shipment every step of the way.</p>
+                    </div>
 
-                    <div class="cs-service-list-wrap">
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-order"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4 class="cs_black_color">At MOTORSPEED COURIER AND FULFILMENT</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    We understand that timely and secure delivery is the backbone of any successful
-                                    business. Whether you’re sending a small parcel or a large consignment, our Courier
-                                    & Delivery Services are designed to meet your needs with speed, reliability, and
-                                    professionalism. From local deliveries to nationwide distribution, we ensure your
-                                    packages reach their destination safely and on time.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
+                    <!-- Last-Mile Delivery -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Last-Mile Delivery</h4>
+                        <p style="color: #666; line-height: 1.7;">The final leg of the delivery journey is often the
+                            most critical. Our efficient door-to-door delivery service ensures a seamless experience for
+                            both businesses and individuals. Whether it’s a package for a customer or a document for a
+                            partner, we make sure it arrives safely at their doorstep.</p>
+                    </div>
 
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-warehouse"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Here’s how we make it happen:</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    ✅ Same-Day & Next-Day Delivery: Need it there fast? Our same-day and next-day
-                                    delivery options ensure your packages are delivered within cities and towns in
-                                    record time. Perfect for urgent shipments or last-minute orders, we guarantee your
-                                    items will arrive when you need them most.
-                                    <br><br>
-                                    ✅ Nationwide Delivery: No matter where your customers are located, we’ve got you
-                                    covered. With secure deliveries across all 47 counties in Kenya, we ensure your
-                                    packages reach even the most remote areas. Our real-time tracking system gives you
-                                    peace of mind, allowing you to monitor your shipment every step of the way.
-                                    <br><br>
-                                    ✅ Last-Mile Delivery: The final leg of the delivery journey is often the most
-                                    critical. Our efficient door-to-door delivery service ensures a seamless experience
-                                    for both businesses and individuals. Whether it’s a package for a customer or a
-                                    document for a partner, we make sure it arrives safely at their doorstep.
-                                    <br><br>
-                                    ✅ Express & Urgent Deliveries: Time-sensitive packages require special attention.
-                                    Our express and urgent delivery services are designed for speed, ensuring your
-                                    shipments arrive as quickly as possible. Whether it’s a critical business document
-                                    or a time-sensitive product, we deliver with precision and care.
-                                    <br><br>
-                                    ✅ Cash on Delivery (COD) Services: Simplify your payment process with our Cash on
-                                    Delivery (COD) option. We collect payments from your customers on your behalf,
-                                    ensuring a smooth and hassle-free transaction. This service is ideal for e-commerce
-                                    businesses looking to offer flexible payment options to their customers.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border mb-50"></div>
+                    <!-- Express & Urgent Deliveries -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Express & Urgent Deliveries
+                        </h4>
+                        <p style="color: #666; line-height: 1.7;">Time-sensitive packages require special attention. Our
+                            express and urgent delivery services are designed for speed, ensuring your shipments arrive
+                            as quickly as possible. Whether it’s a critical business document or a time-sensitive
+                            product, we deliver with precision and care.</p>
+                    </div>
 
-                        <div class="cs-service-item">
-                            <div class="ser-icon-title">
-                                <div class="cs-ser-icons">
-                                    <i class="flaticon-delivery-truck"></i>
-                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
-                                            fill="#D40511" />
-                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="cs-ser-title">
-                                    <h4>Why Choose Our Courier & Delivery Services?</h4>
-                                </div>
-                            </div>
-                            <div class="cs-ser-para">
-                                <p>
-                                    • Speed: We prioritize fast and efficient deliveries, ensuring your packages arrive
-                                    on time, every time.
-                                    <br><br>
-                                    • Reliability: With a proven track record, you can trust us to handle your shipments
-                                    with care and professionalism.
-                                    <br><br>
-                                    • Nationwide Reach: From bustling cities to remote towns, we deliver across all 47
-                                    counties in Kenya.
-                                    <br><br>
-                                    • Real-Time Tracking: Stay informed with our advanced tracking system, giving you
-                                    visibility into your shipment’s journey.
-                                    <br><br>
-                                    • Customer-Centric Approach: We tailor our services to meet your unique needs,
-                                    ensuring a seamless experience for you and your customers.
-                                </p>
-                            </div>
-                            <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="cs-ser-border"></div>
+                    <!-- Cash on Delivery (COD) Services -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Cash on Delivery (COD)
+                            Services</h4>
+                        <p style="color: #666; line-height: 1.7;">Simplify your payment process with our Cash on
+                            Delivery (COD) option. We collect payments from your customers on your behalf, ensuring a
+                            smooth and hassle-free transaction. This service is ideal for e-commerce businesses looking
+                            to offer flexible payment options to their customers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div
+                style="background: #f8f9fa; border-radius: 15px; padding: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Choose Our
+                    Courier & Delivery Services?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <!-- Feature Items -->
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Speed</h5>
+                        <p style="color: #666; line-height: 1.6;">We prioritize fast and efficient deliveries, ensuring
+                            your packages arrive on time, every time.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Reliability</h5>
+                        <p style="color: #666; line-height: 1.6;">With a proven track record, you can trust us to handle
+                            your shipments with care and professionalism.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Nationwide Reach</h5>
+                        <p style="color: #666; line-height: 1.6;">From bustling cities to remote towns, we deliver
+                            across all 47 counties in Kenya.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Real-Time Tracking</h5>
+                        <p style="color: #666; line-height: 1.6;">Stay informed with our advanced tracking system,
+                            giving you visibility into your shipment’s journey.</p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Customer-Centric Approach
+                        </h5>
+                        <p style="color: #666; line-height: 1.6;">We tailor our services to meet your unique needs,
+                            ensuring a seamless experience for you and your customers.</p>
                     </div>
                 </div>
             </div>
@@ -260,8 +219,6 @@
     </section>
     <!-- End Service Section -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
 
     <!-- Start Expertise Area Style Full Width -->
 

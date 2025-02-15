@@ -98,7 +98,8 @@
                                     </div>
                                 </div>
                                 <div class="cs-hero-slider-img slider-image">
-                                    <img src="\assets\img\warehousing pic.jpg" alt="Last-Mile Delivery">
+                                    <img src="\assets\img\Dark-Warehousing-The-Future-of-E.jpg"
+                                        alt="Last-Mile Delivery">
                                 </div>
                             </div>
                         </div>
