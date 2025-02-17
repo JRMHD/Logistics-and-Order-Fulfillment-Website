@@ -73,7 +73,7 @@
                             <div class="swiper-slide cs_center">
                                 <div class="cs-hero-slide-content">
                                     <div class="cs-hero-title">
-                                        <h1 class="logi-splite">State-of-the-Art Warehousing Solutions</h1>
+                                        <h1 class="logi-splite">Efficient courier and delivery services</h1>
                                     </div>
                                     <div class="cs-hero-slider-btn">
                                         <a href="/warehousing" class="cs-primary-btn">
@@ -114,10 +114,10 @@
 
     <!-- End Home_1 Slider -->
 
-    <div class="cs-section-height"></div> <!-- Section to Section Gap -->
+
 
     <!-- Start Expertise Area Style 1 -->
-    <section>
+    {{-- <section>
         <div class="cs-expertise-wrap expert-area-style-1">
             <div class="container-fluid">
                 <div class="row">
@@ -182,7 +182,102 @@
                 </div>
             </div>
         </div>
+    </section> --}}
+
+    <section style="padding: 80px 0; background-color: #f8f9fa;">
+        <div class="cs-expertise-wrap" style="width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 30px;">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; justify-content: center;">
+                <!-- Courier and Delivery Services -->
+                <div
+                    style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; min-height: 220px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="background: #fff1f1; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <i class="fas fa-truck" style="font-size: 28px; color: #dc3545;"></i>
+                        </div>
+                        <h5 style="margin: 0; font-size: 20px; color: #333;">Courier and Delivery Services</h5>
+                    </div>
+                    <p style="margin: 0; color: #666; line-height: 1.7; font-size: 16px;">Fast and reliable delivery
+                        solutions for your packages, with real-time tracking and flexible delivery options to meet your
+                        needs.</p>
+                </div>
+
+                <!-- Ecommerce Packaging -->
+                <div
+                    style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; min-height: 220px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="background: #fff1f1; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <i class="fas fa-box" style="font-size: 28px; color: #dc3545;"></i>
+                        </div>
+                        <h5 style="margin: 0; font-size: 20px; color: #333;">Ecommerce Packaging</h5>
+                    </div>
+                    <p style="margin: 0; color: #666; line-height: 1.7; font-size: 16px;">Professional packaging
+                        solutions designed for e-commerce businesses, ensuring your products arrive safely and
+                        presentably.</p>
+                </div>
+
+                <!-- Warehousing and Storage Solutions -->
+                <div
+                    style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; min-height: 220px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="background: #fff1f1; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <i class="fas fa-warehouse" style="font-size: 28px; color: #dc3545;"></i>
+                        </div>
+                        <h5 style="margin: 0; font-size: 20px; color: #333;">Warehousing and Storage Solutions</h5>
+                    </div>
+                    <p style="margin: 0; color: #666; line-height: 1.7; font-size: 16px;">Secure and climate-controlled
+                        storage facilities with advanced inventory management systems for all your storage needs.</p>
+                </div>
+
+                <!-- Medical Courier -->
+                <div
+                    style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; min-height: 220px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="background: #fff1f1; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <i class="fas fa-briefcase-medical" style="font-size: 28px; color: #dc3545;"></i>
+                        </div>
+                        <h5 style="margin: 0; font-size: 20px; color: #333;">Medical Courier</h5>
+                    </div>
+                    <p style="margin: 0; color: #666; line-height: 1.7; font-size: 16px;">Specialized medical delivery
+                        service with temperature-controlled transportation for sensitive medical supplies and specimens.
+                    </p>
+                </div>
+
+                <!-- Bulk and Corporate Logistics -->
+                <div
+                    style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; min-height: 220px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="background: #fff1f1; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <i class="fas fa-dolly" style="font-size: 28px; color: #dc3545;"></i>
+                        </div>
+                        <h5 style="margin: 0; font-size: 20px; color: #333;">Bulk and Corporate Logistics</h5>
+                    </div>
+                    <p style="margin: 0; color: #666; line-height: 1.7; font-size: 16px;">Comprehensive logistics
+                        solutions for large-scale corporate shipments and bulk cargo transportation.</p>
+                </div>
+
+                <!-- Reverse Logistics -->
+                <div
+                    style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; min-height: 220px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="background: #fff1f1; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <i class="fas fa-undo" style="font-size: 28px; color: #dc3545;"></i>
+                        </div>
+                        <h5 style="margin: 0; font-size: 20px; color: #333;">Reverse Logistics</h5>
+                    </div>
+                    <p style="margin: 0; color: #666; line-height: 1.7; font-size: 16px;">Efficient return management
+                        and processing services to handle product returns, recycling, and disposal.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
     <!-- End Expertise Area Style 1 -->
 
     <section
@@ -241,7 +336,7 @@
         </div>
     </section>
 
-    <div class="cs-section-height"></div> <!-- Section to Section Gap -->
+
 
     <!-- Start About Style 1 -->
     <div class="cs-about-style-2">
