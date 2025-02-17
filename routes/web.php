@@ -9,6 +9,8 @@ use App\Http\Controllers\Admin\TruckingController;
 use App\Http\Controllers\Admin\AdminSubscriberController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\QuoteRequestController;
+use App\Http\Controllers\Admin\TruckingPaymentController;
+use App\Http\Controllers\MpesaCallbackController;
 
 
 Route::get('/', function () {
@@ -66,8 +68,17 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/subscribers/export', [AdminSubscriberController::class, 'exportCsv'])->name('admin.subscribers.export');
 
     Route::get('/admin/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
+
+    Route::get('admin/trucking/{id}/payment', [TruckingPaymentController::class, 'showPaymentForm'])->name('admin.trucking.payment');
+    Route::post('admin/trucking/{id}/payment', [TruckingPaymentController::class, 'initiatePayment'])->name('admin.trucking.payment.process');
+    Route::get('/trucking/payment/{id}', [TruckingPaymentController::class, 'showPaymentForm'])->name('admin.trucking.payment.form');
+    Route::post('/trucking/payment/process/{id}', [TruckingPaymentController::class, 'initiatePayment'])->name('admin.trucking.payment.process');
 });
 
 
 Route::get('/order-tracking', [TruckingController::class, 'trackOrder'])->name('order.tracking');
 Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('quote.request');
+
+Route::get('/trucking/payment/{id}', [TruckingPaymentController::class, 'showPaymentForm'])->name('admin.trucking.payment.form');
+Route::post('/trucking/payment/process/{id}', [TruckingPaymentController::class, 'initiatePayment'])->name('admin.trucking.payment.process');
+Route::post('/mpesa/callback', [MpesaCallbackController::class, 'handleCallback']);

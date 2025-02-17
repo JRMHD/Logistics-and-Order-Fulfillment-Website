@@ -97,7 +97,13 @@
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                     {{ $trucking->tracking_number }}</td>
-                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $trucking->name }}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                    <a href="{{ route('admin.trucking.payment', $trucking->id) }}"
+                                        class="text-blue-600 underline hover:text-blue-800">
+                                        {{ $trucking->name }}
+                                    </a>
+                                </td>
+
                                 {{-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $trucking->email }}</td> --}}
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $trucking->phone }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $trucking->from_location }}
@@ -218,7 +224,13 @@
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                     {{ $trucking->tracking_number }}</td>
-                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $trucking->name }}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                    <a href="{{ route('admin.trucking.payment', $trucking->id) }}"
+                                        class="text-blue-600 hover:text-blue-800 hover:underline">
+                                        {{ $trucking->name }}
+                                    </a>
+                                </td>
+
                                 {{-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $trucking->email }}</td> --}}
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $trucking->phone }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
