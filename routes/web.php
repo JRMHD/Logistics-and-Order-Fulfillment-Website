@@ -82,3 +82,6 @@ Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('q
 Route::get('/trucking/payment/{id}', [TruckingPaymentController::class, 'showPaymentForm'])->name('admin.trucking.payment.form');
 Route::post('/trucking/payment/process/{id}', [TruckingPaymentController::class, 'initiatePayment'])->name('admin.trucking.payment.process');
 Route::post('/mpesa/callback', [MpesaCallbackController::class, 'handleCallback']);
+
+Route::post('admin/trucking/payment/callback', [TruckingPaymentController::class, 'callback'])->name('admin.trucking.payment.callback');
+Route::get('admin/trucking/payment/status/{id}', [TruckingPaymentController::class, 'checkStatus'])->name('admin.trucking.payment.status');
