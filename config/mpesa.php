@@ -8,13 +8,13 @@ return [
         |The Mpesa Consumer Key
         |------------------------------------------
         */
-    'mpesa_consumer_key' => env('MPESA_CONSUMER_KEY'),
+    'mpesa_consumer_key' => env('MPESA_CONSUMER_KEY', 'vuXrCwL4pWwKpN8YCgtoptIicyYK3OKqUACMek1AGsGXOL8y'),
 
     /*-----------------------------------------
         |The Mpesa Consumer Secret
         |------------------------------------------
         */
-    'mpesa_consumer_secret' => env('MPESA_CONSUMER_SECRET'),
+    'mpesa_consumer_secret' => env('MPESA_CONSUMER_SECRET', 'SzMkgmOjdzVkFRZeuhjRGXgYTjmw4HhMUGjnfi6eGBETGlR8Cx5Bl8AjVLAqvrt1'),
 
     /*-----------------------------------------
         |The Lipa na Mpesa Online Passkey
@@ -50,13 +50,13 @@ return [
         |Mpesa C2B Validation url
         |------------------------------------------
         */
-    'c2b_validation_url' => env('MPESA_C2B_VALIDATION_URL'),
+    'c2b_validation_url' => env('MPESA_C2B_VALIDATION_URL', 'https://example.com/mpesa/callback'),
 
     /*-----------------------------------------
         |Mpesa C2B Confirmation url
         |------------------------------------------
         */
-    'c2b_confirmation_url' => env('MPESA_C2B_CONFIRMATION_URL'),
+    'c2b_confirmation_url' => env('MPESA_C2B_CONFIRMATION_URL', 'https://example.com/mpesa/callback'),
 
     /*-----------------------------------------
         |Mpesa B2C Result url
@@ -74,7 +74,7 @@ return [
         |Mpesa Lipa Na Mpesa callback url
         |------------------------------------------
         */
-    'callback_url' => env('MPESA_CALLBACK_URL'),
+    'callback_url' => env('MPESA_CALLBACK_URL', 'https://example.com/mpesa/callback'),
 
     /*-----------------------------------------
         |Mpesa Transaction Status Result url

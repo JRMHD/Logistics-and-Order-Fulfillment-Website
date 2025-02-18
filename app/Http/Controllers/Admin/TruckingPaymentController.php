@@ -24,22 +24,21 @@ class TruckingPaymentController extends Controller
         ]);
 
         $trucking = Trucking::findOrFail($id);
-        $phone = '254' . substr($request->input('phone'), 1); // Convert phone number to 254 format
+        $phone = '254' . substr($request->input('phone'), 1);
         $amount = $request->input('amount');
 
         // Initiate STK Push using the iankumu/mpesa package
         $response = Mpesa::stkpush($phone, $amount, $trucking->id);
 
-        // Check if the request was successful
-        if (isset($response['ResponseCode']) && $response['ResponseCode'] == '0') {
-            // Log the response
-            Log::info('STK Push Response:', $response);
+        // Decode the response
+        $responseData = json_decode((string) $response, true);
 
+        // Check if the request was successful
+        if (isset($responseData['ResponseCode']) && $responseData['ResponseCode'] == '0') {
+            Log::info('STK Push Response:', ['response' => $responseData]);
             return redirect()->back()->with('success', 'Payment request sent successfully to ' . $phone);
         } else {
-            // Log the error
-            Log::error('STK Push Failed:', ['response' => $response]);
-
+            Log::error('STK Push Failed:', ['response' => $responseData]);
             return redirect()->back()->with('error', 'Failed to send payment request. Please check the logs for details.');
         }
     }
