@@ -127,7 +127,7 @@ class TruckingController extends Controller
                 'apikey' => $appKey,
                 'partnerID' => $appToken,
                 'message' => $message,
-                'shortcode' => 'TextSMS',
+                'shortcode' => 'MOTORSPEED',
                 'mobile' => $phoneNumber,
             ]);
 
