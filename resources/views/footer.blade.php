@@ -12,7 +12,7 @@
                                 Sikedi House, Old Mobasa Road, Nairobi
                             </p>
                             <div class="cs-logi-emai-phone">
-                                <a href="#" class="cs-text-style-h6"> +254 711 222666</a>
+                                <a href="#" class="cs-text-style-h6"> +254 711 222 666</a>
                                 <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com
                                 </a>
                             </div>
@@ -27,7 +27,7 @@
                                 Sikedi House, Old Mobasa Road, Nairobi
                             </p>
                             <div class="cs-logi-emai-phone">
-                                <a href="#" class="cs-text-style-h6">+254 711 222666</a>
+                                <a href="#" class="cs-text-style-h6">+254 711 222 666</a>
                                 <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                             </div>
                         </div>

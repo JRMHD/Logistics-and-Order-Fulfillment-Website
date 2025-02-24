@@ -260,7 +260,7 @@
                         <span>Make a Call</span>
                         <div>
                             <h6 class="cs-text-style-h6 cs-text_b_line">
-                                +254 711 222666
+                                +254 711 222 666
                             </h6>
                         </div>
                     </div>
