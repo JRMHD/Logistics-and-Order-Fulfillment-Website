@@ -18,7 +18,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    {{-- <div class="col-lg-3 col-md-6">
                         <div class="cs-logi-cor-office cs-footer-widget">
                             <div class="cs-footer-widget-title">
                                 <h6>East Africa</h6>
@@ -31,7 +31,7 @@
                                 <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-2 col-md-5">
                         <div class="cs-footer-widget">
                             <div class="cs-footer-widget-title">

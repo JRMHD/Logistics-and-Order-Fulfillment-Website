@@ -24,7 +24,7 @@ class TruckingController extends Controller
                 ->orWhere('tracking_number', 'LIKE', "%{$search}%");
         }
 
-        $truckings = $query->orderBy('created_at', 'desc')->paginate(10);
+        $truckings = $query->orderBy('created_at', 'desc')->paginate(5);
         return view('admin.trucking.index', compact('truckings'));
     }
 
@@ -46,16 +46,17 @@ class TruckingController extends Controller
         ]);
 
         // Generate tracking number
-        $tracking_number = strtoupper(Str::random(10));
+        $tracking_number = strtoupper(Str::random(5));
 
         // Create trucking order
         $trucking = Trucking::create(array_merge($request->all(), ['tracking_number' => $tracking_number]));
 
         // Send Email Notification
-        // Mail::to($trucking->email)->send(new TruckingCreated($trucking));
+        Mail::to($trucking->email)->send(new TruckingCreated($trucking));
 
         // Send SMS Notification
-        $this->sendSms($trucking->phone, "Hello {$trucking->name}, your trucking order has been created successfully. Your tracking number is {$tracking_number}.");
+        $this->sendSms($trucking->phone, "Dear {$trucking->name}, Your order {$tracking_number} has been successfully received and is being processed. You will receive an update once it reaches your destination. You can track your order at www.motorspeedcourier.com/order-tracking");
+
 
         return redirect()->route('admin.trucking.index')->with('success', 'Trucking order added successfully! Tracking Number: ' . $tracking_number);
     }
@@ -80,10 +81,10 @@ class TruckingController extends Controller
 
         // Send email notification when status is updated to Delivered
         if ($request->status == 'Delivered') {
-            // Mail::to($trucking->email)->send(new TruckingDelivered($trucking));
+            Mail::to($trucking->email)->send(new TruckingDelivered($trucking));
 
             // Send SMS Notification
-            $this->sendSms($trucking->phone, "Good news {$trucking->name}! Your trucking order ({$trucking->tracking_number}) has been delivered successfully.");
+            $this->sendSms($trucking->phone, "Dear {$trucking->name}, Your order {$trucking->tracking_number} has been successfully delivered. We appreciate your trust in MOTORSPEED LOGISTICS! Inquiry: 0711-222-666");
         }
 
         return redirect()->route('admin.trucking.index')->with('success', 'Status updated successfully!');
