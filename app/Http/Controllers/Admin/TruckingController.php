@@ -8,7 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Log;
 use App\Mail\TruckingCreated;
+use App\Mail\TruckingDelivered;
 
 class TruckingController extends Controller
 {
@@ -50,10 +52,10 @@ class TruckingController extends Controller
         $trucking = Trucking::create(array_merge($request->all(), ['tracking_number' => $tracking_number]));
 
         // Send Email Notification
-        Mail::to($trucking->email)->send(new TruckingCreated($trucking));
+        // Mail::to($trucking->email)->send(new TruckingCreated($trucking));
 
         // Send SMS Notification
-        $this->sendSms($trucking->phone, "Hello {$trucking->name}, your trucking order has been created successfully. Your Tracking Number is: {$tracking_number}.");
+        $this->sendSms($trucking->phone, "Hello {$trucking->name}, your trucking order has been created successfully. Your tracking number is {$tracking_number}.");
 
         return redirect()->route('admin.trucking.index')->with('success', 'Trucking order added successfully! Tracking Number: ' . $tracking_number);
     }
@@ -78,11 +80,9 @@ class TruckingController extends Controller
 
         // Send email notification when status is updated to Delivered
         if ($request->status == 'Delivered') {
-            Mail::to($trucking->email)->send(new \App\Mail\TruckingDelivered($trucking));
-        }
+            // Mail::to($trucking->email)->send(new TruckingDelivered($trucking));
 
-        // Send SMS Notification if status updated to Delivered
-        if ($request->status == 'Delivered') {
+            // Send SMS Notification
             $this->sendSms($trucking->phone, "Good news {$trucking->name}! Your trucking order ({$trucking->tracking_number}) has been delivered successfully.");
         }
 
@@ -110,17 +110,16 @@ class TruckingController extends Controller
         return view('order-tracking', compact('trucking', 'trackingNumber'));
     }
 
-    /**
-     * Send SMS using the API
-     */
-    private function sendSms($phone, $message)
+    private function sendSms($phoneNumber, $message)
     {
-        // Normalize phone number
-        $phoneNumber = $this->normalizePhoneNumber($phone);
-
-        $appKey = env('SMS_APP_KEY');
-        $appToken = env('SMS_APP_TOKEN');
+        $appKey = '403a1d6847b47b7a3dbe998d511b186c';
+        $appToken = '12756';
         $apiUrl = 'https://sms.textsms.co.ke/api/services/sendsms/';
+
+
+
+        // Normalize phone number
+        $phoneNumber = $this->normalizePhoneNumber($phoneNumber);
 
         try {
             $response = Http::post($apiUrl, [
@@ -128,24 +127,26 @@ class TruckingController extends Controller
                 'partnerID' => $appToken,
                 'message' => $message,
                 'shortcode' => 'MOTORSPEED',
+                // 'shortcode' => 'TextSMS',
                 'mobile' => $phoneNumber,
             ]);
 
-            $success = $response->successful();
-
-            return $success;
+            if ($response->successful()) {
+                Log::info("SMS sent successfully to $phoneNumber.");
+            } else {
+                Log::error("Failed to send SMS to $phoneNumber. Response: " . $response->body());
+            }
         } catch (\Exception $e) {
-            return false;
+            Log::error("Error sending SMS: " . $e->getMessage());
         }
     }
 
-    /**
-     * Normalize phone number
-     */
     private function normalizePhoneNumber($number)
     {
+        // Remove all non-digit characters
         $number = preg_replace('/\D/', '', $number);
 
+        // Ensure it starts with country code (e.g., 254 for Kenya)
         if (!str_starts_with($number, '254')) {
             $number = '254' . ltrim($number, '0');
         }
