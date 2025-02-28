@@ -12,33 +12,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>About Motor Speed Courier | Leading Logistics Company in Kenya Since 2018</title>
+    <title>About Motor Speed Courier | Top Logistics & Delivery Company in Nairobi & Kenya</title>
     <meta name="description"
-        content="Discover Motor Speed Courier's journey since 2018, pioneering technology-driven logistics across Kenya's 47 counties. Learn how we're transforming e-commerce and business delivery solutions.">
+        content="Founded in 2018, Motor Speed Courier is Nairobi's premier logistics provider. Discover how our tech-driven approach delivers reliable, affordable courier services across all 47 Kenyan counties.">
     <meta name="keywords"
-        content="about motor speed courier, kenya logistics company, courier company history, logistics technology kenya, nationwide delivery network, kenyan courier services, business logistics partner">
+        content="best logistics company Kenya, Motor Speed Courier history, Nairobi courier services, fastest delivery company Kenya, e-commerce logistics partner, courier network Kenya, affordable delivery services, business logistics Nairobi, tech-enabled courier, same-day delivery Kenya">
+
+    <!-- Geo Location Tags -->
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="About Motor Speed Courier | Kenya's Trusted Logistics Partner">
+    <meta property="og:title" content="About Motor Speed Courier | Leading Logistics Provider in Nairobi & Kenya">
     <meta property="og:description"
-        content="Since 2018, Motor Speed Courier has been revolutionizing logistics in Kenya with technology-driven solutions and nationwide coverage across all 47 counties.">
+        content="Since 2018, Motor Speed Courier has been Kenya's most trusted logistics partner, delivering innovative solutions for businesses across Nairobi and all 47 counties.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com/about">
+    <meta property="og:url" content="https://motorspeedcourier.com/about">
     <meta property="og:site_name" content="Motor Speed Courier">
+    <meta property="og:image" content="https://motorspeedcourier.com/assets/img/about-company.jpg">
+    <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com/about">
+    <link rel="canonical" href="https://motorspeedcourier.com/about">
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.svg">
+    <link rel="icon" href="/assets/img/favicon log.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>

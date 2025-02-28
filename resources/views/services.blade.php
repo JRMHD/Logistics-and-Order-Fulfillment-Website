@@ -12,33 +12,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>Logistics Services | Motor Speed Courier - E-commerce Delivery & Business Solutions Kenya</title>
+    <title>Best Logistics & Delivery Services in Nairobi | Fast Courier Solutions Across Kenya</title>
     <meta name="description"
-        content="Comprehensive logistics services including e-commerce delivery, same-day shipping, and nationwide distribution across Kenya's 47 counties. Custom solutions for businesses of all sizes.">
+        content="Top-rated e-commerce delivery, same-day shipping & affordable courier services in Nairobi & all 47 Kenyan counties. Fast, reliable logistics solutions for businesses of all sizes.">
     <meta name="keywords"
-        content="logistics services kenya, e-commerce delivery, same day delivery, business logistics solutions, courier services nairobi, nationwide delivery kenya, supply chain management, warehousing kenya">
+        content="best logistics services Nairobi, fastest courier Kenya, e-commerce delivery Nairobi, same day delivery Kenya, affordable shipping services, business logistics Nairobi, express courier Kenya, retail delivery solutions, last-mile delivery, SME shipping partner, warehousing Kenya, supply chain solutions">
+
+    <!-- Geo Location Tags -->
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Logistics & Delivery Services | Motor Speed Courier Kenya">
+    <meta property="og:title"
+        content="Premium Logistics & Fast Delivery Services in Nairobi & Kenya | Motor Speed Courier">
     <meta property="og:description"
-        content="Technology-driven logistics solutions for e-commerce, retail & SMEs. Reliable delivery services across all 47 counties in Kenya.">
+        content="Nairobi's most trusted courier service offering same-day delivery, nationwide shipping & complete logistics solutions for businesses across Kenya's 47 counties.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com/services">
+    <meta property="og:url" content="https://motorspeedcourier.com/services">
     <meta property="og:site_name" content="Motor Speed Courier">
+    <meta property="og:image" content="https://motorspeedcourier.com/assets/img/services-hero.jpg">
+    <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com/services">
+    <link rel="canonical" href="https://motorspeedcourier.com/services">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.svg">
+    <!-- Schema.org Markup for Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Motor Speed Courier Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Motor Speed Courier",
+        "url": "https://motorspeedcourier.com"
+      },
+      "serviceType": ["Logistics Services", "Courier Services", "E-commerce Delivery"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Kenya"
+      },
+      "description": "Fast, reliable logistics and delivery services across Nairobi and all 47 counties in Kenya",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+     <!-- Favicon -->
+    <link rel="icon" href="/assets/img/favicon log.png">
+
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>

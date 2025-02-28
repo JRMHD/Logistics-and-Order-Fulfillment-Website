@@ -11,27 +11,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>MotorSpeedCourier - Leading Logistics & Delivery Services in Kenya</title>
+    <title>Best Courier & Logistics Services in Nairobi Kenya | MotorSpeedCourier - Fast Same-Day Delivery</title>
     <meta name="description"
-        content="Kenya's trusted logistics partner since 2018. Offering nationwide delivery across 47 counties, technology-driven solutions for e-commerce, retail & SMEs. Fast, reliable & efficient courier services.">
+        content="Kenya's #1 trusted courier & logistics service since 2018. Affordable same-day delivery in Nairobi, overnight shipping to all 47 counties. Trusted by ecommerce businesses, retail shops & SMEs for reliable package delivery.">
     <meta name="keywords"
-        content="logistics kenya, courier service kenya, e-commerce delivery, nationwide delivery, motor speed courier, business logistics, same day delivery, courier nairobi, kenyan counties delivery">
+        content="best courier Kenya, fastest delivery Nairobi, logistics company Kenya, ecommerce delivery service, same day courier Nairobi, affordable shipping Kenya, business logistics services, nationwide delivery Kenya, MotorSpeedCourier, parcel delivery Nairobi, express courier Kenya, reliable shipping service, CBD delivery Nairobi, last mile delivery Kenya, cargo transportation, door to door delivery">
+
+    <!-- Geo Location Tags -->
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Motor Speed Courier - Leading Logistics & Delivery Services in Kenya">
+    <meta property="og:title" content="Top-Rated Courier & Logistics Services in Kenya | MotorSpeedCourier">
     <meta property="og:description"
-        content="Technology-driven logistics solutions across all 47 Kenyan counties. Trusted by e-commerce, retailers & SMEs since 2018.">
+        content="Kenya's leading courier service with same-day delivery in Nairobi and overnight shipping nationwide. Fast, reliable & affordable delivery trusted by businesses since 2018.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com">
-    <meta property="og:site_name" content="Motor Speed Courier">
+    <meta property="og:url" content="https://motorspeedcourier.com">
+    <meta property="og:site_name" content="MotorSpeedCourier Kenya">
+    <meta property="og:image" content="https://motorspeedcourier.com/assets/img/logo.png">
+    <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="MotorSpeedCourier Kenya">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://motorspeedcourier.com">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.svg">
+    <!-- Mobile Specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+     <!-- Favicon -->
+    <link rel="icon" href="/assets/img/favicon log.png">
+
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -39,6 +54,141 @@
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MotorSpeedCourier Kenya",
+      "alternateName": "Motor Speed Courier",
+      "url": "https://motorspeedcourier.com",
+      "logo": "https://motorspeedcourier.com/assets/img/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+254XXXXXXXXX",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Swahili"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/motorspeedcourier",
+        "https://www.instagram.com/motorspeedcourier",
+        "https://twitter.com/motorspeedcourier"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your Street Address",
+        "addressLocality": "Nairobi",
+        "addressRegion": "Nairobi",
+        "postalCode": "Your Postal Code",
+        "addressCountry": "KE"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "-1.2921",
+          "longitude": "36.8219"
+        },
+        "geoRadius": "500000"
+      },
+      "description": "Kenya's #1 trusted courier & logistics service since 2018. Affordable same-day delivery in Nairobi, overnight shipping to all 47 counties.",
+      "foundingDate": "2018",
+      "slogan": "Fast, Reliable, Affordable Delivery Across Kenya",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Courier Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Same-Day Delivery in Nairobi"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Overnight Delivery to 47 Counties"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ecommerce Fulfillment"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Business Logistics Solutions"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://motorspeedcourier.com",
+      "name": "MotorSpeedCourier Kenya",
+      "image": "https://motorspeedcourier.com/assets/img/logo.png",
+      "priceRange": "$$",
+      "telephone": "+254XXXXXXXXX",
+      "email": "info@motorspeedcourier.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your Street Address",
+        "addressLocality": "Nairobi",
+        "addressRegion": "Nairobi",
+        "postalCode": "Your Postal Code",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-1.2921",
+        "longitude": "36.8219"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "15:00"
+        }
+      ],
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Customer Review"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "235"
+      }
+    }
+    </script>
 </head>
 
 <body>

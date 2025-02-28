@@ -12,33 +12,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>Pricing | Motor Speed Courier Kenya - Delivery & Logistics Questions Answered</title>
+    <title>Affordable Courier Prices & Delivery Rates in Kenya | Motor Speed Courier - Best Shipping Rates</title>
     <meta name="description"
-        content="Find answers to common questions about our logistics services, delivery times, pricing, and coverage across Kenya's 47 counties. Your shipping questions answered.">
+        content="Competitive courier and logistics pricing across Nairobi and all 47 counties. Same-day delivery rates, overnight shipping costs, and bulk discounts for businesses. Transparent pricing with no hidden fees.">
     <meta name="keywords"
-        content="logistics Pricing kenya, courier service questions, delivery Pricing, shipping help kenya, motor speed courier support, logistics information, delivery service guide, shipping questions kenya">
+        content="courier prices Kenya, delivery rates Nairobi, logistics cost Kenya, affordable shipping Kenya, cheap courier service Nairobi, parcel delivery cost, package shipping rates Kenya, same day delivery price, Motor Speed Courier pricing, express delivery cost Kenya, courier fee calculator, best courier rates Nairobi, ecommerce shipping costs Kenya, county to county delivery rates">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Frequently Asked Questions | Motor Speed Courier Kenya">
+    <meta property="og:title" content="Affordable Courier & Logistics Pricing | Motor Speed Courier Kenya">
     <meta property="og:description"
-        content="Get answers about our nationwide delivery services, shipping processes, and logistics solutions. Supporting businesses across Kenya since 2018.">
+        content="Find transparent pricing for all delivery services across Kenya. Competitive rates for same-day delivery in Nairobi, overnight shipping nationwide, and bulk discounts for businesses.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com/Pricing">
-    <meta property="og:site_name" content="Motor Speed Courier">
+    <meta property="og:url" content="http://motorspeedcourier.com/pricing">
+    <meta property="og:site_name" content="Motor Speed Courier Kenya">
+    <meta property="og:image" content="http://motorspeedcourier.com/assets/img/logo.png">
+    <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com/Pricing">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="Motor Speed Courier Kenya">
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Nairobi">
+    <link rel="canonical" href="http://motorspeedcourier.com/pricing">
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.svg">
+    <link rel="icon" href="/assets/img/favicon log.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Courier and Logistics Pricing in Kenya | Motor Speed Courier",
+      "description": "Transparent pricing for courier services across all 47 counties in Kenya. Compare rates for same-day, next-day, and standard delivery options.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Motor Speed Courier Kenya",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://motorspeedcourier.com/assets/img/logo.png"
+        }
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "KES",
+        "lowPrice": "200",
+        "highPrice": "3000",
+        "offerCount": "47",
+        "offers": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Same Day Delivery in Nairobi"
+            },
+            "price": "200",
+            "priceCurrency": "KES"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Overnight County Delivery"
+            },
+            "price": "500",
+            "priceCurrency": "KES"
+          }
+        ]
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://motorspeedcourier.com/pricing"
+      }
+    }
+    </script>
 </head>
 
 <body>

@@ -32,7 +32,7 @@
     <link rel="canonical" href="http://motorspeedcourier.com/services">
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.svg">
+    <link rel="icon" href="/assets/img/favicon log.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -87,7 +87,7 @@
     </section>
     <!-- End Common BreadCrumb -->
 
-    
+
 
     <!-- Start Service Section -->
     <section style="padding: 80px 0; background: #fff;">

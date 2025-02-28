@@ -12,33 +12,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>Track Your Delivery | Motor Speed Courier Kenya - Real-Time Package Tracking</title>
+    <title>Best Courier & Logistics Services in Nairobi Kenya | Motor Speed Courier - Same Day Delivery</title>
     <meta name="description"
-        content="Track your package in real-time with Motor Speed Courier's online tracking system. Fast and reliable delivery tracking across all 47 counties in Kenya.">
+        content="Top-rated courier and logistics provider in Kenya. Fast same-day delivery in Nairobi, overnight shipping to all 47 counties. Track packages in real-time. Best rates guaranteed.">
     <meta name="keywords"
-        content="track package kenya, courier tracking, delivery status, parcel tracking kenya, motor speed courier tracking, real-time tracking, order status kenya, shipping tracker">
+        content="best courier Kenya, logistics Nairobi, parcel delivery Kenya, transportation services Nairobi, same day delivery Kenya, overnight shipping Nairobi, package tracking Kenya, affordable courier services, Motor Speed Courier, express delivery Nairobi, cargo transportation Kenya, reliable courier service, freight forwarding Kenya, business shipping solutions, ecommerce delivery Kenya">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Track Your Package | Motor Speed Courier Kenya">
+    <meta property="og:title" content="Top-Rated Courier & Logistics Services in Kenya | Motor Speed Courier">
     <meta property="og:description"
-        content="Use our real-time tracking system to monitor your deliveries across Kenya. Fast, reliable, and accurate package tracking.">
+        content="Kenya's leading courier service with same-day delivery in Nairobi and overnight shipping nationwide. Real-time tracking and best rates guaranteed.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com/order-tracking">
-    <meta property="og:site_name" content="Motor Speed Courier">
+    <meta property="og:url" content="http://motorspeedcourier.com">
+    <meta property="og:site_name" content="Motor Speed Courier Kenya">
+    <meta property="og:image" content="http://motorspeedcourier.com/assets/img/logo.png">
+    <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com/order-tracking">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="Motor Speed Courier Kenya">
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Nairobi">
+    <link rel="canonical" href="http://motorspeedcourier.com">
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.svg">
+    <link rel="icon" href="/assets/img/favicon log.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Motor Speed Courier Kenya",
+      "image": "http://motorspeedcourier.com/assets/img/logo.png",
+      "url": "http://motorspeedcourier.com",
+      "telephone": "+254XXXXXXXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your Street Address",
+        "addressLocality": "Nairobi",
+        "addressRegion": "Nairobi",
+        "postalCode": "Your Postal Code",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-1.2921",
+        "longitude": "36.8219"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/motorspeedcourier",
+        "https://www.instagram.com/motorspeedcourier"
+      ],
+      "priceRange": "$$",
+      "description": "Top-rated courier and logistics provider in Kenya offering same-day delivery in Nairobi and overnight shipping to all 47 counties with real-time package tracking."
+    }
+    </script>
 </head>
 
 <body>
