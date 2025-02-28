@@ -30,7 +30,7 @@
                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
                         <div
                             style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
-                            <span style="font-size: 0.875rem; color: #64748B;">Transaction Status</span>
+                            {{-- <span style="font-size: 0.875rem; color: #64748B;">Transaction Status</span> --}}
                             <span
                                 style="padding: 0.375rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500;
                         @if ($latestPayment->status === 'completed') background: #DCFCE7; color: #166534;
@@ -39,7 +39,7 @@
                         @else
                             background: #FEF3C7; color: #92400E; @endif
                     ">
-                                {{ ucfirst($latestPayment->status) }}
+                                {{-- {{ ucfirst($latestPayment->status) }} --}}
                             </span>
                         </div>
                         <div style="display: grid; gap: 0.75rem;">

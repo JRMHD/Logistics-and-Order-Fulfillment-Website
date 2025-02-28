@@ -8,31 +8,31 @@ return [
         |The Mpesa Consumer Key
         |------------------------------------------
         */
-    'mpesa_consumer_key' => env('MPESA_CONSUMER_KEY', 'vuXrCwL4pWwKpN8YCgtoptIicyYK3OKqUACMek1AGsGXOL8y'),
+    'mpesa_consumer_key' => env('MPESA_CONSUMER_KEY', '4YslkAfktliGbYqNTxS0Kxo0G7r9MAoHiunLBzWsfOGRr5Dw'),
 
     /*-----------------------------------------
         |The Mpesa Consumer Secret
         |------------------------------------------
         */
-    'mpesa_consumer_secret' => env('MPESA_CONSUMER_SECRET', 'SzMkgmOjdzVkFRZeuhjRGXgYTjmw4HhMUGjnfi6eGBETGlR8Cx5Bl8AjVLAqvrt1'),
+    'mpesa_consumer_secret' => env('MPESA_CONSUMER_SECRET', 'TQ27nRnQrR0WYSDsfBQ8oJUVKBxTBfbC1w0nIdMhehAihQ2Db39WJSkI0s0rVebW'),
 
     /*-----------------------------------------
         |The Lipa na Mpesa Online Passkey
         |------------------------------------------
         */
-    'passkey' => env('SAFARICOM_PASSKEY', 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'),
+    'passkey' => env('SAFARICOM_PASSKEY', '003ecce2211760ce700f7fbd8837e172d8e99c4602b0c0e218079f8738ff707b'),
 
     /*-----------------------------------------
         |The Lipa na Mpesa Online ShortCode
         |------------------------------------------
         */
-    'shortcode' => env('MPESA_BUSINESS_SHORTCODE', '174379'),
+    'shortcode' => env('MPESA_BUSINESS_SHORTCODE', '4976702'),
 
     /*-----------------------------------------
         |The Mpesa Initator Name
         |------------------------------------------
         */
-    'initiator_name' => env('MPESA_INITIATOR_NAME', 'testapi'),
+    'initiator_name' => env('MPESA_INITIATOR_NAME', 'reagan'),
 
     /*-----------------------------------------
         |The Mpesa Initator Password
@@ -50,13 +50,13 @@ return [
         |Mpesa C2B Validation url
         |------------------------------------------
         */
-    'c2b_validation_url' => env('MPESA_C2B_VALIDATION_URL', 'https://example.com/mpesa/callback'),
+    'c2b_validation_url' => env('MPESA_C2B_VALIDATION_URL', 'https://webhook.site/f5766134-dcd3-4dd5-8061-4004fd544a81'),
 
     /*-----------------------------------------
         |Mpesa C2B Confirmation url
         |------------------------------------------
         */
-    'c2b_confirmation_url' => env('MPESA_C2B_CONFIRMATION_URL', 'https://example.com/mpesa/callback'),
+    'c2b_confirmation_url' => env('MPESA_C2B_CONFIRMATION_URL', 'https://webhook.site/f5766134-dcd3-4dd5-8061-4004fd544a81'),
 
     /*-----------------------------------------
         |Mpesa B2C Result url
@@ -74,7 +74,7 @@ return [
         |Mpesa Lipa Na Mpesa callback url
         |------------------------------------------
         */
-    'callback_url' => env('MPESA_CALLBACK_URL', 'https://example.com/mpesa/callback'),
+    'callback_url' => env('MPESA_CALLBACK_URL', 'https://webhook.site/f5766134-dcd3-4dd5-8061-4004fd544a81'),
 
     /*-----------------------------------------
         |Mpesa Transaction Status Result url

@@ -35,6 +35,7 @@ class TruckingPaymentController extends Controller
 
         // Initiate STK Push
         $response = Mpesa::stkpush($phone, $amount, $trucking->id);
+        Log::info($response);
 
         // Decode the response
         $responseData = json_decode((string) $response, true);
