@@ -244,7 +244,7 @@
                         <a href="/">{{ config('app.name') }}</a>. All Rights Reserved. |
                         Designed and Developed by
                         <a href="https://www.jrmhd.tech/" target="_blank" class="text-decoration-none">
-                            Jrmhd Technologies
+                            {{ config('app.name') }}
                         </a>
                     </p>
                 </div>

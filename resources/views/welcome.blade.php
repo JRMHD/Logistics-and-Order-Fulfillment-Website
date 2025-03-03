@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>Best Courier & Logistics Services in Nairobi Kenya | MotorSpeedCourier - Fast Same-Day Delivery</title>
+    <title> MotorSpeed Courier & Fulfilment Centre-Kenya, Best Courier & Logistics Services in Nairobi Kenya | MotorSpeedCourier - Fast Same-Day Delivery</title>
     <meta name="description"
         content="Kenya's #1 trusted courier & logistics service since 2018. Affordable same-day delivery in Nairobi, overnight shipping to all 47 counties. Trusted by ecommerce businesses, retail shops & SMEs for reliable package delivery.">
     <meta name="keywords"
