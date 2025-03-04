@@ -242,10 +242,10 @@
                             document.write(new Date().getFullYear())
                         </script>
                         <a href="/">{{ config('app.name') }}</a>. All Rights Reserved. |
-                        Designed and Developed by
-                        <a href="https://www.jrmhd.tech/" target="_blank" class="text-decoration-none">
+                        {{-- Designed and Developed by --}}
+                        {{-- <a href="https://www.jrmhd.tech/" target="_blank" class="text-decoration-none">
                             {{ config('app.name') }}
-                        </a>
+                        </a> --}}
                     </p>
                 </div>
 
