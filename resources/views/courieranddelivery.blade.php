@@ -137,7 +137,8 @@
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
                         <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Nationwide Delivery</h4>
                         <p style="color: #666; line-height: 1.7;">No matter where your customers are located, we’ve got
-                            you covered. With secure deliveries across all 47 counties in Kenya, we ensure your packages
+                            you covered. With secure deliveries across Tanzania,Uganda and all 47 counties in Kenya, we
+                            ensure your packages
                             reach even the most remote areas. Our real-time tracking system gives you peace of mind,
                             allowing you to monitor your shipment every step of the way.</p>
                     </div>
@@ -198,7 +199,7 @@
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
                         <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Nationwide Reach</h5>
                         <p style="color: #666; line-height: 1.6;">From bustling cities to remote towns, we deliver
-                            across all 47 counties in Kenya.</p>
+                            across Tanzania,Uganda and all 47 counties in Kenya.</p>
                     </div>
 
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">

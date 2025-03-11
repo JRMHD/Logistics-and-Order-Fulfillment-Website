@@ -552,7 +552,7 @@
                                         </p>
                                         <div class="cs-height-30"></div>
                                         <p>
-                                            Our extensive network covers all 47 counties, allowing businesses to scale
+                                            Our extensive network covers Kenya, Tanzania and Uganda allowing businesses to scale
                                             without limitations. We serve e-commerce, retailers, manufacturers,
                                             wholesalers, and SMEs, providing customized solutions that enhance
                                             efficiency, reduce costs, and improve customer satisfaction.
@@ -1132,7 +1132,7 @@
                                         </svg>
                                     </div>
                                     <div class="cs-com-fe-text">
-                                        <p>By 2022, we expanded our network to cover all 47 counties in Kenya, enabling
+                                        <p>By 2022, we expanded our network to cover Tanzania,Uganda and all 47 counties in Kenya, enabling
                                             businesses to scale without limitations.</p>
                                     </div>
                                 </div>

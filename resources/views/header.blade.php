@@ -91,8 +91,7 @@
                                         <ul class="cs_sub_menu">
                                             <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
                                                     Services</a></li>
-                                            <li><a href="{{ url('/ecommercepackaging') }}">E-commerce
-                                                    Packaging</a></li>
+                                            <li><a href="{{ url('/ecommercepackaging') }}">Order Fulfillment</a></li>
                                             <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
                                                     solutions</a></li>
                                             <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a></li>
@@ -107,8 +106,7 @@
                                         <ul class="cs_sub_menu">
                                             <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
                                                     Services</a></li>
-                                            <li><a href="{{ url('/ecommercepackaging') }}">E-commerce
-                                                    Packaging</a></li>
+                                            <li><a href="{{ url('/ecommercepackaging') }}">Order Fulfillment</a></li>
                                             <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
                                                     solutions</a></li>
                                             <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a>
@@ -124,8 +122,7 @@
                                         <ul class="cs_sub_menu">
                                             <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
                                                     Services</a></li>
-                                            <li><a href="{{ url('/ecommercepackaging') }}">E-commerce
-                                                    Packaging</a></li>
+                                            <li><a href="{{ url('/ecommercepackaging') }}">Order Fulfillment</a></li>
                                             <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
                                                     solutions</a></li>
                                             <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a></li>
