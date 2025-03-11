@@ -85,33 +85,60 @@
                                             stroke-linecap="round" />
                                     </svg>
                                 </a>
-                                <ul class="cs_dropdown_menu" style="padding: 10px 0; min-width: 200px;">
-                                    <li style="padding: 8px 15px;">
-                                        <a href="{{ url('/courieranddelivery') }}"
-                                            style="font-size: 15px;"><span>Courier & Delivery Services</span></a>
+                                <ul class="cs_dropdown_menu">
+                                    <li class="cs_country_dropdown">
+                                        <a href="#" onclick="toggleSubDropdown(event)">Kenya</a>
+                                        <ul class="cs_sub_menu">
+                                            <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
+                                                    Services</a></li>
+                                            <li><a href="{{ url('/ecommercepackaging') }}">E-commerce
+                                                    Packaging</a></li>
+                                            <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
+                                                    solutions</a></li>
+                                            <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a></li>
+                                            <li><a href="{{ url('/bulklogistics') }}">Bulk & Corporate
+                                                    Logistics</a></li>
+                                            <li><a href="{{ url('/reverselogistics') }}">Reverse Logistics</a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li style="padding: 8px 15px;">
-                                        <a href="{{ url('/ecommercepackaging') }}"
-                                            style="font-size: 15px;"><span>E-commerce Packaging</span></a>
+                                    <li class="cs_country_dropdown">
+                                        <a href="#" onclick="toggleSubDropdown(event)">Tanzania</a>
+                                        <ul class="cs_sub_menu">
+                                            <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
+                                                    Services</a></li>
+                                            <li><a href="{{ url('/ecommercepackaging') }}">E-commerce
+                                                    Packaging</a></li>
+                                            <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
+                                                    solutions</a></li>
+                                            <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a>
+                                            </li>
+                                            <li><a href="{{ url('/bulklogistics') }}">Bulk & Corporate
+                                                    Logistics</a></li>
+                                            <li><a href="{{ url('/reverselogistics') }}">Reverse Logistics</a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li style="padding: 8px 15px;">
-                                        <a href="{{ url('/warehousing') }}" style="font-size: 15px;"><span>Warehousing &
-                                                Storage solutions</span></a>
-                                    </li>
-                                    <li style="padding: 8px 15px;">
-                                        <a href="{{ url('/medicalcourier') }}" style="font-size: 15px;"><span>Medical
-                                                Courier</span></a>
-                                    </li>
-                                    <li style="padding: 8px 15px;">
-                                        <a href="{{ url('/bulklogistics') }}" style="font-size: 15px;"><span>Bulk &
-                                                Corporate Logistics</span></a>
-                                    </li>
-                                    <li style="padding: 8px 15px;">
-                                        <a href="{{ url('/reverselogistics') }}" style="font-size: 15px;"><span>Reverse
-                                                Logistics</span></a>
+                                    <li class="cs_country_dropdown">
+                                        <a href="#" onclick="toggleSubDropdown(event)">Uganda</a>
+                                        <ul class="cs_sub_menu">
+                                            <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
+                                                    Services</a></li>
+                                            <li><a href="{{ url('/ecommercepackaging') }}">E-commerce
+                                                    Packaging</a></li>
+                                            <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
+                                                    solutions</a></li>
+                                            <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a></li>
+                                            <li><a href="{{ url('/bulklogistics') }}">Bulk & Corporate
+                                                    Logistics</a></li>
+                                            <li><a href="{{ url('/reverselogistics') }}">Reverse Logistics</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
+
+
                             <li style="margin: 0 15px; padding: 10px 0;">
                                 <a href="{{ url('/order-tracking') }}" class="cs-text_b_line"
                                     style="font-size: 15px;"><span>Shipment Tracking</span></a>
@@ -132,90 +159,147 @@
                     </div>
                 </div>
                 <style>
-                    /* Add these styles if not already present */
-                    .cs_nav_dropdown {
+                    /* Keep original styling */
+                    .cs_dropdown_menu,
+                    .cs_sub_menu {
+                        display: none;
+                        list-style: none;
+                        background: white;
+                        border-radius: 5px;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                        z-index: 1000;
+                        position: absolute;
+                    }
+
+                    /* Show dropdown when active */
+                    .cs_dropdown_menu.show,
+                    .cs_sub_menu.show {
+                        display: block !important;
+                        /* Important to override any other display settings */
+                    }
+
+                    /* Position submenus properly */
+                    .cs_country_dropdown {
                         position: relative;
                     }
 
-                    .cs_dropdown_menu {
-                        display: none;
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
+                    .cs_sub_menu {
+                        left: 100%;
+                        top: 0;
                         min-width: 200px;
-                        background-color: #fff;
-                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                        z-index: 1000;
-                        padding: 8px 0;
+                        position: absolute;
                     }
 
-                    .cs_nav_dropdown.active .cs_dropdown_menu,
-                    .cs_nav_dropdown:hover .cs_dropdown_menu {
-                        display: block;
-                    }
+                    /* Improved mobile-specific styles */
+                    @media screen and (max-width: 768px) {
+                        .cs_dropdown_menu {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 200px;
+                            z-index: 1001;
+                        }
 
-                    .cs_dropdown_menu li {
-                        padding: 0;
-                    }
+                        .cs_sub_menu {
+                            position: absolute;
+                            left: 100%;
+                            top: 0;
+                            width: 200px;
+                            display: none;
+                            /* Start hidden */
+                        }
 
-                    .cs_dropdown_menu li a {
-                        padding: 8px 15px;
-                        display: block;
-                        white-space: nowrap;
-                        color: inherit;
-                        text-decoration: none;
-                    }
+                        /* When screen gets too narrow, reposition submenus below parent instead of beside */
+                        @media screen and (max-width: 480px) {
+                            .cs_sub_menu {
+                                left: 0;
+                                top: 100%;
+                                position: absolute;
+                            }
 
-                    .cs_dropdown_menu li a:hover {
-                        background-color: #f5f5f5;
-                    }
+                            .cs_country_dropdown {
+                                position: relative;
+                            }
+                        }
 
-                    .dropdown-arrow {
-                        margin-left: 4px;
-                        transition: transform 0.2s;
-                    }
+                        .cs_sub_menu.show {
+                            display: block !important;
+                        }
 
-                    .cs_nav_dropdown.active .dropdown-arrow {
-                        transform: rotate(180deg);
+                        .cs_country_dropdown>a {
+                            display: block;
+                            padding: 10px;
+                            cursor: pointer;
+                        }
+
+                        /* Make room for the menu to appear */
+                        .cs_nav_dropdown {
+                            position: relative;
+                        }
                     }
                 </style>
 
                 <script>
                     function toggleDropdown(event) {
                         event.preventDefault();
+                        const dropdownMenu = event.currentTarget.closest("li").querySelector(".cs_dropdown_menu");
 
-                        // Close all other dropdowns
-                        const allDropdowns = document.querySelectorAll('.cs_nav_dropdown');
-                        allDropdowns.forEach(dropdown => {
-                            if (dropdown !== event.currentTarget.parentElement) {
-                                dropdown.classList.remove('active');
-                            }
+                        // Close other dropdowns
+                        document.querySelectorAll(".cs_dropdown_menu.show").forEach(menu => {
+                            if (menu !== dropdownMenu) menu.classList.remove("show");
                         });
 
-                        // Toggle current dropdown
-                        const dropdown = event.currentTarget.parentElement;
-                        dropdown.classList.toggle('active');
+                        // Toggle this dropdown
+                        dropdownMenu.classList.toggle("show");
 
-                        // Close dropdown when clicking outside
-                        const closeDropdown = (e) => {
-                            if (!dropdown.contains(e.target)) {
-                                dropdown.classList.remove('active');
-                                document.removeEventListener('click', closeDropdown);
-                            }
-                        };
-
-                        if (dropdown.classList.contains('active')) {
-                            // Wait for next tick to add click listener to prevent immediate closure
-                            setTimeout(() => {
-                                document.addEventListener('click', closeDropdown);
-                            }, 0);
-                        }
+                        // Prevent the click from propagating
+                        event.stopPropagation();
                     }
 
-                    // Close dropdown when screen width changes (e.g., orientation change)
-                    window.addEventListener('resize', () => {
-                        const dropdowns = document.querySelectorAll('.cs_nav_dropdown');
-                        dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+                    function toggleSubDropdown(event) {
+                        event.preventDefault();
+                        const subMenu = event.currentTarget.closest("li").querySelector(".cs_sub_menu");
+
+                        // Toggle this submenu
+                        subMenu.classList.toggle("show");
+
+                        // Prevent the click from propagating
+                        event.stopPropagation();
+                    }
+
+                    // Add event listener for clicks on the document to close dropdowns
+                    document.addEventListener('click', function(event) {
+                        // Only close if clicking outside the menu structure
+                        if (!event.target.closest('.cs_dropdown_menu') &&
+                            !event.target.closest('.cs_sub_menu') &&
+                            !event.target.closest('.dropdown-toggle')) {
+
+                            document.querySelectorAll(".cs_dropdown_menu.show, .cs_sub_menu.show").forEach(menu => {
+                                menu.classList.remove("show");
+                            });
+                        }
+                    });
+
+                    // Fix for touch devices - add a first touch handler
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Add touch support for mobile devices
+                        const countryLinks = document.querySelectorAll('.cs_country_dropdown > a');
+                        countryLinks.forEach(link => {
+                            link.addEventListener('touchend', function(e) {
+                                e.preventDefault();
+                                toggleSubDropdown(e);
+                                e.stopPropagation();
+                            });
+                        });
+
+                        const serviceLink = document.querySelector('.dropdown-toggle');
+                        if (serviceLink) {
+                            serviceLink.addEventListener('touchend', function(e) {
+                                e.preventDefault();
+                                toggleDropdown(e);
+                                e.stopPropagation();
+                            });
+                        }
                     });
                 </script>
                 <!-- End Main Header Middle Area -->
