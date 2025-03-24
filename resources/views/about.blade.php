@@ -38,6 +38,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="author" content="Motor Speed Courier">
     <link rel="canonical" href="https://motorspeedcourier.com/about">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ url('/sitemap.xml') }}">
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/img/favicon log.png">

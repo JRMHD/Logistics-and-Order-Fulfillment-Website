@@ -67,6 +67,41 @@
                         </svg>
                         <span class="ml-3">Trucking</span>
                     </a>
+                    <a href="{{ route('admin.blogs.index') }}"
+                        class="flex items-center p-3 text-gray-600 rounded-lg hover:bg-gray-50">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 4H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z">
+                            </path>
+                            <path d="M16 2v4"></path>
+                            <path d="M8 2v4"></path>
+                            <path d="M3 10h18"></path>
+                            <path d="M8 14h8"></path>
+                            <path d="M8 18h5"></path>
+                        </svg>
+                        <span class="ml-3">Blogs</span>
+                    </a>
+                    <a href="{{ route('admin.blogs.create') }}"
+                        class="flex items-center p-3 text-gray-600 rounded-lg hover:bg-gray-50">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 4H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z">
+                            </path>
+                            <path d="M12 8v8"></path>
+                            <path d="M8 12h8"></path>
+                        </svg>
+                        <span class="ml-3">Create Blog</span>
+                    </a>
+                    <a href="{{ route('admin.comments.index') }}"
+                        class="flex items-center p-3 text-gray-600 rounded-lg hover:bg-gray-50">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M16 10h.01"></path>
+                        </svg>
+                        <span class="ml-3">Blog Comments</span>
+                    </a>
+
+
                     <a href="{{ URL('/admin/subscribers') }}"
                         class="flex items-center p-3 text-gray-600 rounded-lg hover:bg-gray-50">
                         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -82,7 +117,8 @@
                     <a href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                         class="flex items-center p-3 text-gray-600 rounded-lg hover:bg-gray-50">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                             <polyline points="16 17 21 12 16 7"></polyline>
                             <line x1="21" y1="12" x2="9" y2="12"></line>

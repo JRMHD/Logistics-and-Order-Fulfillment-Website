@@ -11,7 +11,12 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\QuoteRequestController;
 use App\Http\Controllers\Admin\TruckingPaymentController;
 use App\Http\Controllers\MpesaCallbackController;
-
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CommentController;
+use Spatie\Sitemap\SitemapGenerator;
+use Illuminate\Support\Facades\File;
+use Illuminate\Http\Response;
+use App\Models\Blog;
 
 Route::get('/', function () {
     return view('welcome');
@@ -85,3 +90,65 @@ Route::post('/mpesa/callback', [MpesaCallbackController::class, 'handleCallback'
 
 Route::post('admin/trucking/payment/callback', [TruckingPaymentController::class, 'callback'])->name('admin.trucking.payment.callback');
 Route::get('admin/trucking/payment/status/{id}', [TruckingPaymentController::class, 'checkStatus'])->name('admin.trucking.payment.status');
+
+Route::prefix('admin')->middleware('auth')->group(function () {
+    Route::resource('blogs', BlogController::class, [
+        'names' => 'admin.blogs'
+    ]);
+
+    Route::get('/comments', [CommentController::class, 'index'])->name('admin.comments.index');
+    Route::get('/comments/{comment}', [CommentController::class, 'show'])->name('admin.comments.show');
+    Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('admin.comments.destroy');
+});
+
+Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blog.index');
+Route::get('/blog/{slug}', [BlogController::class, 'publicShow'])->name('blog.show');
+
+Route::get('/sitemap.xml', function () {
+    SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));
+    return response()->file(public_path('sitemap.xml'));
+});
+Route::get('/sitemap.xml', function () {
+    return response()->view('sitemap')->header('Content-Type', 'text/xml');
+});
+Route::get('/robots.txt', function () {
+    return response()->view('robots')->header('Content-Type', 'text/plain');
+});
+Route::get('/sitemap.xml', function () {
+    $urls = [
+        url('/'),
+        url('/about'),
+        url('/courieranddelivery'),
+        url('/ecommercepackaging'),
+        url('/warehousing'),
+        url('/medicalcourier'),
+        url('/bulklogistics'),
+        url('/reverselogistics'),
+        url('/contact'),
+    ];
+
+    // Add dynamic blog URLs
+    $blogs = Blog::latest()->get();
+    foreach ($blogs as $blog) {
+        $urls[] = url('/blog/' . $blog->id);
+    }
+
+    $content = view('sitemap', compact('urls'))->render();
+
+    return response($content)->header('Content-Type', 'application/xml');
+});
+
+
+Route::post('/comments', [BlogController::class, 'storeComment'])->name('comments.store');
+Route::get('/comments/{blog_id}', [BlogController::class, 'fetchComments'])->name('comments.fetch');
+Route::get('/', [BlogController::class, 'welcome'])->name('home');
+
+
+Route::prefix('{country}')->group(function () {
+    Route::view('/courieranddelivery', 'courieranddelivery');
+    Route::view('/ecommercepackaging', 'ecommercepackaging');
+    Route::view('/warehousing', 'warehousing');
+    Route::view('/medicalcourier', 'medicalcourier');
+    Route::view('/bulklogistics', 'bulklogistics');
+    Route::view('/reverselogistics', 'reverselogistics');
+});

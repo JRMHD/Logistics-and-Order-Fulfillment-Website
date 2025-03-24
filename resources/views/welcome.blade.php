@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title> MotorSpeed Courier & Fulfilment Centre-Kenya, Best Courier & Logistics Services in Nairobi Kenya | MotorSpeedCourier - Fast Same-Day Delivery</title>
+    <title> MotorSpeed Courier & Fulfilment Centre-Kenya, Best Courier & Logistics Services in Nairobi Kenya |
+        MotorSpeedCourier - Fast Same-Day Delivery</title>
     <meta name="description"
         content="Kenya's #1 trusted courier & logistics service since 2018. Affordable same-day delivery in Nairobi, overnight shipping to all 47 counties. Trusted by ecommerce businesses, retail shops & SMEs for reliable package delivery.">
     <meta name="keywords"
@@ -44,9 +45,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
 
-     <!-- Favicon -->
+    <!-- Favicon -->
     <link rel="icon" href="/assets/img/favicon log.png">
 
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ url('/sitemap.xml') }}">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -552,7 +554,8 @@
                                         </p>
                                         <div class="cs-height-30"></div>
                                         <p>
-                                            Our extensive network covers Kenya, Tanzania and Uganda allowing businesses to scale
+                                            Our extensive network covers Kenya, Tanzania and Uganda allowing businesses
+                                            to scale
                                             without limitations. We serve e-commerce, retailers, manufacturers,
                                             wholesalers, and SMEs, providing customized solutions that enhance
                                             efficiency, reduce costs, and improve customer satisfaction.
@@ -573,6 +576,97 @@
         </div>
     </div>
     <!-- Start About Style 1 -->
+
+    <div class="cs-section-height"></div> <!-- Section to Section Gap -->
+
+    <section id="latest-blogs" class="container mt-5">
+        <h2 class="text-center mb-5" style="font-weight: 700; font-size: 2.8rem; color: #333;">Latest Blogs</h2>
+
+        <div class="row g-5">
+            @foreach ($latestBlogs as $blog)
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <a href="{{ route('blog.show', $blog->slug) }}" class="text-decoration-none">
+                        <div class="card h-100 shadow hover-effect"
+                            style="border-radius: 16px; border: none; transition: transform 0.3s, box-shadow 0.3s; overflow: hidden;">
+                            <div class="card-img-wrapper" style="height: 300px; overflow: hidden;">
+                                @if ($blog->image)
+                                    <img src="{{ asset('storage/' . $blog->image) }}"
+                                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;"
+                                        alt="{{ $blog->title }}">
+                                @else
+                                    <div
+                                        style="width: 100%; height: 100%; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                                        <span style="color: #adb5bd; font-size: 1.5rem;">No image</span>
+                                    </div>
+                                @endif
+                            </div>
+                            <div class="card-body" style="padding: 2rem;">
+                                <span class="badge mb-3"
+                                    style="background-color: #e9f7fe; color: #3498db; font-weight: 500; padding: 8px 16px; border-radius: 8px; font-size: 0.95rem;">
+                                    {{ $blog->category }}
+                                </span>
+                                <h5 class="card-title"
+                                    style="font-weight: 700; font-size: 1.6rem; margin-bottom: 1.2rem; color: #333; line-height: 1.3;">
+                                    {{ $blog->title }}
+                                </h5>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div
+                                        style="width: 50px; height: 50px; border-radius: 50%; background-color: #e9ecef; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                                        <span
+                                            style="font-size: 1.2rem; color: #6c757d;">{{ substr($blog->author, 0, 1) }}</span>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0" style="font-weight: 600; color: #333; font-size: 1.1rem;">
+                                            {{ $blog->author }}</p>
+                                        <p class="mb-0" style="font-size: 0.95rem; color: #6c757d;">
+                                            {{ $blog->created_at->format('d M Y') }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="{{ route('blog.show', $blog->slug) }}" class="btn btn-primary mt-3"
+                                    style="border-radius: 12px; padding: 12px 24px; font-weight: 600; font-size: 1.05rem; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); border: none; box-shadow: 0 4px 12px rgba(52,152,219,0.3); transition: all 0.3s ease;">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+
+        <style>
+            .hover-effect:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+            }
+
+            .hover-effect:hover img {
+                transform: scale(1.05);
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4) !important;
+            }
+
+            @media (max-width: 768px) {
+                h2 {
+                    font-size: 2.2rem !important;
+                }
+
+                .card-body {
+                    padding: 1.5rem !important;
+                }
+
+                .card-title {
+                    font-size: 1.3rem !important;
+                }
+            }
+        </style>
+    </section>
+
+
+
 
     <div class="cs-section-height"></div> <!-- Section to Section Gap -->
 
@@ -1132,7 +1226,8 @@
                                         </svg>
                                     </div>
                                     <div class="cs-com-fe-text">
-                                        <p>By 2022, we expanded our network to cover Tanzania,Uganda and all 47 counties in Kenya, enabling
+                                        <p>By 2022, we expanded our network to cover Tanzania,Uganda and all 47 counties
+                                            in Kenya, enabling
                                             businesses to scale without limitations.</p>
                                     </div>
                                 </div>

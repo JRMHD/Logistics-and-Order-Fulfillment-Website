@@ -53,6 +53,7 @@
                                     </li>
                                     <li><a href="{{ url('/termsandconditions') }}" class="cs-text_b_line"><span>Terms
                                                 and Conditions</span></a></li>
+                                    <li><a href="{{ url('/blog') }}" class="cs-text_b_line"><span>Blog</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -228,8 +229,8 @@
             <div class="cs-logi-copy-area">
                 <div class="cs-footer-copy-branding">
                     <div class="cs-footer-copy-branding">
-                        <a href="index.html">
-                            <img src="assets/img/logo_white_text.png" alt="LogiHub"
+                        <a href="/index.html">
+                            <img src="/assets/img/logo_white_text.png" alt="LogiHub"
                                 style="width: 250px; height: auto;" />
                         </a>
                         <span>Delivering Excellence in Global Logistics.</span>

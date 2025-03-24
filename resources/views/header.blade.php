@@ -4,8 +4,8 @@
         <div class="container-fluid">
             <div class="cs-topbar-container">
                 <div class="cs-topbar-left">
-                    <span class="cs-small-text cs-color-black">Reliable Logistics Solutions Across Kenya | Same-Day &
-                        Next-Day Delivery Available</span>
+                    <span class="cs-small-text cs-color-black">Reliable Logistics Solutions Across Kenya, Tanzania and
+                        Uganda</span>
                 </div>
                 <div class="cs-logi-topbar-right">
                     <div class="cs-topbar-social">
@@ -57,7 +57,7 @@
                 <div class="cs_main_header_left">
                     <div class="cs-logi-header-logo">
                         <a class="cs_site_branding" href="/">
-                            <img src="assets/img/logo_black_text.png" alt="Logo" />
+                            <img src="/assets/img/logo_black_text.png" alt="Logo" />
                         </a>
                     </div>
                 </div>
@@ -86,53 +86,29 @@
                                     </svg>
                                 </a>
                                 <ul class="cs_dropdown_menu">
-                                    <li class="cs_country_dropdown">
-                                        <a href="#" onclick="toggleSubDropdown(event)">Kenya</a>
-                                        <ul class="cs_sub_menu">
-                                            <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
-                                                    Services</a></li>
-                                            <li><a href="{{ url('/ecommercepackaging') }}">Order Fulfillment</a></li>
-                                            <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
-                                                    solutions</a></li>
-                                            <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a></li>
-                                            <li><a href="{{ url('/bulklogistics') }}">Bulk & Corporate
-                                                    Logistics</a></li>
-                                            <li><a href="{{ url('/reverselogistics') }}">Reverse Logistics</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="cs_country_dropdown">
-                                        <a href="#" onclick="toggleSubDropdown(event)">Tanzania</a>
-                                        <ul class="cs_sub_menu">
-                                            <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
-                                                    Services</a></li>
-                                            <li><a href="{{ url('/ecommercepackaging') }}">Order Fulfillment</a></li>
-                                            <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
-                                                    solutions</a></li>
-                                            <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a>
-                                            </li>
-                                            <li><a href="{{ url('/bulklogistics') }}">Bulk & Corporate
-                                                    Logistics</a></li>
-                                            <li><a href="{{ url('/reverselogistics') }}">Reverse Logistics</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="cs_country_dropdown">
-                                        <a href="#" onclick="toggleSubDropdown(event)">Uganda</a>
-                                        <ul class="cs_sub_menu">
-                                            <li><a href="{{ url('/courieranddelivery') }}">Courier & Delivery
-                                                    Services</a></li>
-                                            <li><a href="{{ url('/ecommercepackaging') }}">Order Fulfillment</a></li>
-                                            <li><a href="{{ url('/warehousing') }}">Warehousing & Storage
-                                                    solutions</a></li>
-                                            <li><a href="{{ url('/medicalcourier') }}">Medical Courier</a></li>
-                                            <li><a href="{{ url('/bulklogistics') }}">Bulk & Corporate
-                                                    Logistics</a></li>
-                                            <li><a href="{{ url('/reverselogistics') }}">Reverse Logistics</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    @foreach (['kenya', 'tanzania', 'uganda'] as $country)
+                                        <li class="cs_country_dropdown">
+                                            <a href="#"
+                                                onclick="toggleSubDropdown(event)">{{ ucfirst($country) }}</a>
+                                            <ul class="cs_sub_menu">
+                                                <li><a href="{{ url($country . '/courieranddelivery') }}">Courier &
+                                                        Delivery Services</a></li>
+                                                <li><a href="{{ url($country . '/ecommercepackaging') }}">Order
+                                                        Fulfillment</a></li>
+                                                <li><a href="{{ url($country . '/warehousing') }}">Warehousing & Storage
+                                                        solutions</a></li>
+                                                <li><a href="{{ url($country . '/medicalcourier') }}">Medical
+                                                        Courier</a>
+                                                </li>
+                                                <li><a href="{{ url($country . '/bulklogistics') }}">Bulk & Corporate
+                                                        Logistics</a></li>
+                                                <li><a href="{{ url($country . '/reverselogistics') }}">Reverse
+                                                        Logistics</a></li>
+                                            </ul>
+                                        </li>
+                                    @endforeach
                                 </ul>
+
                             </li>
 
 
@@ -149,8 +125,8 @@
                                     style="font-size: 15px;"><span>Contact</span></a>
                             </li>
                             <li style="margin: 0 15px; padding: 10px 0;">
-                                <a href="{{ url('/faq') }}" class="cs-text_b_line"
-                                    style="font-size: 15px;"><span>FAQ</span></a>
+                                <a href="{{ url('/blog') }}" class="cs-text_b_line"
+                                    style="font-size: 15px;"><span>Blog</span></a>
                             </li>
                         </ul>
                     </div>

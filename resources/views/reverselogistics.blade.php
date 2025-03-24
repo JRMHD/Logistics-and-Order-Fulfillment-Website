@@ -35,10 +35,11 @@
     <link rel="icon" href="/assets/img/favicon log.png">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/favicon log.png">
 </head>
 
 <body>
@@ -48,7 +49,7 @@
         <div id="cs-logi-preloader" class="cs-logi-preloader">
             <div class="reveal-img-wrap">
                 <div class="preloader-img-inner">
-                    <img src="assets/img/logi-preloader-logo.png" alt="LogiHub">
+                    <img src="/assets/img/logi-preloader-logo.png" alt="LogiHub">
                 </div>
             </div>
         </div>
@@ -61,7 +62,7 @@
 
     <!-- Start Common BreadCrumb -->
     <section>
-        <div class="cs-braidcrumb-wrap img-scroll-object-zoom" data-src="assets/img/logi-breadcrumb-main1.jpg">
+        <div class="cs-braidcrumb-wrap img-scroll-object-zoom" data-src="/assets/img/logi-breadcrumb-main1.jpg">
             <div class="container">
                 <div class="row cs_center">
                     <div class="cs-bread-page-title-area">
@@ -197,7 +198,8 @@
 
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
                         <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Scalability</h5>
-                        <p style="color: #666; line-height: 1.6;">Whether you're a small business or a large enterprise,
+                        <p style="color: #666; line-height: 1.6;">Whether you're a small business or a large
+                            enterprise,
                             our solutions are designed to scale with your needs.</p>
                     </div>
                 </div>
@@ -209,7 +211,7 @@
 
     <!-- Start CTA -->
     <section>
-        <div class="cs-cta-fullw-horizontal cs-cta-center" data-src="assets/img/cta-fullw-650.jpg">
+        <div class="cs-cta-fullw-horizontal cs-cta-center" data-src="/assets/img/cta-fullw-650.jpg">
             <div class="container">
                 <div class="row">
                     <div class="cs-cta-center-in">
@@ -241,13 +243,13 @@
     </span>
 
     <!-- Script -->
-    <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
-    <script src="assets/js/plugins/swiper.min.js"></script>
-    <script src="assets/js/plugins/SplitText.min.js"></script>
-    <script src="assets/js/plugins/ScrollToPlugin.min.js"></script>
-    <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
-    <script src="assets/js/plugins/gsap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/plugins/jquery-3.7.0.min.js"></script>
+    <script src="/assets/js/plugins/swiper.min.js"></script>
+    <script src="/assets/js/plugins/SplitText.min.js"></script>
+    <script src="/assets/js/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/assets/js/plugins/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/plugins/gsap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 
