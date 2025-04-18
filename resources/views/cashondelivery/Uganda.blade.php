@@ -108,63 +108,69 @@
             <!-- Header Section -->
             <div style="text-align: center; margin-bottom: 60px;">
                 <span
-                    style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Our
-                    Services</span>
-                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">CASH ON DELIVERY (COD) SERVICES IN
-                    UGANDA</h2>
+                    style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">
+                    Our Services
+                </span>
+                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">
+                    CASH ON DELIVERY (COD) SERVICES IN UGANDA – SECURE & CONVENIENT PAYMENT COLLECTION FOR SELLERS
+                </h2>
             </div>
 
             <!-- Introduction Card -->
             <div
                 style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                <h3 style="color: #D40511; font-size: 24px; margin-bottom: 20px;">Secure & Convenient Payment Collection
-                    for Sellers</h3>
                 <p style="color: #444; line-height: 1.8; font-size: 16px;">
                     In Uganda’s fast-growing e-commerce and retail sector, offering flexible payment options can
-                    significantly impact your business success. At <strong>Motorspeed Courier & Fulfillment
-                        Uganda</strong>, we provide a trusted and efficient <strong>Cash on Delivery (COD)</strong>
-                    service that allows sellers to reach more customers, increase order completion rates, and simplify
-                    payment collection.
+                    significantly impact your business success.
+                    At <strong>Motorspeed Courier & Fulfillment Uganda</strong>, we provide a trusted and efficient
+                    <strong>Cash on Delivery (COD)</strong> service
+                    that allows sellers to reach more customers, increase order completion rates, and simplify payment
+                    collection.
                 </p>
             </div>
 
             <!-- Services Section -->
             <div style="margin-bottom: 50px;">
-                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Cash on
-                    Delivery (COD) is Essential for Sellers in Uganda</h3>
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">
+                    Why Cash on Delivery (COD) is Essential for Sellers in Uganda?
+                </h3>
+                <p style="color: #444; line-height: 1.8; font-size: 16px; text-align: center; margin-bottom: 30px;">
+                    Many Ugandan consumers prefer to pay for their orders upon delivery, making COD an essential tool
+                    for businesses looking to scale.
+                </p>
 
                 <!-- Service Features -->
                 <div style="display: grid; gap: 25px;">
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Boost Sales & Conversions
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Boost Sales & Conversions
                         </h4>
                         <p style="color: #666; line-height: 1.7;">Customers are more likely to complete purchases when
-                            they can pay at delivery, increasing your overall sales and revenue.</p>
+                            they can pay at delivery.</p>
                     </div>
 
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Expand Your Market Reach
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Expand Your Market Reach
                         </h4>
-                        <p style="color: #666; line-height: 1.7;">Reach more customers, including those without access
-                            to banking or digital payment platforms, especially in rural or underserved areas.</p>
+                        <p style="color: #666; line-height: 1.7;">Reach more buyers, including those without bank
+                            accounts or mobile payment access.</p>
                     </div>
 
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Minimize Cancellations &
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Minimize Cancellations &
                             Refunds</h4>
-                        <p style="color: #666; line-height: 1.7;">With COD, reduce abandoned carts and improve order
-                            fulfillment rates by building trust with your customers.</p>
+                        <p style="color: #666; line-height: 1.7;">Reduce abandoned carts and improve order fulfillment
+                            rates.</p>
                     </div>
 
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Secure & Reliable Payment
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Secure & Reliable Payment
                             Collection</h4>
-                        <p style="color: #666; line-height: 1.7;">We handle payments on your behalf with full
-                            accountability, ensuring you receive your money securely and promptly.</p>
+                        <p style="color: #666; line-height: 1.7;">We handle payments on your behalf, ensuring smooth
+                            cash flow.</p>
                     </div>
                 </div>
             </div>
@@ -173,26 +179,35 @@
             <div
                 style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 50px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
                 <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">How Our COD
-                    Services Work</h3>
+                    Services Work in Uganda</h3>
                 <div style="display: grid; gap: 20px;">
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Simple & Efficient Order
-                            Processing</h5>
-                        <p style="color: #666; line-height: 1.6;">Receive orders from your store, social media, or
-                            marketplace. We handle fulfillment — warehousing, picking, packing, and dispatching.</p>
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">1. Simple & Efficient COD
+                            Order Processing</h5>
+                        <p style="color: #666; line-height: 1.6;">
+                            • You receive orders from your e-commerce store, social media, or marketplace.<br>
+                            • Motorspeed handles order fulfillment, including warehousing, picking, packing, and
+                            dispatching.
+                        </p>
                     </div>
 
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Secure Payment Collection at
-                            Delivery</h5>
-                        <p style="color: #666; line-height: 1.6;">Our trained couriers collect cash or mobile money upon
-                            delivery, ensuring transparency and security for both buyers and sellers.</p>
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">2. Secure Payment Collection
+                            at Delivery</h5>
+                        <p style="color: #666; line-height: 1.6;">
+                            • Our professional couriers collect cash or mobile money payments upon delivery.<br>
+                            • Transactions are handled with transparency and security to protect both buyers and
+                            sellers.
+                        </p>
                     </div>
 
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Fast Payment Settlement</h5>
-                        <p style="color: #666; line-height: 1.6;">We remit collected payments quickly to your account.
-                            Choose daily, weekly, or custom schedules to match your business needs.</p>
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">3. Fast & Reliable COD Payment
+                            Settlement</h5>
+                        <p style="color: #666; line-height: 1.6;">
+                            • We ensure prompt remittance of collected payments to your business account.<br>
+                            • Choose between daily, weekly, or custom settlement schedules to suit your cash flow needs.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -200,45 +215,56 @@
             <!-- Why Choose Us Section -->
             <div
                 style="background: #f8f9fa; border-radius: 15px; padding: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Choose
-                    Motorspeed for COD in Uganda?</h3>
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">
+                    Why Choose Motorspeed Uganda for Cash on Delivery?
+                </h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Nationwide Coverage</h5>
-                        <p style="color: #666; line-height: 1.6;">We deliver and collect payments in Kampala, Entebbe,
-                            Jinja, Gulu, Mbarara, and other major towns across Uganda.</p>
-                    </div>
-
-                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Integrated Fulfillment</h5>
-                        <p style="color: #666; line-height: 1.6;">Combine COD with warehousing, inventory management,
-                            and last-mile delivery for a full-stack logistics solution.</p>
-                    </div>
-
-                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Secure Payment Handling
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Nationwide COD Coverage
                         </h5>
-                        <p style="color: #666; line-height: 1.6;">Our structured system ensures safe, accountable, and
-                            timely collection and remittance of COD funds.</p>
+                        <p style="color: #666; line-height: 1.6;">
+                            We deliver and collect payments across Kampala, Entebbe, Jinja, Gulu, Mbarara, and other
+                            regions in Uganda.
+                        </p>
                     </div>
 
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Ideal for E-commerce &
-                            Retail</h5>
-                        <p style="color: #666; line-height: 1.6;">Perfect for online sellers, boutiques, electronics
-                            vendors, FMCG brands, and more.</p>
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Integrated with Order
+                            Fulfillment</h5>
+                        <p style="color: #666; line-height: 1.6;">
+                            Combine COD with warehousing, inventory management, and last-mile delivery for a complete
+                            solution.
+                        </p>
                     </div>
 
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Increased Customer
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Secure & Reliable Payment
+                            Handling</h5>
+                        <p style="color: #666; line-height: 1.6;">
+                            Our structured COD system ensures safe, fast, and accountable transactions.
+                        </p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Ideal for E-Commerce &
+                            Retail Businesses</h5>
+                        <p style="color: #666; line-height: 1.6;">
+                            Perfect for online sellers, fashion retailers, electronics brands, and FMCG businesses.
+                        </p>
+                    </div>
+
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Enhanced Customer
                             Satisfaction</h5>
-                        <p style="color: #666; line-height: 1.6;">COD builds trust and loyalty, encouraging repeat
-                            business and long-term relationships.</p>
+                        <p style="color: #666; line-height: 1.6;">
+                            COD increases trust and improves customer retention for repeat business.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- End Service Section -->
 

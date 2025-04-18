@@ -75,10 +75,11 @@
                                 <a href="{{ url('/about') }}" class="cs-text_b_line"
                                     style="font-size: 15px;"><span>About Us</span></a>
                             </li>
+                            <!-- Modified Services Dropdown Menu - Fixed text color and alignment -->
                             <li class="cs_nav_dropdown"
-                                style="margin: 0; padding: 0; position: relative; list-style: none; display: inline-block;">
+                                style="margin: 0 15px; padding: 10px 0; position: relative; list-style: none; display: inline-block;">
                                 <a href="#" class="cs-text_b_line dropdown-toggle" onclick="toggleDropdown(event)"
-                                    style="font-size: 16px; color: #333; text-decoration: none; padding: 15px; display: flex; align-items: center; font-weight: 500; transition: all 0.3s ease;">
+                                    style="font-size: 15px; color: #333; text-decoration: none; display: flex; align-items: center; font-weight: 500; transition: all 0.3s ease;">
                                     <span>Services</span>
                                     <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 10 6"
                                         fill="none" style="margin-left: 8px; transition: transform 0.3s ease;">
@@ -88,61 +89,290 @@
                                 </a>
                                 <ul class="cs_dropdown_menu"
                                     style="position: absolute; top: 100%; left: 0; background-color: #fff; min-width: 220px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 0; margin: 0; display: none; z-index: 1000; list-style: none;">
-                                    @foreach (['kenya', 'tanzania', 'uganda'] as $country)
-                                        <li class="cs_country_dropdown"
-                                            style="position: relative; padding: 0; margin: 0;">
-                                            <a href="#" onclick="toggleSubDropdown(event)"
-                                                style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: #444; text-decoration: none; font-size: 15px; transition: background-color 0.2s ease;">
-                                                {{ ucfirst($country) }}
-                                                <svg width="8" height="12" viewBox="0 0 6 10" fill="none"
-                                                    style="transition: transform 0.3s ease;">
-                                                    <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </a>
-                                            <ul class="cs_sub_menu"
-                                                style="position: absolute; top: 0; left: 100%; background-color: #fff; min-width: 240px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 0; margin: 0; display: none; list-style: none;">
-                                                <li style="padding: 0; margin: 0;">
-                                                    <a href="{{ url('courieranddeliveryservices/' . $country) }}"
-                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
-                                                        Courier & Delivery Services
-                                                    </a>
-                                                </li>
-                                                <li style="padding: 0; margin: 0;">
-                                                    <a href="{{ url('orderfulfilment/' . $country) }}"
-                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
-                                                        Order Fulfillment
-                                                    </a>
-                                                </li>
-                                                <li style="padding: 0; margin: 0;">
-                                                    <a href="{{ url('warehousingandstorage/' . $country) }}"
-                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
-                                                        Warehousing Solutions
-                                                    </a>
-                                                </li>
-                                                <li style="padding: 0; margin: 0;">
-                                                    <a href="{{ url('medicalcourier/' . $country) }}"
-                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
-                                                        Medical Courier
-                                                    </a>
-                                                </li>
-                                                <li style="padding: 0; margin: 0;">
-                                                    <a href="{{ url('reverselogistics/' . $country) }}"
-                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
-                                                        Reverse Logistics
-                                                    </a>
-                                                </li>
-                                                <li style="padding: 0; margin: 0;">
-                                                    <a href="{{ url('cashondelivery/' . $country) }}"
-                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
-                                                        Cash on Delivery
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    @endforeach
+
+                                    <!-- Kenya with flag -->
+                                    <li class="cs_country_dropdown" style="position: relative; padding: 0; margin: 0;">
+                                        <a href="#" onclick="toggleSubDropdown(event)"
+                                            style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: #444; text-decoration: none; font-size: 15px; transition: background-color 0.2s ease;">
+                                            <span style="display: flex; align-items: center; color: #444;">
+                                                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ke.svg"
+                                                    alt="Kenya Flag"
+                                                    style="width: 20px; height: 15px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                                                Kenya
+                                            </span>
+                                            <svg width="8" height="12" viewBox="0 0 6 10" fill="none"
+                                                style="transition: transform 0.3s ease;">
+                                                <path d="M1 9L5 5L1 1" stroke="#444" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                        <ul class="cs_sub_menu"
+                                            style="position: absolute; top: 0; left: 100%; background-color: #fff; min-width: 240px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 0; margin: 0; display: none; list-style: none;">
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('courieranddeliveryservices/kenya') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Courier & Delivery Services
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('orderfulfilment/kenya') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Order Fulfillment
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('warehousingandstorage/kenya') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Warehousing Solutions
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('medicalcourier/kenya') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Medical Courier
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('reverselogistics/kenya') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Reverse Logistics
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('cashondelivery/kenya') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Cash on Delivery
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Tanzania with flag -->
+                                    <li class="cs_country_dropdown"
+                                        style="position: relative; padding: 0; margin: 0;">
+                                        <a href="#" onclick="toggleSubDropdown(event)"
+                                            style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: #444; text-decoration: none; font-size: 15px; transition: background-color 0.2s ease;">
+                                            <span style="display: flex; align-items: center; color: #444;">
+                                                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/tz.svg"
+                                                    alt="Tanzania Flag"
+                                                    style="width: 20px; height: 15px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                                                Tanzania
+                                            </span>
+                                            <svg width="8" height="12" viewBox="0 0 6 10" fill="none"
+                                                style="transition: transform 0.3s ease;">
+                                                <path d="M1 9L5 5L1 1" stroke="#444" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                        <ul class="cs_sub_menu"
+                                            style="position: absolute; top: 0; left: 100%; background-color: #fff; min-width: 240px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 0; margin: 0; display: none; list-style: none;">
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('courieranddeliveryservices/tanzania') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Courier & Delivery Services
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('orderfulfilment/tanzania') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Order Fulfillment
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('warehousingandstorage/tanzania') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Warehousing Solutions
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('medicalcourier/tanzania') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Medical Courier
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('reverselogistics/tanzania') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Reverse Logistics
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('cashondelivery/tanzania') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Cash on Delivery
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Uganda with flag -->
+                                    <li class="cs_country_dropdown"
+                                        style="position: relative; padding: 0; margin: 0;">
+                                        <a href="#" onclick="toggleSubDropdown(event)"
+                                            style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: #444; text-decoration: none; font-size: 15px; transition: background-color 0.2s ease;">
+                                            <span style="display: flex; align-items: center; color: #444;">
+                                                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ug.svg"
+                                                    alt="Uganda Flag"
+                                                    style="width: 20px; height: 15px; margin-right: 10px; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                                                Uganda
+                                            </span>
+                                            <svg width="8" height="12" viewBox="0 0 6 10" fill="none"
+                                                style="transition: transform 0.3s ease;">
+                                                <path d="M1 9L5 5L1 1" stroke="#444" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                        <ul class="cs_sub_menu"
+                                            style="position: absolute; top: 0; left: 100%; background-color: #fff; min-width: 240px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 0; margin: 0; display: none; list-style: none;">
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('courieranddeliveryservices/uganda') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Courier & Delivery Services
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('orderfulfilment/uganda') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Order Fulfillment
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('warehousingandstorage/uganda') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Warehousing Solutions
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('medicalcourier/uganda') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Medical Courier
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('reverselogistics/uganda') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Reverse Logistics
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('cashondelivery/uganda') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    Cash on Delivery
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
+
+                            <!-- Additional CSS for hover effects and better alignment -->
+                            <style>
+                                /* Improved dropdown styling */
+                                .cs_dropdown_menu {
+                                    padding: 8px 0;
+                                    border-radius: 8px;
+                                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                                    width: 220px;
+                                }
+
+                                /* Ensure text is visible against background */
+                                .cs_country_dropdown>a span,
+                                .cs_sub_menu li a {
+                                    color: #444 !important;
+                                    /* Force color to ensure visibility */
+                                }
+
+                                /* SVG arrow colors */
+                                .cs_country_dropdown>a svg path {
+                                    stroke: #444;
+                                }
+
+                                /* Hover effects for menu items */
+                                .cs_country_dropdown>a:hover,
+                                .cs_sub_menu li a:hover {
+                                    background-color: #f5f5f5;
+                                    color: #000 !important;
+                                }
+
+                                /* Better alignment of submenu items */
+                                .cs_sub_menu {
+                                    top: 0;
+                                    left: 100%;
+                                    margin-left: 1px;
+                                    border-radius: 8px;
+                                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+                                }
+
+                                /* Smooth transitions */
+                                .cs_dropdown_menu,
+                                .cs_sub_menu {
+                                    transition: opacity 0.2s ease, transform 0.2s ease;
+                                }
+
+                                /* Animation for dropdown menus */
+                                .cs_dropdown_menu.show {
+                                    animation: fadeIn 0.2s ease forwards;
+                                }
+
+                                .cs_sub_menu.show {
+                                    animation: slideIn 0.2s ease forwards;
+                                }
+
+                                @keyframes fadeIn {
+                                    from {
+                                        opacity: 0;
+                                        transform: translateY(-10px);
+                                    }
+
+                                    to {
+                                        opacity: 1;
+                                        transform: translateY(0);
+                                    }
+                                }
+
+                                @keyframes slideIn {
+                                    from {
+                                        opacity: 0;
+                                        transform: translateX(-10px);
+                                    }
+
+                                    to {
+                                        opacity: 1;
+                                        transform: translateX(0);
+                                    }
+                                }
+
+                                /* Align Services with other nav items */
+                                .cs_nav_list>li {
+                                    vertical-align: middle;
+                                }
+
+                                /* Ensure services has the same margins and padding as other items */
+                                .cs_nav_dropdown {
+                                    margin: 0 15px !important;
+                                    padding: 10px 0 !important;
+                                }
+
+                                /* Mobile optimizations */
+                                @media screen and (max-width: 768px) {
+                                    .cs_sub_menu {
+                                        width: 100%;
+                                        left: 0;
+                                        top: 100%;
+                                    }
+
+                                    /* Ensure flags remain visible on mobile */
+                                    .cs_country_dropdown>a span img {
+                                        display: inline-block;
+                                    }
+
+                                    /* Text visibility on mobile */
+                                    .cs_country_dropdown>a span,
+                                    .cs_sub_menu li a {
+                                        color: #444 !important;
+                                    }
+                                }
+                            </style>
 
 
 
@@ -370,7 +600,7 @@
     <div class="cs_side_header_in">
         <div class="cs-sidebar-about-brand">
             <a class="cs_site_branding" href="/">
-                <img src="assets/img/logo_black_text.png" alt="Logo" />
+                <img src="/assets/img/logo_black_text.png" alt="Logo" />
             </a>
             <p>We handle every step of the order fulfillment process, ensuring your products reach customers on time and
                 in perfect condition.

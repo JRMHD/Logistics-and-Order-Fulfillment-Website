@@ -111,112 +111,116 @@
                     style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Our
                     Services</span>
                 <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">CASH ON DELIVERY (COD) SERVICES IN
-                    KENYA</h2>
+                    KENYA – SECURE & RELIABLE PAYMENT SOLUTIONS FOR SELLERS</h2>
             </div>
 
             <!-- Introduction Card -->
             <div
                 style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                <h3 style="color: #D40511; font-size: 24px; margin-bottom: 20px;">At MOTORSPEED COURIER AND FULFILMENT
-                    KENYA</h3>
                 <p style="color: #444; line-height: 1.8; font-size: 16px;">
-                    In Kenya’s dynamic e-commerce and retail landscape, flexible payment solutions are crucial for
-                    seller success. Our <strong>Cash on Delivery (COD) services</strong> enable sellers to build trust,
-                    reduce cancellations, and reach a wider audience. Motorspeed Courier & Fulfillment offers
-                    <strong>secure, nationwide COD services</strong> that streamline order delivery and payment
-                    collection for businesses across the country.
+                    In Kenya’s rapidly growing e-commerce and retail market, offering flexible payment options can
+                    significantly impact customer satisfaction and sales conversion rates. At <strong>Motorspeed Courier
+                        & Fulfillment Kenya</strong>, we provide seamless <strong>Cash on Delivery (COD)</strong>
+                    solutions that allow sellers to expand their reach, minimize order cancellations, and build trust
+                    with customers who prefer paying upon delivery.
                 </p>
             </div>
 
-            <!-- Services Section -->
+            <!-- Why COD Matters Section -->
             <div style="margin-bottom: 50px;">
-                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">How Our COD
-                    Services Work in Kenya</h3>
-
-                <!-- Service Features -->
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Cash on
+                    Delivery (COD) Matters for Sellers in Kenya?</h3>
                 <div style="display: grid; gap: 25px;">
-                    <!-- Order Processing -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Hassle-Free COD Order
-                            Processing</h4>
-                        <p style="color: #666; line-height: 1.7;">Receive orders via your online store, marketplace, or
-                            direct sales. We handle the entire process – picking, packing, and delivering your products
-                            to customers quickly and reliably.</p>
+                        <p style="color: #666; line-height: 1.7;">✔️ <strong>Higher Conversion Rates</strong> –
+                            Customers are more likely to place orders when they can pay upon delivery.</p>
                     </div>
-
-                    <!-- Secure Collection -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Secure Payment Collection
-                        </h4>
-                        <p style="color: #666; line-height: 1.7;">Our professional delivery team collects cash or mobile
-                            money from your customers at the point of delivery. Every transaction is handled with
-                            transparency and strict accountability.</p>
+                        <p style="color: #666; line-height: 1.7;">✔️ <strong>Reduced Order Cancellations</strong> –
+                            Offering COD minimizes abandoned carts and boosts order completion rates.</p>
                     </div>
-
-                    <!-- Fast Settlement -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Fast & Reliable COD
-                            Settlement</h4>
-                        <p style="color: #666; line-height: 1.7;">We remit collected payments to your business promptly.
-                            Choose daily, weekly, or custom settlement options that suit your cash flow needs.</p>
+                        <p style="color: #666; line-height: 1.7;">✔️ <strong>Increased Market Reach</strong> – Attract
+                            more customers, including those without access to digital payment options.</p>
                     </div>
-
-                    <!-- Full Integration -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Integrated Fulfillment
-                            Services</h4>
-                        <p style="color: #666; line-height: 1.7;">Seamlessly integrate COD with our warehousing,
-                            picking, packing, and last-mile delivery services for a complete fulfillment solution.</p>
+                        <p style="color: #666; line-height: 1.7;">✔️ <strong>Secure & Reliable Payments</strong> – We
+                            collect payments on your behalf and settle funds efficiently.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Why Choose Us Section -->
+            <!-- How COD Works -->
+            <div style="margin-bottom: 50px;">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">How Our COD
+                    Services Work in Kenya</h3>
+                <div style="display: grid; gap: 25px;">
+                    <!-- Step 1 -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">1. Hassle-Free COD Order
+                            Processing</h4>
+                        <p style="color: #666; line-height: 1.7;">• Receive orders from your e-commerce store,
+                            marketplace, or direct sales platform.<br>• Motorspeed picks, packs, and delivers the order
+                            to your customer.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">2. Secure Payment Collection
+                            at Delivery</h4>
+                        <p style="color: #666; line-height: 1.7;">• Our professional couriers collect cash or mobile
+                            money payments from customers.<br>• Transactions are handled with utmost transparency and
+                            security.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div
+                        style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">3. Fast & Reliable COD
+                            Settlement</h4>
+                        <p style="color: #666; line-height: 1.7;">• We remit collected payments to your business
+                            promptly, ensuring a smooth cash flow.<br>• Daily, weekly, or custom payment settlements to
+                            match your business needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
             <div
                 style="background: #f8f9fa; border-radius: 15px; padding: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
                 <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Choose
-                    Motorspeed’s COD Services?</h3>
+                    Motorspeed’s COD Services in Kenya?</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                    <!-- Feature Items -->
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Higher Conversion Rates</h5>
-                        <p style="color: #666; line-height: 1.6;">Customers are more likely to complete purchases when
-                            they can pay upon delivery.</p>
+                        <p style="color: #666; line-height: 1.6;">✅ <strong>Nationwide COD Coverage</strong> – From
+                            Nairobi to Mombasa, Kisumu, Eldoret, Nakuru, and all 47 counties.</p>
                     </div>
-
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Reduced Order Cancellations
-                        </h5>
-                        <p style="color: #666; line-height: 1.6;">Offering COD reduces abandoned carts and increases
-                            order completion rates.</p>
+                        <p style="color: #666; line-height: 1.6;">✅ <strong>Integrated with Order Fulfillment</strong> –
+                            Combine COD with warehousing, picking, packing, and last-mile delivery.</p>
                     </div>
-
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Nationwide Coverage</h5>
-                        <p style="color: #666; line-height: 1.6;">We deliver and collect payments across all 47 counties
-                            in Kenya.</p>
+                        <p style="color: #666; line-height: 1.6;">✅ <strong>Secure & Transparent Payment
+                                Handling</strong> – Our reliable collection process ensures safe and timely settlements.
+                        </p>
                     </div>
-
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Safe & Transparent</h5>
-                        <p style="color: #666; line-height: 1.6;">Our team ensures secure handling and timely remittance
-                            of customer payments.</p>
+                        <p style="color: #666; line-height: 1.6;">✅ <strong>Optimized for E-Commerce & Retail</strong>
+                            – Ideal for online sellers, fashion retailers, electronics businesses, and FMCG brands.</p>
                     </div>
-
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Perfect for E-commerce &
-                            Retail</h5>
-                        <p style="color: #666; line-height: 1.6;">Ideal for online sellers, fashion outlets,
-                            electronics, and FMCG businesses.</p>
+                        <p style="color: #666; line-height: 1.6;">✅ <strong>Improved Customer Trust &
+                                Retention</strong> – COD encourages repeat purchases and stronger brand loyalty.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- End Service Section -->
 
 

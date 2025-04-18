@@ -197,7 +197,7 @@ class BlogController extends Controller
 
     public function welcome()
     {
-        $latestBlogs = Blog::latest()->take(6)->get();
+        $latestBlogs = Blog::latest()->take(3)->get();
 
         return view('welcome', compact('latestBlogs'));
     }

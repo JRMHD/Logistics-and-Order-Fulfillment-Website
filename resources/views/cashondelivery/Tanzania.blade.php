@@ -110,117 +110,138 @@
                 <span
                     style="color: #D40511; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Our
                     Services</span>
-                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">CASH ON DELIVERY (COD) SERVICES IN
-                    TANZANIA</h2>
+                <h2 style="font-size: 42px; color: #1a1a1a; margin: 0 0 30px 0;">Cash on Delivery (COD) Services in
+                    Tanzania – Secure & Hassle-Free Payment Collection for Sellers</h2>
             </div>
 
             <!-- Introduction Card -->
             <div
                 style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                <h3 style="color: #D40511; font-size: 24px; margin-bottom: 20px;">At MOTORSPEED COURIER AND FULFILMENT
-                    TANZANIA</h3>
+                <h3 style="color: #D40511; font-size: 24px; margin-bottom: 20px;">Expand Your Business with Reliable
+                    Cash on Delivery (COD) Services in Tanzania</h3>
                 <p style="color: #444; line-height: 1.8; font-size: 16px;">
-                    In Tanzania’s dynamic retail and e-commerce landscape, offering <strong>Cash on Delivery
-                        (COD)</strong> is a powerful way to build trust, reach more customers, and grow your business.
-                    Motorspeed Tanzania provides a reliable and secure COD service that helps sellers complete more
-                    orders and collect payments with ease. 🚀 Boost conversions, minimize cancellations, and expand your
-                    reach—while we handle the logistics and payment collection for you.
+                    In Tanzania’s evolving e-commerce and retail market, offering Cash on Delivery (COD) can
+                    significantly boost your sales and customer trust. At <strong>Motorspeed Courier & Fulfillment
+                        Tanzania</strong>, we provide a seamless COD solution, ensuring sellers can reach more
+                    customers, complete more orders, and simplify payment collection—without worrying about logistics.
                 </p>
+                <p style="color: #444; line-height: 1.8; font-size: 16px;">🚀 With our COD service, you can increase
+                    conversions, minimize order cancellations, and expand across Tanzania—while we handle your payments
+                    and deliveries!</p>
             </div>
 
             <!-- Services Section -->
             <div style="margin-bottom: 50px;">
-                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">How Our COD
-                    Services Work</h3>
-
-                <!-- Service Features -->
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Cash on
+                    Delivery (COD) Matters for Sellers in Tanzania?</h3>
                 <div style="display: grid; gap: 25px;">
-                    <!-- Order Processing -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Seamless Order Processing &
-                            Fulfillment</h4>
-                        <p style="color: #666; line-height: 1.7;">Customers can place orders via your website, social
-                            platforms, or online marketplace. Motorspeed takes care of storage, picking, packing, and
-                            delivery—ensuring fast, accurate, and smooth order fulfillment across Tanzania.</p>
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Higher Sales & Conversion
+                            Rates</h4>
+                        <p style="color: #666; line-height: 1.7;">Customers are more likely to complete purchases when
+                            they can pay on delivery.</p>
                     </div>
-
-                    <!-- Payment Collection -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Reliable Payment Collection
-                            at Delivery</h4>
-                        <p style="color: #666; line-height: 1.7;">Our trained couriers collect cash or mobile money at
-                            the point of delivery. All transactions are securely recorded, offering peace of mind to
-                            both sellers and buyers.</p>
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Expanded Market Reach</h4>
+                        <p style="color: #666; line-height: 1.7;">Sell to more customers, including those without bank
+                            accounts or mobile payment access.</p>
                     </div>
-
-                    <!-- Payment Settlement -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Fast & Secure COD Payment
-                            Settlement</h4>
-                        <p style="color: #666; line-height: 1.7;">We remit payments to your business quickly and
-                            securely. Choose from flexible settlement options—daily, weekly, or custom—so you stay in
-                            control of your cash flow.</p>
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Reduced Abandoned Carts
+                        </h4>
+                        <p style="color: #666; line-height: 1.7;">Many online shoppers abandon their carts due to lack
+                            of payment options—COD eliminates this issue.</p>
                     </div>
-
-                    <!-- Full Logistics Integration -->
                     <div
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Integrated with Fulfillment
-                            & Delivery</h4>
-                        <p style="color: #666; line-height: 1.7;">Our COD services are seamlessly integrated with
-                            warehousing, inventory management, and last-mile delivery—giving you a complete end-to-end
-                            logistics solution under one roof.</p>
+                        <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✔️ Fast & Secure Payment
+                            Collection</h4>
+                        <p style="color: #666; line-height: 1.7;">We ensure all payments are collected and settled
+                            efficiently to support your business growth.</p>
                     </div>
                 </div>
+                <p style="text-align: center; color: #444; margin-top: 20px;">📦 Motorspeed Tanzania takes care of the
+                    entire COD process, so you can focus on selling more!</p>
+            </div>
+
+            <!-- How It Works -->
+            <div
+                style="background: #f8f9fa; border-radius: 15px; padding: 40px; margin-bottom: 50px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">How Our COD
+                    Services Work in Tanzania</h3>
+                <div style="display: grid; gap: 20px;">
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">1. Seamless Order Processing &
+                            Fulfillment</h5>
+                        <p style="color: #666; line-height: 1.6;">• Customers place orders via your website, social
+                            media, or online marketplace.<br>• Motorspeed handles storage, picking, packing, and
+                            dispatching, ensuring efficient order fulfillment.</p>
+                    </div>
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">2. Reliable Payment Collection
+                            at Delivery</h5>
+                        <p style="color: #666; line-height: 1.6;">• Our trained couriers deliver the package and collect
+                            cash or mobile money payments from customers.<br>• Transactions are securely processed,
+                            ensuring transparency and trust for both buyers and sellers.</p>
+                    </div>
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">3. Fast & Secure COD Payment
+                            Settlement</h5>
+                        <p style="color: #666; line-height: 1.6;">• We remit collected payments to your business quickly
+                            and securely.<br>• Choose from daily, weekly, or custom settlement options to optimize your
+                            cash flow.</p>
+                    </div>
+                </div>
+                <p style="text-align: center; color: #444; margin-top: 20px;">🚀 Let us manage the logistics while you
+                    focus on scaling your business!</p>
             </div>
 
             <!-- Why Choose Us Section -->
             <div
                 style="background: #f8f9fa; border-radius: 15px; padding: 40px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
                 <h3 style="color: #1a1a1a; font-size: 28px; margin-bottom: 30px; text-align: center;">Why Choose
-                    Motorspeed Tanzania for COD?</h3>
+                    Motorspeed Tanzania for Cash on Delivery?</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                    <!-- Feature Items -->
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Higher Sales & Conversion
-                            Rates</h5>
-                        <p style="color: #666; line-height: 1.6;">Buyers feel more confident purchasing when they can
-                            pay on delivery, leading to more completed orders.</p>
-                    </div>
-
-                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Expanded Market Reach</h5>
-                        <p style="color: #666; line-height: 1.6;">Serve customers across Tanzania, including those
-                            without access to digital payments.</p>
-                    </div>
-
-                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Reduced Cart Abandonment
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Nationwide COD Coverage
                         </h5>
-                        <p style="color: #666; line-height: 1.6;">Offer COD as a solution for customers hesitant to pay
-                            online, lowering cart abandonment rates.</p>
+                        <p style="color: #666; line-height: 1.6;">We provide COD delivery services across Dar es
+                            Salaam, Arusha, Mwanza, Dodoma, Mbeya, and other regions in Tanzania.</p>
                     </div>
-
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Transparent & Secure
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Integrated with Order
+                            Fulfillment</h5>
+                        <p style="color: #666; line-height: 1.6;">Combine COD with warehousing, inventory management,
+                            and last-mile delivery for a complete logistics solution.</p>
+                    </div>
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Safe & Transparent
                             Transactions</h5>
-                        <p style="color: #666; line-height: 1.6;">We ensure timely, trackable, and safe payment handling
-                            with proper documentation.</p>
+                        <p style="color: #666; line-height: 1.6;">Our structured COD process ensures timely and secure
+                            payment handling, reducing risks for sellers.</p>
                     </div>
-
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
-                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Ideal for E-Commerce &
-                            Retail</h5>
-                        <p style="color: #666; line-height: 1.6;">Perfect for fashion stores, electronics retailers,
-                            FMCG businesses, and more.</p>
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Perfect for E-Commerce &
+                            Retail Businesses</h5>
+                        <p style="color: #666; line-height: 1.6;">Ideal for online fashion stores, electronics sellers,
+                            FMCG brands, and local retailers.</p>
+                    </div>
+                    <div style="padding: 20px; background: #fff; border-radius: 10px;">
+                        <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">✅ Better Customer Experience
+                        </h5>
+                        <p style="color: #666; line-height: 1.6;">Increase trust and encourage repeat purchases by
+                            offering flexible payment options.</p>
                     </div>
                 </div>
+                <p style="text-align: center; color: #444; margin-top: 30px;">📞 Want to increase sales and simplify
+                    payment collection? Partner with Motorspeed Tanzania for reliable COD services today!</p>
             </div>
         </div>
     </section>
+
 
     <!-- End Service Section -->
 
