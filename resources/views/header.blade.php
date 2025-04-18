@@ -75,41 +75,75 @@
                                 <a href="{{ url('/about') }}" class="cs-text_b_line"
                                     style="font-size: 15px;"><span>About Us</span></a>
                             </li>
-                            <li class="cs_nav_dropdown" style="margin: 0 15px; padding: 10px 0;">
+                            <li class="cs_nav_dropdown"
+                                style="margin: 0; padding: 0; position: relative; list-style: none; display: inline-block;">
                                 <a href="#" class="cs-text_b_line dropdown-toggle" onclick="toggleDropdown(event)"
-                                    style="font-size: 15px;">
+                                    style="font-size: 16px; color: #333; text-decoration: none; padding: 15px; display: flex; align-items: center; font-weight: 500; transition: all 0.3s ease;">
                                     <span>Services</span>
                                     <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 10 6"
-                                        fill="currentColor" style="margin-left: 5px;">
+                                        fill="none" style="margin-left: 8px; transition: transform 0.3s ease;">
                                         <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" />
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <ul class="cs_dropdown_menu">
+                                <ul class="cs_dropdown_menu"
+                                    style="position: absolute; top: 100%; left: 0; background-color: #fff; min-width: 220px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 0; margin: 0; display: none; z-index: 1000; list-style: none;">
                                     @foreach (['kenya', 'tanzania', 'uganda'] as $country)
-                                        <li class="cs_country_dropdown">
-                                            <a href="#"
-                                                onclick="toggleSubDropdown(event)">{{ ucfirst($country) }}</a>
-                                            <ul class="cs_sub_menu">
-                                                <li><a href="{{ url($country . '/courieranddelivery') }}">Courier &
-                                                        Delivery Services</a></li>
-                                                <li><a href="{{ url($country . '/ecommercepackaging') }}">Order
-                                                        Fulfillment</a></li>
-                                                <li><a href="{{ url($country . '/warehousing') }}">Warehousing & Storage
-                                                        solutions</a></li>
-                                                <li><a href="{{ url($country . '/medicalcourier') }}">Medical
-                                                        Courier</a>
+                                        <li class="cs_country_dropdown"
+                                            style="position: relative; padding: 0; margin: 0;">
+                                            <a href="#" onclick="toggleSubDropdown(event)"
+                                                style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: #444; text-decoration: none; font-size: 15px; transition: background-color 0.2s ease;">
+                                                {{ ucfirst($country) }}
+                                                <svg width="8" height="12" viewBox="0 0 6 10" fill="none"
+                                                    style="transition: transform 0.3s ease;">
+                                                    <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                            <ul class="cs_sub_menu"
+                                                style="position: absolute; top: 0; left: 100%; background-color: #fff; min-width: 240px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 0; margin: 0; display: none; list-style: none;">
+                                                <li style="padding: 0; margin: 0;">
+                                                    <a href="{{ url('courieranddeliveryservices/' . $country) }}"
+                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                        Courier & Delivery Services
+                                                    </a>
                                                 </li>
-                                                <li><a href="{{ url($country . '/bulklogistics') }}">Bulk & Corporate
-                                                        Logistics</a></li>
-                                                <li><a href="{{ url($country . '/reverselogistics') }}">Reverse
-                                                        Logistics</a></li>
+                                                <li style="padding: 0; margin: 0;">
+                                                    <a href="{{ url('orderfulfilment/' . $country) }}"
+                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                        Order Fulfillment
+                                                    </a>
+                                                </li>
+                                                <li style="padding: 0; margin: 0;">
+                                                    <a href="{{ url('warehousingandstorage/' . $country) }}"
+                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                        Warehousing Solutions
+                                                    </a>
+                                                </li>
+                                                <li style="padding: 0; margin: 0;">
+                                                    <a href="{{ url('medicalcourier/' . $country) }}"
+                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                        Medical Courier
+                                                    </a>
+                                                </li>
+                                                <li style="padding: 0; margin: 0;">
+                                                    <a href="{{ url('reverselogistics/' . $country) }}"
+                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                        Reverse Logistics
+                                                    </a>
+                                                </li>
+                                                <li style="padding: 0; margin: 0;">
+                                                    <a href="{{ url('cashondelivery/' . $country) }}"
+                                                        style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                        Cash on Delivery
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </li>
                                     @endforeach
                                 </ul>
-
                             </li>
+
 
 
                             <li style="margin: 0 15px; padding: 10px 0;">

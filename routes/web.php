@@ -144,11 +144,86 @@ Route::get('/comments/{blog_id}', [BlogController::class, 'fetchComments'])->nam
 Route::get('/', [BlogController::class, 'welcome'])->name('home');
 
 
-Route::prefix('{country}')->group(function () {
-    Route::view('/courieranddelivery', 'courieranddelivery');
-    Route::view('/ecommercepackaging', 'ecommercepackaging');
-    Route::view('/warehousing', 'warehousing');
-    Route::view('/medicalcourier', 'medicalcourier');
-    Route::view('/bulklogistics', 'bulklogistics');
-    Route::view('/reverselogistics', 'reverselogistics');
+// Route::prefix('{country}')->group(function () {
+//     Route::view('/courieranddelivery', 'courieranddelivery');
+//     Route::view('/ecommercepackaging', 'ecommercepackaging');
+//     Route::view('/warehousing', 'warehousing');
+//     Route::view('/medicalcourier', 'medicalcourier');
+//     Route::view('/bulklogistics', 'bulklogistics');
+//     Route::view('/reverselogistics', 'reverselogistics');
+// });
+
+
+// Kenya Route
+Route::get('/cashondelivery/kenya', function () {
+    return view('cashondelivery.kenya');
+});
+
+// Tanzania Route
+Route::get('/cashondelivery/tanzania', function () {
+    return view('cashondelivery.Tanzania');
+});
+
+// Uganda Route
+Route::get('/cashondelivery/uganda', function () {
+    return view('cashondelivery.Uganda');
+});
+
+Route::get('/courieranddeliveryservices/kenya', function () {
+    return view('courieranddeliveryservices.kenya');
+});
+
+Route::get('/courieranddeliveryservices/tanzania', function () {
+    return view('courieranddeliveryservices.tanzania');
+});
+
+Route::get('/courieranddeliveryservices/uganda', function () {
+    return view('courieranddeliveryservices.uganda');
+});
+
+Route::get('/medicalcourier/kenya', function () {
+    return view('medicalcourier.kenya');
+});
+
+Route::get('/medicalcourier/tanzania', function () {
+    return view('medicalcourier.tanzania');
+});
+
+Route::get('/medicalcourier/uganda', function () {
+    return view('medicalcourier.uganda');
+});
+Route::get('/orderfulfilment/kenya', function () {
+    return view('orderfulfilment.kenya');
+});
+
+Route::get('/orderfulfilment/tanzania', function () {
+    return view('orderfulfilment.tanzania');
+});
+
+Route::get('/orderfulfilment/uganda', function () {
+    return view('orderfulfilment.uganda');
+});
+
+Route::get('/reverselogistics/kenya', function () {
+    return view('reverselogistics.kenya');
+});
+
+Route::get('/reverselogistics/tanzania', function () {
+    return view('reverselogistics.tanzania');
+});
+
+Route::get('/reverselogistics/uganda', function () {
+    return view('reverselogistics.uganda');
+});
+
+Route::get('/warehousingandstorage/kenya', function () {
+    return view('warehousingandstorage.kenya');
+});
+
+Route::get('/warehousingandstorage/tanzania', function () {
+    return view('warehousingandstorage.tanzania');
+});
+
+Route::get('/warehousingandstorage/uganda', function () {
+    return view('warehousingandstorage.uganda');
 });
