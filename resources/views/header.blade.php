@@ -1,53 +1,34 @@
 <header class="cs_site_header cs-header-with-bg cs_style1 cs_sticky_header">
-    <!-- Header Topbar Start -->
-    <div class="cs_logi_topbar">
-        <div class="container-fluid">
-            <div class="cs-topbar-container">
-                <div class="cs-topbar-left">
-                    <span class="cs-small-text cs-color-black">Reliable Logistics Solutions Across Kenya, Tanzania and
-                        Uganda</span>
-                </div>
-                <div class="cs-logi-topbar-right">
-                    <div class="cs-topbar-social">
-                        <ul>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>M</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>O</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>T</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>O</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>R</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>S</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>P</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>E</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>E</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="cs-text_b_line"><span>D</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+    <!-- SIMPLE, RELIABLE TICKER THAT IS GUARANTEED TO BE VISIBLE -->
+    <div style="background-color: #003B3B; color: white; overflow: hidden; padding: 8px 0;">
+        <div class="ticker-wrapper" style="overflow: hidden; width: 100%;">
+            <div class="ticker" style="white-space: nowrap; display: inline-block; animation: ticker-scroll 60s linear infinite;">
+                <span style="margin-right: 50px; font-size: 13px;">📦 Motorspeed eCommerce Fulfillment - East Africa's Premier 3PL Provider</span>
+                <span style="margin-right: 50px; font-size: 13px;">🏢 Warehousing Solutions in Kenya, Tanzania & Uganda</span>
+                <span style="margin-right: 50px; font-size: 13px;">💰 Cash on Delivery Available</span>
+                <span style="margin-right: 50px; font-size: 13px;">📦 eCommerce Packaging & Fulfillment Specialists</span>
+                <span style="margin-right: 50px; font-size: 13px;">🚚 Third-Party Logistics (3PL) Services</span>
+                
+                <!-- Duplicate content to ensure continuous flow -->
+                <span style="margin-right: 50px; font-size: 13px;">📦 Motorspeed eCommerce Fulfillment - East Africa's Premier 3PL Provider</span>
+                <span style="margin-right: 50px; font-size: 13px;">🏢 Warehousing Solutions in Kenya, Tanzania & Uganda</span>
+                <span style="margin-right: 50px; font-size: 13px;">💰 Cash on Delivery Available</span>
+                <span style="margin-right: 50px; font-size: 13px;">📦 eCommerce Packaging & Fulfillment Specialists</span>
+                <span style="margin-right: 50px; font-size: 13px;">🚚 Third-Party Logistics (3PL) Services</span>
             </div>
         </div>
     </div>
-    <!-- End Topbar -->
+
+    <style>
+        @keyframes ticker-scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
 
     <!-- Start Main Header Area -->
     <div class="cs_main_header">
@@ -144,6 +125,12 @@
                                                     Cash on Delivery
                                                 </a>
                                             </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('3pl/kenya') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    3PL Services
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
 
@@ -202,6 +189,12 @@
                                                     Cash on Delivery
                                                 </a>
                                             </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('3pl/tanzania') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    3PL Services
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
 
@@ -258,6 +251,12 @@
                                                 <a href="{{ url('cashondelivery/uganda') }}"
                                                     style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
                                                     Cash on Delivery
+                                                </a>
+                                            </li>
+                                            <li style="padding: 0; margin: 0;">
+                                                <a href="{{ url('3pl/uganda') }}"
+                                                    style="display: block; padding: 10px 20px; color: #444; text-decoration: none; font-size: 14px; transition: background-color 0.2s ease; white-space: nowrap;">
+                                                    3PL Services
                                                 </a>
                                             </li>
                                         </ul>
@@ -370,6 +369,11 @@
                                     .cs_country_dropdown>a span,
                                     .cs_sub_menu li a {
                                         color: #444 !important;
+                                    }
+                                    
+                                    /* Adjust ticker for mobile */
+                                    .ticker span {
+                                        font-size: 12px !important;
                                     }
                                 }
                             </style>
@@ -544,8 +548,9 @@
                 <!-- Start Main Header Right Area -->
                 <div class="cs_main_header_right">
                     <div class="cs-header-additional-item">
-                        <a href="{{ url('/Quoterequest') }}"><span class="cs_accent_color">+</span> Request a Free
-                            Quote</a>
+                        <a href="{{ url('/Quoterequest') }}" style="background-color: #003B3B; color: white; padding: 8px 15px; border-radius: 4px; display: inline-block;">
+                            <span style="color: white;">+</span> Request a Free Quote
+                        </a>
                     </div>
                     <div class="cs_toolbox">
                         <span class="cs_icon_btn">
@@ -564,14 +569,14 @@
     </div>
     <!-- End Main Header Area -->
 
-    <!-- Header Email Phone -->
+    <!-- Header Email Phone - Keeping Original Structure -->
     <div class="cs-header-emai-phone">
         <div class="cs-topbar-email">
             <div class="cs-email">
-                <a href="#">info@motorspeedcourier.com</a>
+                <a href="mailto:info@motorspeedcourier.com">info@motorspeedcourier.com</a>
             </div>
         </div>
-        <a href="#" class="cs-header-phone">
+        <a href="tel:+254711222666" class="cs-header-phone">
             <div class="cs-header-phone-content">
                 <div class="cs-header-phone-in">
                     <div class="cs-header-phone-icon">
@@ -609,7 +614,7 @@
 
 
         <div class="cs-sidebar-middle-area">
-            <p>Reliable Logistics Solutions Across Kenya | Same-Day & Next-Day Delivery Available</p>
+            <p>Motorspeed eCommerce Fulfillment - East Africa's Premier 3PL Provider</p>
             <div class="cs-sidebar-emai-phone">
                 <a href="#" class="cs-text-style-h6">+254 711 222666</a>
                 <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-
-
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
@@ -12,24 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>Privacy Policy | Motor Speed Courier Kenya - Delivery & Logistics Questions Answered</title>
+    <title>MotorSpeed Fulfillment East Africa |  Privacy Policy</title>
     <meta name="description"
-        content="Find answers to common questions about our logistics services, delivery times, pricing, and coverage across Kenya's 47 counties. Your shipping questions answered.">
-    <meta name="keywords"
-        content="logistics Privacy Policy kenya, courier service questions, delivery Privacy Policy, shipping help kenya, motor speed courier support, logistics information, delivery service guide, shipping questions kenya">
+        content="Find answers to common questions about our logistics services, delivery times, pricing, and coverage across East Africa (Kenya, Uganda, Tanzania). Your shipping questions answered.">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Frequently Asked Questions | Motor Speed Courier Kenya">
+    <meta property="og:title" content="Frequently Asked Questions | Motorspeed Fulfillment">
     <meta property="og:description"
-        content="Get answers about our nationwide delivery services, shipping processes, and logistics solutions. Supporting businesses across Kenya since 2018.">
+        content="Get answers about our delivery services, shipping processes, and logistics solutions across East Africa. Supporting businesses since 2018.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com/Privacy Policy">
-    <meta property="og:site_name" content="Motor Speed Courier">
+    <meta property="og:url" content="http://motorspeedfulfillment.com/Privacy Policy">
+    <meta property="og:site_name" content="Motorspeed Fulfillment">
 
     <!-- Additional SEO Tags -->
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com/Privacy Policy">
+    <meta name="author" content="Motorspeed Fulfillment">
+    <link rel="canonical" href="http://motorspeedfulfillment.com/Privacy Policy">
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/img/favicon log.png">
@@ -39,6 +35,117 @@
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Custom styles for the redesigned Get In Touch section */
+        .cs-contact-page-content {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .cs-contact-in {
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .cs-contact-in h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+        .cs-contact-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .cs-logi-office-wrap {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .cs-logi-cor-office {
+            flex: 1;
+        }
+        .cs-footer-widget-title h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+        .cs-max-width-200 {
+            font-size: 15px;
+            color: #666;
+        }
+        .cs-logi-emai-phone a {
+            display: block;
+            font-size: 15px;
+            color: #D40511;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+        .cs-logi-emai-phone a:hover {
+            color: #a0040d;
+        }
+        .cs-border-v-line {
+            display: none;
+        }
+        .cs-contact-cta-wrap {
+            padding: 40px;
+            background: linear-gradient(135deg, #D40511 0%, #a0040d 100%);
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .cs-contact-cta-wrap h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .cs-contact-cta-wrap p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+        .cs-contact-cta-wrap .cs-primary-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 30px;
+            background: #fff;
+            color: #D40511;
+            font-weight: 600;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .cs-contact-cta-wrap .cs-primary-btn:hover {
+            background: #f1f1f1;
+            color: #a0040d;
+        }
+        .cs-primary-btn i {
+            margin-left: 10px;
+        }
+        @media (max-width: 991px) {
+            .cs-contact-in {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            .cs-logi-office-wrap {
+                flex-direction: column;
+            }
+            .cs-contact-cta-wrap,
+            .cs-contact-in {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -48,7 +155,7 @@
         <div id="cs-logi-preloader" class="cs-logi-preloader">
             <div class="reveal-img-wrap">
                 <div class="preloader-img-inner">
-                    <img src="assets/img/logi-preloader-logo.png" alt="LogiHub">
+                    <img src="assets/img/logi-preloader-logo.png" alt="Motorspeed Fulfillment Logo">
                 </div>
             </div>
         </div>
@@ -88,12 +195,12 @@
                                 <span>Privacy Policy</span>
                             </div>
                             <div class="cs-page-title">
-                                <h2 class="cs_white_color">Privacy Policy</h2>
+                                <h1 class="cs_white_color">East Africa's Trusted Fulfillment Service</h1>
                             </div>
                         </div>
                     </div>
                     <div class="breadcrumb">
-                        <ul class="cs_mp0">
+                        <ul class=" kudus_mp0">
                             <li>
                                 <a href="/" class="cs-text_b_line"><span>Home</span></a>
                             </li>
@@ -130,12 +237,11 @@
                             <div class="cs_accordian">
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Welcome to MOTORSPEED COURIER AND
-                                            FULFILMENT</h6>
+                                        <h2 class="cs_accordian_title cs_m0">Trusted Logistics & Fulfillment Services in East Africa - MOTORSPEED FULFILLMENT</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Welcome to MOTORSPEED COURIER AND FULFILMENT (hereinafter referred to as
+                                        <p>Welcome to MOTORSPEED FULFILLMENT (hereinafter referred to as
                                             "we," "us," "our," or the "Company"), a trading name of MOTORSPEED LOGISTICS
                                             AND FULFILMENT CENTRE LIMITED, a company registered under the laws of Kenya.
                                             This Privacy Policy ("Policy") explains how we collect, use, disclose, and
@@ -146,7 +252,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">1. INFORMATION WE COLLECT</h6>
+                                        <h2 class="cs_accordian_title cs_m0">1. Customer Data Protection & Information Collection Policy</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -167,7 +273,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">2. HOW WE USE YOUR INFORMATION</h6>
+                                        <h2 class="cs_accordian_title cs_m0">2. Secure Shipping Data Usage & Customer Privacy Protection</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -185,7 +291,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">3. HOW WE SHARE YOUR INFORMATION</h6>
+                                        <h2 class="cs_accordian_title cs_m0">3. Logistics Data Sharing & Third-Party Delivery Partners</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -203,7 +309,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">4. DATA SECURITY</h6>
+                                        <h2 class="cs_accordian_title cs_m0">4. Fulfillment Service Security Measures & Data Protection</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -217,7 +323,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">5. DATA RETENTION</h6>
+                                        <h2 class="cs_accordian_title cs_m0">5. Shipping Information Storage & Retention Policy</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -230,7 +336,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">6. YOUR RIGHTS</h6>
+                                        <h2 class="cs_accordian_title cs_m0">6. Customer Rights for East Africa Delivery Services</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -251,7 +357,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">7. COOKIES AND TRACKING TECHNOLOGIES</h6>
+                                        <h2 class="cs_accordian_title cs_m0">7. Website Tracking & Logistics Service Cookies Policy</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -263,7 +369,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">8. THIRD-PARTY LINKS</h6>
+                                        <h2 class="cs_accordian_title cs_m0">8. External Shipping Partners & Third-Party Websites</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -276,7 +382,7 @@
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">9. CHANGES TO THIS POLICY</h6>
+                                        <h2 class="cs_accordian_title cs_m0">9. East Africa Fulfillment Service Policy Updates & Changes</h2>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
@@ -294,8 +400,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- End Privacy Policy Content Section -->
 
     <div class="cs-section-height"></div>
@@ -304,55 +408,47 @@
     <!-- Start Get In Touch Content -->
     <section>
         <div class="cs-contact-page-content">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row cs_center">
                     <div class="col-xl-5">
                         <div class="cs-contact-in">
-                            <h2>Still Have a Question Please ask?</h2>
-                            <p class="cs-contact-text"> {{ config('app.name') }}
-                                serve industries like
-                                e-commerce, retail, and manufacturing, ensuring seamless supply chain management. Reach
-                                out through our <a href="/contact">contact page</a> or customer support to discuss
-                                customized logistics solutions tailored to your needs.</p>
+                            <h3>Need Help with East Africa Delivery Services?</h3>
+                            <p class="cs-contact-text">Motorspeed Fulfillment serves industries like e-commerce, retail, and manufacturing across Kenya, Uganda, and Tanzania, ensuring seamless supply chain management. Reach out to discuss customized logistics solutions tailored to your needs.</p>
                             <div class="cs-logi-office-wrap">
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
-                                        <h6>Corporate Office</h6>
+                                        <h4>Nairobi Corporate Office</h4>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        Nairobi,Kenya
+                                        Nairobi, Kenya
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+254 798 984929</a>
-                                        <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
+                                        <a href="tel:+25471122666" class="cs-text-style-h6">+254 711 22 666</a>
+                                        <a href="mailto:info@motorspeedfulfillment.com" class="cs-text-style-h6">info@motorspeedfulfillment.com</a>
                                     </div>
                                 </div>
-                                <div class="cs-border-v-line"></div>
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
-                                        <h6>East Africa</h6>
+                                        <h4>Sales Team</h4>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        Nairobi,Kenya
+                                        East Africa
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+254 706 459198</a>
-                                        <a href="#" class="cs-text-style-h6">nyamsawa@gmail.com</a>
+                                        <a href="tel:+254711222666" class="cs-text-style-h6">+254 711 222 666</a>
+                                        <a href="mailto:sales@motorspeedfulfillment.com" class="cs-text-style-h6">sales@motorspeedfulfillment.com</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-7">
-                        <div>
-                            <div class="cs-form-cp-in cs-form-light text-center" style="color: white;">
-                                <a href="/contact" class="cs-primary-btn" style="color: white;">Contact Us<i
-                                        class="flaticon-right-arrow"></i></a>
-                            </div>
+                        <div class="cs-contact-cta-wrap">
+                            <h3>Contact Us</h3>
+                            <p>Our team is ready to assist with your logistics needs across Kenya, Uganda, and Tanzania. Visit our contact page to get in touch and explore tailored solutions for your business.</p>
+                            <a href="/contact" class="cs-primary-btn">Go to Contact Page<i class="flaticon-right-arrow"></i></a>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
     <!-- Essential Meta Tags -->
     <meta charset="utf-8">
@@ -12,27 +8,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>FAQ | Motor Speed Courier Kenya - Delivery & Logistics Questions Answered</title>
+    <title>FAQ: Fulfillment Services, Logistics & Courier in Kenya, Uganda, Tanzania | Motorspeed Logistics</title>
     <meta name="description"
-        content="Find answers to common questions about our logistics services, delivery times, pricing, and coverage across Kenya's 47 counties. Your shipping questions answered.">
+        content="Answers to questions about Motorspeed Logistics' fulfillment, warehousing, courier, medical courier, reverse logistics, cash on delivery, and 3PL services across Kenya, Uganda, and Tanzania.">
     <meta name="keywords"
-        content="logistics faq kenya, courier service questions, delivery faq, shipping help kenya, motor speed courier support, logistics information, delivery service guide, shipping questions kenya">
+        content="fulfillment services FAQ East Africa, logistics Kenya, courier service Uganda, medical courier Tanzania, reverse logistics Kenya, cash on delivery FAQ, 3PL questions, shipping help Nairobi, Motorspeed Logistics support, delivery service guide">
+
+    <!-- Geo Location Tags -->
+    <meta name="geo.region" content="KE, UG, TZ">
+    <meta name="geo.placename" content="Nairobi, Kampala, Dar es Salaam">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Frequently Asked Questions | Motor Speed Courier Kenya">
+    <meta property="og:title"
+        content="FAQ: Fulfillment, Logistics & Courier Services in East Africa | Motorspeed Logistics">
     <meta property="og:description"
-        content="Get answers about our nationwide delivery services, shipping processes, and logistics solutions. Supporting businesses across Kenya since 2018.">
+        content="Get answers about our fulfillment, warehousing, courier, and logistics services across Kenya, Uganda, and Tanzania. Trusted solutions since 2018.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://motorspeedcourier.com/faq">
-    <meta property="og:site_name" content="Motor Speed Courier">
+    <meta property="og:url" content="https://www.motorspeedcourier.com/faq">
+    <meta property="og:site_name" content="Motorspeed Logistics">
+    <meta property="og:image" content="https://www.motorspeedcourier.com/assets/img/faq-hero.jpg">
+    <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="http://motorspeedcourier.com/faq">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="Motorspeed Logistics">
+    <link rel="canonical" href="https://www.motorspeedcourier.com/faq">
+
+    <!-- Schema.org Markup for FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are Motorspeed Logistics' fulfillment services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Motorspeed Logistics is a logistics and order fulfillment company providing seamless, technology-driven solutions across Kenya, Uganda, and Tanzania. Learn more at https://motorspeedcourier.com/orderfulfilment/kenya."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does Motorspeed Logistics operate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide comprehensive logistics services across Kenya, Uganda, and Tanzania, covering major cities like Nairobi, Kampala, and Dar es Salaam."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I track my shipment with Motorspeed Logistics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track your shipment in real-time using our online tracking tool at https://www.motorspeedcourier.com/tracking. Enter your tracking number for instant updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Motorspeed Logistics offer same-day courier services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide same-day and next-day courier services across Kenya, Uganda, and Tanzania, subject to availability. Visit https://motorspeedcourier.com/courieranddeliveryservices/kenya."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does cash on delivery work with Motorspeed Logistics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cash on Delivery allows customers to pay upon delivery. We collect payments and remit them to you after deducting fees. Learn more at https://motorspeedcourier.com/cashondelivery/kenya."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicon -->
-    <link rel="icon" href="/assets/img/favicon log.png">
+    <link rel="icon" href="/assets/img/favicon-log.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -42,13 +97,12 @@
 </head>
 
 <body>
-
     <!-- Start Preloader -->
     <div id="logi-preloader">
         <div id="cs-logi-preloader" class="cs-logi-preloader">
             <div class="reveal-img-wrap">
                 <div class="preloader-img-inner">
-                    <img src="assets/img/logi-preloader-logo.png" alt="LogiHub">
+                    <img src="assets/img/logi-preloader-logo.png" alt="Motorspeed Logistics">
                 </div>
             </div>
         </div>
@@ -88,7 +142,7 @@
                                 <span>FAQ</span>
                             </div>
                             <div class="cs-page-title">
-                                <h2 class="cs_white_color">FAQ</h2>
+                                <h2 class="cs_white_color">FAQ: Fulfillment Services & Logistics in East Africa</h2>
                             </div>
                         </div>
                     </div>
@@ -119,18 +173,12 @@
                         <div class="cs-left-navigation-wrap">
                             <div class="cs-left-nav-in">
                                 <ul>
-                                    <li id="tab1-tab" class="cs-text_b_line tab active"><a href="#"><span>About
-                                                {{ config('app.name') }}</span></a></li>
-                                    <li id="tab2-tab" class="cs-text_b_line tab"><a href="#"><span>Our
-                                                History</span></a></li>
-                                    <li id="tab3-tab" class="cs-text_b_line tab"><a href="#"><span>Industries We
-                                                Serve</span></a></li>
-                                    <li id="tab4-tab" class="cs-text_b_line tab"><a href="#"><span>Timely
-                                                Deliveries</span></a></li>
-                                    <li id="tab5-tab" class="cs-text_b_line tab"><a
-                                            href="#"><span>Sustainability</span></a></li>
-                                    <li id="tab6-tab" class="cs-text_b_line tab"><a
-                                            href="#"><span>Partnerships</span></a></li>
+                                    <li id="tab1-tab" class="cs-text_b_line tab active"><a href="#"><span>About Motorspeed Logistics</span></a></li>
+                                    <li id="tab2-tab" class="cs-text_b_line tab"><a href="#"><span>Our History</span></a></li>
+                                    <li id="tab3-tab" class="cs-text_b_line tab"><a href="#"><span>Industries We Serve</span></a></li>
+                                    <li id="tab4-tab" class="cs-text_b_line tab"><a href="#"><span>Timely Deliveries</span></a></li>
+                                    <li id="tab5-tab" class="cs-text_b_line tab"><a href="#"><span>Sustainability</span></a></li>
+                                    <li id="tab6-tab" class="cs-text_b_line tab"><a href="#"><span>Partnerships</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -140,94 +188,65 @@
                             <div class="cs_accordian">
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What is {{ config('app.name') }}?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">What is Motorspeed Logistics?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>{{ config('app.name') }} is a logistics and order fulfillment company
-                                            dedicated to providing seamless, technology-driven logistics solutions
-                                            across Kenya.</p>
+                                        <p>Motorspeed Logistics is a logistics and order <a href="https://motorspeedcourier.com/orderfulfilment/kenya">fulfillment</a> company providing seamless, technology-driven solutions, including <a href="https://motorspeedcourier.com/warehousingandstorage/kenya">warehousing</a>, <a href="https://motorspeedcourier.com/courieranddeliveryservices/kenya">courier</a>, <a href="https://motorspeedcourier.com/medicalcourier/kenya">medical courier</a>, <a href="https://motorspeedcourier.com/reverselogistics/kenya">reverse logistics</a>, <a href="https://motorspeedcourier.com/cashondelivery/kenya">cash on delivery</a>, and <a href="https://www.motorspeedcourier.com/3pl/kenya">3PL</a> across Kenya, Uganda, and Tanzania.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">When was {{ config('app.name') }} founded?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">When was Motorspeed Logistics founded?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>{{ config('app.name') }} was established in 2018 to bridge the gap between
-                                            businesses and their customers through innovative logistics solutions.</p>
+                                        <p>Motorspeed Logistics was established in 2018 to bridge the gap between businesses and their customers through innovative logistics solutions across East Africa.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What industries does
-                                            {{ config('app.name') }} serve?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">What industries does Motorspeed Logistics serve?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We serve e-commerce, retailers, manufacturers, wholesalers, and SMEs,
-                                            providing customized logistics solutions to enhance efficiency and reduce
-                                            costs.</p>
+                                        <p>We serve e-commerce, retail, healthcare, manufacturing, and SMEs, providing customized logistics solutions to enhance efficiency and reduce costs.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How does {{ config('app.name') }} ensure
-                                            timely deliveries?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">How does Motorspeed Logistics ensure timely deliveries?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We leverage state-of-the-art tracking systems, real-time updates, and
-                                            optimized delivery routes to ensure timely and reliable order fulfillment.
-                                        </p>
+                                        <p>We leverage state-of-the-art tracking systems, real-time updates, and optimized delivery routes to ensure timely and reliable order <a href="https://motorspeedcourier.com/courieranddeliveryservices/kenya">courier services</a> across Kenya, Uganda, and Tanzania.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What sustainability initiatives does
-                                            {{ config('app.name') }} follow?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">What sustainability initiatives does Motorspeed Logistics follow?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We are committed to eco-friendly logistics practices, including fleet
-                                            optimization and sustainable supply chain solutions, to reduce our carbon
-                                            footprint.</p>
+                                        <p>We are committed to eco-friendly logistics practices, including fleet optimization and sustainable supply chain solutions, to reduce our carbon footprint in East Africa.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How can I partner with
-                                            {{ config('app.name') }}?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">How can I partner with Motorspeed Logistics?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Businesses can partner with us by reaching out through our contact page or
-                                            customer support to discuss customized logistics solutions.</p>
+                                        <p>Businesses can partner with us by reaching out through our <a href="/contact">contact page</a> or customer support to discuss customized <a href="https://www.motorspeedcourier.com/3pl/kenya">3PL</a> and logistics solutions.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How can I partner with
-                                            {{ config('app.name') }}?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">Where does Motorspeed Logistics operate?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Businesses can partner with us by reaching out through our contact page or
-                                            customer support to discuss customized logistics solutions.</p>
-                                    </div>
-                                </div>
-
-                                <div class="cs_accordian_item cs_color_1">
-                                    <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Where do you operate?</h6>
-                                        <i class="flaticon-down-arrow"></i>
-                                    </div>
-                                    <div class="cs_accordian_body">
-                                        <p>We provide nationwide coverage across all 47 counties in Kenya, as well as
-                                            international delivery services. Whether you’re in Nairobi, Mombasa, or any
-                                            other part of the country, we’ve got you covered.</p>
+                                        <p>We provide comprehensive logistics services across Kenya, Uganda, and Tanzania, covering major cities like Nairobi, Kampala, and Dar es Salaam, as well as nationwide coverage in Kenya’s 47 counties.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
@@ -236,90 +255,72 @@
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>You can track your shipment in real-time using our online tracking tool.
-                                            Simply enter your tracking number on our website, and you’ll get updates on
-                                            the status of your package.</p>
+                                        <p>You can track your shipment in real-time using our <a href="/tracking">online tracking tool</a>. Simply enter your tracking number on our website for instant updates.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Do you offer same-day delivery?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">Does Motorspeed Logistics offer same-day delivery?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Yes, we offer same-day and next-day delivery for packages within cities and
-                                            towns. Contact us to confirm availability in your area.</p>
+                                        <p>Yes, we offer same-day and next-day <a href="https://motorspeedcourier.com/courieranddeliveryservices/kenya">courier services</a> across Kenya, Uganda, and Tanzania. Contact us to confirm availability in your area.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What is Cash on Delivery (COD), and how
-                                            does it work?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">What is Cash on Delivery (COD), and how does it work?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Cash on Delivery (COD) allows your customers to pay for their orders upon
-                                            delivery. We collect the payment on your behalf and remit it to you after
-                                            deducting any applicable fees.</p>
+                                        <p><a href="https://motorspeedcourier.com/cashondelivery/kenya">Cash on Delivery</a> allows your customers to pay for their orders upon delivery. We collect the payment on your behalf and remit it to you after deducting any applicable fees.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What items are prohibited for delivery?
-                                        </h6>
+                                        <h6 class="cs_accordian_title cs_m0">What items are prohibited for delivery?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We do not handle prohibited goods such as illegal substances, hazardous
-                                            materials, perishable items without proper packaging, cash, or live animals.
-                                            For a full list, refer to our Terms of Service.</p>
+                                        <p>We do not handle prohibited goods such as illegal substances, hazardous materials, perishable items without proper packaging, cash, or live animals. For a full list, refer to our <a href="/terms">Terms of Service</a>.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Can you integrate with my e-commerce
-                                            platform?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">Can Motorspeed Logistics integrate with my e-commerce platform?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Yes, we offer API integration with popular platforms like Shopify,
-                                            WooCommerce, and Jumia. This allows for seamless order processing and
-                                            inventory management.</p>
+                                        <p>Yes, we offer API integration with popular platforms like Shopify, WooCommerce, and Jumia for seamless order processing and inventory management.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">How do you handle returns for e-commerce
-                                            businesses?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">How does Motorspeed Logistics handle returns for e-commerce businesses?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We provide hassle-free returns management, including product inspection,
-                                            repackaging, reshipping, and eco-friendly disposal. Learn more about our
-                                            Reverse Logistics & Returns Handling services.</p>
+                                        <p>We provide hassle-free <a href="https://motorspeedcourier.com/reverselogistics/kenya">reverse logistics</a>, including product inspection, repackaging, reshipping, and eco-friendly disposal for e-commerce businesses.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">Can you reship returned items?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">Can Motorspeed Logistics reship returned items?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>Yes, we offer repackaging and reshipping services for returned items that are
-                                            in good condition and can be resold.</p>
+                                        <p>Yes, we offer repackaging and reshipping services for returned items that are in good condition and can be resold.</p>
                                     </div>
                                 </div>
                                 <div class="cs_accordian_item cs_color_1">
                                     <div class="cs_accordian_header">
-                                        <h6 class="cs_accordian_title cs_m0">What payment methods do you accept?</h6>
+                                        <h6 class="cs_accordian_title cs_m0">What payment methods does Motorspeed Logistics accept?</h6>
                                         <i class="flaticon-down-arrow"></i>
                                     </div>
                                     <div class="cs_accordian_body">
-                                        <p>We accept various payment methods, including cash, credit/debit cards, mobile
-                                            money, and bank transfers.</p>
+                                        <p>We accept various payment methods, including cash, credit/debit cards, mobile money (e.g., M-Pesa), and bank transfers.</p>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -327,7 +328,6 @@
             </div>
         </div>
     </div>
-
     <!-- End Faq Content Section -->
 
     <div class="cs-section-height"></div>
@@ -340,36 +340,32 @@
                 <div class="row cs_center">
                     <div class="col-xl-5">
                         <div class="cs-contact-in">
-                            <h2>Still Have a Question Please ask?</h2>
-                            <p class="cs-contact-text"> {{ config('app.name') }}
-                                serve industries like
-                                e-commerce, retail, and manufacturing, ensuring seamless supply chain management. Reach
-                                out through our <a href="/contact">contact page</a> or customer support to discuss
-                                customized logistics solutions tailored to your needs.</p>
+                            <h2>Still Have a Question? Contact Motorspeed Logistics</h2>
+                            <p class="cs-contact-text">Motorspeed Logistics serves industries like e-commerce, retail, healthcare, and manufacturing with tailored <a href="https://motorspeedcourier.com/orderfulfilment/kenya">fulfillment</a>, <a href="https://motorspeedcourier.com/courieranddeliveryservices/kenya">courier</a>, and <a href="https://www.motorspeedcourier.com/3pl/kenya">3PL</a> solutions across Kenya, Uganda, and Tanzania. Reach out through our <a href="/contact">contact page</a> or customer support to discuss your logistics needs.</p>
                             <div class="cs-logi-office-wrap">
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
                                         <h6>Corporate Office</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        Nairobi,Kenya
+                                        Nairobi, Kenya
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+254 711 222666</a>
-                                        <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
+                                        <a href="tel:+254711222666" class="cs-text-style-h6">+254 711 222666</a>
+                                        <a href="mailto:info@motorspeedcourier.com" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                                     </div>
                                 </div>
                                 <div class="cs-border-v-line"></div>
                                 <div class="cs-logi-cor-office cs-default-office">
                                     <div class="cs-footer-widget-title">
-                                        <h6>East Africa</h6>
+                                        <h6>East Africa Operations</h6>
                                     </div>
                                     <p class="cs-max-width-200 cs-color-body">
-                                        Nairobi,Kenya
+                                        Nairobi, Kenya
                                     </p>
                                     <div class="cs-logi-emai-phone">
-                                        <a href="#" class="cs-text-style-h6">+254 711 222666</a>
-                                        <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
+                                        <a href="tel:+254711222666" class="cs-text-style-h6">+254 711 222666</a>
+                                        <a href="mailto:info@motorspeedcourier.com" class="cs-text-style-h6">info@motorspeedcourier.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -377,14 +373,11 @@
                     </div>
                     <div class="col-xl-7">
                         <div>
-                            <div class="cs-form-cp-in cs-form-light text-center" style="color: white;">
-                                <a href="/contact" class="cs-primary-btn" style="color: white;">Contact Us<i
-                                        class="flaticon-right-arrow"></i></a>
+                            <div class="cs-form-cp-in cs-form-light text-center">
+                                <a href="/contact" class="cs-primary-btn">Contact Us <i class="flaticon-right-arrow"></i></a>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

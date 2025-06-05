@@ -1,264 +1,262 @@
 <footer>
-    <div class="cs-logi-footer-container">
-        <div class="cs-logi-footer-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="cs-logi-cor-office cs-footer-widget">
-                            <div class="cs-footer-widget-title">
-                                <h6>Corporate Office</h6>
-                            </div>
-                            <p class="cs-max-width-200">
-                                Sikedi House, Old Mobasa Road, Nairobi
-                            </p>
-                            <div class="cs-logi-emai-phone">
-                                <a href="#" class="cs-text-style-h6"> +254 711 222 666</a>
-                                <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- <div class="col-lg-3 col-md-6">
-                        <div class="cs-logi-cor-office cs-footer-widget">
-                            <div class="cs-footer-widget-title">
-                                <h6>East Africa</h6>
-                            </div>
-                            <p class="cs-max-width-200">
-                                Sikedi House, Old Mobasa Road, Nairobi
-                            </p>
-                            <div class="cs-logi-emai-phone">
-                                <a href="#" class="cs-text-style-h6">+254 711 222 666</a>
-                                <a href="#" class="cs-text-style-h6">info@motorspeedcourier.com</a>
-                            </div>
-                        </div>
-                    </div> --}}
-                    <div class="col-lg-2 col-md-5">
-                        <div class="cs-footer-widget">
-                            <div class="cs-footer-widget-title">
-                                <h6>Useful Link</h6>
-                            </div>
-                            <div class="cs-logi-footer-useful-link">
-                                <ul>
-                                    <li><a href="{{ url('/about') }}" class="cs-text_b_line"><span>About Us</span></a>
-                                    </li>
-                                    <li><a href="{{ url('/contact') }}" class="cs-text_b_line"><span>Contact
-                                                Us</span></a></li>
-
-                                    <li> <a href="{{ url('/faq') }}" class="cs-text_b_line"><span>Faq</span></a>
-                                    </li>
-                                    <li><a href="{{ url('/order-tracking') }}" class="cs-text_b_line"><span>Track
-                                                Shipment</span></a></li>
-                                    <li> <a href="{{ url('/privacypolicy') }}" class="cs-text_b_line"><span>Privacy
-                                                Policy</span></a>
-                                    </li>
-                                    <li><a href="{{ url('/termsandconditions') }}" class="cs-text_b_line"><span>Terms
-                                                and Conditions</span></a></li>
-                                    <li><a href="{{ url('/blog') }}" class="cs-text_b_line"><span>Blog</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-7">
-                        <div class="cs-footer-widget">
-                            <div>
-                                <div class="cs-footer-widget-title">
-                                    <h6>Newsletter</h6>
-                                </div>
-                                <p>Delivering Excellence in Global Logistics.</p>
-                            </div>
-                            <div id="responseMessage" class="mt-2" style="margin-top: 10px;"></div>
-                            <form class="cs-logi-newsletter" id="subscribeForm"
-                                style="max-width: 500px; padding: 20px;">
-                                @csrf
-                                <input class="cs-newsletter-email" type="email" name="email"
-                                    placeholder="Enter Your Email Address" required
-                                    style="width: 70%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; margin-right: 10px;" />
-
-                                <button class="cs-newsletter-btn cs_center svg-left-to-right-animation-wrap"
-                                    type="submit" id="subscribeBtn"
-                                    style="width: 25%; padding: 12px; background: #000; color: white; border: none; border-radius: 4px; cursor: pointer;">
-                                    Subscribe
-                                    <span class="svg-left-to-right-animation">
-                                        <i class="flaticon-right-arrow"></i>
-                                        <i class="flaticon-right-arrow"></i>
-                                    </span>
-                                </button>
-
-                                <div id="loading" class="spinner" style="display: none; margin-top: 10px;"></div>
-
-
-                            </form>
-
-                            <style>
-                                /* Modern CSS Loader */
-                                .spinner {
-                                    margin: 10px auto;
-                                    width: 30px;
-                                    height: 30px;
-                                    border: 4px solid rgba(0, 0, 0, 0.1);
-                                    border-left-color: #3498db;
-                                    /* Loader color */
-                                    border-radius: 50%;
-                                    animation: spin 1s linear infinite;
-                                    display: inline-block;
-                                }
-
-                                @keyframes spin {
-                                    0% {
-                                        transform: rotate(0deg);
-                                    }
-
-                                    100% {
-                                        transform: rotate(360deg);
-                                    }
-                                }
-                            </style>
-
-                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                            <script>
-                                $(document).ready(function() {
-                                    $("#subscribeForm").on("submit", function(e) {
-                                        e.preventDefault();
-
-                                        $("#subscribeBtn").prop("disabled", true); // Disable button
-                                        $("#loading").show(); // Show spinner
-                                        $("#responseMessage").html('');
-
-                                        $.ajax({
-                                            url: "{{ route('subscribe') }}",
-                                            method: "POST",
-                                            data: $(this).serialize(),
-                                            success: function(response) {
-                                                $("#loading").hide();
-                                                $("#subscribeBtn").prop("disabled", false);
-                                                $("#responseMessage").html('<div class="text-success">' + response
-                                                    .message + '</div>');
-                                                $("#subscribeForm")[0].reset();
-                                            },
-                                            error: function(xhr) {
-                                                $("#loading").hide();
-                                                $("#subscribeBtn").prop("disabled", false);
-                                                let errors = xhr.responseJSON.errors;
-                                                let errorMessage = '<div class="text-danger">';
-                                                $.each(errors, function(key, value) {
-                                                    errorMessage += value[0] + '<br>';
-                                                });
-                                                errorMessage += '</div>';
-                                                $("#responseMessage").html(errorMessage);
-                                            }
-                                        });
-                                    });
-                                });
-                            </script>
-
-                            <div style="padding: 1.5rem; text-align: center;">
-                                <ul
-                                    style="list-style: none; padding: 0; margin: 0; display: flex; gap: 1.5rem; justify-content: center; align-items: center;">
-                                    <!-- LinkedIn -->
-                                    <li>
-                                        <a href="https://www.linkedin.com/company/motorspeedcourier" target="_blank"
-                                            rel="noopener noreferrer"
-                                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f8fafc; border-radius: 50%; color: #0077b5; transition: all 0.3s ease;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="currentColor">
-                                                <path
-                                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                    <!-- X (Twitter) -->
-                                    <li>
-                                        <a href="https://twitter.com/motorspeedcargo" target="_blank"
-                                            rel="noopener noreferrer"
-                                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f8fafc; border-radius: 50%; color: #000000; transition: all 0.3s ease;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="currentColor">
-                                                <path
-                                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                    <!-- Instagram -->
-                                    <li>
-                                        <a href="https://www.instagram.com/motorspeed_courier" target="_blank"
-                                            rel="noopener noreferrer"
-                                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f8fafc; border-radius: 50%; color: #e4405f; transition: all 0.3s ease;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="currentColor">
-                                                <path
-                                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                    <!-- Facebook -->
-                                    <li>
-                                        <a href="https://www.facebook.com/profile.php?id=61573438790178" target="_blank"
-                                            rel="noopener noreferrer"
-                                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f8fafc; border-radius: 50%; color: #1877f2; transition: all 0.3s ease;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="currentColor">
-                                                <path
-                                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                    <!-- TikTok -->
-                                    <li>
-                                        <a href="https://www.tiktok.com/@motorspeed_logistics" target="_blank"
-                                            rel="noopener noreferrer"
-                                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f8fafc; border-radius: 50%; color: #000000; transition: all 0.3s ease;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="currentColor">
-                                                <path
-                                                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0011.14-4.02v-6.95a8.16 8.16 0 004.65 1.49v-3.93a4.84 4.84 0 01-1.2 0z" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div style="background-color: #003B3B; color: white; position: relative; padding-top: 40px;">
+        <!-- Main footer content -->
         <div class="container">
-            <div class="cs-logi-copy-area">
-                <div class="cs-footer-copy-branding">
-                    <div class="cs-footer-copy-branding">
-                        <a href="/index.html">
-                            <img src="/assets/img/logo_white_text.png" alt="LogiHub"
-                                style="width: 250px; height: auto;" />
-                        </a>
-                        <span>Delivering Excellence in Global Logistics.</span>
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-bottom: 30px;">
+                <!-- Company Info Column -->
+                <div class="col-lg-3 col-md-6" style="padding: 0 15px; margin-bottom: 25px;">
+                    <h6 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; position: relative; padding-bottom: 10px; display: inline-block;">
+                        About Us
+                        <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 2px; background-color: #ff0000;"></span>
+                    </h6>
+                    <div style="margin-bottom: 15px;">
+                        <img src="/assets/img/logo_white_text.png" alt="Motorspeed Fulfillment" style="height: 40px; margin-bottom: 15px;" />
+                        <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px; line-height: 1.6; margin-bottom: 15px;">
+                            Delivering Excellence in Global Logistics across East Africa. Specializing in fulfillment, warehousing, and courier services.
+                        </p>
                     </div>
-
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://www.linkedin.com/company/motorspeedcourier" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; color: white; transition: all 0.3s ease;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://twitter.com/motorspeedcargo" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; color: white; transition: all 0.3s ease;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/motorspeed_courier" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; color: white; transition: all 0.3s ease;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61573438790178" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; color: white; transition: all 0.3s ease;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="cs-footer-copy-text">
-                    <p>©
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>
-                        <a href="/">{{ config('app.name') }}</a>. All Rights Reserved. |
-                        {{-- Designed and Developed by --}}
-                        {{-- <a href="https://www.jrmhd.tech/" target="_blank" class="text-decoration-none">
-                            {{ config('app.name') }}
-                        </a> --}}
+
+                <!-- Contact Information Column -->
+                <div class="col-lg-3 col-md-6" style="padding: 0 15px; margin-bottom: 25px;">
+                    <h6 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; position: relative; padding-bottom: 10px; display: inline-block;">
+                        Contact Us
+                        <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 2px; background-color: #ff0000;"></span>
+                    </h6>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li style="display: flex; align-items: flex-start; font-size: 14px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; flex-shrink: 0; margin-top: 3px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Sikedi House, Old Mombasa Road, Nairobi</span>
+                        </li>
+                        <li style="display: flex; align-items: center; font-size: 14px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <a href="tel:+254711222666" style="color: white; text-decoration: none; transition: color 0.3s ease;">+254 711 222 666</a>
+                        </li>
+                        <li style="display: flex; align-items: center; font-size: 14px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; flex-shrink: 0;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <a href="mailto:info@motorspeedcourier.com" style="color: white; text-decoration: none; transition: color 0.3s ease;">info@motorspeedcourier.com</a>
+                        </li>
+                    </ul>
+                    
+                    <div style="margin-top: 15px;">
+                        <h6 style="font-size: 14px; font-weight: 600; margin-bottom: 8px;">We Accept</h6>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; max-width: 220px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="VISA" style="height: 24px; background: white; border-radius: 3px; padding: 3px;" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="MASTERCARD" style="height: 24px; background: white; border-radius: 3px; padding: 3px;" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/M-PESA_LOGO-01.svg" alt="M-PESA" style="height: 24px; background: white; border-radius: 3px; padding: 3px;" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Airtel_Africa_logo.svg" alt="AIRTEL MONEY" style="height: 24px; background: white; border-radius: 3px; padding: 3px;" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/New-mtn-logo.jpg" alt="MTN MOBILE MONEY" style="height: 24px; background: white; border-radius: 3px; padding: 3px;" />
+                            <div style="background: white; border-radius: 3px; padding: 3px 6px; font-size: 10px; font-weight: bold; color: #003B3B;">BANK TRANSFER</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-6" style="padding: 0 15px; margin-bottom: 25px;">
+                    <h6 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; position: relative; padding-bottom: 10px; display: inline-block;">
+                        Quick Links
+                        <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 2px; background-color: #ff0000;"></span>
+                    </h6>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 8px;">
+                        <li>
+                            <a href="{{ url('/about') }}" style="color: white; text-decoration: none; display: flex; align-items: center; transition: color 0.3s ease; font-size: 14px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/contact') }}" style="color: white; text-decoration: none; display: flex; align-items: center; transition: color 0.3s ease; font-size: 14px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/services') }}" style="color: white; text-decoration: none; display: flex; align-items: center; transition: color 0.3s ease; font-size: 14px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                <span>Our Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/order-tracking') }}" style="color: white; text-decoration: none; display: flex; align-items: center; transition: color 0.3s ease; font-size: 14px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                <span>Track Shipment</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/faq') }}" style="color: white; text-decoration: none; display: flex; align-items: center; transition: color 0.3s ease; font-size: 14px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                <span>FAQ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/blog') }}" style="color: white; text-decoration: none; display: flex; align-items: center; transition: color 0.3s ease; font-size: 14px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/privacypolicy') }}" style="color: white; text-decoration: none; display: flex; align-items: center; transition: color 0.3s ease; font-size: 14px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-lg-4 col-md-6" style="padding: 0 15px; margin-bottom: 25px;">
+                    <h6 style="font-size: 16px; font-weight: 600; margin-bottom: 20px; position: relative; padding-bottom: 10px; display: inline-block;">
+                        Newsletter
+                        <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 2px; background-color: #ff0000;"></span>
+                    </h6>
+                    <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px; line-height: 1.6; margin-bottom: 15px;">
+                        Stay updated with our latest news and offers by subscribing to our newsletter.
                     </p>
+                    
+                    <div id="responseMessage" style="margin-bottom: 10px; font-size: 13px; min-height: 20px;"></div>
+                    
+                    <form id="subscribeForm">
+                        @csrf
+                        <div style="display: flex; gap: 8px; margin-bottom: 15px;">
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Your Email Address" 
+                                required 
+                                style="flex: 1; padding: 8px 12px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 4px; color: white; font-size: 14px; outline: none;" 
+                            />
+                            <button 
+                                type="submit" 
+                                id="subscribeBtn" 
+                                style="background: #ff0000; color: white; border: none; border-radius: 4px; padding: 0 15px; font-weight: 500; cursor: pointer; white-space: nowrap; font-size: 14px;"
+                            >
+                                Subscribe
+                            </button>
+                        </div>
+                        <div id="loading" style="display: none; margin: 0 auto; width: 20px; height: 20px; border: 2px solid rgba(255, 255, 255, 0.1); border-left-color: #ff0000; border-radius: 50%; animation: msf-spin 1s linear infinite;"></div>
+                    </form>
+                    
+                    <div style="margin-top: 15px;">
+                        <h6 style="font-size: 14px; font-weight: 600; margin-bottom: 8px;">Our Service Areas</h6>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(255, 255, 255, 0.1); font-size: 12px; padding: 4px 10px; border-radius: 20px;">Kenya</span>
+                            <span style="background: rgba(255, 255, 255, 0.1); font-size: 12px; padding: 4px 10px; border-radius: 20px;">Uganda</span>
+                            <span style="background: rgba(255, 255, 255, 0.1); font-size: 12px; padding: 4px 10px; border-radius: 20px;">Tanzania</span>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
-        <div class="cs-logi-footer-border">
-            <svg width="1920" height="186" viewBox="0 0 1920 186" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2"
-                    d="M1919.95 15.0784C1789.84 47.7321 1593.01 73.75 1313.98 21.8595C940.467 -47.6007 736.04 72.8343 688.434 185.993M0.135498 174.227C71.8468 137.994 149.172 106.307 231.119 82.6053C550.484 -9.76492 1181.35 52.3115 1168.87 185.973"
-                    stroke="white" />
-            </svg>
+
+        <!-- Bottom bar with copyright -->
+        <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 15px 0;">
+            <div class="container">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin: 0;">
+                        © <span id="msf-current-year"></span> Motorspeed Logistics & Fulfillment. All Rights Reserved.
+                    </p>
+                    <div style="color: rgba(255, 255, 255, 0.7); font-size: 13px;">
+                        <span>Delivering Excellence in Global Logistics</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Scoped styles and script for the footer only -->
+    <style>
+        @keyframes msf-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Hover effects */
+        footer a:hover {
+            color: #ff6666 !important;
+        }
+        
+        footer button:hover {
+            background-color: #cc0000 !important;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            footer .container > div {
+                flex-direction: column;
+            }
+            
+            footer .container > div > div:last-child {
+                margin-top: 10px;
+                text-align: left;
+            }
+        }
+    </style>
+
+    <script>
+        // Set current year
+        document.getElementById('msf-current-year').textContent = new Date().getFullYear();
+        
+        // Form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('subscribeForm');
+            if (!form) return;
+            
+            const btn = document.getElementById('subscribeBtn');
+            const loading = document.getElementById('loading');
+            const responseMessage = document.getElementById('responseMessage');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                btn.disabled = true;
+                loading.style.display = 'block';
+                responseMessage.innerHTML = '';
+                
+                const formData = new FormData(form);
+                
+                fetch('{{ route("subscribe") }}', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    loading.style.display = 'none';
+                    btn.disabled = false;
+                    
+                    if(data.message) {
+                        responseMessage.innerHTML = '<div style="color: #4ade80;">' + data.message + '</div>';
+                        form.reset();
+                    } else if(data.errors) {
+                        let errorMessage = '<div style="color: #f87171;">';
+                        Object.values(data.errors).forEach(error => {
+                            errorMessage += error[0] + '<br>';
+                        });
+                        errorMessage += '</div>';
+                        responseMessage.innerHTML = errorMessage;
+                    }
+                })
+                .catch(error => {
+                    loading.style.display = 'none';
+                    btn.disabled = false;
+                    responseMessage.innerHTML = '<div style="color: #f87171;">An error occurred. Please try again.</div>';
+                });
+            });
+        });
+    </script>
 </footer>

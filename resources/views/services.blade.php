@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
     <!-- Essential Meta Tags -->
     <meta charset="utf-8">
@@ -12,51 +8,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title>Best Logistics & Delivery Services in Nairobi | Fast Courier Solutions Across Kenya</title>
+    <title>Premier Fulfillment & Logistics Services in East Africa | Motorspeed Logistics</title>
     <meta name="description"
-        content="Top-rated e-commerce delivery, same-day shipping & affordable courier services in Nairobi & all 47 Kenyan counties. Fast, reliable logistics solutions for businesses of all sizes.">
+        content="Motorspeed Logistics offers top-tier fulfillment, warehousing, courier, medical courier, reverse logistics, cash on delivery, and 3PL services across Kenya, Uganda, and Tanzania. Fast, reliable delivery with real-time tracking.">
     <meta name="keywords"
-        content="best logistics services Nairobi, fastest courier Kenya, e-commerce delivery Nairobi, same day delivery Kenya, affordable shipping services, business logistics Nairobi, express courier Kenya, retail delivery solutions, last-mile delivery, SME shipping partner, warehousing Kenya, supply chain solutions">
+        content="fulfillment services East Africa, courier Kenya, warehousing Uganda, medical courier Tanzania, reverse logistics Kenya, cash on delivery Kenya, 3PL East Africa, same day delivery Nairobi, overnight shipping East Africa, package tracking, Motorspeed Logistics, express delivery, reliable logistics, freight forwarding East Africa, business shipping solutions">
 
     <!-- Geo Location Tags -->
-    <meta name="geo.region" content="KE">
-    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.region" content="KE, UG, TZ">
+    <meta name="geo.placename" content="Nairobi, Kampala, Dar es Salaam">
     <meta name="geo.position" content="-1.2921;36.8219">
     <meta name="ICBM" content="-1.2921, 36.8219">
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title"
-        content="Premium Logistics & Fast Delivery Services in Nairobi & Kenya | Motor Speed Courier">
+        content="Top Fulfillment & Logistics Services in East Africa | Motorspeed Logistics">
     <meta property="og:description"
-        content="Nairobi's most trusted courier service offering same-day delivery, nationwide shipping & complete logistics solutions for businesses across Kenya's 47 counties.">
+        content="Trusted provider of fulfillment, warehousing, courier, medical courier, reverse logistics, cash on delivery, and 3PL services across Kenya, Uganda, and Tanzania with fast delivery and real-time tracking.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://motorspeedcourier.com/services">
-    <meta property="og:site_name" content="Motor Speed Courier">
-    <meta property="og:image" content="https://motorspeedcourier.com/assets/img/services-hero.jpg">
+    <meta property="og:url" content="https://www.motorspeedcourier.com/services">
+    <meta property="og:site_name" content="Motorspeed Logistics">
+    <meta property="og:image" content="https://www.motorspeedcourier.com/assets/img/services-hero.jpg">
     <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <meta name="author" content="Motor Speed Courier">
-    <link rel="canonical" href="https://motorspeedcourier.com/services">
+    <meta name="author" content="Motorspeed Logistics">
+    <link rel="canonical" href="https://www.motorspeedcourier.com/services">
 
     <!-- Schema.org Markup for Services -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "Motor Speed Courier Services",
+      "name": "Motorspeed Logistics Services",
       "provider": {
         "@type": "Organization",
-        "name": "Motor Speed Courier",
-        "url": "https://motorspeedcourier.com"
+        "name": "Motorspeed Logistics",
+        "url": "https://www.motorspeedcourier.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Street Address",
+          "addressLocality": "Nairobi",
+          "addressRegion": "Nairobi",
+          "postalCode": "Your Postal Code",
+          "addressCountry": "KE"
+        },
+        "telephone": "+254XXXXXXXXX"
       },
-      "serviceType": ["Logistics Services", "Courier Services", "E-commerce Delivery"],
-      "areaServed": {
-        "@type": "Country",
-        "name": "Kenya"
-      },
-      "description": "Fast, reliable logistics and delivery services across Nairobi and all 47 counties in Kenya",
+      "serviceType": ["Fulfillment Services", "Warehousing", "Courier Services", "Medical Courier", "Reverse Logistics", "Cash on Delivery", "3PL"],
+      "areaServed": [
+        {"@type": "Country", "name": "Kenya"},
+        {"@type": "Country", "name": "Uganda"},
+        {"@type": "Country", "name": "Tanzania"}
+      ],
+      "description": "Premier fulfillment, warehousing, courier, medical courier, reverse logistics, cash on delivery, and 3PL services across Kenya, Uganda, and Tanzania with fast delivery and real-time tracking.",
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock"
@@ -64,9 +70,8 @@
     }
     </script>
 
-     <!-- Favicon -->
-    <link rel="icon" href="/assets/img/favicon log.png">
-
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/favicon-log.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -77,13 +82,12 @@
 </head>
 
 <body>
-
     <!-- Start Preloader -->
     <div id="logi-preloader">
         <div id="cs-logi-preloader" class="cs-logi-preloader">
             <div class="reveal-img-wrap">
                 <div class="preloader-img-inner">
-                    <img src="assets/img/logi-preloader-logo.png" alt="LogiHub">
+                    <img src="assets/img/logi-preloader-logo.png" alt="Motorspeed Logistics">
                 </div>
             </div>
         </div>
@@ -92,7 +96,7 @@
 
     <!-- Start Header Section -->
     @include('header')
-    <!-- End Sidebar -->
+    <!-- End Header -->
 
     <!-- Start Common BreadCrumb -->
     <section>
@@ -101,9 +105,8 @@
                 <div class="row cs_center">
                     <div class="cs-bread-page-title-area">
                         <div class="cs-page-title-in">
-
                             <div class="cs-page-title">
-                                <h2 class="cs_white_color">Our Services</h2>
+                                <h1 class="cs_white_color">Cheapest Fulfillment in Kenya</h1>
                             </div>
                         </div>
                     </div>
@@ -156,11 +159,12 @@
                                     </svg>
                                 </div>
                                 <div class="cs-cap-text">
-                                    <p>Services</p>
+                                    <p>Our Solutions</p>
                                 </div>
                             </div>
                             <div class="cs-sec-title cs-max-w-640">
-                                <h2>What We Offer</h2>
+                                <h2>Comprehensive Logistics Services</h2>
+                                <p>Explore our tailored solutions for fulfillment, warehousing, courier, and more across Kenya, Uganda, and Tanzania.</p>
                             </div>
                         </div>
                     </div>
@@ -187,12 +191,11 @@
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We handle every step of the order fulfillment process, ensuring your products reach
-                                    customers on time and in perfect condition.
+                                    Our core service streamlines your e-commerce operations with end-to-end fulfillment, ensuring accurate and timely delivery across East Africa.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
+                                <a href="https://motorspeedcourier.com/orderfulfilment/kenya"><i class="flaticon-arrow"></i> Learn More</a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
@@ -216,17 +219,16 @@
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    Our state-of-the-art warehousing solutions provide secure and scalable storage
-                                    tailored to your business needs.
+                                    Secure, scalable warehousing solutions in Kenya, Uganda, and Tanzania to optimize your inventory and support your supply chain.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
+                                <a href="https://motorspeedcourier.com/warehousingandstorage/kenya"><i class="flaticon-arrow"></i> Learn More</a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Last-Mile Delivery -->
+                        <!-- Courier Services -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -240,22 +242,105 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Last-Mile Delivery</h4>
+                                    <h4>Courier Services</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We specialize in efficient last-mile delivery services, ensuring your products reach
-                                    their final destination quickly and reliably.
+                                    Fast and reliable courier services with same-day and overnight delivery options across Kenya, Uganda, and Tanzania.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
+                                <a href="https://motorspeedcourier.com/courieranddeliveryservices/kenya"><i class="flaticon-arrow"></i> Learn More</a>
                             </div>
                         </div>
                         <div class="cs-ser-border mb-50"></div>
 
-                        <!-- Bulk Distribution -->
+                        <!-- Medical Courier -->
+                        <div class="cs-service-item">
+                            <div class="ser-icon-title">
+                                <div class="cs-ser-icons">
+                                    <i class="flaticon-medical"></i>
+                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
+                                            fill="#D40511" />
+                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="cs-ser-title">
+                                    <h4>Medical Courier</h4>
+                                </div>
+                            </div>
+                            <div class="cs-ser-para">
+                                <p>
+                                    Specialized courier services for safe and timely delivery of medical supplies and pharmaceuticals across East Africa.
+                                </p>
+                            </div>
+                            <div class="cs-ser-btn">
+                                <a href="https://motorspeedcourier.com/medicalcourier/kenya"><i class="flaticon-arrow"></i> Learn More</a>
+                            </div>
+                        </div>
+                        <div class="cs-ser-border mb-50"></div>
+
+                        <!-- Reverse Logistics -->
+                        <div class="cs-service-item">
+                            <div class="ser-icon-title">
+                                <div class="cs-ser-icons">
+                                    <i class="flaticon-return"></i>
+                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
+                                            fill="#D40511" />
+                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="cs-ser-title">
+                                    <h4>Reverse Logistics</h4>
+                                </div>
+                            </div>
+                            <div class="cs-ser-para">
+                                <p>
+                                    Efficient management of returns and exchanges to enhance customer satisfaction and streamline operations in Kenya, Uganda, and Tanzania.
+                                </p>
+                            </div>
+                            <div class="cs-ser-btn">
+                                <a href="https://motorspeedcourier.com/reverselogistics/kenya"><i class="flaticon-arrow"></i> Learn More</a>
+                            </div>
+                        </div>
+                        <div class="cs-ser-border mb-50"></div>
+
+                        <!-- Cash on Delivery -->
+                        <div class="cs-service-item">
+                            <div class="ser-icon-title">
+                                <div class="cs-ser-icons">
+                                    <i class="flaticon-money"></i>
+                                    <svg width="59" height="70" viewBox="0 0 59 70" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.929443 69.8221L58.5489 34.9999L0.929443 0.177734V69.8221Z"
+                                            fill="#D40511" />
+                                        <path opacity="0.4" d="M0.929443 34.9999H58.5489L0.929443 0.177734V34.9999Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="cs-ser-title">
+                                    <h4>Cash on Delivery</h4>
+                                </div>
+                            </div>
+                            <div class="cs-ser-para">
+                                <p>
+                                    Flexible cash-on-delivery options to boost customer trust and convenience for e-commerce businesses across East Africa.
+                                </p>
+                            </div>
+                            <div class="cs-ser-btn">
+                                <a href="https://motorspeedcourier.com/cashondelivery/kenya"><i class="flaticon-arrow"></i> Learn More</a>
+                            </div>
+                        </div>
+                        <div class="cs-ser-border mb-50"></div>
+
+                        <!-- 3PL -->
                         <div class="cs-service-item">
                             <div class="ser-icon-title">
                                 <div class="cs-ser-icons">
@@ -269,73 +354,72 @@
                                     </svg>
                                 </div>
                                 <div class="cs-ser-title">
-                                    <h4>Bulk Distribution</h4>
+                                    <h4>3PL (Third-Party Logistics)</h4>
                                 </div>
                             </div>
                             <div class="cs-ser-para">
                                 <p>
-                                    We handle large-scale distribution with precision and efficiency, ensuring your
-                                    products are delivered on time and in bulk.
+                                    Comprehensive 3PL services to outsource your logistics, from storage to delivery, across Kenya, Uganda, and Tanzania.
                                 </p>
                             </div>
                             <div class="cs-ser-btn">
-                                <a href="/about"><i class="flaticon-arrow"></i></a>
+                                <a href="https://www.motorspeedcourier.com/3pl/kenya"><i class="flaticon-arrow"></i> Learn More</a>
                             </div>
                         </div>
                         <div class="cs-ser-border"></div>
                     </div>
                 </div>
-    </section>
-    <!-- End Service Section -->
+            </div>
+        </section>
+        <!-- End Service Section -->
 
-    <div class="cs-section-height"></div>
-    <!-- Section to Section Gap -->
+        <div class="cs-section-height"></div>
+        <!-- Section to Section Gap -->
 
-    <!-- Start Expertise Area Style Full Width -->
-
-
-    <!-- Start CTA -->
-    <section>
-        <div class="cs-cta-fullw-horizontal cs-cta-center" data-src="assets/img/cta-fullw-650.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="cs-cta-center-in">
-                        <div class="cs-cta-center-title">
-                            <h2 class="cs_white_color logi-splite">
-                                Experience Reliable Logistics Contact Us Today
-                            </h2>
-                        </div>
-                        <div class="cs-cta-btn">
-                            <div class="cs-primary-btn">
-                                <a href="/Quoterequest">Free Quote
-                                    <i class="flaticon-right-arrow"></i>
-                                </a>
+        <!-- Start CTA -->
+        <section>
+            <div class="cs-cta-fullw-horizontal cs-cta-center" data-src="assets/img/cta-fullw-650.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="cs-cta-center-in">
+                            <div class="cs-cta-center-title">
+                                <h2 class="cs_white_color logi-splite">
+                                    Transform Your Logistics with Motorspeed Logistics
+                                </h2>
+                                <p class="cs_white_color">
+                                    Contact us today for tailored fulfillment and logistics solutions across East Africa.
+                                </p>
+                            </div>
+                            <div class="cs-cta-btn">
+                                <div class="cs-primary-btn">
+                                    <a href="/quote-request">Get a Free Quote
+                                        <i class="flaticon-right-arrow"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End CTA -->
+        </section>
+        <!-- End CTA -->
 
-    <!-- Start Footer -->
-    @include('footer')
-    <!-- End Footer -->
-    @include('whatsapp')
-    <span class="cs_scrollup">
-        <i class="flaticon-top"></i>
-    </span>
+        <!-- Start Footer -->
+        @include('footer')
+        <!-- End Footer -->
+        @include('whatsapp')
+        <span class="cs_scrollup">
+            <i class="flaticon-top"></i>
+        </span>
 
-    <!-- Script -->
-    <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
-    <script src="assets/js/plugins/swiper.min.js"></script>
-    <script src="assets/js/plugins/SplitText.min.js"></script>
-    <script src="assets/js/plugins/ScrollToPlugin.min.js"></script>
-    <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
-    <script src="assets/js/plugins/gsap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Script -->
+        <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
+        <script src="assets/js/plugins/swiper.min.js"></script>
+        <script src="assets/js/plugins/SplitText.min.js"></script>
+        <script src="assets/js/plugins/ScrollToPlugin.min.js"></script>
+        <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+        <script src="assets/js/plugins/gsap.min.js"></script>
+        <script src="assets/js/main.js"></script>
 </body>
-
 
 </html>

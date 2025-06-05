@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
     <!-- Essential Meta Tags -->
     <meta charset="utf-8">
@@ -32,14 +28,14 @@
     <link rel="canonical" href="http://motorspeedcourier.com/services">
 
     <!-- Favicon -->
-    <link rel="icon" href="/assets/img/favicon log.png">
+    <link rel="icon" href="/assets/img/favicon log.png" alt="Motor Speed Courier Favicon">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/fonts/flaticon.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="icon" href="/assets/img/favicon log.png">
+    <link rel="icon" href="/assets/img/favicon log.png" alt="Motor Speed Courier Favicon">
 </head>
 
 <body>
@@ -49,7 +45,7 @@
         <div id="cs-logi-preloader" class="cs-logi-preloader">
             <div class="reveal-img-wrap">
                 <div class="preloader-img-inner">
-                    <img src="/assets/img/logi-preloader-logo.png" alt="">
+                    <img src="/assets/img/logi-preloader-logo.png" alt="Motor Speed Courier Preloader Logo">
                 </div>
             </div>
         </div>
@@ -67,7 +63,6 @@
                 <div class="row cs_center">
                     <div class="cs-bread-page-title-area">
                         <div class="cs-page-title-in">
-
                             <div class="cs-page-title">
                                 <h2 class="cs_white_color">Our Services</h2>
                             </div>
@@ -87,8 +82,6 @@
         </div>
     </section>
     <!-- End Common BreadCrumb -->
-
-
 
     <!-- Start Service Section -->
     <section style="padding: 80px 0; background: #fff;">
@@ -138,7 +131,7 @@
                         style="background: #fff; border-left: 4px solid #D40511; padding: 30px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
                         <h4 style="color: #1a1a1a; font-size: 20px; margin-bottom: 15px;">✅ Nationwide Delivery</h4>
                         <p style="color: #666; line-height: 1.7;">No matter where your customers are located, we’ve got
-                            you covered. With secure deliveries across Tanzania,Uganda and all 47 counties in Kenya, we
+                            you covered. With secure deliveries across Tanzania, Uganda, and all 47 counties in Kenya, we
                             ensure your packages
                             reach even the most remote areas. Our real-time tracking system gives you peace of mind,
                             allowing you to monitor your shipment every step of the way.</p>
@@ -200,7 +193,7 @@
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
                         <h5 style="color: #D40511; font-size: 18px; margin-bottom: 10px;">• Nationwide Reach</h5>
                         <p style="color: #666; line-height: 1.6;">From bustling cities to remote towns, we deliver
-                            across Tanzania,Uganda and all 47 counties in Kenya.</p>
+                            across Tanzania, Uganda, and all 47 counties in Kenya.</p>
                     </div>
 
                     <div style="padding: 20px; background: #fff; border-radius: 10px;">
@@ -220,10 +213,6 @@
         </div>
     </section>
     <!-- End Service Section -->
-
-
-    <!-- Start Expertise Area Style Full Width -->
-
 
     <!-- Start CTA -->
     <section>
@@ -267,6 +256,5 @@
     <script src="/assets/js/plugins/gsap.min.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
-
 
 </html>

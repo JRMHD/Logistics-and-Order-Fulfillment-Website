@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Dynamic SEO Meta Tags -->
-    <title>{{ $blog->title }} | Motor Speed Courier Blog</title>
+    <title>{{ $blog->title }} | MotorSpeed Fulfillment Blog</title>
     <meta name="description" content="{{ Str::limit(strip_tags($blog->content), 160) }}">
     <meta name="keywords" content="{{ $blog->keywords }}">
 

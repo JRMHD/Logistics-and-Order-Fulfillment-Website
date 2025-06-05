@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
+    <!-- Google Site Verification Meta Tag -->
+    <meta name="google-site-verification" content="-OKuPccv9g7oFRzZBU8BKIzghBUebbFSlIBeJIPJa3U" />
+
     <!-- Essential Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Meta Tags -->
-    <title> MotorSpeed Courier & Fulfilment Centre-Kenya, Best Courier & Logistics Services in Nairobi Kenya |
-        MotorSpeedCourier - Fast Same-Day Delivery</title>
+    <title>MotorSpeed Fulfillment - Premier Ecommerce Fulfillment & Logistics Services in East Africa | Kenya, Uganda, Tanzania</title>
     <meta name="description"
-        content="Kenya's #1 trusted courier & logistics service since 2018. Affordable same-day delivery in Nairobi, overnight shipping to all 47 counties. Trusted by ecommerce businesses, retail shops & SMEs for reliable package delivery.">
+        content="East Africa's leading fulfillment provider offering comprehensive ecommerce logistics, warehousing, and 3PL services across Kenya, Uganda, and Tanzania. Trusted by global brands for reliable, cost-effective fulfillment solutions.">
     <meta name="keywords"
-        content="best courier Kenya, fastest delivery Nairobi, logistics company Kenya, ecommerce delivery service, same day courier Nairobi, affordable shipping Kenya, business logistics services, nationwide delivery Kenya, MotorSpeedCourier, parcel delivery Nairobi, express courier Kenya, reliable shipping service, CBD delivery Nairobi, last mile delivery Kenya, cargo transportation, door to door delivery">
+        content="ecommerce fulfillment East Africa, best fulfillment company Kenya, fulfillment services Uganda, 3PL Tanzania, warehousing Kenya, order fulfillment Nairobi, cash on delivery Kenya, logistics company East Africa, ecommerce fulfillment Africa, best 3PL provider Kenya, international shipping East Africa, global fulfillment services, cross-border logistics Africa">
 
     <!-- Geo Location Tags -->
     <meta name="geo.region" content="KE">
@@ -25,18 +26,18 @@
     <meta name="ICBM" content="-1.2921, 36.8219">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Top-Rated Courier & Logistics Services in Kenya | MotorSpeedCourier">
+    <meta property="og:title" content="MotorSpeed Fulfillment - Premier Ecommerce Fulfillment Services in East Africa">
     <meta property="og:description"
-        content="Kenya's leading courier service with same-day delivery in Nairobi and overnight shipping nationwide. Fast, reliable & affordable delivery trusted by businesses since 2018.">
+        content="East Africa's leading fulfillment provider offering comprehensive ecommerce logistics, warehousing, and 3PL services across Kenya, Uganda, and Tanzania.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://motorspeedcourier.com">
-    <meta property="og:site_name" content="MotorSpeedCourier Kenya">
+    <meta property="og:site_name" content="MotorSpeed Fulfillment">
     <meta property="og:image" content="https://motorspeedcourier.com/assets/img/logo.png">
     <meta property="og:locale" content="en_KE">
 
     <!-- Additional SEO Tags -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <meta name="author" content="MotorSpeedCourier Kenya">
+    <meta name="author" content="MotorSpeed Fulfillment">
     <meta name="rating" content="general">
     <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://motorspeedcourier.com">
@@ -56,6 +57,7 @@
     <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
