@@ -1,129 +1,128 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div
-        style="max-width: 900px; margin: 0 auto; padding: 40px 30px; font-family: 'Poppins', 'Inter', sans-serif; background-color: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-        @if (session('success'))
-            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-6" role="alert">
-                <span class="block sm:inline">{{ session('success') }}</span>
-                <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-                    <svg class="fill-current h-6 w-6 text-green-500" role="button"
-                        onclick="this.parentElement.parentElement.style.display='none';" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20">
-                        <title>Close</title>
-                        <path
-                            d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
-                    </svg>
-                </span>
-            </div>
-        @endif
+    {{-- Define common styles for reuse --}}
+    @php
+        $cardStyle = 'background: white; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.07); padding: 2rem;';
+        $labelStyle = 'display: block; font-size: 0.875rem; font-weight: 600; color: #6b7280; margin-bottom: 0.25rem;';
+        $valueStyle = 'font-size: 1rem; color: #1f2937; font-weight: 500;';
+    @endphp
 
-        @if (session('error'))
-            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-6" role="alert">
-                <span class="block sm:inline">{{ session('error') }}</span>
-                <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-                    <svg class="fill-current h-6 w-6 text-red-500" role="button"
-                        onclick="this.parentElement.parentElement.style.display='none';" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20">
-                        <title>Close</title>
-                        <path
-                            d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
-                    </svg>
-                </span>
-            </div>
-        @endif
+    <div style="min-height: 100vh; background: #f8fafc; padding: 2rem 1rem;">
+        <div style="max-width: 1280px; margin: 0 auto;">
 
-        <h1 style="color: #111; font-size: 32px; margin-bottom: 40px; font-weight: 700; letter-spacing: -0.5px;">Comment
-            Details</h1>
-
-        <div style="display: flex; flex-direction: column; gap: 24px;">
-            <div
-                style="display: flex; flex-direction: column; gap: 10px; background-color: #fafafa; padding: 20px; border-radius: 8px; border: 1.5px solid #eee;">
-                <div style="margin-bottom: 8px;">
-                    <span style="font-weight: 600; color: #111; font-size: 15px; letter-spacing: -0.2px;">Blog Title:</span>
-                    <span style="font-size: 16px; color: #4b5563; margin-left: 8px;">{{ $comment->blog->title }}</span>
-                </div>
-
-                <div style="margin-bottom: 8px;">
-                    <span style="font-weight: 600; color: #111; font-size: 15px; letter-spacing: -0.2px;">Author:</span>
-                    <span style="font-size: 16px; color: #4b5563; margin-left: 8px;">{{ $comment->name }}</span>
-                </div>
-
-                <div style="margin-bottom: 8px;">
-                    <span style="font-weight: 600; color: #111; font-size: 15px; letter-spacing: -0.2px;">Email:</span>
-                    <span style="font-size: 16px; color: #4b5563; margin-left: 8px;">{{ $comment->email }}</span>
-                </div>
-
-                <div style="margin-bottom: 8px;">
-                    <span style="font-weight: 600; color: #111; font-size: 15px; letter-spacing: -0.2px;">Date:</span>
-                    <span
-                        style="font-size: 16px; color: #4b5563; margin-left: 8px;">{{ $comment->created_at->format('d M Y, H:i') }}</span>
-                </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <label style="font-weight: 600; color: #111; font-size: 15px; letter-spacing: -0.2px;">Comment</label>
+            @if (session('success'))
                 <div
-                    style="padding: 16px; border: 1.5px solid #eee; background-color: #fafafa; border-radius: 8px; font-size: 16px; min-height: 100px; color: #4b5563;">
-                    {{ $comment->comment }}
+                    style="background: #dcfce7; color: #166534; padding: 1rem; border-radius: 0.75rem; border-left: 4px solid #22c55e; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(34, 197, 94, 0.1);">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;"><svg
+                            style="width: 1.25rem; height: 1.25rem;" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg><span>{{ session('success') }}</span></div>
+                </div>
+            @endif
+            @if (session('error'))
+                <div
+                    style="background: #fee2e2; color: #991b1b; padding: 1rem; border-radius: 0.75rem; border-left: 4px solid #ef4444; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(239, 68, 68, 0.1);">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;"><svg
+                            style="width: 1.25rem; height: 1.25rem;" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                clip-rule="evenodd" />
+                        </svg><span>{{ session('error') }}</span></div>
+                </div>
+            @endif
+
+            <!-- Page Header -->
+            <div id="page-header"
+                style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div
+                        style="flex-shrink: 0; width: 3.5rem; height: 3.5rem; background: linear-gradient(135deg, #ED1C24, #c41e3a); border-radius: 1rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px -5px rgba(237, 28, 36, 0.4);">
+                        <svg style="width: 2rem; height: 2rem; color: white;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 2rem; font-weight: 700; color: #1f2937; margin: 0;">Comment Details</h1>
+                        <p style="color: #6b7280; margin: 0;">Reviewing comment from <span
+                                style="font-weight: 600; color: #374151;">{{ $comment->name }}</span></p>
+                    </div>
+                </div>
+                <div style="flex-shrink: 0; display: flex; align-items: center; gap: 0.75rem;">
+                    <a href="{{ route('admin.comments.index') }}"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #374151; padding: 0.625rem 1.25rem; border-radius: 0.75rem; font-weight: 600; background: #e5e7eb; border: none; transition: all 0.3s ease;"
+                        onmouseover="this.style.background='#d1d5db';" onmouseout="this.style.background='#e5e7eb';">
+                        Back
+                    </a>
+                    <form action="{{ route('admin.comments.destroy', $comment->id) }}" method="POST"
+                        style="display: inline;">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" onclick="return confirm('Are you sure you want to delete this comment?')"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: white; padding: 0.625rem 1.25rem; border-radius: 0.75rem; font-weight: 600; background: #ef4444; border: none; cursor:pointer; transition: all 0.3s ease;"
+                            onmouseover="this.style.opacity=0.9" onmouseout="this.style.opacity=1">
+                            Delete
+                        </button>
+                    </form>
                 </div>
             </div>
 
-            <div style="display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap;">
-                <form action="{{ route('admin.comments.destroy', $comment->id) }}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" onclick="return confirm('Are you sure you want to delete this comment?')"
-                        style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; border: none; padding: 16px 32px; font-size: 16px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; font-weight: 600; letter-spacing: -0.2px; box-shadow: 0 4px 12px rgba(239,68,68,0.3); display: inline-flex; align-items: center;"
-                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 18px rgba(239,68,68,0.35)';"
-                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(239,68,68,0.3)';">
-                        Delete Comment
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
-                            <path
-                                d="M6 2H10M2 4H14M12.6667 4L12.1991 11.0129C12.129 12.065 12.0939 12.5911 11.8667 12.99C11.6666 13.3412 11.3648 13.6235 11.0011 13.7998C10.588 14 10.0607 14 9.00623 14H6.99377C5.93927 14 5.41202 14 4.99889 13.7998C4.63517 13.6235 4.33339 13.3412 4.13332 12.99C3.90607 12.5911 3.871 12.065 3.80086 11.0129L3.33333 4"
-                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </form>
+            <!-- Details Grid -->
+            <div id="details-grid" style="display: grid; gap: 2rem;">
 
-                <a href="{{ route('admin.comments.index') }}"
-                    style="background-color: #f3f4f6; color: #4b5563; border: 1.5px solid #e5e7eb; padding: 16px 32px; font-size: 16px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; font-weight: 600; letter-spacing: -0.2px; display: inline-flex; align-items: center; text-decoration: none;"
-                    onmouseover="this.style.backgroundColor='#e5e7eb'; this.style.transform='translateY(-2px)';"
-                    onmouseout="this.style.backgroundColor='#f3f4f6'; this.style.transform='translateY(0)';">
-                    Back to Comments
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        style="margin-left: 8px;">
-                        <path d="M12.6673 8H3.33398M3.33398 8L7.33398 4M3.33398 8L7.33398 12" stroke="#4B5563"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
+                <!-- Left Column: The Comment -->
+                <div style="{{ $cardStyle }}">
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div
+                            style="flex-shrink: 0; width: 3rem; height: 3rem; background: linear-gradient(135deg, #e2e8f0, #f1f5f9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #4b5563; font-weight: 700; font-size: 1.25rem;">
+                            {{ substr($comment->name, 0, 1) }}
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h3 style="font-size: 1.125rem; font-weight: 600; color: #1f2937; margin: 0;">
+                                {{ $comment->name }}</h3>
+                            <p style="font-size: 0.875rem; color: #6b7280; margin: 0;">{{ $comment->email }}</p>
+                        </div>
+                    </div>
+                    <blockquote
+                        style="margin: 1.5rem 0 0 0; padding: 1.5rem; background-color: #f8fafc; border-left: 4px solid #ED1C24; border-radius: 0.5rem;">
+                        <p style="font-size: 1rem; color: #374151; line-height: 1.7; margin: 0;">{{ $comment->comment }}</p>
+                    </blockquote>
+                </div>
+
+                <!-- Right Column: Context -->
+                <div style="{{ $cardStyle }}">
+                    <h3
+                        style="font-size: 1.25rem; font-weight: 600; color: #1f2937; margin: 0 0 1.5rem 0; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+                        Context</h3>
+                    <div style="display: grid; gap: 1.5rem;">
+                        <div>
+                            <label style="{{ $labelStyle }}">On Blog Post</label>
+                            <div style="{{ $valueStyle }}">{{ $comment->blog->title }}</div>
+                        </div>
+                        <div>
+                            <label style="{{ $labelStyle }}">Date Submitted</label>
+                            <div style="{{ $valueStyle }}">{{ $comment->created_at->format('M d, Y, h:i A') }}</div>
+                        </div>
+                        <div>
+                            <label style="{{ $labelStyle }}">Time Since Submission</label>
+                            <div style="{{ $valueStyle }}">{{ $comment->created_at->diffForHumans() }}</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-
     <style>
-        @media (max-width: 768px) {
-            div {
-                padding: 30px 20px !important;
-            }
-
-            h1 {
-                font-size: 28px !important;
-                margin-bottom: 30px !important;
-            }
-
-            button,
-            a {
-                padding: 14px !important;
-                font-size: 15px !important;
-                width: 100% !important;
-                justify-content: center !important;
-                margin-bottom: 10px !important;
-            }
-
-            .flex-wrap {
-                flex-direction: column !important;
+        /* Responsive Grid Layout */
+        @media (min-width: 1024px) {
+            #details-grid {
+                grid-template-columns: 2fr 1fr;
             }
         }
     </style>

@@ -3,456 +3,431 @@
 @section('title', 'Blog Management')
 
 @section('content')
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Breadcrumbs -->
-    <nav class="flex mb-5" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-            <li class="inline-flex items-center">
-                <a href="{{ route('admin.dashboard') }}" class="text-gray-700 hover:text-blue-600 inline-flex items-center">
-                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                    </svg>
-                    Dashboard
-                </a>
-            </li>
-            <li aria-current="page">
-                <div class="flex items-center">
-                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="ml-1 text-gray-500 md:ml-2 font-medium">Blog Posts</span>
-                </div>
-            </li>
-        </ol>
-    </nav>
+    <div style="min-height: 100vh; background: #f8fafc; padding: 2rem 1rem;">
+        <div style="max-width: 1280px; margin: 0 auto;">
 
-    <!-- Header Section -->
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-        <div>
-            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">Blog Posts</h1>
-            <p class="mt-2 text-lg text-gray-600">Manage your website's blog content</p>
-        </div>
-        <div class="mt-4 md:mt-0">
-            <a href="{{ route('admin.blogs.create') }}" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-150">
-                <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
-                </svg>
-                Create Blog Post
-            </a>
-        </div>
-    </div>
-
-    <!-- Alerts -->
-    @if (session('success'))
-    <div id="success-alert" class="rounded-md bg-green-50 p-4 mb-6 border border-green-200 shadow-sm" role="alert">
-        <div class="flex">
-            <div class="flex-shrink-0">
-                <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3">
-                <p class="text-sm font-medium text-green-800">{{ session('success') }}</p>
-            </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                    <button type="button" onclick="document.getElementById('success-alert').style.display='none'" class="inline-flex bg-green-50 rounded-md p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                        <span class="sr-only">Dismiss</span>
-                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            @if (session('success'))
+                <div id="success-alert"
+                    style="background: #dcfce7; color: #166534; padding: 1rem; border-radius: 0.75rem; border-left: 4px solid #22c55e; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(34, 197, 94, 0.1);">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <svg style="width: 1.25rem; height: 1.25rem;" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
                         </svg>
-                    </button>
+                        <span>{{ session('success') }}</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    @endif
+            @endif
 
-    @if (session('error'))
-    <div id="error-alert" class="rounded-md bg-red-50 p-4 mb-6 border border-red-200 shadow-sm" role="alert">
-        <div class="flex">
-            <div class="flex-shrink-0">
-                <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3">
-                <p class="text-sm font-medium text-red-800">{{ session('error') }}</p>
-            </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                    <button type="button" onclick="document.getElementById('error-alert').style.display='none'" class="inline-flex bg-red-50 rounded-md p-1.5 text-red-500 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-                        <span class="sr-only">Dismiss</span>
-                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            @if (session('error'))
+                <div id="error-alert"
+                    style="background: #fee2e2; color: #991b1b; padding: 1rem; border-radius: 0.75rem; border-left: 4px solid #ef4444; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(239, 68, 68, 0.1);">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <svg style="width: 1.25rem; height: 1.25rem;" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                clip-rule="evenodd" />
                         </svg>
-                    </button>
+                        <span>{{ session('error') }}</span>
+                    </div>
+                </div>
+            @endif
+
+
+            <!-- Page Header -->
+            <div id="page-header"
+                style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div
+                        style="flex-shrink: 0; width: 3.5rem; height: 3.5rem; background: linear-gradient(135deg, #ED1C24, #c41e3a); border-radius: 1rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px -5px rgba(237, 28, 36, 0.4);">
+                        <svg style="width: 2rem; height: 2rem; color: white;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 12h6m-1 8h.01">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 2rem; font-weight: 700; color: #1f2937; margin: 0;">Blog Management</h1>
+                        <p style="color: #6b7280; margin: 0;">Create, edit, and manage all your blog content.</p>
+                    </div>
+                </div>
+                <div style="flex-shrink: 0;">
+                    <a href="{{ route('admin.blogs.create') }}"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: white; padding: 0.75rem 1.5rem; border-radius: 0.75rem; font-weight: 600; background: linear-gradient(135deg, #ED1C24, #c41e3a); border: none; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 15px -3px rgba(237, 28, 36, 0.3)';"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.1)';">
+                        <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Create Blog Post
+                    </a>
                 </div>
             </div>
-        </div>
-    </div>
-    @endif
 
-    <!-- Search and Filter Section -->
-    <div class="bg-white rounded-xl shadow-sm overflow-hidden mb-6">
-        <div class="px-6 py-4 border-b border-gray-200 bg-gray-50">
-            <h3 class="text-lg font-medium leading-6 text-gray-900">Search & Filter</h3>
-        </div>
-        <div class="p-6">
-            <form method="GET" action="{{ route('admin.blogs.index') }}" id="search-form">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div class="col-span-1 md:col-span-2">
-                        <label for="search" class="block text-sm font-medium text-gray-700 mb-1">Search</label>
-                        <div class="relative rounded-md shadow-sm">
-                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <input type="text" name="search" id="search" value="{{ request('search') }}" placeholder="Search by title, content, or author..." class="focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md" />
+            <!-- Filters Section -->
+            <div
+                style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);">
+                <form method="GET" action="{{ route('admin.blogs.index') }}" id="search-form">
+                    @php
+                        $inputStyle =
+                            'box-sizing: border-box; width: 100%; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 0.875rem 1rem; font-size: 0.875rem; background: rgba(255, 255, 255, 0.9); transition: all 0.3s ease; outline: none;';
+                        $focusJs =
+                            "this.style.borderColor='#ED1C24'; this.style.boxShadow='0 0 0 3px rgba(237, 28, 36, 0.2)';";
+                        $blurJs = "this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';";
+                        $labelStyle =
+                            'display: block; font-size: 0.875rem; font-weight: 600; color: #374151; margin-bottom: 0.5rem;';
+                    @endphp
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="grid-column: 1 / -1; @media (min-width: 1024px) { grid-column: span 2; }">
+                            <label for="search" style="{{ $labelStyle }}">Search</label>
+                            <input type="text" name="search" id="search" value="{{ request('search') }}"
+                                placeholder="By title, content, or author..." style="{{ $inputStyle }}"
+                                onfocus="{{ $focusJs }}" onblur="{{ $blurJs }}">
+                        </div>
+                        <div>
+                            <label for="category" style="{{ $labelStyle }}">Category</label>
+                            <select name="category" id="category" style="{{ $inputStyle }}"
+                                onfocus="{{ $focusJs }}" onblur="{{ $blurJs }}">
+                                <option value="">All Categories</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category }}"
+                                        {{ request('category') == $category ? 'selected' : '' }}>{{ $category }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div>
+                            <label for="status" style="{{ $labelStyle }}">Status</label>
+                            <select name="status" id="status" style="{{ $inputStyle }}"
+                                onfocus="{{ $focusJs }}" onblur="{{ $blurJs }}">
+                                <option value="">All Statuses</option>
+                                <option value="published" {{ request('status') == 'published' ? 'selected' : '' }}>
+                                    Published</option>
+                                <option value="draft" {{ request('status') == 'draft' ? 'selected' : '' }}>Draft</option>
+                                <option value="scheduled" {{ request('status') == 'scheduled' ? 'selected' : '' }}>
+                                    Scheduled</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="date_from" style="{{ $labelStyle }}">Date From</label>
+                            <input type="date" name="date_from" id="date_from" value="{{ request('date_from') }}"
+                                style="{{ $inputStyle }}" onfocus="{{ $focusJs }}" onblur="{{ $blurJs }}">
+                        </div>
+                        <div>
+                            <label for="date_to" style="{{ $labelStyle }}">Date To</label>
+                            <input type="date" name="date_to" id="date_to" value="{{ request('date_to') }}"
+                                style="{{ $inputStyle }}" onfocus="{{ $focusJs }}" onblur="{{ $blurJs }}">
+                        </div>
+                        <div>
+                            <label for="sort" style="{{ $labelStyle }}">Sort By</label>
+                            <select name="sort" id="sort" style="{{ $inputStyle }}"
+                                onfocus="{{ $focusJs }}" onblur="{{ $blurJs }}">
+                                <option value="created_at_desc"
+                                    {{ request('sort') == 'created_at_desc' ? 'selected' : '' }}>Newest First</option>
+                                <option value="created_at_asc"
+                                    {{ request('sort') == 'created_at_asc' ? 'selected' : '' }}>Oldest First</option>
+                                <option value="title_asc" {{ request('sort') == 'title_asc' ? 'selected' : '' }}>Title
+                                    (A-Z)</option>
+                                <option value="title_desc" {{ request('sort') == 'title_desc' ? 'selected' : '' }}>Title
+                                    (Z-A)</option>
+                                <option value="views_desc" {{ request('sort') == 'views_desc' ? 'selected' : '' }}>Most
+                                    Viewed</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; align-items: end; gap: 0.75rem;">
+                            <button type="submit"
+                                style="width: 100%; background: linear-gradient(135deg, #ED1C24, #c41e3a); color: white; padding: 0.875rem; border-radius: 0.75rem; font-weight: 600; border: none; cursor: pointer; transition: all 0.3s ease;"
+                                onmouseover="this.style.opacity=0.9" onmouseout="this.style.opacity=1">Filter</button>
+                            <a href="{{ route('admin.blogs.index') }}"
+                                style="flex-shrink: 0; background: #e2e8f0; color: #374151; padding: 0.875rem 1.5rem; border-radius: 0.75rem; font-weight: 600; border: none; cursor: pointer; transition: all 0.3s ease; text-decoration: none;"
+                                onmouseover="this.style.background='#cbd5e1'"
+                                onmouseout="this.style.background='#e2e8f0'">Clear</a>
                         </div>
                     </div>
-                    
-                    <div>
-                        <label for="category" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                        <select name="category" id="category" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
-                            <option value="">All Categories</option>
-                            @foreach ($categories as $category)
-                                <option value="{{ $category }}" {{ request('category') == $category ? 'selected' : '' }}>
-                                    {{ $category }}
-                                </option>
-                            @endforeach
-                        </select>
-                    </div>
+                </form>
+            </div>
 
-                    <div>
-                        <label for="status" class="block text-sm font-medium text-gray-700 mb-1">Status</label>
-                        <select name="status" id="status" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
-                            <option value="">All Statuses</option>
-                            <option value="published" {{ request('status') == 'published' ? 'selected' : '' }}>Published</option>
-                            <option value="draft" {{ request('status') == 'draft' ? 'selected' : '' }}>Draft</option>
-                            <option value="scheduled" {{ request('status') == 'scheduled' ? 'selected' : '' }}>Scheduled</option>
-                        </select>
-                    </div>
+            <!-- Blog Posts List -->
+            <div>
+                <div id="blog-table-header"
+                    style="padding: 0 1.5rem; margin-bottom: 0.5rem; font-size: 0.75rem; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; align-items: center;">
+                    <div style="flex: 4;">Post</div>
+                    <div style="flex: 2;">Status</div>
+                    <div style="flex: 2;">Category & Author</div>
+                    <div style="flex: 2;">Date</div>
+                    <div style="flex: 1; text-align: center;">Actions</div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
-                    <div>
-                        <label for="date_from" class="block text-sm font-medium text-gray-700 mb-1">Date From</label>
-                        <input type="date" name="date_from" id="date_from" value="{{ request('date_from') }}" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-
-                    <div>
-                        <label for="date_to" class="block text-sm font-medium text-gray-700 mb-1">Date To</label>
-                        <input type="date" name="date_to" id="date_to" value="{{ request('date_to') }}" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                    </div>
-
-                    <div>
-                        <label for="sort" class="block text-sm font-medium text-gray-700 mb-1">Sort By</label>
-                        <select name="sort" id="sort" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
-                            <option value="created_at_desc" {{ request('sort') == 'created_at_desc' ? 'selected' : '' }}>Newest First</option>
-                            <option value="created_at_asc" {{ request('sort') == 'created_at_asc' ? 'selected' : '' }}>Oldest First</option>
-                            <option value="title_asc" {{ request('sort') == 'title_asc' ? 'selected' : '' }}>Title (A-Z)</option>
-                            <option value="title_desc" {{ request('sort') == 'title_desc' ? 'selected' : '' }}>Title (Z-A)</option>
-                            <option value="views_desc" {{ request('sort') == 'views_desc' ? 'selected' : '' }}>Most Viewed</option>
-                        </select>
-                    </div>
-
-                    <div class="flex items-end">
-                        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-150">
-                            <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" />
-                            </svg>
-                            Filter
-                        </button>
-                        <a href="{{ route('admin.blogs.index') }}" class="ml-3 inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-150">
-                            Clear
-                        </a>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Blog Posts Table -->
-    <div class="bg-white rounded-xl shadow-sm overflow-hidden mb-6">
-        <div class="px-6 py-4 border-b border-gray-200 bg-gray-50 flex justify-between items-center">
-            <h3 class="text-lg font-medium leading-6 text-gray-900">Blog Posts</h3>
-            <span class="text-sm text-gray-500">{{ $blogs->total() }} posts found</span>
-        </div>
-        <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200">
-                <thead class="bg-gray-50">
-                    <tr>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Title
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Category
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Author
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Status
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Date
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Actions
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white divide-y divide-gray-200">
-                    @forelse ($blogs as $blog)
-                        <tr class="hover:bg-gray-50 transition-colors duration-150">
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="flex items-center">
-                                    @if($blog->image)
-                                        <div class="flex-shrink-0 h-10 w-10 mr-3">
-                                            <img class="h-10 w-10 rounded-md object-cover" src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}">
-                                        </div>
-                                    @else
-                                        <div class="flex-shrink-0 h-10 w-10 mr-3 bg-gray-200 rounded-md flex items-center justify-center">
-                                            <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                            </svg>
-                                        </div>
-                                    @endif
-                                    <div class="ml-1">
-                                        <div class="text-sm font-medium text-gray-900 truncate max-w-xs">
-                                            {{ $blog->title }}
-                                        </div>
-                                        <div class="text-xs text-gray-500 truncate max-w-xs">
-                                            {{ Str::limit(strip_tags($blog->content), 60) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                                    {{ $blog->category }}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $blog->author }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                @if($blog->status == 'published')
-                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                        Published
-                                    </span>
-                                @elseif($blog->status == 'draft')
-                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                                        Draft
-                                    </span>
-                                @elseif($blog->status == 'scheduled')
-                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">
-                                        Scheduled
-                                    </span>
-                                @else
-                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800">
-                                        {{ ucfirst($blog->status) }}
-                                    </span>
-                                @endif
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <div class="flex flex-col">
-                                    <span>{{ $blog->created_at->format('M d, Y') }}</span>
-                                    <span class="text-xs text-gray-400">{{ $blog->created_at->format('h:i A') }}</span>
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                <div class="flex space-x-2">
-                                    <a href="{{ route('admin.blogs.show', $blog->id) }}" class="text-blue-600 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 p-1.5 rounded-md transition-colors duration-150" title="View">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                    <a href="{{ route('admin.blogs.edit', $blog->id) }}" class="text-yellow-600 hover:text-yellow-900 bg-yellow-100 hover:bg-yellow-200 p-1.5 rounded-md transition-colors duration-150" title="Edit">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
-                                        </svg>
-                                    </a>
-                                    <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST" class="inline-block">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" onclick="return confirm('Are you sure you want to delete this blog post? This action cannot be undone.')" class="text-red-600 hover:text-red-900 bg-red-100 hover:bg-red-200 p-1.5 rounded-md transition-colors duration-150" title="Delete">
-                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                            </svg>
-                                        </button>
-                                    </form>
-                                    @if(isset($blog->slug))
-                                    <a href="{{ url('/blog/' . $blog->slug) }}" target="_blank" class="text-green-600 hover:text-green-900 bg-green-100 hover:bg-green-200 p-1.5 rounded-md transition-colors duration-150" title="View Live">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                                        </svg>
-                                    </a>
-                                    @endif
-                                </div>
-                            </td>
-                        </tr>
-                    @empty
-                        <tr>
-                            <td colspan="6" class="px-6 py-10 text-center text-gray-500">
-                                <div class="flex flex-col items-center justify-center">
-                                    <svg class="h-12 w-12 text-gray-400 mb-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                @forelse ($blogs as $blog)
+                    <div class="blog-row"
+                        style="background: white; border-radius: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1rem; transition: all 0.2s ease-in-out; display: flex;"
+                        onmouseover="this.style.boxShadow='0 5px 15px rgba(0,0,0,0.08)'; this.style.transform='translateY(-2px)';"
+                        onmouseout="this.style.boxShadow='0 2px 4px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                        <!-- Post Cell -->
+                        <div class="blog-cell" data-label="Post"
+                            style="flex: 4; display: flex; align-items: center; gap: 1rem;">
+                            @if ($blog->image)
+                                <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}"
+                                    style="flex-shrink: 0; width: 3rem; height: 3rem; object-fit: cover; border-radius: 0.5rem;">
+                            @else
+                                <div
+                                    style="flex-shrink: 0; width: 3rem; height: 3rem; background: #f3f4f6; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+                                    <svg style="width: 1.5rem; height: 1.5rem; color: #9ca3af;" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
                                     </svg>
-                                    <p class="text-lg font-medium">No blog posts found</p>
-                                    <p class="text-sm mt-1">Try adjusting your search or filter to find what you're looking for.</p>
-                                    <a href="{{ route('admin.blogs.create') }}" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-150">
-                                        <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
-                                        </svg>
-                                        Create New Blog Post
-                                    </a>
                                 </div>
-                            </td>
-                        </tr>
-                    @endforelse
-                </tbody>
-            </table>
+                            @endif
+                            <div>
+                                <div style="font-weight: 600; color: #1f2937; line-height: 1.4;">{{ $blog->title }}</div>
+                                <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem;">
+                                    {{ Str::limit(strip_tags($blog->content), 60) }}</div>
+                            </div>
+                        </div>
+                        <!-- Status Cell -->
+                        <div class="blog-cell" data-label="Status" style="flex: 2;">
+                            <span class="mobile-label">Status:</span>
+                            @php
+                                $statusStyles = [
+                                    'published' => 'background: #dcfce7; color: #166534;',
+                                    'draft' => 'background: #fef3c7; color: #92400e;',
+                                    'scheduled' => 'background: #ede9fe; color: #5b21b6;',
+                                    'default' => 'background: #f3f4f6; color: #374151;',
+                                ];
+                                $style = $statusStyles[$blog->status] ?? $statusStyles['default'];
+                            @endphp
+                            <span
+                                style="padding: 0.25rem 0.75rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; {{ $style }}">{{ ucfirst($blog->status) }}</span>
+                        </div>
+                        <!-- Category & Author Cell -->
+                        <div class="blog-cell" data-label="Category & Author" style="flex: 2;">
+                            <span class="mobile-label">Category & Author:</span>
+                            <div>
+                                <div style="font-weight: 500; color: #374151;">{{ $blog->category }}</div>
+                                <div style="font-size: 0.875rem; color: #6b7280;">by {{ $blog->author }}</div>
+                            </div>
+                        </div>
+                        <!-- Date Cell -->
+                        <div class="blog-cell" data-label="Date" style="flex: 2;">
+                            <span class="mobile-label">Date:</span>
+                            <span style="color: #6b7280;">{{ $blog->created_at->format('M d, Y') }}</span>
+                        </div>
+                        <!-- Actions Cell -->
+                        <div class="blog-cell" data-label="Actions"
+                            style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.25rem; flex-wrap: wrap;">
+                            @php $iconBtnStyle = "text-decoration: none; padding: 0.5rem; border-radius: 50%; transition: all 0.2s ease; display: inline-flex; align-items: center; justify-content: center; border: none; cursor: pointer; background: transparent;"; @endphp
+                            <a href="{{ route('admin.blogs.show', $blog->id) }}" title="View"
+                                style="{{ $iconBtnStyle }} color: #4f46e5;" onmouseover="this.style.background='#eef2ff'"
+                                onmouseout="this.style.background='transparent'"><svg
+                                    style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg></a>
+                            <a href="{{ route('admin.blogs.edit', $blog->id) }}" title="Edit"
+                                style="{{ $iconBtnStyle }} color: #3b82f6;" onmouseover="this.style.background='#eff6ff'"
+                                onmouseout="this.style.background='transparent'"><svg
+                                    style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                </svg></a>
+                            @if (isset($blog->slug))
+                                <a href="{{ url('/blog/' . $blog->slug) }}" target="_blank" title="View Live"
+                                    style="{{ $iconBtnStyle }} color: #16a34a;"
+                                    onmouseover="this.style.background='#f0fdf4'"
+                                    onmouseout="this.style.background='transparent'"><svg
+                                        style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                        </path>
+                                    </svg></a>
+                            @endif
+                            <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST"
+                                class="inline-block">@csrf @method('DELETE')<button type="submit"
+                                    onclick="return confirm('Are you sure? This action cannot be undone.')" title="Delete"
+                                    style="{{ $iconBtnStyle }} color: #ef4444;"
+                                    onmouseover="this.style.background='#fee2e2'"
+                                    onmouseout="this.style.background='transparent'"><svg
+                                        style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg></button></form>
+                        </div>
+                    </div>
+                @empty
+                    <div
+                        style="background: white; border-radius: 1rem; padding: 4rem; text-align: center; color: #6b7280; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <svg style="width: 4rem; height: 4rem; color: #d1d5db; margin: 0 auto 1rem auto;" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                        <h3 style="font-size: 1.25rem; font-weight: 600; color: #374151; margin: 0;">No blog posts found
+                        </h3>
+                        <p style="margin-top: 0.5rem;">Try adjusting your filters or create a new post to get started.</p>
+                    </div>
+                @endforelse
+            </div>
+
+            <!-- Pagination -->
+            @if ($blogs->hasPages())
+                <div style="margin-top: 2rem;">
+                    {{ $blogs->withQueryString()->links() }}
+                </div>
+            @endif
+
+            <!-- Blog Stats Summary -->
+            @php
+                $stats = [
+                    [
+                        'label' => 'Total Posts',
+                        'value' => $blogs->total(),
+                        'color' => 'linear-gradient(135deg, #3b82f6, #60a5fa)',
+                        'shadow' => 'rgba(59, 130, 246, 0.3)',
+                        'icon' =>
+                            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />',
+                    ],
+                    [
+                        'label' => 'Published Posts',
+                        'value' => $publishedCount ?? 0,
+                        'color' => 'linear-gradient(135deg, #22c55e, #4ade80)',
+                        'shadow' => 'rgba(34, 197, 94, 0.3)',
+                        'icon' =>
+                            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />',
+                    ],
+                    [
+                        'label' => 'Total Views',
+                        'value' => $totalViews ?? 0,
+                        'color' => 'linear-gradient(135deg, #f59e0b, #fbbf24)',
+                        'shadow' => 'rgba(245, 158, 11, 0.3)',
+                        'icon' =>
+                            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />',
+                    ],
+                    [
+                        'label' => 'Posts This Month',
+                        'value' => $postsThisMonth ?? 0,
+                        'color' => 'linear-gradient(135deg, #8b5cf6, #a78bfa)',
+                        'shadow' => 'rgba(139, 92, 246, 0.3)',
+                        'icon' =>
+                            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />',
+                    ],
+                ];
+            @endphp
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+                @foreach ($stats as $stat)
+                    <div style="background: white; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); padding: 1.5rem; display: flex; align-items: center; gap: 1rem; transition: all 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,0.1)';"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.1)';">
+                        <div
+                            style="width: 3rem; height: 3rem; background: {{ $stat['color'] }}; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px -2px {{ $stat['shadow'] }};">
+                            <svg style="width: 1.5rem; height: 1.5rem; color: white;" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">{!! $stat['icon'] !!}</svg>
+                        </div>
+                        <div>
+                            <div style="font-size: 1.875rem; font-weight: 700; color: #1f2937;">{{ $stat['value'] }}</div>
+                            <div style="font-size: 0.875rem; color: #6b7280;">{{ $stat['label'] }}</div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 
-    <!-- Pagination -->
-    <div class="flex justify-center">
-        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-            {{ $blogs->withQueryString()->links() }}
-        </nav>
-    </div>
+    <style>
+        /* Responsive Table */
+        #blog-table-header {
+            display: none;
+        }
 
-    <!-- Blog Stats Summary -->
-    <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="bg-white overflow-hidden shadow rounded-lg">
-            <div class="px-4 py-5 sm:p-6">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                    </div>
-                    <div class="ml-5 w-0 flex-1">
-                        <dl>
-                            <dt class="text-sm font-medium text-gray-500 truncate">
-                                Total Posts
-                            </dt>
-                            <dd>
-                                <div class="text-lg font-medium text-gray-900">
-                                    {{ $blogs->total() }}
-                                </div>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
+        .blog-row {
+            flex-direction: column;
+        }
 
-        <div class="bg-white overflow-hidden shadow rounded-lg">
-            <div class="px-4 py-5 sm:p-6">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 bg-green-500 rounded-md p-3">
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <div class="ml-5 w-0 flex-1">
-                        <dl>
-                            <dt class="text-sm font-medium text-gray-500 truncate">
-                                Published Posts
-                            </dt>
-                            <dd>
-                                <div class="text-lg font-medium text-gray-900">
-                                    {{ $publishedCount ?? 0 }}
-                                </div>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
+        .blog-cell {
+            padding: 1rem 1rem;
+            border-bottom: 1px solid #f3f4f6;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-        <div class="bg-white overflow-hidden shadow rounded-lg">
-            <div class="px-4 py-5 sm:p-6">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 bg-yellow-500 rounded-md p-3">
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                    </div>
-                    <div class="ml-5 w-0 flex-1">
-                        <dl>
-                            <dt class="text-sm font-medium text-gray-500 truncate">
-                                Total Views
-                            </dt>
-                            <dd>
-                                <div class="text-lg font-medium text-gray-900">
-                                    {{ $totalViews ?? 0 }}
-                                </div>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
+        .blog-row>.blog-cell:last-child {
+            border-bottom: none;
+        }
 
-        <div class="bg-white overflow-hidden shadow rounded-lg">
-            <div class="px-4 py-5 sm:p-6">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 bg-purple-500 rounded-md p-3">
-                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <div class="ml-5 w-0 flex-1">
-                        <dl>
-                            <dt class="text-sm font-medium text-gray-500 truncate">
-                                Posts This Month
-                            </dt>
-                            <dd>
-                                <div class="text-lg font-medium text-gray-900">
-                                    {{ $postsThisMonth ?? 0 }}
-                                </div>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        .mobile-label {
+            display: inline-block;
+            font-weight: 600;
+            color: #4b5563;
+        }
 
-<!-- JavaScript for enhanced functionality -->
-<script>
-    // Auto-submit form when certain filters change
-    document.addEventListener('DOMContentLoaded', function() {
-        const autoSubmitElements = [
-            document.getElementById('category'),
-            document.getElementById('status'),
-            document.getElementById('sort')
-        ];
-        
-        autoSubmitElements.forEach(element => {
-            if (element) {
-                element.addEventListener('change', function() {
-                    document.getElementById('search-form').submit();
-                });
+        .blog-cell[data-label="Post"] {
+            justify-content: flex-start;
+            padding-top: 1rem;
+        }
+
+        @media (min-width: 992px) {
+            #blog-table-header {
+                display: flex;
             }
-        });
-        
-        // Auto-dismiss alerts after 5 seconds
-        setTimeout(function() {
-            const alerts = document.querySelectorAll('[role="alert"]');
-            alerts.forEach(alert => {
-                alert.style.display = 'none';
+
+            .blog-row {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .blog-cell {
+                padding: 1.25rem 1.5rem;
+                border-bottom: none;
+                text-align: left;
+                justify-content: flex-start;
+            }
+
+            .mobile-label {
+                display: none;
+            }
+
+            .blog-cell[data-label="Actions"] {
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const autoSubmitElements = [document.getElementById('category'), document.getElementById('status'),
+                document.getElementById('sort')
+            ];
+            autoSubmitElements.forEach(element => {
+                if (element) {
+                    element.addEventListener('change', function() {
+                        document.getElementById('search-form').submit();
+                    });
+                }
             });
-        }, 5000);
-    });
-</script>
+            setTimeout(function() {
+                const alerts = [document.getElementById('success-alert'), document.getElementById(
+                    'error-alert')];
+                alerts.forEach(alert => {
+                    if (alert) {
+                        alert.style.display = 'none';
+                    }
+                });
+            }, 5000);
+        });
+    </script>
 @endsection

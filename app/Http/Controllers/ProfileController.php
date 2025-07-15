@@ -7,6 +7,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class ProfileController extends Controller
@@ -26,13 +27,29 @@ class ProfileController extends Controller
      */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
+        $user = $request->user();
 
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
+        // Handle company logo upload
+        $companyLogoPath = $user->company_logo;
+        if ($request->hasFile('company_logo')) {
+            // Delete old logo if exists
+            if ($user->company_logo) {
+                Storage::disk('public')->delete($user->company_logo);
+            }
+            $companyLogoPath = $request->file('company_logo')->store('company_logos', 'public');
         }
 
-        $request->user()->save();
+        // Prepare data for update
+        $updateData = $request->validated();
+        $updateData['company_logo'] = $companyLogoPath;
+
+        $user->fill($updateData);
+
+        if ($user->isDirty('email')) {
+            $user->email_verified_at = null;
+        }
+
+        $user->save();
 
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }
@@ -47,6 +64,11 @@ class ProfileController extends Controller
         ]);
 
         $user = $request->user();
+
+        // Delete company logo if exists
+        if ($user->company_logo) {
+            Storage::disk('public')->delete($user->company_logo);
+        }
 
         Auth::logout();
 

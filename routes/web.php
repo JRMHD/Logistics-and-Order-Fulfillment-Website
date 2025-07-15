@@ -22,11 +22,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// User dashboard - requires authentication and email verification
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+// User profile routes - requires authentication and email verification
+Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -34,7 +36,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__ . '/auth.php';
 
-
+// Public routes (no authentication required)
 Route::view('/about', 'about');
 Route::view('/contact', 'contact');
 Route::view('/faq', 'faq');
@@ -58,14 +60,14 @@ Route::fallback(function () {
     return view('404');
 });
 
+// Public form submissions (no verification required)
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
+Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('quote.request');
 
-
-
-Route::middleware(['auth', 'admin'])->group(function () {
+// Admin routes - requires authentication, email verification, and admin access
+Route::middleware(['auth', 'verified', 'role:admin_access'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
-    // Route::resource('/admin/trucking', TruckingController::class);
     Route::resource('/admin/trucking', TruckingController::class)->names('admin.trucking');
 
     // Subscriber Management
@@ -80,18 +82,28 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::post('/trucking/payment/process/{id}', [TruckingPaymentController::class, 'initiatePayment'])->name('admin.trucking.payment.process');
 });
 
+// Admin-only routes (strict admin access) - requires authentication, email verification, and admin role
+Route::middleware(['auth', 'verified', 'role:admin'])->group(function () {
+    // Add routes that only admins should access
+    // For example: user management, system settings, etc.
+});
 
+// Order tracking (public access)
 Route::get('/order-tracking', [TruckingController::class, 'trackOrder'])->name('order.tracking');
-Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('quote.request');
 
+// Payment routes (public access for customer payments)
 Route::get('/trucking/payment/{id}', [TruckingPaymentController::class, 'showPaymentForm'])->name('admin.trucking.payment.form');
 Route::post('/trucking/payment/process/{id}', [TruckingPaymentController::class, 'initiatePayment'])->name('admin.trucking.payment.process');
 Route::post('/mpesa/callback', [MpesaCallbackController::class, 'handleCallback']);
 
-Route::post('admin/trucking/payment/callback', [TruckingPaymentController::class, 'callback'])->name('admin.trucking.payment.callback');
-Route::get('admin/trucking/payment/status/{id}', [TruckingPaymentController::class, 'checkStatus'])->name('admin.trucking.payment.status');
+// Payment callback and status routes (admin access)
+Route::middleware(['auth', 'verified', 'role:admin_access'])->group(function () {
+    Route::post('admin/trucking/payment/callback', [TruckingPaymentController::class, 'callback'])->name('admin.trucking.payment.callback');
+    Route::get('admin/trucking/payment/status/{id}', [TruckingPaymentController::class, 'checkStatus'])->name('admin.trucking.payment.status');
+});
 
-Route::prefix('admin')->middleware('auth')->group(function () {
+// Blog management - requires authentication, email verification, and admin access
+Route::prefix('admin')->middleware(['auth', 'verified', 'role:admin_access'])->group(function () {
     Route::resource('blogs', BlogController::class, [
         'names' => 'admin.blogs'
     ]);
@@ -101,9 +113,11 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('admin.comments.destroy');
 });
 
+// Public blog routes
 Route::get('/blog', [BlogController::class, 'publicIndex'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'publicShow'])->name('blog.show');
 
+// SEO routes (public access)
 Route::get('/sitemap.xml', function () {
     SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));
     return response()->file(public_path('sitemap.xml'));
@@ -138,33 +152,23 @@ Route::get('/sitemap.xml', function () {
     return response($content)->header('Content-Type', 'application/xml');
 });
 
-
+// Public comment routes
 Route::post('/comments', [BlogController::class, 'storeComment'])->name('comments.store');
 Route::get('/comments/{blog_id}', [BlogController::class, 'fetchComments'])->name('comments.fetch');
 Route::get('/', [BlogController::class, 'welcome'])->name('home');
 
-
-// Route::prefix('{country}')->group(function () {
-//     Route::view('/courieranddelivery', 'courieranddelivery');
-//     Route::view('/ecommercepackaging', 'ecommercepackaging');
-//     Route::view('/warehousing', 'warehousing');
-//     Route::view('/medicalcourier', 'medicalcourier');
-//     Route::view('/bulklogistics', 'bulklogistics');
-//     Route::view('/reverselogistics', 'reverselogistics');
-// });
-
-
-// Kenya Route
+// Country-specific service pages (public access)
+// Kenya Routes
 Route::get('/cashondelivery/kenya', function () {
     return view('cashondelivery.kenya');
 });
 
-// Tanzania Route
+// Tanzania Routes
 Route::get('/cashondelivery/tanzania', function () {
     return view('cashondelivery.Tanzania');
 });
 
-// Uganda Route
+// Uganda Routes
 Route::get('/cashondelivery/uganda', function () {
     return view('cashondelivery.Uganda');
 });
@@ -192,6 +196,7 @@ Route::get('/medicalcourier/tanzania', function () {
 Route::get('/medicalcourier/uganda', function () {
     return view('medicalcourier.uganda');
 });
+
 Route::get('/orderfulfilment/kenya', function () {
     return view('orderfulfilment.kenya');
 });
@@ -226,4 +231,15 @@ Route::get('/warehousingandstorage/tanzania', function () {
 
 Route::get('/warehousingandstorage/uganda', function () {
     return view('warehousingandstorage.uganda');
+});
+
+
+
+Route::middleware(['auth', 'verified', 'role:admin_access'])->group(function () {
+
+    // User Management
+    Route::resource('/admin/users', \App\Http\Controllers\Admin\UserManagementController::class)->names('admin.users');
+    Route::patch('/admin/users/{user}/freeze', [\App\Http\Controllers\Admin\UserManagementController::class, 'toggleFreeze'])->name('admin.users.freeze');
+    Route::patch('/admin/users/{user}/password', [\App\Http\Controllers\Admin\UserManagementController::class, 'updatePassword'])->name('admin.users.password');
+    Route::patch('/admin/users/{user}/api-authorization', [\App\Http\Controllers\Admin\UserManagementController::class, 'toggleApiAuthorization'])->name('admin.users.api-authorization');
 });

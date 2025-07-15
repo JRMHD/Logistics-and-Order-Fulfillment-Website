@@ -4,59 +4,386 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Reset Password') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} - Reset Password</title>
+    <link rel="icon" href="/assets/img/favicon log.png">
     @vite('resources/css/app.css')
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --primary: #EC1F27;
+            --primary-rgb: 236, 31, 39;
+            --primary-light: #ff4d56;
+            --primary-dark: #c91e27;
+
+            --neutral-0: #ffffff;
+            --neutral-50: #fafafa;
+            --neutral-100: #f4f4f5;
+            --neutral-200: #e4e4e7;
+            --neutral-300: #d4d4d8;
+            --neutral-400: #a1a1aa;
+            --neutral-500: #71717a;
+            --neutral-600: #52525b;
+            --neutral-700: #3f3f46;
+            --neutral-800: #27272a;
+            --neutral-900: #18181b;
+
+            --blue-50: #eff6ff;
+            --blue-100: #dbeafe;
+            --blue-500: #3b82f6;
+            --blue-600: #2563eb;
+
+            --green-50: #f0fdf4;
+            --green-500: #22c55e;
+
+            --violet-50: #f5f3ff;
+            --violet-500: #8b5cf6;
+
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+            --blur-sm: blur(4px);
+            --blur-xl: blur(24px);
+
+            --radius-lg: 16px;
+            --radius-2xl: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg,
+                    var(--neutral-50) 0%,
+                    var(--neutral-100) 25%,
+                    var(--blue-50) 50%,
+                    var(--violet-50) 75%,
+                    var(--neutral-50) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(var(--primary-rgb), 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            animation: backgroundFloat 20s ease-in-out infinite;
+        }
+
+        @keyframes backgroundFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateY(-10px) rotate(1deg);
+            }
+
+            66% {
+                transform: translateY(5px) rotate(-1deg);
+            }
+        }
+
+        .auth-container {
+            width: 100%;
+            max-width: 440px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .auth-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: var(--blur-xl);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-2xl);
+            padding: 0;
+            box-shadow: var(--shadow-2xl);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .auth-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.1) 0%,
+                    rgba(255, 255, 255, 0.05) 100%);
+            pointer-events: none;
+        }
+
+        .auth-header {
+            padding: 40px 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-container {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 48px;
+            width: auto;
+        }
+
+        .auth-header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--neutral-900);
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+            background: linear-gradient(135deg, var(--neutral-900), var(--neutral-700));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .auth-header p {
+            font-size: 16px;
+            color: var(--neutral-500);
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+
+        .auth-form {
+            padding: 20px 40px 40px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--neutral-700);
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1.5px solid var(--neutral-200);
+            border-radius: var(--radius-lg);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--neutral-900);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: var(--blur-sm);
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            outline: none;
+            letter-spacing: -0.01em;
+        }
+
+        .form-input::placeholder {
+            color: var(--neutral-400);
+            font-weight: 400;
+        }
+
+        .form-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.1);
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-1px);
+        }
+
+        .error-message {
+            margin-top: 8px;
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 18px 24px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border: none;
+            border-radius: var(--radius-lg);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            letter-spacing: -0.01em;
+            box-shadow: 0 4px 16px rgba(var(--primary-rgb), 0.3);
+            position: relative;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(var(--primary-rgb), 0.4);
+        }
+
+        .submit-button.loading {
+            pointer-events: none;
+            opacity: 0.8;
+        }
+
+        .submit-button.loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 -10px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .auth-card {
+            animation: fadeInUp 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px;
+            }
+
+            .auth-header {
+                padding: 32px 24px 16px;
+            }
+
+            .logo-container img {
+                height: 40px;
+            }
+
+            .auth-header h1 {
+                font-size: 28px;
+            }
+
+            .auth-form {
+                padding: 16px 24px 32px;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-white min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-md">
-        <div class="bg-white shadow-2xl rounded-2xl overflow-hidden border-2 border-[#004041]">
-            <div class="bg-[#004041] p-6 text-center">
-                <h1 class="text-3xl font-bold text-white">Reset Password</h1>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo-container">
+                    <img src="{{ asset('assets/img/logo_black_text.png') }}" alt="{{ config('app.name', 'Logo') }}">
+                </div>
+                <h1>Reset Your Password</h1>
+                <p>Create a new, strong password for your account</p>
             </div>
 
-            <form method="POST" action="{{ route('password.store') }}" class="p-8 space-y-6">
+            <form method="POST" action="{{ route('password.store') }}" class="auth-form">
                 @csrf
 
+                <!-- Password Reset Token -->
                 <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
-                <!-- Email -->
-                <div>
-                    <x-input-label for="email" :value="__('Email')" class="text-[#004041] font-semibold" />
-                    <x-text-input id="email" type="email" name="email" :value="old('email', $request->email)" required autofocus
-                        autocomplete="username"
-                        class="mt-1 w-full border-2 border-[#004041] rounded-lg focus:ring-red-500 focus:border-red-500 transition duration-300" />
-                    <x-input-error :messages="$errors->get('email')" class="mt-2 text-red-600" />
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input id="email" type="email" name="email" value="{{ old('email', $request->email) }}"
+                        required autofocus autocomplete="username"
+                        class="form-input @error('email') border-red-300 @enderror" />
+                    @error('email')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                 </div>
 
-                <!-- New Password -->
-                <div>
-                    <x-input-label for="password" :value="__('New Password')" class="text-[#004041] font-semibold" />
-                    <x-text-input id="password" type="password" name="password" required autocomplete="new-password"
-                        placeholder="Enter new password"
-                        class="mt-1 w-full border-2 border-[#004041] rounded-lg focus:ring-red-500 focus:border-red-500 transition duration-300" />
-                    <x-input-error :messages="$errors->get('password')" class="mt-2 text-red-600" />
+                <!-- Password Input -->
+                <div class="form-group">
+                    <label for="password" class="form-label">New Password</label>
+                    <input id="password" type="password" name="password" required autocomplete="new-password"
+                        placeholder="Enter your new password"
+                        class="form-input @error('password') border-red-300 @enderror" />
+                    @error('password')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                 </div>
 
-                <!-- Confirm Password -->
-                <div>
-                    <x-input-label for="password_confirmation" :value="__('Confirm Password')" class="text-[#004041] font-semibold" />
-                    <x-text-input id="password_confirmation" type="password" name="password_confirmation" required
-                        autocomplete="new-password" placeholder="Confirm new password"
-                        class="mt-1 w-full border-2 border-[#004041] rounded-lg focus:ring-red-500 focus:border-red-500 transition duration-300" />
-                    <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2 text-red-600" />
+                <!-- Confirm Password Input -->
+                <div class="form-group">
+                    <label for="password_confirmation" class="form-label">Confirm New Password</label>
+                    <input id="password_confirmation" type="password" name="password_confirmation" required
+                        autocomplete="new-password" placeholder="Confirm your new password" class="form-input" />
+                    @error('password_confirmation')
+                        <div class="error-message">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <!-- Submit Button -->
-                <div class="flex justify-end">
-                    <x-primary-button
-                        class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-                        {{ __('Reset Password') }}
-                    </x-primary-button>
-                </div>
+                <button type="submit" class="submit-button" id="reset-btn">
+                    {{ __('Reset Password') }}
+                </button>
             </form>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.auth-form');
+            const resetBtn = document.getElementById('reset-btn');
+
+            if (form) {
+                form.addEventListener('submit', function() {
+                    resetBtn.classList.add('loading');
+                    resetBtn.textContent = '';
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
