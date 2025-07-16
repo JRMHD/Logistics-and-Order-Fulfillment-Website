@@ -175,7 +175,7 @@
                         gap: 0.5rem;
                         margin-bottom: 1.5rem;
                     ">
-                    <input type="text" name="tracking_number" id="trackingNumber"
+                    <input type="text" name="tracking_number" id="trackingNumber" value="{{ $trackingNumber ?? '' }}"
                         style="
                             flex: 1;
                             padding: 1rem 1.25rem;
@@ -225,13 +225,14 @@
                 <p style="color: #6b7280;">Fetching order details...</p>
             </div>
 
-            <!-- Order Details -->
-            <div id="orderDetails"
+            <!-- Trucking Order Details -->
+            <div id="truckingOrderDetails"
                 style="
-                    display: none;
+                    display: {{ isset($trackingType) && $trackingType === 'trucking' && $trucking ? 'block' : 'none' }};
                     background: #ffffff;
                     border-radius: 12px;
                     padding: 2rem;
+                    border: 1px solid #e5e9f2;
                 ">
                 <h2
                     style="
@@ -240,7 +241,7 @@
                         margin-bottom: 1.5rem;
                         font-weight: 600;
                     ">
-                    Order Details
+                    Trucking Order Details
                 </h2>
 
                 <div
@@ -251,36 +252,44 @@
                     ">
                     <p style="display: flex; gap: 0.5rem; margin: 0;">
                         <strong style="color: #6b7280; min-width: 140px;">Name:</strong>
-                        <span id="orderName" style="color: #1a1f36;"></span>
+                        <span id="truckingOrderName" style="color: #1a1f36;">{{ $trucking->name ?? '' }}</span>
                     </p>
                     <p style="display: flex; gap: 0.5rem; margin: 0;">
                         <strong style="color: #6b7280; min-width: 140px;">Tracking Number:</strong>
-                        <span id="orderTrackingNumber" style="color: #1a1f36;"></span>
+                        <span id="truckingTrackingNumber"
+                            style="color: #1a1f36;">{{ $trucking->tracking_number ?? '' }}</span>
                     </p>
                     <p style="display: flex; gap: 0.5rem; margin: 0;">
                         <strong style="color: #6b7280; min-width: 140px;">From:</strong>
-                        <span id="orderFrom" style="color: #1a1f36;"></span>
+                        <span id="truckingOrderFrom"
+                            style="color: #1a1f36;">{{ $trucking->from_location ?? '' }}</span>
                     </p>
                     <p style="display: flex; gap: 0.5rem; margin: 0;">
                         <strong style="color: #6b7280; min-width: 140px;">To:</strong>
-                        <span id="orderTo" style="color: #1a1f36;"></span>
+                        <span id="truckingOrderTo" style="color: #1a1f36;">{{ $trucking->to_location ?? '' }}</span>
                     </p>
-                    <p style="display: flex; gap: 0.5rem; margin: 0;">
+                    <p style="display: flex; gap: 0.5rem; margin: 0; align-items: center;">
                         <strong style="color: #6b7280; min-width: 140px;">Status:</strong>
-                        <span id="orderStatus"
+                        <span id="truckingOrderStatus" class="status-badge"
                             style="
                                 padding: 0.25rem 0.75rem;
-                                background: #ecfdf5;
-                                color: #10b981;
+                                background: {{ isset($trucking) && $trucking->status === 'Delivered' ? '#ecfdf5' : (isset($trucking) && $trucking->status === 'In Transit' ? '#eff6ff' : (isset($trucking) && $trucking->status === 'Pending' ? '#fef3c7' : '#fef2f2')) }};
+                                color: {{ isset($trucking) && $trucking->status === 'Delivered' ? '#10b981' : (isset($trucking) && $trucking->status === 'In Transit' ? '#2563eb' : (isset($trucking) && $trucking->status === 'Pending' ? '#d97706' : '#dc2626')) }};
                                 border-radius: 9999px;
                                 font-size: 0.875rem;
                                 font-weight: 500;
-                            "></span>
+                            ">{{ isset($trucking) ? $trucking->status : '' }}</span>
                     </p>
+                    @if (isset($trucking) && $trucking->load_description)
+                        <p style="display: flex; gap: 0.5rem; margin: 0;">
+                            <strong style="color: #6b7280; min-width: 140px;">Description:</strong>
+                            <span style="color: #1a1f36;">{{ $trucking->load_description }}</span>
+                        </p>
+                    @endif
                 </div>
 
-                <!-- Tracking Steps -->
-                <div class="tracking-steps"
+                <!-- Trucking Steps -->
+                <div class="trucking-steps"
                     style="
                         display: flex;
                         justify-content: space-between;
@@ -299,7 +308,7 @@
                         ">
                     </div>
 
-                    <div class="step pending"
+                    <div class="step trucking-pending"
                         style="
                             text-align: center;
                             z-index: 2;
@@ -328,7 +337,7 @@
                             ">Pending</span>
                     </div>
 
-                    <div class="step in-transit"
+                    <div class="step trucking-in-transit"
                         style="
                             text-align: center;
                             z-index: 2;
@@ -354,10 +363,11 @@
                                 color: #6b7280;
                                 font-size: 0.875rem;
                                 font-weight: 500;
-                            ">In Transit</span>
+                            ">In
+                            Transit</span>
                     </div>
 
-                    <div class="step delivered"
+                    <div class="step trucking-delivered"
                         style="
                             text-align: center;
                             z-index: 2;
@@ -386,7 +396,7 @@
                             ">Delivered</span>
                     </div>
 
-                    <div class="step cancelled"
+                    <div class="step trucking-cancelled"
                         style="
                             text-align: center;
                             z-index: 2;
@@ -417,10 +427,111 @@
                 </div>
             </div>
 
+            <!-- API Order Details -->
+            <div id="apiOrderDetails"
+                style="
+                    display: {{ isset($trackingType) && $trackingType === 'order' && $order ? 'block' : 'none' }};
+                    background: #ffffff;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    border: 1px solid #e5e9f2;
+                ">
+                <h2
+                    style="
+                        font-size: 1.5rem;
+                        color: #1a1f36;
+                        margin-bottom: 1.5rem;
+                        font-weight: 600;
+                    ">
+                    API Order Details
+                </h2>
+
+                <div
+                    style="
+                        display: grid;
+                        gap: 1rem;
+                        margin-bottom: 2rem;
+                    ">
+                    <p style="display: flex; gap: 0.5rem; margin: 0;">
+                        <strong style="color: #6b7280; min-width: 140px;">Customer:</strong>
+                        <span id="apiOrderName" style="color: #1a1f36;">{{ $order->customer_name ?? '' }}</span>
+                    </p>
+                    <p style="display: flex; gap: 0.5rem; margin: 0;">
+                        <strong style="color: #6b7280; min-width: 140px;">Tracking Number:</strong>
+                        <span id="apiTrackingNumber"
+                            style="color: #1a1f36;">{{ $order->tracking_number ?? '' }}</span>
+                    </p>
+                    <p style="display: flex; gap: 0.5rem; margin: 0;">
+                        <strong style="color: #6b7280; min-width: 140px;">From:</strong>
+                        <span id="apiOrderFrom"
+                            style="color: #1a1f36;">{{ $order->client->company_name ?? 'API Client' }}</span>
+                    </p>
+                    <p style="display: flex; gap: 0.5rem; margin: 0;">
+                        <strong style="color: #6b7280; min-width: 140px;">To:</strong>
+                        <span id="apiOrderTo"
+                            style="color: #1a1f36;">{{ isset($order) ? $order->city . ', ' . $order->country : '' }}</span>
+                    </p>
+                    <p style="display: flex; gap: 0.5rem; margin: 0; align-items: center;">
+                        <strong style="color: #6b7280; min-width: 140px;">Status:</strong>
+                        <span id="apiOrderStatus"
+                            class="status-badge {{ isset($order) && $order->status_color ? $order->status_color : 'info' }}"
+                            style="
+                                padding: 0.25rem 0.75rem;
+                                background: {{ isset($order) && $order->status_color === 'success' ? '#ecfdf5' : (isset($order) && $order->status_color === 'warning' ? '#fef3c7' : (isset($order) && $order->status_color === 'danger' ? '#fef2f2' : '#eff6ff')) }};
+                                color: {{ isset($order) && $order->status_color === 'success' ? '#10b981' : (isset($order) && $order->status_color === 'warning' ? '#d97706' : (isset($order) && $order->status_color === 'danger' ? '#dc2626' : '#2563eb')) }};
+                                border-radius: 9999px;
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                            ">{{ isset($order) ? $order->status_label : '' }}</span>
+                    </p>
+                    @if (isset($order) && $order->delivery_type)
+                        <p style="display: flex; gap: 0.5rem; margin: 0;">
+                            <strong style="color: #6b7280; min-width: 140px;">Delivery Type:</strong>
+                            <span style="color: #1a1f36;">{{ ucfirst($order->delivery_type) }}</span>
+                        </p>
+                    @endif
+                    @if (isset($order) && $order->total_amount)
+                        <p style="display: flex; gap: 0.5rem; margin: 0;">
+                            <strong style="color: #6b7280; min-width: 140px;">Total Amount:</strong>
+                            <span style="color: #1a1f36;">{{ $order->currency }}
+                                {{ number_format($order->total_amount, 2) }}</span>
+                        </p>
+                    @endif
+                </div>
+
+                <!-- API Order Status History (if available) -->
+                @if (isset($order) && $order->statusHistory && $order->statusHistory->count() > 0)
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e5e9f2;">
+                        <h3 style="font-size: 1.25rem; color: #1a1f36; margin-bottom: 1rem; font-weight: 600;">Status
+                            History</h3>
+                        <div style="space-y: 1rem;">
+                            @foreach ($order->statusHistory->take(5) as $history)
+                                <div
+                                    style="display: flex; gap: 1rem; padding: 0.75rem; background: #f9fafb; border-radius: 8px; margin-bottom: 0.5rem;">
+                                    <div
+                                        style="flex-shrink: 0; width: 8px; height: 8px; background: #5469d4; border-radius: 50%; margin-top: 0.5rem;">
+                                    </div>
+                                    <div style="flex: 1;">
+                                        <p style="margin: 0; font-weight: 600; color: #1a1f36;">
+                                            {{ $history->status_label }}</p>
+                                        @if ($history->notes)
+                                            <p style="margin: 0; font-size: 0.875rem; color: #6b7280;">
+                                                {{ $history->notes }}</p>
+                                        @endif
+                                        <p style="margin: 0; font-size: 0.75rem; color: #9ca3af;">
+                                            {{ $history->created_at->format('M d, Y H:i') }}</p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                @endif
+            </div>
+
             <!-- Error Message -->
             <p id="errorMessage"
                 style="
-                    display: none;
+                    display: {{ isset($trackingNumber) && !$trucking && !$order ? 'block' : 'none' }};
                     color: #dc2626;
                     text-align: center;
                     padding: 1rem;
@@ -428,7 +539,12 @@
                     border-radius: 8px;
                     margin-top: 1rem;
                 ">
-                Invalid Tracking Number. Please try again.
+                @if (isset($trackingNumber) && !$trucking && !$order)
+                    No order found with tracking number: <strong>{{ $trackingNumber }}</strong>. Please check your
+                    tracking number and try again.
+                @else
+                    Invalid Tracking Number. Please try again.
+                @endif
             </p>
         </div>
     </section>
@@ -461,16 +577,18 @@
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
-            .tracking-section > div {
+            .tracking-section>div {
                 padding: 1.5rem;
             }
 
-            .tracking-steps {
+            .trucking-steps,
+            .api-steps {
                 flex-direction: column;
                 gap: 1.5rem;
             }
 
-            .tracking-steps::before {
+            .trucking-steps::before,
+            .api-steps::before {
                 display: none;
             }
 
@@ -486,7 +604,7 @@
         }
 
         @media (max-width: 480px) {
-            form > div {
+            form>div {
                 flex-direction: column;
             }
 
@@ -500,6 +618,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
+            // Initialize tracking steps if order is already loaded
+            @if (isset($trackingType) && $trackingType === 'trucking' && $trucking)
+                updateTruckingSteps('{{ $trucking->status }}');
+            @endif
+
             $('#trackingForm').on('submit', function(e) {
                 e.preventDefault(); // Prevent form submission
 
@@ -507,7 +630,8 @@
 
                 // Show loader
                 $('#loader').show();
-                $('#orderDetails').hide();
+                $('#truckingOrderDetails').hide();
+                $('#apiOrderDetails').hide();
                 $('#errorMessage').hide();
 
                 // AJAX request
@@ -521,19 +645,81 @@
                         $('#loader').hide();
 
                         if (response.trucking) {
-                            // Update order details
-                            $('#orderName').text(response.trucking.name);
-                            $('#orderTrackingNumber').text(response.trucking.tracking_number);
-                            $('#orderFrom').text(response.trucking.from_location);
-                            $('#orderTo').text(response.trucking.to_location);
-                            $('#orderStatus').text(response.trucking.status).removeClass()
-                                .addClass('badge bg-success');
+                            // Update trucking order details
+                            $('#truckingOrderName').text(response.trucking.name);
+                            $('#truckingTrackingNumber').text(response.trucking
+                            .tracking_number);
+                            $('#truckingOrderFrom').text(response.trucking.from_location);
+                            $('#truckingOrderTo').text(response.trucking.to_location);
+
+                            // Update status with proper styling
+                            const truckingStatusBadge = $('#truckingOrderStatus');
+                            truckingStatusBadge.text(response.trucking.status);
+
+                            // Update status colors based on status
+                            let bgColor = '#eff6ff';
+                            let textColor = '#2563eb';
+
+                            if (response.trucking.status === 'Delivered') {
+                                bgColor = '#ecfdf5';
+                                textColor = '#10b981';
+                            } else if (response.trucking.status === 'Pending') {
+                                bgColor = '#fef3c7';
+                                textColor = '#d97706';
+                            } else if (response.trucking.status === 'Cancelled') {
+                                bgColor = '#fef2f2';
+                                textColor = '#dc2626';
+                            }
+
+                            truckingStatusBadge.css({
+                                'background-color': bgColor,
+                                'color': textColor
+                            });
 
                             // Update tracking steps
-                            updateTrackingSteps(response.trucking.status);
+                            updateTruckingSteps(response.trucking.status);
 
-                            // Show order details
-                            $('#orderDetails').show();
+                            // Show trucking order details
+                            $('#truckingOrderDetails').show();
+                        } else if (response.order) {
+                            // Update API order details
+                            $('#apiOrderName').text(response.order.customer_name);
+                            $('#apiTrackingNumber').text(response.order.tracking_number);
+                            $('#apiOrderFrom').text(response.order.client ? response.order
+                                .client.company_name : 'API Client');
+                            $('#apiOrderTo').text(response.order.city + ', ' + response.order
+                                .country);
+
+                            // Update status with proper styling
+                            const statusBadge = $('#apiOrderStatus');
+                            statusBadge.text(response.order.status_label || response.order
+                                .status);
+
+                            // Update status colors based on status
+                            let bgColor = '#eff6ff';
+                            let textColor = '#2563eb';
+
+                            if (response.order.status_color === 'success' || response.order
+                                .status === 'delivered') {
+                                bgColor = '#ecfdf5';
+                                textColor = '#10b981';
+                            } else if (response.order.status_color === 'warning' || response
+                                .order.status === 'pending') {
+                                bgColor = '#fef3c7';
+                                textColor = '#d97706';
+                            } else if (response.order.status_color === 'danger' || response
+                                .order.status === 'cancelled') {
+                                bgColor = '#fef2f2';
+                                textColor = '#dc2626';
+                            }
+
+                            statusBadge.css({
+                                'background-color': bgColor,
+                                'color': textColor
+                            });
+
+                            // Show API order details
+                            $('#apiOrderDetails').show();
                         } else {
                             // Show error message
                             $('#errorMessage').show();
@@ -546,26 +732,26 @@
                 });
             });
 
-            function updateTrackingSteps(status) {
-                // Reset all steps
-                $('.step').removeClass('active completed');
+            function updateTruckingSteps(status) {
+                // Reset all trucking steps
+                $('.trucking-pending, .trucking-in-transit, .trucking-delivered, .trucking-cancelled').removeClass(
+                    'active completed');
 
                 // Mark steps based on status
                 if (status === 'Pending') {
-                    $('.step.pending').addClass('active');
+                    $('.trucking-pending').addClass('active');
                 } else if (status === 'In Transit') {
-                    $('.step.pending').addClass('completed');
-                    $('.step.in-transit').addClass('active');
+                    $('.trucking-pending').addClass('completed');
+                    $('.trucking-in-transit').addClass('active');
                 } else if (status === 'Delivered') {
-                    $('.step.pending, .step.in-transit').addClass('completed');
-                    $('.step.delivered').addClass('active');
+                    $('.trucking-pending, .trucking-in-transit').addClass('completed');
+                    $('.trucking-delivered').addClass('active');
                 } else if (status === 'Cancelled') {
-                    $('.step.cancelled').addClass('active');
+                    $('.trucking-cancelled').addClass('active');
                 }
             }
         });
     </script>
-
     <!-- Start Footer -->
     @include('footer')
     <!-- End Footer -->

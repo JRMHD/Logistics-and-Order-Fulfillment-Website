@@ -2,18 +2,25 @@
     <!-- SIMPLE, RELIABLE TICKER THAT IS GUARANTEED TO BE VISIBLE -->
     <div style="background-color: #003B3B; color: white; overflow: hidden; padding: 8px 0;">
         <div class="ticker-wrapper" style="overflow: hidden; width: 100%;">
-            <div class="ticker" style="white-space: nowrap; display: inline-block; animation: ticker-scroll 60s linear infinite;">
-                <span style="margin-right: 50px; font-size: 13px;">📦 Motorspeed eCommerce Fulfillment - East Africa's Premier 3PL Provider</span>
-                <span style="margin-right: 50px; font-size: 13px;">🏢 Warehousing Solutions in Kenya, Tanzania & Uganda</span>
+            <div class="ticker"
+                style="white-space: nowrap; display: inline-block; animation: ticker-scroll 60s linear infinite;">
+                <span style="margin-right: 50px; font-size: 13px;">📦 Motorspeed eCommerce Fulfillment - East Africa's
+                    Premier 3PL Provider</span>
+                <span style="margin-right: 50px; font-size: 13px;">🏢 Warehousing Solutions in Kenya, Tanzania &
+                    Uganda</span>
                 <span style="margin-right: 50px; font-size: 13px;">💰 Cash on Delivery Available</span>
-                <span style="margin-right: 50px; font-size: 13px;">📦 eCommerce Packaging & Fulfillment Specialists</span>
+                <span style="margin-right: 50px; font-size: 13px;">📦 eCommerce Packaging & Fulfillment
+                    Specialists</span>
                 <span style="margin-right: 50px; font-size: 13px;">🚚 Third-Party Logistics (3PL) Services</span>
-                
+
                 <!-- Duplicate content to ensure continuous flow -->
-                <span style="margin-right: 50px; font-size: 13px;">📦 Motorspeed eCommerce Fulfillment - East Africa's Premier 3PL Provider</span>
-                <span style="margin-right: 50px; font-size: 13px;">🏢 Warehousing Solutions in Kenya, Tanzania & Uganda</span>
+                <span style="margin-right: 50px; font-size: 13px;">📦 Motorspeed eCommerce Fulfillment - East Africa's
+                    Premier 3PL Provider</span>
+                <span style="margin-right: 50px; font-size: 13px;">🏢 Warehousing Solutions in Kenya, Tanzania &
+                    Uganda</span>
                 <span style="margin-right: 50px; font-size: 13px;">💰 Cash on Delivery Available</span>
-                <span style="margin-right: 50px; font-size: 13px;">📦 eCommerce Packaging & Fulfillment Specialists</span>
+                <span style="margin-right: 50px; font-size: 13px;">📦 eCommerce Packaging & Fulfillment
+                    Specialists</span>
                 <span style="margin-right: 50px; font-size: 13px;">🚚 Third-Party Logistics (3PL) Services</span>
             </div>
         </div>
@@ -24,6 +31,7 @@
             0% {
                 transform: translateX(0);
             }
+
             100% {
                 transform: translateX(-50%);
             }
@@ -135,8 +143,7 @@
                                     </li>
 
                                     <!-- Tanzania with flag -->
-                                    <li class="cs_country_dropdown"
-                                        style="position: relative; padding: 0; margin: 0;">
+                                    <li class="cs_country_dropdown" style="position: relative; padding: 0; margin: 0;">
                                         <a href="#" onclick="toggleSubDropdown(event)"
                                             style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: #444; text-decoration: none; font-size: 15px; transition: background-color 0.2s ease;">
                                             <span style="display: flex; align-items: center; color: #444;">
@@ -370,7 +377,7 @@
                                     .cs_sub_menu li a {
                                         color: #444 !important;
                                     }
-                                    
+
                                     /* Adjust ticker for mobile */
                                     .ticker span {
                                         font-size: 12px !important;
@@ -544,14 +551,55 @@
                     });
                 </script>
                 <!-- End Main Header Middle Area -->
+                <div class="cs-header-auth-section" style="margin-left: 15px;">
+                    @guest
+                        <!-- Show login/register links when not authenticated -->
+                        <div class="auth-buttons" style="display: flex; gap: 8px; align-items: center;">
+                            <a href="{{ route('login') }}" class="auth-link login-btn"
+                                style="color: #003B3B; padding: 8px 15px; border: 1px solid #003B3B; border-radius: 4px; text-decoration: none; font-size: 14px;">
+                                Login
+                            </a>
+                            {{-- <a href="{{ route('register') }}" class="auth-link register-btn"
+                                style="background-color: #003B3B; color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-size: 14px;">
+                                Register
+                            </a> --}}
+                        </div>
+                    @endguest
 
+                    @auth
+                        <!-- Show dashboard link and user menu when authenticated -->
+                        <div class="user-section" style="position: relative; display: inline-block;">
+                            <div class="user-controls" style="display: flex; gap: 8px; align-items: center;">
+                                <!-- Dashboard link based on user role -->
+                                @if (auth()->user()->hasRole('admin') || auth()->user()->hasRole('admin_access'))
+                                    <a href="{{ route('admin.dashboard') }}" class="dashboard-link"
+                                        style="color: #003B3B; padding: 8px 15px; border: 1px solid #003B3B; border-radius: 4px; text-decoration: none; font-size: 14px;">
+                                        <span class="dashboard-text">Admin Dashboard</span>
+                                        <span class="dashboard-text-mobile">Admin</span>
+                                    </a>
+                                @else
+                                    <a href="{{ route('dashboard') }}" class="dashboard-link"
+                                        style="color: #003B3B; padding: 8px 15px; border: 1px solid #003B3B; border-radius: 4px; text-decoration: none; font-size: 14px;">
+                                        <span class="dashboard-text">Dashboard</span>
+                                        <span class="dashboard-text-mobile">Panel</span>
+                                    </a>
+                                @endif
+
+                               
+                            </div>
+                        </div>
+                    @endauth
+                </div>
                 <!-- Start Main Header Right Area -->
                 <div class="cs_main_header_right">
                     <div class="cs-header-additional-item">
-                        <a href="{{ url('/Quoterequest') }}" style="background-color: #003B3B; color: white; padding: 8px 15px; border-radius: 4px; display: inline-block;">
+                        <a href="{{ url('/Quoterequest') }}"
+                            style="background-color: #003B3B; color: white; padding: 8px 15px; border-radius: 4px; display: inline-block;">
                             <span style="color: white;">+</span> Request a Free Quote
                         </a>
                     </div>
+
+
                     <div class="cs_toolbox">
                         <span class="cs_icon_btn">
                             <span class="cs_icon_btn_in">

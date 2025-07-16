@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Trucking;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
@@ -57,7 +58,6 @@ class TruckingController extends Controller
         // Send SMS Notification
         $this->sendSms($trucking->phone, "Dear {$trucking->name}, Your order {$tracking_number} has been successfully received and is being processed. You will receive an update once it reaches your destination. You can track your order at www.motorspeedcourier.com/order-tracking");
 
-
         return redirect()->route('admin.trucking.index')->with('success', 'Trucking order added successfully! Tracking Number: ' . $tracking_number);
     }
 
@@ -96,19 +96,50 @@ class TruckingController extends Controller
         return redirect()->route('admin.trucking.index')->with('success', 'Trucking order deleted successfully!');
     }
 
+    // Updated trackOrder method to handle both Trucking and Order models
     public function trackOrder(Request $request)
     {
         $trackingNumber = $request->input('tracking_number');
-        $trucking = Trucking::where('tracking_number', $trackingNumber)->first();
+        $trucking = null;
+        $order = null;
+        $trackingType = null;
 
-        if ($request->ajax()) {
-            return response()->json([
-                'trucking' => $trucking,
-                'trackingNumber' => $trackingNumber,
-            ]);
+        if ($trackingNumber) {
+            // First, try to find in Trucking model
+            $trucking = Trucking::where('tracking_number', $trackingNumber)->first();
+
+            // If not found in Trucking, try Order model
+            if (!$trucking) {
+                $order = Order::where('tracking_number', $trackingNumber)
+                    ->with(['client', 'statusHistory'])
+                    ->first();
+
+                if ($order) {
+                    $trackingType = 'order';
+                }
+            } else {
+                $trackingType = 'trucking';
+            }
         }
 
-        return view('order-tracking', compact('trucking', 'trackingNumber'));
+        if ($request->ajax()) {
+            $response = [
+                'trucking' => $trucking,
+                'order' => $order ? $order->load(['client', 'statusHistory']) : null,
+                'trackingType' => $trackingType,
+                'trackingNumber' => $trackingNumber,
+            ];
+
+            // Add computed attributes for order if it exists
+            if ($order) {
+                $response['order']['status_label'] = $order->status_label;
+                $response['order']['status_color'] = $order->status_color;
+            }
+
+            return response()->json($response);
+        }
+
+        return view('order-tracking', compact('trucking', 'order', 'trackingType', 'trackingNumber'));
     }
 
     private function sendSms($phoneNumber, $message)
@@ -116,8 +147,6 @@ class TruckingController extends Controller
         $appKey = '403a1d6847b47b7a3dbe998d511b186c';
         $appToken = '12756';
         $apiUrl = 'https://sms.textsms.co.ke/api/services/sendsms/';
-
-
 
         // Normalize phone number
         $phoneNumber = $this->normalizePhoneNumber($phoneNumber);
@@ -128,7 +157,6 @@ class TruckingController extends Controller
                 'partnerID' => $appToken,
                 'message' => $message,
                 'shortcode' => 'MOTORSPEED',
-                // 'shortcode' => 'TextSMS',
                 'mobile' => $phoneNumber,
             ]);
 

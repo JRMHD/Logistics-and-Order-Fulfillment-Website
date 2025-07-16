@@ -17,15 +17,20 @@ use Spatie\Sitemap\SitemapGenerator;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Response;
 use App\Models\Blog;
+use App\Http\Controllers\ApiKeyController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\Admin\ApiKeyController as AdminApiKeyController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 // User dashboard - requires authentication and email verification
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 // User profile routes - requires authentication and email verification
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -243,3 +248,44 @@ Route::middleware(['auth', 'verified', 'role:admin_access'])->group(function () 
     Route::patch('/admin/users/{user}/password', [\App\Http\Controllers\Admin\UserManagementController::class, 'updatePassword'])->name('admin.users.password');
     Route::patch('/admin/users/{user}/api-authorization', [\App\Http\Controllers\Admin\UserManagementController::class, 'toggleApiAuthorization'])->name('admin.users.api-authorization');
 });
+
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::resource('api-keys', ApiKeyController::class);
+    Route::patch('/api-keys/{apiKey}/regenerate', [ApiKeyController::class, 'regenerate'])->name('api-keys.regenerate');
+    Route::patch('/api-keys/{apiKey}/toggle', [ApiKeyController::class, 'toggle'])->name('api-keys.toggle');
+
+    // User Order Management Routes
+    Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
+    Route::get('/orders/{order}', [OrderController::class, 'show'])->name('orders.show');
+});
+
+// Admin Order Management
+Route::middleware(['auth', 'verified', 'role:admin_access'])->group(function () {
+    Route::prefix('admin/orders')->name('admin.orders.')->group(function () {
+        Route::get('/', [AdminOrderController::class, 'index'])->name('index');
+        Route::get('/dashboard', [AdminOrderController::class, 'dashboard'])->name('dashboard');
+        Route::get('/{order}', [AdminOrderController::class, 'show'])->name('show');
+        Route::get('/{order}/edit', [AdminOrderController::class, 'edit'])->name('edit');
+        Route::put('/{order}', [AdminOrderController::class, 'update'])->name('update');
+        Route::patch('/{order}/status', [AdminOrderController::class, 'updateStatus'])->name('update-status');
+        Route::post('/bulk-status-update', [AdminOrderController::class, 'bulkStatusUpdate'])->name('bulk-status-update');
+        Route::delete('/{order}', [AdminOrderController::class, 'destroy'])->name('destroy');
+        Route::get('/export/csv', [AdminOrderController::class, 'export'])->name('export');
+    });
+
+    // Admin API Key Management Routes
+    Route::prefix('admin/api-keys')->name('admin.api-keys.')->group(function () {
+        Route::get('/', [AdminApiKeyController::class, 'index'])->name('index');
+        Route::get('/{apiKey}', [AdminApiKeyController::class, 'show'])->name('show');
+        Route::get('/{apiKey}/usage', [AdminApiKeyController::class, 'usage'])->name('usage');
+        Route::patch('/{apiKey}/toggle', [AdminApiKeyController::class, 'toggle'])->name('toggle');
+        Route::delete('/{apiKey}', [AdminApiKeyController::class, 'destroy'])->name('destroy');
+        Route::post('/bulk-action', [AdminApiKeyController::class, 'bulkAction'])->name('bulk-action');
+    });
+});
+
+// Public API Documentation
+Route::get('/api-docs', function () {
+    return view('api-documentation');
+})->name('api.documentation');

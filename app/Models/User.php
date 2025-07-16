@@ -57,6 +57,30 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     /**
+     * Get the API keys for the user.
+     */
+    public function apiKeys()
+    {
+        return $this->hasMany(ApiKey::class);
+    }
+
+    /**
+     * Get the orders created by this user (as a client).
+     */
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'client_id');
+    }
+
+    /**
+     * Get the order status updates made by this user.
+     */
+    public function orderStatusUpdates()
+    {
+        return $this->hasMany(OrderStatusHistory::class, 'updated_by');
+    }
+
+    /**
      * Check if user has a specific role
      */
     public function hasRole(string $role): bool
@@ -168,5 +192,35 @@ class User extends Authenticatable implements MustVerifyEmail
     public function isApiAuthorized(): bool
     {
         return $this->api_authorized;
+    }
+
+    /**
+     * Get the active API keys for the user
+     */
+    public function activeApiKeys()
+    {
+        return $this->apiKeys()->active();
+    }
+
+    /**
+     * Get order statistics for the user
+     */
+    public function getOrderStats(): array
+    {
+        $orders = $this->orders();
+
+        return [
+            'total' => $orders->count(),
+            'pending' => $orders->where('status', Order::STATUS_PENDING)->count(),
+            'in_transit' => $orders->whereIn('status', [
+                Order::STATUS_DISPATCHED,
+                Order::STATUS_PICKED_UP,
+                Order::STATUS_IN_TRANSIT,
+                Order::STATUS_OUT_FOR_DELIVERY
+            ])->count(),
+            'delivered' => $orders->where('status', Order::STATUS_DELIVERED)->count(),
+            'cancelled' => $orders->where('status', Order::STATUS_CANCELLED)->count(),
+            'this_month' => $orders->whereMonth('created_at', now()->month)->count(),
+        ];
     }
 }
