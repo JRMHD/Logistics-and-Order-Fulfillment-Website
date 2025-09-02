@@ -222,6 +222,102 @@
                         </div>
                     </div>
 
+                    <!-- Shipping Cost Breakdown -->
+                    @if($order->total_shipping_cost)
+                    <div style="{{ $cardStyle }}">
+                        <h3 style="{{ $cardHeaderStyle }}">Shipping Cost Breakdown</h3>
+                        <div style="{{ $cardBodyStyle }}">
+                            <div style="display: grid; grid-template-columns: 1fr; @media(min-width: 768px){ grid-template-columns: 1fr 1fr; } gap: 1.5rem;">
+                                <!-- Left Column - Calculation Details -->
+                                <div>
+                                    <div style="{{ $infoRowStyle }}">
+                                        <span style="{{ $infoLabelStyle }}">Distance</span>
+                                        <span style="{{ $infoValueStyle }}">{{ $order->distance_km ?? 'N/A' }} km</span>
+                                    </div>
+                                    <div style="{{ $infoRowStyle }}">
+                                        <span style="{{ $infoLabelStyle }}">Route Type</span>
+                                        <span style="{{ $infoValueStyle }}">
+                                            @if($order->is_within_nairobi)
+                                                <span style="padding: 0.25rem 0.5rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; background: #dcfce7; color: #166534;">
+                                                    Within Nairobi
+                                                </span>
+                                            @else
+                                                <span style="padding: 0.25rem 0.5rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; background: #dbeafe; color: #1e40af;">
+                                                    Nationwide
+                                                </span>
+                                            @endif
+                                        </span>
+                                    </div>
+                                    <div style="{{ $infoRowStyle }}">
+                                        <span style="{{ $infoLabelStyle }}">Calculation Method</span>
+                                        <span style="{{ $infoValueStyle }}">
+                                            @php
+                                                $methodColors = [
+                                                    'google_maps' => 'background: #dcfce7; color: #166534;',
+                                                    'fallback' => 'background: #fef3c7; color: #92400e;',
+                                                    'estimate' => 'background: #fee2e2; color: #991b1b;',
+                                                    'nairobi_flat_rate' => 'background: #dbeafe; color: #1e40af;'
+                                                ];
+                                                $methodStyle = $methodColors[$order->rate_calculation_method] ?? 'background: #f3f4f6; color: #374151;';
+                                                $methodLabel = match($order->rate_calculation_method) {
+                                                    'google_maps' => 'Google Maps',
+                                                    'fallback' => 'Fallback Matrix',
+                                                    'estimate' => 'Estimated',
+                                                    'nairobi_flat_rate' => 'Nairobi Flat Rate',
+                                                    default => 'Unknown'
+                                                };
+                                            @endphp
+                                            <span style="padding: 0.25rem 0.5rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; {{ $methodStyle }}">
+                                                {{ $methodLabel }}
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div style="{{ $infoRowStyle }} border-bottom: none;">
+                                        <span style="{{ $infoLabelStyle }}">Delivery Type</span>
+                                        <span style="{{ $infoValueStyle }}">{{ ucfirst($order->delivery_type) }} ({{ $order->delivery_type_multiplier }}x)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column - Cost Breakdown -->
+                                <div>
+                                    @if($order->is_within_nairobi)
+                                        <div style="{{ $infoRowStyle }}">
+                                            <span style="{{ $infoLabelStyle }}">Flat Rate</span>
+                                            <span style="{{ $infoValueStyle }}">{{ $order->currency }} {{ number_format($order->base_shipping_rate, 2) }}</span>
+                                        </div>
+                                        <div style="{{ $infoRowStyle }}">
+                                            <span style="{{ $infoLabelStyle }}">Weight Charge</span>
+                                            <span style="{{ $infoValueStyle }}">{{ $order->currency }} 0.00</span>
+                                        </div>
+                                        <div style="{{ $infoRowStyle }}">
+                                            <span style="{{ $infoLabelStyle }}">Distance Charge</span>
+                                            <span style="{{ $infoValueStyle }}">{{ $order->currency }} 0.00</span>
+                                        </div>
+                                    @else
+                                        <div style="{{ $infoRowStyle }}">
+                                            <span style="{{ $infoLabelStyle }}">Base Rate</span>
+                                            <span style="{{ $infoValueStyle }}">{{ $order->currency }} {{ number_format($order->base_shipping_rate, 2) }}</span>
+                                        </div>
+                                        <div style="{{ $infoRowStyle }}">
+                                            <span style="{{ $infoLabelStyle }}">Weight Charge</span>
+                                            <span style="{{ $infoValueStyle }}">{{ $order->currency }} {{ number_format($order->weight_charge, 2) }}</span>
+                                        </div>
+                                        <div style="{{ $infoRowStyle }}">
+                                            <span style="{{ $infoLabelStyle }}">Distance Charge</span>
+                                            <span style="{{ $infoValueStyle }}">{{ $order->currency }} {{ number_format($order->distance_charge, 2) }}</span>
+                                        </div>
+                                    @endif
+                                    
+                                    <div style="{{ $infoRowStyle }} border-bottom: none; font-size: 1.125rem; font-weight: 700;">
+                                        <span style="{{ $infoLabelStyle }}">Total Shipping Cost</span>
+                                        <span style="{{ $infoValueStyle }} color: #ED1C24;">{{ $order->currency }} {{ number_format($order->total_shipping_cost, 2) }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+
                     <!-- Notes -->
                     @if ($order->special_instructions || $order->delivery_notes)
                         <div

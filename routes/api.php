@@ -31,6 +31,9 @@ Route::prefix('v1')->middleware('api.auth')->group(function () {
 
     // Get available order statuses
     Route::get('statuses', [OrderController::class, 'getStatuses'])->name('api.statuses');
+    
+    // Calculate shipping rates
+    Route::post('calculate-rate', [OrderController::class, 'calculateRate'])->name('api.calculate-rate');
 
     // Public tracking endpoint (no authentication required for customer tracking)
     Route::get('track/{trackingNumber}', function ($trackingNumber) {
@@ -129,7 +132,27 @@ Route::get('docs', function () {
             ],
             'utilities' => [
                 'GET /statuses' => 'Get available order statuses',
+                'POST /calculate-rate' => 'Calculate shipping rate for checkout',
                 'GET /track/{tracking_number}' => 'Public order tracking (no auth required)',
+            ]
+        ],
+        'rate_calculation' => [
+            'endpoint' => 'POST /api/v1/calculate-rate',
+            'description' => 'Calculate shipping rates based on weight, origin, and destination',
+            'parameters' => [
+                'weight' => 'required|numeric (kg)',
+                'origin_city' => 'required|string',
+                'destination_city' => 'required|string', 
+                'delivery_type' => 'optional|string (standard, express, same_day)'
+            ],
+            'pricing_rules' => [
+                'within_nairobi' => 'Flat rate of 415 KSH regardless of weight',
+                'nationwide' => 'Base 100 KSH + (10 KSH × weight) + (3 KSH × distance)',
+                'delivery_multipliers' => [
+                    'standard' => '1.0x',
+                    'express' => '1.5x', 
+                    'same_day' => '2.0x'
+                ]
             ]
         ],
         'order_statuses' => \App\Models\Order::getStatusList(),

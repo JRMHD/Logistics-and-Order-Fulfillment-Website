@@ -270,6 +270,75 @@
                         @endif
                     </div>
 
+                    <!-- Shipping Cost Breakdown Card -->
+                    @if($order->total_shipping_cost)
+                    <div style="background: white; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+                        <h6 style="margin: 0 0 1.5rem 0; font-size: 1.125rem; font-weight: 600; color: #1f2937;">Shipping Cost Breakdown</h6>
+                        
+                        <!-- Main Shipping Info -->
+                        <div class="info-grid" style="margin-bottom: 1.5rem;">
+                            <div class="info-row">
+                                <strong>Distance:</strong>
+                                <span>{{ $order->distance_km ?? 'N/A' }} km</span>
+                            </div>
+                            <div class="info-row">
+                                <strong>Route Type:</strong>
+                                @if($order->is_within_nairobi)
+                                    <span style="padding: 0.25rem 0.5rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; background: #dcfce7; color: #166534;">
+                                        Within Nairobi
+                                    </span>
+                                @else
+                                    <span style="padding: 0.25rem 0.5rem; font-size: 0.75rem; font-weight: 600; border-radius: 9999px; background: #dbeafe; color: #1e40af;">
+                                        Nationwide
+                                    </span>
+                                @endif
+                            </div>
+                            <div class="info-row">
+                                <strong>Delivery Type Multiplier:</strong>
+                                <span>{{ $order->delivery_type_multiplier }}x ({{ ucfirst($order->delivery_type) }})</span>
+                            </div>
+                        </div>
+
+                        <!-- Cost Breakdown Table -->
+                        <div style="background: #f8fafc; border-radius: 0.5rem; padding: 1rem; border: 1px solid #e5e7eb;">
+                            <h6 style="margin: 0 0 1rem 0; font-size: 0.875rem; font-weight: 600; color: #374151; text-transform: uppercase; letter-spacing: 0.05em;">Cost Breakdown</h6>
+                            
+                            @if($order->is_within_nairobi)
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">
+                                    <span style="color: #6b7280;">Flat Rate (Nairobi):</span>
+                                    <span style="font-weight: 600; color: #1f2937;">{{ $order->currency }} {{ number_format($order->base_shipping_rate, 2) }}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">
+                                    <span style="color: #6b7280;">Weight Charge:</span>
+                                    <span style="color: #6b7280;">{{ $order->currency }} 0.00</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">
+                                    <span style="color: #6b7280;">Distance Charge:</span>
+                                    <span style="color: #6b7280;">{{ $order->currency }} 0.00</span>
+                                </div>
+                            @else
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">
+                                    <span style="color: #6b7280;">Base Rate:</span>
+                                    <span style="font-weight: 600; color: #1f2937;">{{ $order->currency }} {{ number_format($order->base_shipping_rate, 2) }}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">
+                                    <span style="color: #6b7280;">Weight Charge:</span>
+                                    <span style="font-weight: 600; color: #1f2937;">{{ $order->currency }} {{ number_format($order->weight_charge, 2) }}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb;">
+                                    <span style="color: #6b7280;">Distance Charge ({{ $order->distance_km }} km):</span>
+                                    <span style="font-weight: 600; color: #1f2937;">{{ $order->currency }} {{ number_format($order->distance_charge, 2) }}</span>
+                                </div>
+                            @endif
+                            
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; margin-top: 0.5rem; font-size: 1.125rem; font-weight: 700; color: #1f2937; border-top: 2px solid #3b82f6;">
+                                <span>Total Shipping Cost:</span>
+                                <span style="color: #3b82f6;">{{ $order->currency }} {{ number_format($order->total_shipping_cost, 2) }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+
                     <!-- Special Instructions Card -->
                     @if ($order->special_instructions)
                         <div

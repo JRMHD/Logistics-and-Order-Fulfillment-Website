@@ -47,6 +47,9 @@
                         style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Authentication</a>
                     <a href="#endpoints"
                         style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Endpoints</a>
+                    <a href="#rate-calculation"
+                        style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Rate
+                        Calculation</a>
                     <a href="#examples"
                         style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Code
                         Examples</a>
@@ -476,6 +479,16 @@
                     <div style="border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem;">
                         <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                             <span
+                                style="background: #fef3c7; color: #92400e; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">POST</span>
+                            <span
+                                style="font-family: monospace; font-weight: 500; color: #1f2937;">/calculate-rate</span>
+                        </div>
+                        <p style="color: #4b5563; font-size: 0.875rem;">Calculate shipping rates for checkout integration.</p>
+                    </div>
+
+                    <div style="border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span
                                 style="background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">GET</span>
                             <span style="font-family: monospace; font-weight: 500; color: #1f2937;">/statuses</span>
                         </div>
@@ -734,12 +747,20 @@ client.post('/orders', orderData)
                         </div>
                     </div>
 
-                    <div>
-                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #4b5563; margin-bottom: 0.75rem;">Public
-                            Tracking (No Authentication)</h4>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #4b5563; margin-bottom: 0.75rem;">Calculate
+                            Shipping Rate</h4>
                         <div style="position: relative;">
                             <pre
-                                style="background: #1f2937; color: #e5e7eb; padding: 1.25rem; border-radius: 0.5rem; overflow-x: auto; font-family: monospace; font-size: 0.875rem;"><code>curl -X GET {{ url('/api/v1/track') }}/TRACKING_NUMBER</code></pre>
+                                style="background: #1f2937; color: #e5e7eb; padding: 1.25rem; border-radius: 0.5rem; overflow-x: auto; font-family: monospace; font-size: 0.875rem;"><code>curl -X POST {{ url('/api/v1/calculate-rate') }} \
+  -H "X-API-Key: sk_your_api_key_here" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "weight": 4.0,
+    "origin_city": "Nairobi",
+    "destination_city": "Meru",
+    "delivery_type": "standard"
+  }'</code></pre>
                             <button
                                 onclick="copyToClipboard(document.getElementById('curl-tab-content').querySelectorAll('code')[3].textContent)"
                                 style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(255,255,255,0.1); border: none; border-radius: 0.25rem; padding: 0.5rem; cursor: pointer;">
@@ -751,6 +772,161 @@ client.post('/orders', orderData)
                             </button>
                         </div>
                     </div>
+
+                    <div>
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #4b5563; margin-bottom: 0.75rem;">Public
+                            Tracking (No Authentication)</h4>
+                        <div style="position: relative;">
+                            <pre
+                                style="background: #1f2937; color: #e5e7eb; padding: 1.25rem; border-radius: 0.5rem; overflow-x: auto; font-family: monospace; font-size: 0.875rem;"><code>curl -X GET {{ url('/api/v1/track') }}/TRACKING_NUMBER</code></pre>
+                            <button
+                                onclick="copyToClipboard(document.getElementById('curl-tab-content').querySelectorAll('code')[4].textContent)"
+                                style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(255,255,255,0.1); border: none; border-radius: 0.25rem; padding: 0.5rem; cursor: pointer;">
+                                <svg style="width: 1rem; height: 1rem; color: white;" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rate Calculation Section -->
+            <div id="rate-calculation"
+                style="background: white; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 2rem; height: 2rem; background: linear-gradient(135deg, #10b981, #059669); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+                        <svg style="width: 1rem; height: 1rem; color: white;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h2 style="font-size: 1.25rem; font-weight: 600; color: #1f2937; margin: 0;">Rate Calculation</h2>
+                </div>
+
+                <p style="color: #4b5563; margin-bottom: 1.5rem;">
+                    Calculate shipping rates for checkout integration. This endpoint allows you to get accurate pricing 
+                    before creating orders, perfect for e-commerce platforms and checkout flows.
+                </p>
+
+                <div style="background: #f9fafb; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 0.875rem; font-weight: 600; color: #6b7280; margin-bottom: 0.75rem;">
+                        Pricing Rules
+                    </h3>
+                    <div style="display: grid; gap: 1rem;">
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <div style="flex-shrink: 0; width: 1.25rem; height: 1.25rem; background: #dcfce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 0.125rem;">
+                                <svg style="width: 0.75rem; height: 0.75rem; color: #16a34a;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.875rem; font-weight: 600; color: #1f2937; margin: 0 0 0.25rem 0;">Within Nairobi</h4>
+                                <p style="font-size: 0.875rem; color: #6b7280; margin: 0;">Flat rate of <strong>415 KSH</strong> per package, regardless of weight or distance</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <div style="flex-shrink: 0; width: 1.25rem; height: 1.25rem; background: #dbeafe; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 0.125rem;">
+                                <svg style="width: 0.75rem; height: 0.75rem; color: #2563eb;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.875rem; font-weight: 600; color: #1f2937; margin: 0 0 0.25rem 0;">Nationwide (Outside Nairobi)</h4>
+                                <p style="font-size: 0.875rem; color: #6b7280; margin: 0;">
+                                    <strong>Base 100 KSH</strong> + <strong>10 KSH per kg</strong> + <strong>3 KSH per km</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #fef3c7; border: 1px solid #f59e0b; border-radius: 0.75rem; padding: 1rem; margin-bottom: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <svg style="width: 1rem; height: 1rem; color: #d97706;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #92400e; margin: 0;">Example Calculation</h4>
+                    </div>
+                    <p style="font-size: 0.875rem; color: #92400e; margin: 0;">
+                        4 kg package from Nairobi to Meru (230 km) = 100 + (10 × 4) + (3 × 230) = <strong>830 KSH</strong>
+                    </p>
+                </div>
+
+                <h3 style="font-size: 1rem; font-weight: 600; color: #1f2937; margin-bottom: 1rem;">Request Parameters</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                        <thead>
+                            <tr style="background: #f9fafb;">
+                                <th style="text-align: left; padding: 0.75rem; font-weight: 600; color: #374151; border-bottom: 1px solid #e5e7eb;">Parameter</th>
+                                <th style="text-align: left; padding: 0.75rem; font-weight: 600; color: #374151; border-bottom: 1px solid #e5e7eb;">Type</th>
+                                <th style="text-align: left; padding: 0.75rem; font-weight: 600; color: #374151; border-bottom: 1px solid #e5e7eb;">Required</th>
+                                <th style="text-align: left; padding: 0.75rem; font-weight: 600; color: #374151; border-bottom: 1px solid #e5e7eb;">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6;"><code style="background: #f3f4f6; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-family: monospace;">weight</code></td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6; color: #6b7280;">number</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6;"><span style="background: #dcfce7; color: #16a34a; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500;">Required</span></td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Package weight in kilograms (0.1 - 1000)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6;"><code style="background: #f3f4f6; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-family: monospace;">origin_city</code></td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6; color: #6b7280;">string</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6;"><span style="background: #dcfce7; color: #16a34a; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500;">Required</span></td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Origin city name (e.g., "Nairobi", "CBD", "Westlands")</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6;"><code style="background: #f3f4f6; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-family: monospace;">destination_city</code></td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6; color: #6b7280;">string</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6;"><span style="background: #dcfce7; color: #16a34a; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500;">Required</span></td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Destination city name</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem;"><code style="background: #f3f4f6; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-family: monospace;">delivery_type</code></td>
+                                <td style="padding: 0.75rem; color: #6b7280;">string</td>
+                                <td style="padding: 0.75rem;"><span style="background: #fef3c7; color: #92400e; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500;">Optional</span></td>
+                                <td style="padding: 0.75rem; color: #6b7280;">Delivery speed: "standard" (1x), "express" (1.5x), "same_day" (2x)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 style="font-size: 1rem; font-weight: 600; color: #1f2937; margin: 1.5rem 0 1rem 0;">Example Response</h3>
+                <div style="position: relative;">
+                    <pre style="background: #1f2937; color: #e5e7eb; padding: 1.25rem; border-radius: 0.5rem; overflow-x: auto; font-family: monospace; font-size: 0.875rem;"><code>{
+  "success": true,
+  "data": {
+    "weight": 4,
+    "origin_city": "Nairobi",
+    "destination_city": "Meru",
+    "distance_km": 230,
+    "is_within_nairobi": false,
+    "delivery_type": "standard",
+    "calculation_breakdown": {
+      "base_rate": 100,
+      "weight_charge": 40,
+      "distance_charge": 690,
+      "total": 830
+    },
+    "delivery_type_multiplier": 1,
+    "total_rate": 830,
+    "currency": "KES"
+  },
+  "message": "Shipping rate calculated successfully"
+}</code></pre>
+                    <button
+                        onclick="copyToClipboard(this.previousElementSibling.querySelector('code').textContent)"
+                        style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(255,255,255,0.1); border: none; border-radius: 0.25rem; padding: 0.5rem; cursor: pointer;">
+                        <svg style="width: 1rem; height: 1rem; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
 
