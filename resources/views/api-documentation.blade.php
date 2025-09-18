@@ -47,6 +47,8 @@
                         style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Authentication</a>
                     <a href="#endpoints"
                         style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Endpoints</a>
+                    <a href="#cities-api"
+                        style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Cities API</a>
                     <a href="#rate-calculation"
                         style="flex-shrink: 0; text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; color: #4b5563; background: #f3f4f6; transition: all 0.2s ease;">Rate
                         Calculation</a>
@@ -504,6 +506,212 @@
                         </div>
                         <p style="color: #4b5563; font-size: 0.875rem;">Public tracking (no authentication required).</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Cities API Section -->
+            <div id="cities-api"
+                style="background: white; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 2rem; height: 2rem; background: linear-gradient(135deg, #10b981, #059669); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+                        <svg style="width: 1rem; height: 1rem; color: white;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h2 style="font-size: 1.25rem; font-weight: 600; color: #1f2937; margin: 0;">Cities API</h2>
+                </div>
+
+                <p style="color: #4b5563; margin-bottom: 1.5rem;">
+                    The Cities API provides comprehensive access to cities and locations across Kenya, Tanzania, and Uganda.
+                    Perfect for populating dropdown menus, address autocomplete, and shipping form validation.
+                </p>
+
+                <div style="background: #dcfce7; border: 1px solid #16a34a; border-radius: 0.75rem; padding: 1rem; margin-bottom: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <svg style="width: 1.25rem; height: 1.25rem; color: #16a34a;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <strong style="color: #16a34a; font-weight: 600;">Public Endpoints Available</strong>
+                    </div>
+                    <p style="font-size: 0.875rem; color: #166534; margin: 0;">
+                        Cities endpoints are also available at <code>/api/public/cities/*</code> without authentication for easier frontend integration.
+                    </p>
+                </div>
+
+                <!-- Get All Cities -->
+                <div style="border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span
+                            style="background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">GET</span>
+                        <span style="font-family: monospace; font-weight: 500; color: #1f2937;">/cities</span>
+                    </div>
+                    <p style="color: #4b5563; margin-bottom: 1rem;">Get all cities with optional filtering by country, type, and search.</p>
+
+                    <h4 style="font-size: 0.875rem; font-weight: 600; color: #4b5563; margin-bottom: 0.75rem;">Query Parameters</h4>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                            <thead>
+                                <tr style="background: #f9fafb; text-align: left;">
+                                    <th style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Parameter</th>
+                                    <th style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Type</th>
+                                    <th style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Description</th>
+                                    <th style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-weight: 600;">Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-family: monospace; color: #dc2626;">country</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb;">string</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb;">Filter by country (KEN, TZS, UGA)</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-family: monospace; color: #4b5563;">?country=KEN</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-family: monospace; color: #dc2626;">major_only</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb;">boolean</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb;">Show only major cities</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-family: monospace; color: #4b5563;">?major_only=true</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-family: monospace; color: #dc2626;">nairobi_areas</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb;">boolean</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb;">Show only Nairobi areas</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; font-family: monospace; color: #4b5563;">?nairobi_areas=true</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; font-family: monospace; color: #dc2626;">search</td>
+                                    <td style="padding: 0.75rem;">string</td>
+                                    <td style="padding: 0.75rem;">Search by city name</td>
+                                    <td style="padding: 0.75rem; font-family: monospace; color: #4b5563;">?search=nairobi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Quick Access Endpoints -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span
+                                style="background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">GET</span>
+                            <span style="font-family: monospace; font-weight: 500; color: #1f2937; font-size: 0.875rem;">/cities/major</span>
+                        </div>
+                        <p style="color: #4b5563; font-size: 0.875rem; margin-bottom: 0.5rem;">Get major cities optimized for dropdowns</p>
+                        <div style="background: #f9fafb; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.75rem;">
+                            <strong>Perfect for:</strong> Origin/destination dropdowns
+                        </div>
+                    </div>
+
+                    <div style="border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span
+                                style="background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">GET</span>
+                            <span style="font-family: monospace; font-weight: 500; color: #1f2937; font-size: 0.875rem;">/cities/search</span>
+                        </div>
+                        <p style="color: #4b5563; font-size: 0.875rem; margin-bottom: 0.5rem;">Real-time search with autocomplete</p>
+                        <div style="background: #f9fafb; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.75rem;">
+                            <strong>Perfect for:</strong> Search-as-you-type features
+                        </div>
+                    </div>
+
+                    <div style="border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span
+                                style="background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">GET</span>
+                            <span style="font-family: monospace; font-weight: 500; color: #1f2937; font-size: 0.875rem;">/cities/nairobi-areas</span>
+                        </div>
+                        <p style="color: #4b5563; font-size: 0.875rem; margin-bottom: 0.5rem;">All Nairobi metropolitan areas</p>
+                        <div style="background: #f9fafb; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.75rem;">
+                            <strong>Perfect for:</strong> Detailed delivery zones
+                        </div>
+                    </div>
+
+                    <div style="border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span
+                                style="background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">GET</span>
+                            <span style="font-family: monospace; font-weight: 500; color: #1f2937; font-size: 0.875rem;">/cities/countries</span>
+                        </div>
+                        <p style="color: #4b5563; font-size: 0.875rem; margin-bottom: 0.5rem;">Get supported countries</p>
+                        <div style="background: #f9fafb; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.75rem;">
+                            <strong>Returns:</strong> KEN, TZS, UGA with counts
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1rem; font-weight: 600; color: #1f2937; margin-bottom: 1rem;">Example Response</h3>
+                <div style="background: #1f2937; border-radius: 0.75rem; padding: 1rem; margin-bottom: 1rem;">
+                    <pre style="color: #f3f4f6; font-family: monospace; font-size: 0.875rem; margin: 0; overflow-x: auto; white-space: pre-wrap;">{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Nairobi",
+      "normalized_name": "nairobi",
+      "region": "Nairobi County",
+      "country": "KEN",
+      "country_name": "Kenya",
+      "latitude": "-1.29210000",
+      "longitude": "36.82190000",
+      "is_major_city": true,
+      "is_nairobi_area": true,
+      "aliases": ["nairobi city", "nairobi cbd", "cbd"]
+    },
+    {
+      "id": 2,
+      "name": "Mombasa",
+      "normalized_name": "mombasa",
+      "region": "Mombasa County",
+      "country": "KEN",
+      "country_name": "Kenya",
+      "latitude": "-4.04350000",
+      "longitude": "39.66820000",
+      "is_major_city": true,
+      "is_nairobi_area": false,
+      "aliases": ["mombasa city"]
+    }
+  ],
+  "meta": {
+    "total": 2,
+    "filters_applied": {"country": "KEN", "major_only": true}
+  },
+  "message": "Cities retrieved successfully"
+}</pre>
+                </div>
+
+                <h3 style="font-size: 1rem; font-weight: 600; color: #1f2937; margin-bottom: 1rem;">Integration Examples</h3>
+
+                <div style="background: #f8fafc; border-radius: 0.75rem; padding: 1rem; margin-bottom: 1rem;">
+                    <h4 style="font-size: 0.875rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Populate Dropdown Menu</h4>
+                    <pre style="color: #374151; font-family: monospace; font-size: 0.75rem; margin: 0; overflow-x: auto;">fetch('/api/public/cities/major?country=KEN')
+  .then(response => response.json())
+  .then(data => {
+    const select = document.getElementById('city-select');
+    data.data.forEach(city => {
+      const option = document.createElement('option');
+      option.value = city.normalized_name;
+      option.textContent = city.name;
+      select.appendChild(option);
+    });
+  });</pre>
+                </div>
+
+                <div style="background: #f8fafc; border-radius: 0.75rem; padding: 1rem;">
+                    <h4 style="font-size: 0.875rem; font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Search Autocomplete</h4>
+                    <pre style="color: #374151; font-family: monospace; font-size: 0.75rem; margin: 0; overflow-x: auto;">function searchCities(query) {
+  if (query.length < 2) return;
+
+  fetch(`/api/public/cities/search?q=${encodeURIComponent(query)}&limit=5`)
+    .then(response => response.json())
+    .then(data => {
+      displaySearchResults(data.data);
+    });
+}</pre>
                 </div>
             </div>
 

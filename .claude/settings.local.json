@@ -3,7 +3,9 @@
     "allow": [
       "Bash(dir)",
       "Bash(php artisan make:migration:*)",
-      "Bash(php artisan:*)"
+      "Bash(php artisan:*)",
+      "Bash(curl:*)",
+      "Bash(php:*)"
     ],
     "deny": [],
     "ask": []
