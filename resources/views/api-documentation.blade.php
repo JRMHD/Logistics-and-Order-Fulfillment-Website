@@ -353,6 +353,46 @@
                                 <tr style="background: #f9fafb;">
                                     <td
                                         style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace; color: #1f2937;">
+                                        origin_address</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">string</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #ef4444;">Required</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">Complete pickup address</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace; color: #1f2937;">
+                                        origin_city</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">string</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #ef4444;">Required</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">Pickup city name</td>
+                                </tr>
+                                <tr style="background: #f9fafb;">
+                                    <td
+                                        style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace; color: #1f2937;">
+                                        origin_country</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">string</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #ef4444;">Required</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">Pickup country (Kenya, Tanzania, Uganda)</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace; color: #1f2937;">
+                                        origin_state</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">string</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #10b981;">Optional</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">Pickup state/region</td>
+                                </tr>
+                                <tr style="background: #f9fafb;">
+                                    <td
+                                        style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace; color: #1f2937;">
+                                        origin_postal_code</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">string</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #10b981;">Optional</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">Pickup postal code</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace; color: #1f2937;">
                                         delivery_address</td>
                                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #4b5563;">string</td>
                                     <td style="padding: 0.75rem; border: 1px solid #e5e7eb; color: #ef4444;">Required</td>
@@ -757,6 +797,9 @@ $orderData = [
     'customer_name' => 'John Doe',
     'customer_email' => 'john@example.com',
     'customer_phone' => '+254712345678',
+    'origin_address' => '456 Industrial Area, Nairobi',
+    'origin_city' => 'Nairobi',
+    'origin_country' => 'Kenya',
     'delivery_address' => '123 Main Street, Westlands',
     'city' => 'Nairobi',
     'country' => 'Kenya',
@@ -834,6 +877,9 @@ const orderData = {
     customer_name: 'John Doe',
     customer_email: 'john@example.com',
     customer_phone: '+254712345678',
+    origin_address: '456 Industrial Area, Nairobi',
+    origin_city: 'Nairobi',
+    origin_country: 'Kenya',
     delivery_address: '123 Main Street, Westlands',
     city: 'Nairobi',
     country: 'Kenya',
@@ -888,6 +934,9 @@ client.post('/orders', orderData)
     "customer_name": "John Doe",
     "customer_email": "john@example.com",
     "customer_phone": "+254712345678",
+    "origin_address": "456 Industrial Area, Nairobi",
+    "origin_city": "Nairobi",
+    "origin_country": "Kenya",
     "delivery_address": "123 Main Street, Westlands",
     "city": "Nairobi",
     "country": "Kenya",

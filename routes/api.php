@@ -224,6 +224,54 @@ Route::get('docs', function () {
                 'message' => 'string'
             ]
         ],
+        'order_creation' => [
+            'endpoint' => 'POST /api/v1/orders',
+            'description' => 'Create a new delivery order with origin and destination details',
+            'required_parameters' => [
+                'customer_name' => 'required|string|max:255 - Full name of recipient',
+                'customer_email' => 'required|email|max:255 - Email for notifications',
+                'customer_phone' => 'required|string|max:20 - Phone number for delivery contact',
+                'origin_address' => 'required|string - Complete pickup address',
+                'origin_city' => 'required|string|max:100 - Pickup city name',
+                'origin_country' => 'required|string|max:100 - Pickup country',
+                'delivery_address' => 'required|string - Complete delivery address',
+                'city' => 'required|string|max:100 - Delivery city name',
+                'country' => 'required|string|max:100 - Delivery country',
+                'items' => 'required|array - Array of items to ship',
+                'items.*.name' => 'required|string - Item name',
+                'items.*.quantity' => 'required|integer|min:1 - Item quantity',
+                'items.*.price' => 'required|numeric|min:0 - Item price',
+                'total_amount' => 'required|numeric|min:0 - Total order value'
+            ],
+            'optional_parameters' => [
+                'external_order_id' => 'nullable|string|max:255 - Your system\'s order reference',
+                'origin_state' => 'nullable|string|max:100 - Pickup state/region',
+                'origin_postal_code' => 'nullable|string|max:20 - Pickup postal code',
+                'state' => 'nullable|string|max:100 - Delivery state/region',
+                'postal_code' => 'nullable|string|max:20 - Delivery postal code',
+                'items.*.description' => 'nullable|string - Item description',
+                'currency' => 'nullable|string|size:3 - Currency code (default: KES)',
+                'special_instructions' => 'nullable|string - Delivery instructions',
+                'cash_on_delivery' => 'boolean - Enable COD (default: false)',
+                'cod_amount' => 'nullable|numeric|min:0 - COD amount if enabled',
+                'delivery_type' => 'nullable|string - standard, express, same_day (default: standard)',
+                'estimated_delivery' => 'nullable|date|after:now - Expected delivery date'
+            ],
+            'response_format' => [
+                'success' => true,
+                'data' => [
+                    'tracking_number' => 'string - Unique tracking ID',
+                    'status' => 'string - Current order status',
+                    'total_shipping_cost' => 'decimal - Calculated shipping fee',
+                    'distance_km' => 'decimal - Distance between origin and destination',
+                    'rate_calculation_method' => 'string - How rate was calculated',
+                    'origin_city' => 'string - Pickup city',
+                    'city' => 'string - Delivery city',
+                    'all_order_fields' => '... - Complete order details'
+                ],
+                'message' => 'Order created successfully'
+            ]
+        ],
         'rate_calculation' => [
             'endpoint' => 'POST /api/v1/calculate-rate',
             'description' => 'Calculate shipping rates based on weight, origin, and destination',

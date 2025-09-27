@@ -45,6 +45,11 @@ class OrderController extends Controller
             'customer_name' => 'required|string|max:255',
             'customer_email' => 'required|email|max:255',
             'customer_phone' => 'required|string|max:20',
+            'origin_address' => 'required|string',
+            'origin_city' => 'required|string|max:100',
+            'origin_state' => 'nullable|string|max:100',
+            'origin_country' => 'required|string|max:100',
+            'origin_postal_code' => 'nullable|string|max:20',
             'delivery_address' => 'required|string',
             'city' => 'required|string|max:100',
             'state' => 'nullable|string|max:100',
@@ -77,7 +82,7 @@ class OrderController extends Controller
             return $item['quantity'] ?? 1; // Use quantity as weight if no weight specified
         });
 
-        $originCity = strtolower(trim($request->origin_city ?? 'nairobi'));
+        $originCity = strtolower(trim($request->origin_city));
         $destinationCity = strtolower(trim($request->city));
         $deliveryType = $request->delivery_type ?? 'standard';
 
@@ -133,6 +138,11 @@ class OrderController extends Controller
             'customer_name' => $request->customer_name,
             'customer_email' => $request->customer_email,
             'customer_phone' => $request->customer_phone,
+            'origin_address' => $request->origin_address,
+            'origin_city' => $request->origin_city,
+            'origin_state' => $request->origin_state,
+            'origin_country' => $request->origin_country,
+            'origin_postal_code' => $request->origin_postal_code,
             'delivery_address' => $request->delivery_address,
             'city' => $request->city,
             'state' => $request->state,
@@ -222,6 +232,11 @@ class OrderController extends Controller
             'customer_name' => 'string|max:255',
             'customer_email' => 'email|max:255',
             'customer_phone' => 'string|max:20',
+            'origin_address' => 'string',
+            'origin_city' => 'string|max:100',
+            'origin_state' => 'nullable|string|max:100',
+            'origin_country' => 'string|max:100',
+            'origin_postal_code' => 'nullable|string|max:20',
             'delivery_address' => 'string',
             'city' => 'string|max:100',
             'state' => 'nullable|string|max:100',
@@ -243,6 +258,11 @@ class OrderController extends Controller
             'customer_name',
             'customer_email',
             'customer_phone',
+            'origin_address',
+            'origin_city',
+            'origin_state',
+            'origin_country',
+            'origin_postal_code',
             'delivery_address',
             'city',
             'state',
