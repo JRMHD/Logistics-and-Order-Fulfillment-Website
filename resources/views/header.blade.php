@@ -552,43 +552,13 @@
                 </script>
                 <!-- End Main Header Middle Area -->
                 <div class="cs-header-auth-section" style="margin-left: 15px;">
-                    @guest
-                        <!-- Show login/register links when not authenticated -->
-                        <div class="auth-buttons" style="display: flex; gap: 8px; align-items: center;">
-                            <a href="{{ route('login') }}" class="auth-link login-btn"
-                                style="color: #003B3B; padding: 8px 15px; border: 1px solid #003B3B; border-radius: 4px; text-decoration: none; font-size: 14px;">
-                                Login
-                            </a>
-                            {{-- <a href="{{ route('register') }}" class="auth-link register-btn"
-                                style="background-color: #003B3B; color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-size: 14px;">
-                                Register
-                            </a> --}}
-                        </div>
-                    @endguest
-
-                    @auth
-                        <!-- Show dashboard link and user menu when authenticated -->
-                        <div class="user-section" style="position: relative; display: inline-block;">
-                            <div class="user-controls" style="display: flex; gap: 8px; align-items: center;">
-                                <!-- Dashboard link based on user role -->
-                                @if (auth()->user()->hasRole('admin') || auth()->user()->hasRole('admin_access'))
-                                    <a href="{{ route('admin.dashboard') }}" class="dashboard-link"
-                                        style="color: #003B3B; padding: 8px 15px; border: 1px solid #003B3B; border-radius: 4px; text-decoration: none; font-size: 14px;">
-                                        <span class="dashboard-text">Admin Dashboard</span>
-                                        <span class="dashboard-text-mobile">Admin</span>
-                                    </a>
-                                @else
-                                    <a href="{{ route('dashboard') }}" class="dashboard-link"
-                                        style="color: #003B3B; padding: 8px 15px; border: 1px solid #003B3B; border-radius: 4px; text-decoration: none; font-size: 14px;">
-                                        <span class="dashboard-text">Dashboard</span>
-                                        <span class="dashboard-text-mobile">Panel</span>
-                                    </a>
-                                @endif
-
-                               
-                            </div>
-                        </div>
-                    @endauth
+                    <!-- External Login Link -->
+                    <div class="auth-buttons" style="display: flex; gap: 8px; align-items: center;">
+                        <a href="https://motorspeed.logisticssystem.co.ke/login" class="auth-link login-btn"
+                            style="color: #003B3B; padding: 8px 15px; border: 1px solid #003B3B; border-radius: 4px; text-decoration: none; font-size: 14px;">
+                            Login
+                        </a>
+                    </div>
                 </div>
                 <!-- Start Main Header Right Area -->
                 <div class="cs_main_header_right">
